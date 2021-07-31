@@ -9,21 +9,47 @@
 /* Begin PBXBuildFile section */
 		DD30295F26B53EB500ABEB63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD30295E26B53EB500ABEB63 /* AppDelegate.swift */; };
 		DD30296126B53EB500ABEB63 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD30296026B53EB500ABEB63 /* SceneDelegate.swift */; };
-		DD30296326B53EB500ABEB63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD30296226B53EB500ABEB63 /* ViewController.swift */; };
 		DD30296626B53EB500ABEB63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD30296426B53EB500ABEB63 /* Main.storyboard */; };
-		DD30296826B53EB700ABEB63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD30296726B53EB700ABEB63 /* Assets.xcassets */; };
 		DD30296B26B53EB700ABEB63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD30296926B53EB700ABEB63 /* LaunchScreen.storyboard */; };
+		DD30297726B5482000ABEB63 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD30297626B5482000ABEB63 /* BaseViewController.swift */; };
+		DD30297B26B54F9B00ABEB63 /* MyYogiyoStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD30297A26B54F9B00ABEB63 /* MyYogiyoStoryboard.storyboard */; };
+		DD30297E26B5512E00ABEB63 /* MyYogiyoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD30297D26B5512E00ABEB63 /* MyYogiyoViewController.swift */; };
+		DD30298026B5515800ABEB63 /* SocialLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD30297F26B5515800ABEB63 /* SocialLoginViewController.swift */; };
+		DD30298726B5612600ABEB63 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD30298626B5612600ABEB63 /* Images.xcassets */; };
+		DD30299926B5695500ABEB63 /* emailLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD30299826B5695500ABEB63 /* emailLoginViewController.swift */; };
+		DD30299B26B5696400ABEB63 /* EmailSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD30299A26B5696400ABEB63 /* EmailSignUpViewController.swift */; };
+		DD3029A526B5761700ABEB63 /* HomeStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD3029A426B5761700ABEB63 /* HomeStoryboard.storyboard */; };
+		DD3029A726B5762A00ABEB63 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3029A626B5762A00ABEB63 /* HomeViewController.swift */; };
+		DD3029A926B576DC00ABEB63 /* JjimStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD3029A826B576DC00ABEB63 /* JjimStoryboard.storyboard */; };
+		DD3029AB26B576EE00ABEB63 /* JjimViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3029AA26B576EE00ABEB63 /* JjimViewController.swift */; };
+		DD3029AD26B5770900ABEB63 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3029AC26B5770900ABEB63 /* SearchViewController.swift */; };
+		DD3029AF26B5771300ABEB63 /* SearchStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD3029AE26B5771300ABEB63 /* SearchStoryboard.storyboard */; };
+		DD3029B126B5773300ABEB63 /* OrderStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD3029B026B5773300ABEB63 /* OrderStoryboard.storyboard */; };
+		DD3029B326B5774300ABEB63 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3029B226B5774300ABEB63 /* OrderViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DD30295B26B53EB500ABEB63 /* Yogiyo_test_iOS_Flora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yogiyo_test_iOS_Flora.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD30295E26B53EB500ABEB63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD30296026B53EB500ABEB63 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DD30296226B53EB500ABEB63 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DD30296526B53EB500ABEB63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DD30296726B53EB700ABEB63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD30296A26B53EB700ABEB63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD30296C26B53EB700ABEB63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD30297626B5482000ABEB63 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		DD30297A26B54F9B00ABEB63 /* MyYogiyoStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyYogiyoStoryboard.storyboard; sourceTree = "<group>"; };
+		DD30297D26B5512E00ABEB63 /* MyYogiyoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyYogiyoViewController.swift; sourceTree = "<group>"; };
+		DD30297F26B5515800ABEB63 /* SocialLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLoginViewController.swift; sourceTree = "<group>"; };
+		DD30298626B5612600ABEB63 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DD30299826B5695500ABEB63 /* emailLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = emailLoginViewController.swift; sourceTree = "<group>"; };
+		DD30299A26B5696400ABEB63 /* EmailSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailSignUpViewController.swift; sourceTree = "<group>"; };
+		DD3029A426B5761700ABEB63 /* HomeStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeStoryboard.storyboard; sourceTree = "<group>"; };
+		DD3029A626B5762A00ABEB63 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DD3029A826B576DC00ABEB63 /* JjimStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = JjimStoryboard.storyboard; sourceTree = "<group>"; };
+		DD3029AA26B576EE00ABEB63 /* JjimViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JjimViewController.swift; sourceTree = "<group>"; };
+		DD3029AC26B5770900ABEB63 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		DD3029AE26B5771300ABEB63 /* SearchStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchStoryboard.storyboard; sourceTree = "<group>"; };
+		DD3029B026B5773300ABEB63 /* OrderStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OrderStoryboard.storyboard; sourceTree = "<group>"; };
+		DD3029B226B5774300ABEB63 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +82,68 @@
 		DD30295D26B53EB500ABEB63 /* Yogiyo_test_iOS_Flora */ = {
 			isa = PBXGroup;
 			children = (
+				DD30297426B547D600ABEB63 /* Configuration */,
+				DD30297326B53FAC00ABEB63 /* Sources */,
 				DD30295E26B53EB500ABEB63 /* AppDelegate.swift */,
 				DD30296026B53EB500ABEB63 /* SceneDelegate.swift */,
-				DD30296226B53EB500ABEB63 /* ViewController.swift */,
-				DD30296426B53EB500ABEB63 /* Main.storyboard */,
-				DD30296726B53EB700ABEB63 /* Assets.xcassets */,
+				DD30298626B5612600ABEB63 /* Images.xcassets */,
 				DD30296926B53EB700ABEB63 /* LaunchScreen.storyboard */,
 				DD30296C26B53EB700ABEB63 /* Info.plist */,
 			);
 			path = Yogiyo_test_iOS_Flora;
+			sourceTree = "<group>";
+		};
+		DD30297326B53FAC00ABEB63 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				DD30296426B53EB500ABEB63 /* Main.storyboard */,
+				DD30297926B54F5800ABEB63 /* Network */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		DD30297426B547D600ABEB63 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				DD30297526B547FE00ABEB63 /* Base */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		DD30297526B547FE00ABEB63 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				DD30297626B5482000ABEB63 /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		DD30297926B54F5800ABEB63 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DD3029A426B5761700ABEB63 /* HomeStoryboard.storyboard */,
+				DD3029A626B5762A00ABEB63 /* HomeViewController.swift */,
+				DD3029A826B576DC00ABEB63 /* JjimStoryboard.storyboard */,
+				DD3029AA26B576EE00ABEB63 /* JjimViewController.swift */,
+				DD3029AE26B5771300ABEB63 /* SearchStoryboard.storyboard */,
+				DD3029AC26B5770900ABEB63 /* SearchViewController.swift */,
+				DD3029B026B5773300ABEB63 /* OrderStoryboard.storyboard */,
+				DD3029B226B5774300ABEB63 /* OrderViewController.swift */,
+				DD30297A26B54F9B00ABEB63 /* MyYogiyoStoryboard.storyboard */,
+				DD30297C26B550EE00ABEB63 /* SignIn */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		DD30297C26B550EE00ABEB63 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				DD30297D26B5512E00ABEB63 /* MyYogiyoViewController.swift */,
+				DD30297F26B5515800ABEB63 /* SocialLoginViewController.swift */,
+				DD30299826B5695500ABEB63 /* emailLoginViewController.swift */,
+				DD30299A26B5696400ABEB63 /* EmailSignUpViewController.swift */,
+			);
+			path = SignIn;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +204,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD30296B26B53EB700ABEB63 /* LaunchScreen.storyboard in Resources */,
-				DD30296826B53EB700ABEB63 /* Assets.xcassets in Resources */,
+				DD3029AF26B5771300ABEB63 /* SearchStoryboard.storyboard in Resources */,
+				DD30298726B5612600ABEB63 /* Images.xcassets in Resources */,
+				DD3029B126B5773300ABEB63 /* OrderStoryboard.storyboard in Resources */,
+				DD3029A526B5761700ABEB63 /* HomeStoryboard.storyboard in Resources */,
+				DD30297B26B54F9B00ABEB63 /* MyYogiyoStoryboard.storyboard in Resources */,
 				DD30296626B53EB500ABEB63 /* Main.storyboard in Resources */,
+				DD3029A926B576DC00ABEB63 /* JjimStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +221,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD30296326B53EB500ABEB63 /* ViewController.swift in Sources */,
+				DD30297E26B5512E00ABEB63 /* MyYogiyoViewController.swift in Sources */,
+				DD30297726B5482000ABEB63 /* BaseViewController.swift in Sources */,
+				DD3029B326B5774300ABEB63 /* OrderViewController.swift in Sources */,
+				DD30298026B5515800ABEB63 /* SocialLoginViewController.swift in Sources */,
+				DD30299926B5695500ABEB63 /* emailLoginViewController.swift in Sources */,
+				DD3029A726B5762A00ABEB63 /* HomeViewController.swift in Sources */,
+				DD3029AD26B5770900ABEB63 /* SearchViewController.swift in Sources */,
+				DD30299B26B5696400ABEB63 /* EmailSignUpViewController.swift in Sources */,
 				DD30295F26B53EB500ABEB63 /* AppDelegate.swift in Sources */,
+				DD3029AB26B576EE00ABEB63 /* JjimViewController.swift in Sources */,
 				DD30296126B53EB500ABEB63 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
