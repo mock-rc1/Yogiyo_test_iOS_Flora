@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C35AAF0C54B833C35190D52B /* Pods_Yogiyo_test_iOS_Flora.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6235731F73929395489CB1A6 /* Pods_Yogiyo_test_iOS_Flora.framework */; };
 		DD30295F26B53EB500ABEB63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD30295E26B53EB500ABEB63 /* AppDelegate.swift */; };
 		DD30296126B53EB500ABEB63 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD30296026B53EB500ABEB63 /* SceneDelegate.swift */; };
 		DD30296626B53EB500ABEB63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD30296426B53EB500ABEB63 /* Main.storyboard */; };
@@ -26,9 +27,18 @@
 		DD3029AF26B5771300ABEB63 /* SearchStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD3029AE26B5771300ABEB63 /* SearchStoryboard.storyboard */; };
 		DD3029B126B5773300ABEB63 /* OrderStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD3029B026B5773300ABEB63 /* OrderStoryboard.storyboard */; };
 		DD3029B326B5774300ABEB63 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3029B226B5774300ABEB63 /* OrderViewController.swift */; };
+		DD3029BD26B61A8900ABEB63 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3029BC26B61A8900ABEB63 /* NavigationViewController.swift */; };
+		DD3029C226B62AF100ABEB63 /* EmailPassTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3029C026B62AF000ABEB63 /* EmailPassTableViewCell.swift */; };
+		DD3029C326B62AF100ABEB63 /* EmailPassTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3029C126B62AF000ABEB63 /* EmailPassTableViewCell.xib */; };
+		DD3029C626B62E5900ABEB63 /* AgreeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3029C426B62E5900ABEB63 /* AgreeTableViewCell.swift */; };
+		DD3029C726B62E5900ABEB63 /* AgreeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3029C526B62E5900ABEB63 /* AgreeTableViewCell.xib */; };
+		DD3029CE26B6AC8F00ABEB63 /* CompleteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3029CC26B6AC8E00ABEB63 /* CompleteTableViewCell.swift */; };
+		DD3029CF26B6AC8F00ABEB63 /* CompleteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3029CD26B6AC8E00ABEB63 /* CompleteTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6235731F73929395489CB1A6 /* Pods_Yogiyo_test_iOS_Flora.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yogiyo_test_iOS_Flora.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		95248392EC2AE0412051667B /* Pods-Yogiyo_test_iOS_Flora.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yogiyo_test_iOS_Flora.debug.xcconfig"; path = "Target Support Files/Pods-Yogiyo_test_iOS_Flora/Pods-Yogiyo_test_iOS_Flora.debug.xcconfig"; sourceTree = "<group>"; };
 		DD30295B26B53EB500ABEB63 /* Yogiyo_test_iOS_Flora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yogiyo_test_iOS_Flora.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD30295E26B53EB500ABEB63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD30296026B53EB500ABEB63 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +60,14 @@
 		DD3029AE26B5771300ABEB63 /* SearchStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchStoryboard.storyboard; sourceTree = "<group>"; };
 		DD3029B026B5773300ABEB63 /* OrderStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OrderStoryboard.storyboard; sourceTree = "<group>"; };
 		DD3029B226B5774300ABEB63 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		DD3029BC26B61A8900ABEB63 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		DD3029C026B62AF000ABEB63 /* EmailPassTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailPassTableViewCell.swift; sourceTree = "<group>"; };
+		DD3029C126B62AF000ABEB63 /* EmailPassTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmailPassTableViewCell.xib; sourceTree = "<group>"; };
+		DD3029C426B62E5900ABEB63 /* AgreeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgreeTableViewCell.swift; sourceTree = "<group>"; };
+		DD3029C526B62E5900ABEB63 /* AgreeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AgreeTableViewCell.xib; sourceTree = "<group>"; };
+		DD3029CC26B6AC8E00ABEB63 /* CompleteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteTableViewCell.swift; sourceTree = "<group>"; };
+		DD3029CD26B6AC8E00ABEB63 /* CompleteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompleteTableViewCell.xib; sourceTree = "<group>"; };
+		F9C1772B30741BA88AC342B9 /* Pods-Yogiyo_test_iOS_Flora.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yogiyo_test_iOS_Flora.release.xcconfig"; path = "Target Support Files/Pods-Yogiyo_test_iOS_Flora/Pods-Yogiyo_test_iOS_Flora.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,17 +75,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C35AAF0C54B833C35190D52B /* Pods_Yogiyo_test_iOS_Flora.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		34587B96E208F5550CB476C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6235731F73929395489CB1A6 /* Pods_Yogiyo_test_iOS_Flora.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		708DEDA540CE6145ED721D3F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				95248392EC2AE0412051667B /* Pods-Yogiyo_test_iOS_Flora.debug.xcconfig */,
+				F9C1772B30741BA88AC342B9 /* Pods-Yogiyo_test_iOS_Flora.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		DD30295226B53EB500ABEB63 = {
 			isa = PBXGroup;
 			children = (
 				DD30295D26B53EB500ABEB63 /* Yogiyo_test_iOS_Flora */,
 				DD30295C26B53EB500ABEB63 /* Products */,
+				708DEDA540CE6145ED721D3F /* Pods */,
+				34587B96E208F5550CB476C3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,7 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				DD30296426B53EB500ABEB63 /* Main.storyboard */,
-				DD30297926B54F5800ABEB63 /* Network */,
+				DD3029B626B6195500ABEB63 /* Action */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -118,32 +156,103 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
-		DD30297926B54F5800ABEB63 /* Network */ = {
+		DD3029B626B6195500ABEB63 /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				DD3029B726B6196600ABEB63 /* Home */,
+				DD3029B826B6197A00ABEB63 /* Jjim */,
+				DD3029B926B619CB00ABEB63 /* Search */,
+				DD3029BA26B619EB00ABEB63 /* Order */,
+				DD3029BB26B61A1000ABEB63 /* MyYogiyo */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		DD3029B726B6196600ABEB63 /* Home */ = {
 			isa = PBXGroup;
 			children = (
 				DD3029A426B5761700ABEB63 /* HomeStoryboard.storyboard */,
 				DD3029A626B5762A00ABEB63 /* HomeViewController.swift */,
-				DD3029A826B576DC00ABEB63 /* JjimStoryboard.storyboard */,
-				DD3029AA26B576EE00ABEB63 /* JjimViewController.swift */,
-				DD3029AE26B5771300ABEB63 /* SearchStoryboard.storyboard */,
-				DD3029AC26B5770900ABEB63 /* SearchViewController.swift */,
-				DD3029B026B5773300ABEB63 /* OrderStoryboard.storyboard */,
-				DD3029B226B5774300ABEB63 /* OrderViewController.swift */,
-				DD30297A26B54F9B00ABEB63 /* MyYogiyoStoryboard.storyboard */,
-				DD30297C26B550EE00ABEB63 /* SignIn */,
 			);
-			path = Network;
+			path = Home;
 			sourceTree = "<group>";
 		};
-		DD30297C26B550EE00ABEB63 /* SignIn */ = {
+		DD3029B826B6197A00ABEB63 /* Jjim */ = {
+			isa = PBXGroup;
+			children = (
+				DD3029A826B576DC00ABEB63 /* JjimStoryboard.storyboard */,
+				DD3029AA26B576EE00ABEB63 /* JjimViewController.swift */,
+			);
+			path = Jjim;
+			sourceTree = "<group>";
+		};
+		DD3029B926B619CB00ABEB63 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				DD3029AE26B5771300ABEB63 /* SearchStoryboard.storyboard */,
+				DD3029AC26B5770900ABEB63 /* SearchViewController.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		DD3029BA26B619EB00ABEB63 /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				DD3029B026B5773300ABEB63 /* OrderStoryboard.storyboard */,
+				DD3029B226B5774300ABEB63 /* OrderViewController.swift */,
+			);
+			path = Order;
+			sourceTree = "<group>";
+		};
+		DD3029BB26B61A1000ABEB63 /* MyYogiyo */ = {
+			isa = PBXGroup;
+			children = (
+				DD30297A26B54F9B00ABEB63 /* MyYogiyoStoryboard.storyboard */,
+				DD3029C826B66CDC00ABEB63 /* MyYogigoTab */,
+				DD3029C926B66D1700ABEB63 /* SocialLogin */,
+				DD3029CA26B66D4C00ABEB63 /* emailLogin */,
+				DD3029CB26B66D8C00ABEB63 /* EmailSignUp */,
+			);
+			path = MyYogiyo;
+			sourceTree = "<group>";
+		};
+		DD3029C826B66CDC00ABEB63 /* MyYogigoTab */ = {
 			isa = PBXGroup;
 			children = (
 				DD30297D26B5512E00ABEB63 /* MyYogiyoViewController.swift */,
-				DD30297F26B5515800ABEB63 /* SocialLoginViewController.swift */,
-				DD30299826B5695500ABEB63 /* emailLoginViewController.swift */,
-				DD30299A26B5696400ABEB63 /* EmailSignUpViewController.swift */,
 			);
-			path = SignIn;
+			path = MyYogigoTab;
+			sourceTree = "<group>";
+		};
+		DD3029C926B66D1700ABEB63 /* SocialLogin */ = {
+			isa = PBXGroup;
+			children = (
+				DD3029BC26B61A8900ABEB63 /* NavigationViewController.swift */,
+				DD30297F26B5515800ABEB63 /* SocialLoginViewController.swift */,
+			);
+			path = SocialLogin;
+			sourceTree = "<group>";
+		};
+		DD3029CA26B66D4C00ABEB63 /* emailLogin */ = {
+			isa = PBXGroup;
+			children = (
+				DD30299826B5695500ABEB63 /* emailLoginViewController.swift */,
+			);
+			path = emailLogin;
+			sourceTree = "<group>";
+		};
+		DD3029CB26B66D8C00ABEB63 /* EmailSignUp */ = {
+			isa = PBXGroup;
+			children = (
+				DD30299A26B5696400ABEB63 /* EmailSignUpViewController.swift */,
+				DD3029C026B62AF000ABEB63 /* EmailPassTableViewCell.swift */,
+				DD3029C126B62AF000ABEB63 /* EmailPassTableViewCell.xib */,
+				DD3029C426B62E5900ABEB63 /* AgreeTableViewCell.swift */,
+				DD3029C526B62E5900ABEB63 /* AgreeTableViewCell.xib */,
+				DD3029CC26B6AC8E00ABEB63 /* CompleteTableViewCell.swift */,
+				DD3029CD26B6AC8E00ABEB63 /* CompleteTableViewCell.xib */,
+			);
+			path = EmailSignUp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,9 +262,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD30296F26B53EB700ABEB63 /* Build configuration list for PBXNativeTarget "Yogiyo_test_iOS_Flora" */;
 			buildPhases = (
+				95E179896DEDEFEE78081C0D /* [CP] Check Pods Manifest.lock */,
 				DD30295726B53EB500ABEB63 /* Sources */,
 				DD30295826B53EB500ABEB63 /* Frameworks */,
 				DD30295926B53EB500ABEB63 /* Resources */,
+				2A1FED7E997C21961A48C97E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -206,21 +317,68 @@
 				DD30296B26B53EB700ABEB63 /* LaunchScreen.storyboard in Resources */,
 				DD3029AF26B5771300ABEB63 /* SearchStoryboard.storyboard in Resources */,
 				DD30298726B5612600ABEB63 /* Images.xcassets in Resources */,
+				DD3029CF26B6AC8F00ABEB63 /* CompleteTableViewCell.xib in Resources */,
 				DD3029B126B5773300ABEB63 /* OrderStoryboard.storyboard in Resources */,
+				DD3029C726B62E5900ABEB63 /* AgreeTableViewCell.xib in Resources */,
 				DD3029A526B5761700ABEB63 /* HomeStoryboard.storyboard in Resources */,
 				DD30297B26B54F9B00ABEB63 /* MyYogiyoStoryboard.storyboard in Resources */,
 				DD30296626B53EB500ABEB63 /* Main.storyboard in Resources */,
 				DD3029A926B576DC00ABEB63 /* JjimStoryboard.storyboard in Resources */,
+				DD3029C326B62AF100ABEB63 /* EmailPassTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A1FED7E997C21961A48C97E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Yogiyo_test_iOS_Flora/Pods-Yogiyo_test_iOS_Flora-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Yogiyo_test_iOS_Flora/Pods-Yogiyo_test_iOS_Flora-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Yogiyo_test_iOS_Flora/Pods-Yogiyo_test_iOS_Flora-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95E179896DEDEFEE78081C0D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Yogiyo_test_iOS_Flora-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DD30295726B53EB500ABEB63 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD3029CE26B6AC8F00ABEB63 /* CompleteTableViewCell.swift in Sources */,
+				DD3029BD26B61A8900ABEB63 /* NavigationViewController.swift in Sources */,
 				DD30297E26B5512E00ABEB63 /* MyYogiyoViewController.swift in Sources */,
 				DD30297726B5482000ABEB63 /* BaseViewController.swift in Sources */,
 				DD3029B326B5774300ABEB63 /* OrderViewController.swift in Sources */,
@@ -229,8 +387,10 @@
 				DD3029A726B5762A00ABEB63 /* HomeViewController.swift in Sources */,
 				DD3029AD26B5770900ABEB63 /* SearchViewController.swift in Sources */,
 				DD30299B26B5696400ABEB63 /* EmailSignUpViewController.swift in Sources */,
+				DD3029C226B62AF100ABEB63 /* EmailPassTableViewCell.swift in Sources */,
 				DD30295F26B53EB500ABEB63 /* AppDelegate.swift in Sources */,
 				DD3029AB26B576EE00ABEB63 /* JjimViewController.swift in Sources */,
+				DD3029C626B62E5900ABEB63 /* AgreeTableViewCell.swift in Sources */,
 				DD30296126B53EB500ABEB63 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -375,6 +535,7 @@
 		};
 		DD30297026B53EB700ABEB63 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95248392EC2AE0412051667B /* Pods-Yogiyo_test_iOS_Flora.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -394,6 +555,7 @@
 		};
 		DD30297126B53EB700ABEB63 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9C1772B30741BA88AC342B9 /* Pods-Yogiyo_test_iOS_Flora.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

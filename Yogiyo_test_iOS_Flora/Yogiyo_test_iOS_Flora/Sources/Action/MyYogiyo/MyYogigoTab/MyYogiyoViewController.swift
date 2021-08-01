@@ -15,9 +15,8 @@ class MyYogiyoViewController: UIViewController {
     }
     
     @IBAction func loginBtnTap(_ sender: Any) {
-        guard let dvc = self.storyboard?.instantiateViewController(identifier: "SocialLoginViewController") as? SocialLoginViewController else { return }
+        guard let dvc = self.storyboard?.instantiateViewController(identifier: "NavigationViewController") as? NavigationViewController else { return }
         
-        //navigationController?.pushViewController(dvc, animated: true)
         dvc.modalPresentationStyle = .fullScreen
         self.present(dvc, animated: true)
     }
