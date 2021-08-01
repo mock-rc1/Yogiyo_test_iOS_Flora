@@ -23,6 +23,9 @@
                         <state key="normal" image="squareshape" catalog="system">
                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20" scale="large" weight="thin"/>
                         </state>
+                        <connections>
+                            <action selector="allAgreeBtnTap:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="MZk-sW-Pzq"/>
+                        </connections>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="전체동의" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VpC-pS-jZi">
                         <rect key="frame" x="52.5" y="22.5" width="59" height="20.5"/>

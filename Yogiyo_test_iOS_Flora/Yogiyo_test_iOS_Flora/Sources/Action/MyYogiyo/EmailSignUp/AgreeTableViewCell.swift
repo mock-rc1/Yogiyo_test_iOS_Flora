@@ -40,12 +40,15 @@ class AgreeTableViewCell: UITableViewCell {
     }
     
     @IBAction func allAgreeBtnTap (_ sender: UIButton) {
+        print("눌린다")
         
-        viewWithTag(2)
-        viewWithTag(3)
-        viewWithTag(4)
-        viewWithTag(5)
-        viewWithTag(6)
+        viewWithTag(1)?.backgroundColor = .red
+        viewWithTag(2)?.backgroundColor = .red
+        viewWithTag(3)?.backgroundColor = .red
+        viewWithTag(4)?.backgroundColor = .red
+        viewWithTag(5)?.backgroundColor = .red
+        viewWithTag(6)?.backgroundColor = .red
+        
 
     }
     
