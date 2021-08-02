@@ -1,5 +1,17 @@
 PODS:
   - Alamofire (5.4.3)
+  - FBSDKCoreKit (11.0.1):
+    - FBSDKCoreKit/Core (= 11.0.1)
+  - FBSDKCoreKit/Core (11.0.1):
+    - FBSDKCoreKit_Basics (~> 11.0.1)
+  - FBSDKCoreKit_Basics (11.0.1):
+    - FBSDKCoreKit_Basics/Basics (= 11.0.1)
+  - FBSDKCoreKit_Basics/Basics (11.0.1)
+  - FBSDKLoginKit (11.0.1):
+    - FBSDKLoginKit/Login (= 11.0.1)
+  - FBSDKLoginKit/Login (11.0.1):
+    - FBSDKCoreKit (~> 11.0.1)
+    - FBSDKCoreKit_Basics (~> 11.0.1)
   - KakaoSDKAuth (2.5.5):
     - KakaoSDKCommon (= 2.5.5)
   - KakaoSDKCommon (2.5.5):
@@ -11,25 +23,37 @@ PODS:
     - KakaoSDKCommon/Common (= 2.5.5)
   - KakaoSDKUser (2.5.5):
     - KakaoSDKAuth (= 2.5.5)
+  - naveridlogin-sdk-ios (4.1.3)
 
 DEPENDENCIES:
+  - Alamofire (~> 5.4)
+  - FBSDKLoginKit
   - KakaoSDKAuth
   - KakaoSDKCommon
   - KakaoSDKUser
+  - naveridlogin-sdk-ios
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - FBSDKCoreKit
+    - FBSDKCoreKit_Basics
+    - FBSDKLoginKit
     - KakaoSDKAuth
     - KakaoSDKCommon
     - KakaoSDKUser
+    - naveridlogin-sdk-ios
 
 SPEC CHECKSUMS:
   Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  FBSDKCoreKit: 38c9e29a3f1436362acacff6486d3a28628c288f
+  FBSDKCoreKit_Basics: 06780a4a12e16596bde8406add02c6aa1bf38616
+  FBSDKLoginKit: 8243e04c590c38b85c69fcf09d1234514d2475c3
   KakaoSDKAuth: 7474cf67d199a9c2ec6a46e4ed8398cf34c1262d
   KakaoSDKCommon: fb2c9223a86d6f65a8ba73bbaad7cec6a2b09630
   KakaoSDKUser: 7bb1c38bbd4608bd4e7eebbd4eda130338364fb3
+  naveridlogin-sdk-ios: b9d7c20677981177ed994ecb1c8c2b49f223277d
 
-PODFILE CHECKSUM: ac3ee3a9a3a2364f06c57dd1d9e59844984aefeb
+PODFILE CHECKSUM: 97649728e65a1318d4285510c17c3aeb1ec41ea3
 
 COCOAPODS: 1.10.2

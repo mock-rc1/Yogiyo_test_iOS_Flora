@@ -15,6 +15,7 @@ class NoUserTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        tapGesture()
         // Initialization code
     }
     
@@ -26,6 +27,17 @@ class NoUserTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    // MARK: UIView tap gesture
+    func tapGesture() {
+        let tapGesture = UITapGestureRecognizer(target: self, action:#selector(self.screenDidTap(_:)))
+        self.loginUIView.addGestureRecognizer(tapGesture)
+    }
+    @objc private func screenDidTap(_ gesture: UITapGestureRecognizer) {
+//        guard let dvc = storyboard?.instantiateViewController(identifier: "SocialLoginViewController")else{return}
+//        present(dvc, animated: true, completion:nil)
+     print("tap")
     }
     
 }

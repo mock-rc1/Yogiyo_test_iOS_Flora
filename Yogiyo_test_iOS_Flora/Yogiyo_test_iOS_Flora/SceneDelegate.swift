@@ -7,17 +7,37 @@
 
 import UIKit
 import KakaoSDKAuth
+import NaverThirdPartyLogin
+import FBSDKCoreKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     var window: UIWindow?
     
     func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
+        
+        // 카카오
         if let url = URLContexts.first?.url {
             if (AuthApi.isKakaoTalkLoginUrl(url)) {
                 _ = AuthController.handleOpenUrl(url: url)
             }
         }
+
+        // 네이버
+        NaverThirdPartyLoginConnection
+          .getSharedInstance()?
+          .receiveAccessToken(URLContexts.first?.url)
+        
+        // 페이스북
+        guard let url = URLContexts.first?.url else {
+                return
+            }
+            ApplicationDelegate.shared.application(
+                UIApplication.shared,
+                open: url,
+                sourceApplication: nil,
+                annotation: [UIApplication.OpenURLOptionsKey.annotation]
+            )
     }
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {

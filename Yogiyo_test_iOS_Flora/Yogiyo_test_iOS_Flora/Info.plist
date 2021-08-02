@@ -26,9 +26,20 @@
 				<string>kakaofbe44eaca4bd9a9c16541f9eef9cdd5b</string>
 			</array>
 		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>naverlogin</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>naverlogin</string>
+			</array>
+		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string></string>
+	
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UIApplicationSceneManifest</key>
@@ -73,5 +84,44 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+    <key>LSApplicationQueriesSchemes</key>
+      <array>
+        <string>naversearchapp</string>
+        <string>naversearchthirdlogin</string>
+      </array>
+      <key>CFBundleURLTypes</key>
+      <array>
+        <dict>
+        <key>CFBundleURLSchemes</key>
+        <array>
+          <string>fb383445486718819</string>
+        </array>
+        </dict>
+      </array>
+      <key>FacebookAppID</key>
+      <string>383445486718819</string>
+      <key>FacebookClientToken</key>
+      <string>143fc2fa69fee8baea503a690f946b3f</string>
+      <key>FacebookDisplayName</key>
+      <string>socialLoginTest</string>
+      
+      <key>LSApplicationQueriesSchemes</key>
+      <array>
+        <string>fbapi</string>
+        <string>fbapi20130214</string>
+        <string>fbapi20130410</string>
+        <string>fbapi20130702</string>
+        <string>fbapi20131010</string>
+        <string>fbapi20131219</string>
+        <string>fbapi20140410</string>
+        <string>fbapi20140116</string>
+        <string>fbapi20150313</string>
+        <string>fbapi20150629</string>
+        <string>fbapi20160328</string>
+        <string>fbauth</string>
+        <string>fb-messenger-share-api</string>
+        <string>fbauth2</string>
+        <string>fbshareextension</string>
+      </array>
 </dict>
 </plist>

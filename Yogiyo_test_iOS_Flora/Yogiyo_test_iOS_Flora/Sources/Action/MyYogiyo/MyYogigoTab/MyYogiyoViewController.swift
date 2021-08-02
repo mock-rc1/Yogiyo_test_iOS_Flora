@@ -13,6 +13,7 @@ class MyYogiyoViewController: UIViewController {
     
     let sections: [String] = ["로그인전후화면", "쿠폰함", "카테고리"]
     let category = [1,2,3,4,5,6,7]
+    var userName : String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +22,7 @@ class MyYogiyoViewController: UIViewController {
         MyYogiyoTableView.dataSource = self
         // 테이블 뷰 경계션 없애기
         MyYogiyoTableView.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: .greatestFiniteMagnitude)
+        
         
         self.MyYogiyoTableView.register(NoUserTableViewCell.nib(), forCellReuseIdentifier: NoUserTableViewCell.identifier)
         self.MyYogiyoTableView.register(MyYogiyoTableViewCell.nib(), forCellReuseIdentifier: MyYogiyoTableViewCell.identifier)
@@ -36,12 +38,15 @@ class MyYogiyoViewController: UIViewController {
         dvc.modalPresentationStyle = .fullScreen
         self.present(dvc, animated: true)
     }
+    
 }
+
 
 extension MyYogiyoViewController: UITableViewDataSource, UITableViewDelegate {
     
+
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // 로그인할때안할때나눌거야
         if section == 0 {
             return 1
             
@@ -59,9 +64,11 @@ extension MyYogiyoViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if(indexPath.section == 0) {
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: NoUserTableViewCell.identifier) as? NoUserTableViewCell else{
+            
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: MyYogiyoLoginTableViewCell.identifier) as? MyYogiyoLoginTableViewCell else{
                 return UITableViewCell()
             }
+            cell.userNameLabel.text = userMainData.shared.loginUser
             return cell
         }
         else if(indexPath.section == 1) {

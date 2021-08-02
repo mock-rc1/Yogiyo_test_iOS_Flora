@@ -7,6 +7,9 @@ target 'Yogiyo_test_iOS_Flora' do
   pod 'KakaoSDKUser'
   pod 'KakaoSDKCommon'  # 필수 요소를 담은 공통 모듈
   pod 'KakaoSDKAuth'  # 사용자 인증
+  pod 'naveridlogin-sdk-ios'
+  pod 'FBSDKLoginKit'
+  pod 'Alamofire', '~> 5.4'
   # Pods for Yogiyo_test_iOS_Flora
 
 end

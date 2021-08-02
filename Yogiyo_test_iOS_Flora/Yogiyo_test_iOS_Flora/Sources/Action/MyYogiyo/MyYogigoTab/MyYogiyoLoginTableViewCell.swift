@@ -9,6 +9,8 @@ import UIKit
 
 class MyYogiyoLoginTableViewCell: UITableViewCell {
     
+    @IBOutlet weak var userNameLabel: UILabel!
+    
     static let identifier = "MyYogiyoLoginTableViewCell"
 
     override func awakeFromNib() {
