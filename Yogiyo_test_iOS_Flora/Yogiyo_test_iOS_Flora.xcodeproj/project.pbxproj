@@ -28,12 +28,6 @@
 		DD3029B126B5773300ABEB63 /* OrderStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD3029B026B5773300ABEB63 /* OrderStoryboard.storyboard */; };
 		DD3029B326B5774300ABEB63 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3029B226B5774300ABEB63 /* OrderViewController.swift */; };
 		DD3029BD26B61A8900ABEB63 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3029BC26B61A8900ABEB63 /* NavigationViewController.swift */; };
-		DD3029C226B62AF100ABEB63 /* EmailPassTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3029C026B62AF000ABEB63 /* EmailPassTableViewCell.swift */; };
-		DD3029C326B62AF100ABEB63 /* EmailPassTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3029C126B62AF000ABEB63 /* EmailPassTableViewCell.xib */; };
-		DD3029C626B62E5900ABEB63 /* AgreeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3029C426B62E5900ABEB63 /* AgreeTableViewCell.swift */; };
-		DD3029C726B62E5900ABEB63 /* AgreeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3029C526B62E5900ABEB63 /* AgreeTableViewCell.xib */; };
-		DD3029CE26B6AC8F00ABEB63 /* CompleteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3029CC26B6AC8E00ABEB63 /* CompleteTableViewCell.swift */; };
-		DD3029CF26B6AC8F00ABEB63 /* CompleteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3029CD26B6AC8E00ABEB63 /* CompleteTableViewCell.xib */; };
 		DD3F8FE926B7B14800F98C1D /* userDataTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F8FE826B7B14800F98C1D /* userDataTest.swift */; };
 		DD3F8FEC26B7FB8900F98C1D /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F8FEB26B7FB8900F98C1D /* UIViewController.swift */; };
 		DD3F8FF026B8520F00F98C1D /* beforeLoginTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F8FEE26B8520F00F98C1D /* beforeLoginTVCell.swift */; };
@@ -53,6 +47,13 @@
 		DD3F901426B9044000F98C1D /* categoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3F901226B9044000F98C1D /* categoryTableViewCell.xib */; };
 		DD3F901726B9045C00F98C1D /* CategotyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F901526B9045C00F98C1D /* CategotyViewController.swift */; };
 		DD3F901826B9045C00F98C1D /* CategotyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3F901626B9045C00F98C1D /* CategotyViewController.xib */; };
+		DD3F901D26B95A0B00F98C1D /* SignUpData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F901C26B95A0B00F98C1D /* SignUpData.swift */; };
+		DD3F901F26B95BF400F98C1D /* SignUpDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F901E26B95BF400F98C1D /* SignUpDataManager.swift */; };
+		DD3F902126B95FBA00F98C1D /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F902026B95FBA00F98C1D /* NetworkResult.swift */; };
+		DD3F902326B9973E00F98C1D /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F902226B9973E00F98C1D /* String.swift */; };
+		DD3F902826B9979800F98C1D /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F902726B9979800F98C1D /* AlertViewController.swift */; };
+		DD3F902A26B9986700F98C1D /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F902926B9986700F98C1D /* UIButton.swift */; };
+		DD3F902C26B9A05A00F98C1D /* SignUpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F902B26B9A05A00F98C1D /* SignUpRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,12 +81,6 @@
 		DD3029B026B5773300ABEB63 /* OrderStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OrderStoryboard.storyboard; sourceTree = "<group>"; };
 		DD3029B226B5774300ABEB63 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 		DD3029BC26B61A8900ABEB63 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
-		DD3029C026B62AF000ABEB63 /* EmailPassTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailPassTableViewCell.swift; sourceTree = "<group>"; };
-		DD3029C126B62AF000ABEB63 /* EmailPassTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmailPassTableViewCell.xib; sourceTree = "<group>"; };
-		DD3029C426B62E5900ABEB63 /* AgreeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgreeTableViewCell.swift; sourceTree = "<group>"; };
-		DD3029C526B62E5900ABEB63 /* AgreeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AgreeTableViewCell.xib; sourceTree = "<group>"; };
-		DD3029CC26B6AC8E00ABEB63 /* CompleteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteTableViewCell.swift; sourceTree = "<group>"; };
-		DD3029CD26B6AC8E00ABEB63 /* CompleteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompleteTableViewCell.xib; sourceTree = "<group>"; };
 		DD3F8FE826B7B14800F98C1D /* userDataTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userDataTest.swift; sourceTree = "<group>"; };
 		DD3F8FEB26B7FB8900F98C1D /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		DD3F8FEE26B8520F00F98C1D /* beforeLoginTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = beforeLoginTVCell.swift; sourceTree = "<group>"; };
@@ -105,6 +100,13 @@
 		DD3F901226B9044000F98C1D /* categoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = categoryTableViewCell.xib; sourceTree = "<group>"; };
 		DD3F901526B9045C00F98C1D /* CategotyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategotyViewController.swift; sourceTree = "<group>"; };
 		DD3F901626B9045C00F98C1D /* CategotyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategotyViewController.xib; sourceTree = "<group>"; };
+		DD3F901C26B95A0B00F98C1D /* SignUpData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpData.swift; sourceTree = "<group>"; };
+		DD3F901E26B95BF400F98C1D /* SignUpDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpDataManager.swift; sourceTree = "<group>"; };
+		DD3F902026B95FBA00F98C1D /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		DD3F902226B9973E00F98C1D /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		DD3F902726B9979800F98C1D /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
+		DD3F902926B9986700F98C1D /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		DD3F902B26B9A05A00F98C1D /* SignUpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRequest.swift; sourceTree = "<group>"; };
 		F9C1772B30741BA88AC342B9 /* Pods-Yogiyo_test_iOS_Flora.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yogiyo_test_iOS_Flora.release.xcconfig"; path = "Target Support Files/Pods-Yogiyo_test_iOS_Flora/Pods-Yogiyo_test_iOS_Flora.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -173,7 +175,9 @@
 			isa = PBXGroup;
 			children = (
 				DD30296426B53EB500ABEB63 /* Main.storyboard */,
-				DD3029B626B6195500ABEB63 /* Action */,
+				DD3F902426B9977000F98C1D /* Action */,
+				DD3029B626B6195500ABEB63 /* View */,
+				DD3F901926B9584200F98C1D /* New Group */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -195,7 +199,7 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
-		DD3029B626B6195500ABEB63 /* Action */ = {
+		DD3029B626B6195500ABEB63 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				DD3029B726B6196600ABEB63 /* Home */,
@@ -204,7 +208,7 @@
 				DD3029BA26B619EB00ABEB63 /* Order */,
 				DD3029BB26B61A1000ABEB63 /* MyYogiyo */,
 			);
-			path = Action;
+			path = View;
 			sourceTree = "<group>";
 		};
 		DD3029B726B6196600ABEB63 /* Home */ = {
@@ -286,12 +290,6 @@
 			isa = PBXGroup;
 			children = (
 				DD30299A26B5696400ABEB63 /* EmailSignUpViewController.swift */,
-				DD3029C026B62AF000ABEB63 /* EmailPassTableViewCell.swift */,
-				DD3029C126B62AF000ABEB63 /* EmailPassTableViewCell.xib */,
-				DD3029C426B62E5900ABEB63 /* AgreeTableViewCell.swift */,
-				DD3029C526B62E5900ABEB63 /* AgreeTableViewCell.xib */,
-				DD3029CC26B6AC8E00ABEB63 /* CompleteTableViewCell.swift */,
-				DD3029CD26B6AC8E00ABEB63 /* CompleteTableViewCell.xib */,
 			);
 			path = EmailSignUp;
 			sourceTree = "<group>";
@@ -301,6 +299,8 @@
 			children = (
 				DD3F8FEB26B7FB8900F98C1D /* UIViewController.swift */,
 				DD3F900D26B8FB6200F98C1D /* Border.swift */,
+				DD3F902226B9973E00F98C1D /* String.swift */,
+				DD3F902926B9986700F98C1D /* UIButton.swift */,
 			);
 			path = "New Group";
 			sourceTree = "<group>";
@@ -384,6 +384,41 @@
 			path = ThirdController;
 			sourceTree = "<group>";
 		};
+		DD3F901926B9584200F98C1D /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F902026B95FBA00F98C1D /* NetworkResult.swift */,
+				DD3F901A26B9588100F98C1D /* SignUp */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		DD3F901A26B9588100F98C1D /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F901E26B95BF400F98C1D /* SignUpDataManager.swift */,
+				DD3F901B26B9594A00F98C1D /* Entity */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		DD3F901B26B9594A00F98C1D /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F901C26B95A0B00F98C1D /* SignUpData.swift */,
+				DD3F902B26B9A05A00F98C1D /* SignUpRequest.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		DD3F902426B9977000F98C1D /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F902726B9979800F98C1D /* AlertViewController.swift */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -449,9 +484,7 @@
 				DD3F8FF726B8531800F98C1D /* BeforeLoginConVC.xib in Resources */,
 				DD30298726B5612600ABEB63 /* Images.xcassets in Resources */,
 				DD3F8FFB26B8DFA200F98C1D /* completeLoginTVCell.xib in Resources */,
-				DD3029CF26B6AC8F00ABEB63 /* CompleteTableViewCell.xib in Resources */,
 				DD3029B126B5773300ABEB63 /* OrderStoryboard.storyboard in Resources */,
-				DD3029C726B62E5900ABEB63 /* AgreeTableViewCell.xib in Resources */,
 				DD3029A526B5761700ABEB63 /* HomeStoryboard.storyboard in Resources */,
 				DD30297B26B54F9B00ABEB63 /* MyYogiyoStoryboard.storyboard in Resources */,
 				DD30296626B53EB500ABEB63 /* Main.storyboard in Resources */,
@@ -461,7 +494,6 @@
 				DD3F901826B9045C00F98C1D /* CategotyViewController.xib in Resources */,
 				DD3F901426B9044000F98C1D /* categoryTableViewCell.xib in Resources */,
 				DD3029A926B576DC00ABEB63 /* JjimStoryboard.storyboard in Resources */,
-				DD3029C326B62AF100ABEB63 /* EmailPassTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,27 +548,31 @@
 			files = (
 				DD3F8FFA26B8DFA200F98C1D /* completeLoginTVCell.swift in Sources */,
 				DD3F900E26B8FB6200F98C1D /* Border.swift in Sources */,
+				DD3F901F26B95BF400F98C1D /* SignUpDataManager.swift in Sources */,
+				DD3F902326B9973E00F98C1D /* String.swift in Sources */,
 				DD3F901726B9045C00F98C1D /* CategotyViewController.swift in Sources */,
-				DD3029CE26B6AC8F00ABEB63 /* CompleteTableViewCell.swift in Sources */,
 				DD3029BD26B61A8900ABEB63 /* NavigationViewController.swift in Sources */,
 				DD3F8FE926B7B14800F98C1D /* userDataTest.swift in Sources */,
 				DD30297E26B5512E00ABEB63 /* MyYogiyoViewController.swift in Sources */,
 				DD30297726B5482000ABEB63 /* BaseViewController.swift in Sources */,
+				DD3F902A26B9986700F98C1D /* UIButton.swift in Sources */,
 				DD3029B326B5774300ABEB63 /* OrderViewController.swift in Sources */,
 				DD3F8FF026B8520F00F98C1D /* beforeLoginTVCell.swift in Sources */,
 				DD30298026B5515800ABEB63 /* SocialLoginViewController.swift in Sources */,
 				DD30299926B5695500ABEB63 /* emailLoginViewController.swift in Sources */,
 				DD3F900B26B8EAF200F98C1D /* CouponConVC.swift in Sources */,
 				DD3029A726B5762A00ABEB63 /* HomeViewController.swift in Sources */,
+				DD3F902826B9979800F98C1D /* AlertViewController.swift in Sources */,
+				DD3F902C26B9A05A00F98C1D /* SignUpRequest.swift in Sources */,
 				DD3029AD26B5770900ABEB63 /* SearchViewController.swift in Sources */,
 				DD30299B26B5696400ABEB63 /* EmailSignUpViewController.swift in Sources */,
 				DD3F900626B8EAB600F98C1D /* couponTableViewCell.swift in Sources */,
+				DD3F901D26B95A0B00F98C1D /* SignUpData.swift in Sources */,
 				DD3F8FEC26B7FB8900F98C1D /* UIViewController.swift in Sources */,
-				DD3029C226B62AF100ABEB63 /* EmailPassTableViewCell.swift in Sources */,
+				DD3F902126B95FBA00F98C1D /* NetworkResult.swift in Sources */,
 				DD30295F26B53EB500ABEB63 /* AppDelegate.swift in Sources */,
 				DD3029AB26B576EE00ABEB63 /* JjimViewController.swift in Sources */,
 				DD3F8FFE26B8DFE000F98C1D /* CompleteLoginVC.swift in Sources */,
-				DD3029C626B62E5900ABEB63 /* AgreeTableViewCell.swift in Sources */,
 				DD30296126B53EB500ABEB63 /* SceneDelegate.swift in Sources */,
 				DD3F8FF626B8531800F98C1D /* BeforeLoginConVC.swift in Sources */,
 				DD3F901326B9044000F98C1D /* categoryTableViewCell.swift in Sources */,
