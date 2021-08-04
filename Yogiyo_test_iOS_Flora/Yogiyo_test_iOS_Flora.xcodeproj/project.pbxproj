@@ -49,11 +49,28 @@
 		DD3F901826B9045C00F98C1D /* CategotyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3F901626B9045C00F98C1D /* CategotyViewController.xib */; };
 		DD3F901D26B95A0B00F98C1D /* SignUpData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F901C26B95A0B00F98C1D /* SignUpData.swift */; };
 		DD3F901F26B95BF400F98C1D /* SignUpDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F901E26B95BF400F98C1D /* SignUpDataManager.swift */; };
-		DD3F902126B95FBA00F98C1D /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F902026B95FBA00F98C1D /* NetworkResult.swift */; };
 		DD3F902326B9973E00F98C1D /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F902226B9973E00F98C1D /* String.swift */; };
 		DD3F902826B9979800F98C1D /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F902726B9979800F98C1D /* AlertViewController.swift */; };
 		DD3F902A26B9986700F98C1D /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F902926B9986700F98C1D /* UIButton.swift */; };
 		DD3F902C26B9A05A00F98C1D /* SignUpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F902B26B9A05A00F98C1D /* SignUpRequest.swift */; };
+		DD3F903126BA474700F98C1D /* BannerTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F902F26BA474700F98C1D /* BannerTVCell.swift */; };
+		DD3F903226BA474700F98C1D /* BannerTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3F903026BA474700F98C1D /* BannerTVCell.xib */; };
+		DD3F903526BA4BA300F98C1D /* BannerCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F903326BA4BA300F98C1D /* BannerCVCell.swift */; };
+		DD3F903626BA4BA300F98C1D /* BannerCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3F903426BA4BA300F98C1D /* BannerCVCell.xib */; };
+		DD3F903D26BA582F00F98C1D /* FourthButtonTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F903B26BA582F00F98C1D /* FourthButtonTVCell.swift */; };
+		DD3F903E26BA582F00F98C1D /* FourthButtonTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3F903C26BA582F00F98C1D /* FourthButtonTVCell.xib */; };
+		DD3F904226BA63BE00F98C1D /* FourthBtnConVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F904026BA63BE00F98C1D /* FourthBtnConVC.swift */; };
+		DD3F904326BA63BE00F98C1D /* FourthBtnConVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3F904126BA63BE00F98C1D /* FourthBtnConVC.xib */; };
+		DD3F904726BA72C200F98C1D /* FoodCategoryTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F904526BA72C200F98C1D /* FoodCategoryTVCell.swift */; };
+		DD3F904826BA72C200F98C1D /* FoodCategoryTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3F904626BA72C200F98C1D /* FoodCategoryTVCell.xib */; };
+		DD3F904C26BA72FC00F98C1D /* CategoryFoodConVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F904A26BA72FC00F98C1D /* CategoryFoodConVC.swift */; };
+		DD3F904D26BA72FC00F98C1D /* CategoryFoodConVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3F904B26BA72FC00F98C1D /* CategoryFoodConVC.xib */; };
+		DD3F905226BA820700F98C1D /* HashTageCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F905026BA820700F98C1D /* HashTageCVCell.swift */; };
+		DD3F905326BA820700F98C1D /* HashTageCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3F905126BA820700F98C1D /* HashTageCVCell.xib */; };
+		DD3F905926BA9E3F00F98C1D /* ExpressTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F905726BA9E3E00F98C1D /* ExpressTVCell.swift */; };
+		DD3F905A26BA9E3F00F98C1D /* ExpressTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3F905826BA9E3E00F98C1D /* ExpressTVCell.xib */; };
+		DD3F905D26BAA3A000F98C1D /* ExpressCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F905B26BAA3A000F98C1D /* ExpressCVCell.swift */; };
+		DD3F905E26BAA3A000F98C1D /* ExpressCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3F905C26BAA3A000F98C1D /* ExpressCVCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,11 +119,28 @@
 		DD3F901626B9045C00F98C1D /* CategotyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategotyViewController.xib; sourceTree = "<group>"; };
 		DD3F901C26B95A0B00F98C1D /* SignUpData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpData.swift; sourceTree = "<group>"; };
 		DD3F901E26B95BF400F98C1D /* SignUpDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpDataManager.swift; sourceTree = "<group>"; };
-		DD3F902026B95FBA00F98C1D /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 		DD3F902226B9973E00F98C1D /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		DD3F902726B9979800F98C1D /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
 		DD3F902926B9986700F98C1D /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		DD3F902B26B9A05A00F98C1D /* SignUpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRequest.swift; sourceTree = "<group>"; };
+		DD3F902F26BA474700F98C1D /* BannerTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerTVCell.swift; sourceTree = "<group>"; };
+		DD3F903026BA474700F98C1D /* BannerTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BannerTVCell.xib; sourceTree = "<group>"; };
+		DD3F903326BA4BA300F98C1D /* BannerCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCVCell.swift; sourceTree = "<group>"; };
+		DD3F903426BA4BA300F98C1D /* BannerCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BannerCVCell.xib; sourceTree = "<group>"; };
+		DD3F903B26BA582F00F98C1D /* FourthButtonTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthButtonTVCell.swift; sourceTree = "<group>"; };
+		DD3F903C26BA582F00F98C1D /* FourthButtonTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FourthButtonTVCell.xib; sourceTree = "<group>"; };
+		DD3F904026BA63BE00F98C1D /* FourthBtnConVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthBtnConVC.swift; sourceTree = "<group>"; };
+		DD3F904126BA63BE00F98C1D /* FourthBtnConVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FourthBtnConVC.xib; sourceTree = "<group>"; };
+		DD3F904526BA72C200F98C1D /* FoodCategoryTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategoryTVCell.swift; sourceTree = "<group>"; };
+		DD3F904626BA72C200F98C1D /* FoodCategoryTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodCategoryTVCell.xib; sourceTree = "<group>"; };
+		DD3F904A26BA72FC00F98C1D /* CategoryFoodConVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryFoodConVC.swift; sourceTree = "<group>"; };
+		DD3F904B26BA72FC00F98C1D /* CategoryFoodConVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryFoodConVC.xib; sourceTree = "<group>"; };
+		DD3F905026BA820700F98C1D /* HashTageCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashTageCVCell.swift; sourceTree = "<group>"; };
+		DD3F905126BA820700F98C1D /* HashTageCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HashTageCVCell.xib; sourceTree = "<group>"; };
+		DD3F905726BA9E3E00F98C1D /* ExpressTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpressTVCell.swift; sourceTree = "<group>"; };
+		DD3F905826BA9E3E00F98C1D /* ExpressTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExpressTVCell.xib; sourceTree = "<group>"; };
+		DD3F905B26BAA3A000F98C1D /* ExpressCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpressCVCell.swift; sourceTree = "<group>"; };
+		DD3F905C26BAA3A000F98C1D /* ExpressCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExpressCVCell.xib; sourceTree = "<group>"; };
 		F9C1772B30741BA88AC342B9 /* Pods-Yogiyo_test_iOS_Flora.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yogiyo_test_iOS_Flora.release.xcconfig"; path = "Target Support Files/Pods-Yogiyo_test_iOS_Flora/Pods-Yogiyo_test_iOS_Flora.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -215,7 +249,7 @@
 			isa = PBXGroup;
 			children = (
 				DD3029A426B5761700ABEB63 /* HomeStoryboard.storyboard */,
-				DD3029A626B5762A00ABEB63 /* HomeViewController.swift */,
+				DD3F902D26BA42E500F98C1D /* HomeTab */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -387,7 +421,6 @@
 		DD3F901926B9584200F98C1D /* New Group */ = {
 			isa = PBXGroup;
 			children = (
-				DD3F902026B95FBA00F98C1D /* NetworkResult.swift */,
 				DD3F901A26B9588100F98C1D /* SignUp */,
 			);
 			path = "New Group";
@@ -417,6 +450,128 @@
 				DD3F902726B9979800F98C1D /* AlertViewController.swift */,
 			);
 			path = Action;
+			sourceTree = "<group>";
+		};
+		DD3F902D26BA42E500F98C1D /* HomeTab */ = {
+			isa = PBXGroup;
+			children = (
+				DD3029A626B5762A00ABEB63 /* HomeViewController.swift */,
+				DD3F902E26BA46D800F98C1D /* Cell */,
+			);
+			path = HomeTab;
+			sourceTree = "<group>";
+		};
+		DD3F902E26BA46D800F98C1D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F903726BA4BB300F98C1D /* Banner */,
+				DD3F903A26BA57BF00F98C1D /* FourthButton */,
+				DD3F904426BA728200F98C1D /* FoodCategory */,
+				DD3F905426BA976F00F98C1D /* Express */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		DD3F903726BA4BB300F98C1D /* Banner */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F903826BA4BC000F98C1D /* TableView */,
+			);
+			path = Banner;
+			sourceTree = "<group>";
+		};
+		DD3F903826BA4BC000F98C1D /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F902F26BA474700F98C1D /* BannerTVCell.swift */,
+				DD3F903026BA474700F98C1D /* BannerTVCell.xib */,
+				DD3F903926BA4BD700F98C1D /* CollectionView */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		DD3F903926BA4BD700F98C1D /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F903326BA4BA300F98C1D /* BannerCVCell.swift */,
+				DD3F903426BA4BA300F98C1D /* BannerCVCell.xib */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		DD3F903A26BA57BF00F98C1D /* FourthButton */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F903B26BA582F00F98C1D /* FourthButtonTVCell.swift */,
+				DD3F903C26BA582F00F98C1D /* FourthButtonTVCell.xib */,
+				DD3F903F26BA638E00F98C1D /* Controller */,
+			);
+			path = FourthButton;
+			sourceTree = "<group>";
+		};
+		DD3F903F26BA638E00F98C1D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F904026BA63BE00F98C1D /* FourthBtnConVC.swift */,
+				DD3F904126BA63BE00F98C1D /* FourthBtnConVC.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DD3F904426BA728200F98C1D /* FoodCategory */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F904526BA72C200F98C1D /* FoodCategoryTVCell.swift */,
+				DD3F904626BA72C200F98C1D /* FoodCategoryTVCell.xib */,
+				DD3F904926BA72DB00F98C1D /* Controller */,
+			);
+			path = FoodCategory;
+			sourceTree = "<group>";
+		};
+		DD3F904926BA72DB00F98C1D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F904A26BA72FC00F98C1D /* CategoryFoodConVC.swift */,
+				DD3F904B26BA72FC00F98C1D /* CategoryFoodConVC.xib */,
+				DD3F904F26BA81DF00F98C1D /* CollectionView */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DD3F904F26BA81DF00F98C1D /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F905026BA820700F98C1D /* HashTageCVCell.swift */,
+				DD3F905126BA820700F98C1D /* HashTageCVCell.xib */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		DD3F905426BA976F00F98C1D /* Express */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F905526BA9D4900F98C1D /* TableView */,
+			);
+			path = Express;
+			sourceTree = "<group>";
+		};
+		DD3F905526BA9D4900F98C1D /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F905726BA9E3E00F98C1D /* ExpressTVCell.swift */,
+				DD3F905826BA9E3E00F98C1D /* ExpressTVCell.xib */,
+				DD3F905626BA9D5F00F98C1D /* CollectionView */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		DD3F905626BA9D5F00F98C1D /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F905B26BAA3A000F98C1D /* ExpressCVCell.swift */,
+				DD3F905C26BAA3A000F98C1D /* ExpressCVCell.xib */,
+			);
+			path = CollectionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -480,6 +635,9 @@
 			files = (
 				DD30296B26B53EB700ABEB63 /* LaunchScreen.storyboard in Resources */,
 				DD3029AF26B5771300ABEB63 /* SearchStoryboard.storyboard in Resources */,
+				DD3F903226BA474700F98C1D /* BannerTVCell.xib in Resources */,
+				DD3F905326BA820700F98C1D /* HashTageCVCell.xib in Resources */,
+				DD3F903E26BA582F00F98C1D /* FourthButtonTVCell.xib in Resources */,
 				DD3F900726B8EAB600F98C1D /* couponTableViewCell.xib in Resources */,
 				DD3F8FF726B8531800F98C1D /* BeforeLoginConVC.xib in Resources */,
 				DD30298726B5612600ABEB63 /* Images.xcassets in Resources */,
@@ -489,11 +647,17 @@
 				DD30297B26B54F9B00ABEB63 /* MyYogiyoStoryboard.storyboard in Resources */,
 				DD30296626B53EB500ABEB63 /* Main.storyboard in Resources */,
 				DD3F900C26B8EAF200F98C1D /* CouponConVC.xib in Resources */,
+				DD3F904D26BA72FC00F98C1D /* CategoryFoodConVC.xib in Resources */,
+				DD3F903626BA4BA300F98C1D /* BannerCVCell.xib in Resources */,
 				DD3F8FF126B8520F00F98C1D /* beforeLoginTVCell.xib in Resources */,
 				DD3F8FFF26B8DFE000F98C1D /* CompleteLoginVC.xib in Resources */,
+				DD3F904326BA63BE00F98C1D /* FourthBtnConVC.xib in Resources */,
 				DD3F901826B9045C00F98C1D /* CategotyViewController.xib in Resources */,
 				DD3F901426B9044000F98C1D /* categoryTableViewCell.xib in Resources */,
+				DD3F904826BA72C200F98C1D /* FoodCategoryTVCell.xib in Resources */,
+				DD3F905A26BA9E3F00F98C1D /* ExpressTVCell.xib in Resources */,
 				DD3029A926B576DC00ABEB63 /* JjimStoryboard.storyboard in Resources */,
+				DD3F905E26BAA3A000F98C1D /* ExpressCVCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,30 +713,38 @@
 				DD3F8FFA26B8DFA200F98C1D /* completeLoginTVCell.swift in Sources */,
 				DD3F900E26B8FB6200F98C1D /* Border.swift in Sources */,
 				DD3F901F26B95BF400F98C1D /* SignUpDataManager.swift in Sources */,
+				DD3F903D26BA582F00F98C1D /* FourthButtonTVCell.swift in Sources */,
 				DD3F902326B9973E00F98C1D /* String.swift in Sources */,
 				DD3F901726B9045C00F98C1D /* CategotyViewController.swift in Sources */,
 				DD3029BD26B61A8900ABEB63 /* NavigationViewController.swift in Sources */,
 				DD3F8FE926B7B14800F98C1D /* userDataTest.swift in Sources */,
+				DD3F904226BA63BE00F98C1D /* FourthBtnConVC.swift in Sources */,
+				DD3F904C26BA72FC00F98C1D /* CategoryFoodConVC.swift in Sources */,
 				DD30297E26B5512E00ABEB63 /* MyYogiyoViewController.swift in Sources */,
 				DD30297726B5482000ABEB63 /* BaseViewController.swift in Sources */,
 				DD3F902A26B9986700F98C1D /* UIButton.swift in Sources */,
 				DD3029B326B5774300ABEB63 /* OrderViewController.swift in Sources */,
 				DD3F8FF026B8520F00F98C1D /* beforeLoginTVCell.swift in Sources */,
 				DD30298026B5515800ABEB63 /* SocialLoginViewController.swift in Sources */,
+				DD3F905926BA9E3F00F98C1D /* ExpressTVCell.swift in Sources */,
 				DD30299926B5695500ABEB63 /* emailLoginViewController.swift in Sources */,
 				DD3F900B26B8EAF200F98C1D /* CouponConVC.swift in Sources */,
 				DD3029A726B5762A00ABEB63 /* HomeViewController.swift in Sources */,
 				DD3F902826B9979800F98C1D /* AlertViewController.swift in Sources */,
 				DD3F902C26B9A05A00F98C1D /* SignUpRequest.swift in Sources */,
+				DD3F905226BA820700F98C1D /* HashTageCVCell.swift in Sources */,
 				DD3029AD26B5770900ABEB63 /* SearchViewController.swift in Sources */,
 				DD30299B26B5696400ABEB63 /* EmailSignUpViewController.swift in Sources */,
+				DD3F904726BA72C200F98C1D /* FoodCategoryTVCell.swift in Sources */,
 				DD3F900626B8EAB600F98C1D /* couponTableViewCell.swift in Sources */,
 				DD3F901D26B95A0B00F98C1D /* SignUpData.swift in Sources */,
 				DD3F8FEC26B7FB8900F98C1D /* UIViewController.swift in Sources */,
-				DD3F902126B95FBA00F98C1D /* NetworkResult.swift in Sources */,
+				DD3F905D26BAA3A000F98C1D /* ExpressCVCell.swift in Sources */,
 				DD30295F26B53EB500ABEB63 /* AppDelegate.swift in Sources */,
+				DD3F903126BA474700F98C1D /* BannerTVCell.swift in Sources */,
 				DD3029AB26B576EE00ABEB63 /* JjimViewController.swift in Sources */,
 				DD3F8FFE26B8DFE000F98C1D /* CompleteLoginVC.swift in Sources */,
+				DD3F903526BA4BA300F98C1D /* BannerCVCell.swift in Sources */,
 				DD30296126B53EB500ABEB63 /* SceneDelegate.swift in Sources */,
 				DD3F8FF626B8531800F98C1D /* BeforeLoginConVC.swift in Sources */,
 				DD3F901326B9044000F98C1D /* categoryTableViewCell.swift in Sources */,

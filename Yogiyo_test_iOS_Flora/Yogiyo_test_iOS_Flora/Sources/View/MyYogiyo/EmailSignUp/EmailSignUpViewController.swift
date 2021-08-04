@@ -13,6 +13,7 @@ import UIKit
 
 class EmailSignUpViewController: BaseViewController {
     lazy var dataManager: SignUpDataManager = SignUpDataManager()
+    var tureOrFalse = Bool()
     
     @IBOutlet weak var emailInputTextField: UITextField!
     @IBOutlet weak var passwordInputTextField: UITextField!
@@ -23,7 +24,7 @@ class EmailSignUpViewController: BaseViewController {
     @IBOutlet weak var moneyAgreeBtn: UIButton!
     @IBOutlet weak var ageAgreeBtn: UIButton!
     @IBOutlet weak var saleAgreeBtn: UIButton!
-    @IBOutlet weak var nextPageBtn: UIView!
+    @IBOutlet weak var nextPageBtn: UIButton!
     @IBOutlet weak var contentBtn1: UIButton!
     @IBOutlet weak var contentBtn2: UIButton!
     @IBOutlet weak var contentBtn3: UIButton!
@@ -36,23 +37,35 @@ class EmailSignUpViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         dismissKeyboardWhenTappedAround()
-        textFieldStyle()
+        setStyle()
         textFieldInShowHide()
         
+        
+        
     }
-    // 텍스트필드 스타일
-    func textFieldStyle() {
+    // 스타일
+    func setStyle() {
         emailInputTextField.clearButtonMode = .always
         passwordInputTextField.rightView = overlayButton
         passwordInputTextField.rightViewMode = .whileEditing
         passwordInputTextField.isSecureTextEntry = true
+        nextPageBtn.layer.cornerRadius = 5
+    }
+    
+    // 약관동의버튼
+    func allAgree(_ value: Bool) {
+        if useAgreeBtn.isSelected == true && privacyAgreeBtn.isSelected == true && moneyAgreeBtn.isSelected  == true && ageAgreeBtn.isSelected == true && saleAgreeBtn.isSelected == true {
+            allAgreeBtn.isSelected = true
+        } else {
+            allAgreeBtn.isSelected = false
+        }
     }
     
     @IBAction func completeBtnTap(_ sender: Any) {
         
         // 페이지 생성할건지 말건지 알게되면 그때 하자
-//        guard let dvc = self.storyboard?.instantiateViewController(identifier: "")else{return}
-//        self.present(dvc, animated: true, completion:nil)
+        guard let dvc = self.storyboard?.instantiateViewController(identifier: "MyYogiyoViewController")else{return}
+        self.present(dvc, animated: true, completion:nil)
         
         guard let id = emailInputTextField.text?.trim, id.isExists else {
             self.presentAlert(title: "아이디를 입력해주세요")
@@ -76,9 +89,7 @@ class EmailSignUpViewController: BaseViewController {
         dataManager.postSignUp(input, delegate: self)
         
     }
-    
-    
-    
+
     // 텍스트필드 안에 '가리기','보기' 버튼
     func textFieldInShowHide() {
         overlayButton.setTitle("보기", for: .normal)
@@ -117,6 +128,7 @@ class EmailSignUpViewController: BaseViewController {
     @IBAction func allAgreeBtnTap (_ sender: UIButton) {
         print("눌린다")
         if (buttonClick == true) {
+            allAgree(true)
             allAgreeBtn.tintColor = #colorLiteral(red: 0.9745565057, green: 0.008201596327, blue: 0.3125460446, alpha: 1)
             useAgreeBtn.tintColor = #colorLiteral(red: 0.9745565057, green: 0.008201596327, blue: 0.3125460446, alpha: 1)
             privacyAgreeBtn.tintColor = #colorLiteral(red: 0.9745565057, green: 0.008201596327, blue: 0.3125460446, alpha: 1)
@@ -131,6 +143,7 @@ class EmailSignUpViewController: BaseViewController {
             saleAgreeBtn.setImage(UIImage(systemName: "checkmark.square"), for: .normal)
         }
         else {
+            allAgree(false)
             allAgreeBtn.tintColor = #colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1)
             useAgreeBtn.tintColor = #colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1)
             privacyAgreeBtn.tintColor = #colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1)
@@ -144,62 +157,72 @@ class EmailSignUpViewController: BaseViewController {
             ageAgreeBtn.setImage(UIImage(systemName: "squareshape"), for: .normal)
             saleAgreeBtn.setImage(UIImage(systemName: "squareshape"), for: .normal)
         }
-        buttonClick = !buttonClick
+        //buttonClick = !buttonClick
     }
     
     @IBAction func useAgreeBtnTap (_ sender: UIButton) {
         if (buttonClick == true) {
+            allAgree(true)
             useAgreeBtn.setImage(UIImage(systemName: "checkmark.square"), for: .normal)
             useAgreeBtn.tintColor = #colorLiteral(red: 0.9745565057, green: 0.008201596327, blue: 0.3125460446, alpha: 1)
         }else{
+            allAgree(false)
             useAgreeBtn.tintColor = #colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1)
             useAgreeBtn.setImage(UIImage(systemName: "squareshape"), for: .normal)
         }
-        buttonClick = !buttonClick
+        //buttonClick = !buttonClick
     }
     
     @IBAction func privacyAgreeBtnTap (_ sender: UIButton) {
         if (buttonClick == true) {
+            allAgree(true)
             privacyAgreeBtn.setImage(UIImage(systemName: "checkmark.square"), for: .normal)
             privacyAgreeBtn.tintColor = #colorLiteral(red: 0.9745565057, green: 0.008201596327, blue: 0.3125460446, alpha: 1)
         }else{
+            allAgree(false)
             privacyAgreeBtn.tintColor = #colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1)
             privacyAgreeBtn.setImage(UIImage(systemName: "squareshape"), for: .normal)
         }
-        buttonClick = !buttonClick
+        //buttonClick = !buttonClick
     }
     
     @IBAction func financeAgreeBtnTap (_ sender: UIButton) {
         if (buttonClick == true) {
+            allAgree(true)
             moneyAgreeBtn.setImage(UIImage(systemName: "checkmark.square"), for: .normal)
             moneyAgreeBtn.tintColor = #colorLiteral(red: 0.9745565057, green: 0.008201596327, blue: 0.3125460446, alpha: 1)
         }else{
+            allAgree(false)
             moneyAgreeBtn.tintColor = #colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1)
             moneyAgreeBtn.setImage(UIImage(systemName: "squareshape"), for: .normal)
         }
-        buttonClick = !buttonClick
+        //buttonClick = !buttonClick
     }
     
     @IBAction func ageAgreeBtnTap (_ sender: UIButton) {
         if (buttonClick == true) {
+            allAgree(true)
             ageAgreeBtn.setImage(UIImage(systemName: "checkmark.square"), for: .normal)
             ageAgreeBtn.tintColor = #colorLiteral(red: 0.9745565057, green: 0.008201596327, blue: 0.3125460446, alpha: 1)
         }else{
+            allAgree(false)
             ageAgreeBtn.tintColor = #colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1)
             ageAgreeBtn.setImage(UIImage(systemName: "squareshape"), for: .normal)
         }
-        buttonClick = !buttonClick
+        //buttonClick = !buttonClick
     }
     
     @IBAction func yogiyoAgreeBtnTap (_ sender: UIButton) {
         if (buttonClick == true) {
+            allAgree(true)
             saleAgreeBtn.setImage(UIImage(systemName: "checkmark.square"), for: .normal)
             saleAgreeBtn.tintColor = #colorLiteral(red: 0.9745565057, green: 0.008201596327, blue: 0.3125460446, alpha: 1)
         }else{
+            allAgree(false)
             saleAgreeBtn.tintColor = #colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1)
             saleAgreeBtn.setImage(UIImage(systemName: "squareshape"), for: .normal)
         }
-        buttonClick = !buttonClick
+        //buttonClick = !buttonClick
     }
 }
 

@@ -3,30 +3,103 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home View Controller-->
+        <!--홈-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController storyboardIdentifier="HomeViewController" id="Y6W-OH-hqX" customClass="HomeViewController" customModule="Yogiyo_test_iOS_Flora" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nPZ-sm-w2j">
+                                <rect key="frame" x="0.0" y="44" width="414" height="46"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aWl-z8-kjV">
+                                        <rect key="frame" x="13" y="7" width="35" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="aWl-z8-kjV" secondAttribute="height" multiplier="35:32" id="pFk-uT-VEq"/>
+                                            <constraint firstAttribute="height" constant="32" id="xbU-4Y-Tmk"/>
+                                        </constraints>
+                                        <state key="normal" image="alertIcon"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vii-5I-J7R">
+                                        <rect key="frame" x="160.5" y="12.5" width="93.5" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="양화로 160 ">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <imageReference key="image" image="arrowtriangle.down.fill" catalog="system" symbolScale="small"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="15" scale="small"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="aWl-z8-kjV" firstAttribute="leading" secondItem="nPZ-sm-w2j" secondAttribute="leading" constant="13" id="CXo-fr-t1V"/>
+                                    <constraint firstItem="Vii-5I-J7R" firstAttribute="centerX" secondItem="nPZ-sm-w2j" secondAttribute="centerX" id="IuW-wW-aFV"/>
+                                    <constraint firstItem="aWl-z8-kjV" firstAttribute="centerY" secondItem="nPZ-sm-w2j" secondAttribute="centerY" id="KYQ-Q0-N6t"/>
+                                    <constraint firstAttribute="height" constant="46" id="X7Z-Uo-grB"/>
+                                    <constraint firstItem="Vii-5I-J7R" firstAttribute="centerY" secondItem="aWl-z8-kjV" secondAttribute="centerY" id="nOZ-oM-Xrq"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lPb-Mz-9ML">
+                                <rect key="frame" x="0.0" y="90" width="414" height="723"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lPb-Mz-9ML" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="5FY-Y7-g2e"/>
+                            <constraint firstItem="nPZ-sm-w2j" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="5Ju-y9-Kzy"/>
+                            <constraint firstItem="lPb-Mz-9ML" firstAttribute="top" secondItem="nPZ-sm-w2j" secondAttribute="bottom" id="OWq-pN-dq1"/>
+                            <constraint firstItem="nPZ-sm-w2j" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="QkT-4m-hev"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="nPZ-sm-w2j" secondAttribute="trailing" id="Yyr-90-9rk"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="lPb-Mz-9ML" secondAttribute="trailing" id="rPL-20-AO2"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="lPb-Mz-9ML" secondAttribute="bottom" id="z0X-hh-AoU"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="홈" id="sgk-5c-26H"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="alertBtn" destination="aWl-z8-kjV" id="s3S-Qw-PlJ"/>
+                        <outlet property="currentLocationBtn" destination="Vii-5I-J7R" id="0LM-ai-NLQ"/>
+                        <outlet property="mainTableView" destination="lPb-Mz-9ML" id="Zci-oZ-TSg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="35" y="84"/>
+            <point key="canvasLocation" x="-100.00000000000001" y="62.946428571428569"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="foV-xs-X55">
+            <objects>
+                <viewController id="Tnn-sK-fiv" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VYO-nB-FB7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="rOB-wV-GCv"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lc6-HS-V8c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="641" y="63"/>
         </scene>
     </scenes>
     <resources>
+        <image name="alertIcon" width="108" height="101"/>
+        <image name="arrowtriangle.down.fill" catalog="system" width="128" height="124"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

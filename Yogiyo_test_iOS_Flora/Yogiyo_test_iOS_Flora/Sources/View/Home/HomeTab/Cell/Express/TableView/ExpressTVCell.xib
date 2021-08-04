@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ExpressTVCell" rowHeight="290" id="KGk-i7-Jjw" customClass="ExpressTVCell" customModule="Yogiyo_test_iOS_Flora" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="364" height="290"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="364" height="290"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🛵 요기요 익스프레스" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ygn-N2-7s2">
+                        <rect key="frame" x="20" y="15" width="157.5" height="21.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHN-7n-fny">
+                        <rect key="frame" x="180.5" y="15" width="16" height="22"/>
+                        <color key="tintColor" systemColor="systemGray4Color"/>
+                        <state key="normal" image="info.circle" catalog="system">
+                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small" weight="thin"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IEo-rP-kIm">
+                        <rect key="frame" x="303" y="18.5" width="41" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="tintColor" systemColor="systemGray2Color"/>
+                        <state key="normal" title="더보기" image="chevron.right" catalog="system">
+                            <color key="titleColor" systemColor="systemGray2Color"/>
+                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="14" scale="small" weight="light"/>
+                        </state>
+                    </button>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="K2N-3W-l0R">
+                        <rect key="frame" x="0.0" y="49.5" width="364" height="240.5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="AAN-fF-Wt8">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="K2N-3W-l0R" secondAttribute="trailing" id="B4J-Sz-jSw"/>
+                    <constraint firstAttribute="bottom" secondItem="K2N-3W-l0R" secondAttribute="bottom" id="DXp-Ar-qRS"/>
+                    <constraint firstItem="ygn-N2-7s2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="GeY-LK-LkD"/>
+                    <constraint firstItem="cHN-7n-fny" firstAttribute="centerY" secondItem="ygn-N2-7s2" secondAttribute="centerY" id="Map-K9-qwx"/>
+                    <constraint firstItem="ygn-N2-7s2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="S2Q-3m-0xl"/>
+                    <constraint firstItem="K2N-3W-l0R" firstAttribute="top" secondItem="ygn-N2-7s2" secondAttribute="bottom" constant="13" id="fls-90-LQS"/>
+                    <constraint firstAttribute="trailing" secondItem="IEo-rP-kIm" secondAttribute="trailing" constant="20" id="i5D-yt-1Ay"/>
+                    <constraint firstItem="K2N-3W-l0R" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="i7Y-q8-XPr"/>
+                    <constraint firstItem="IEo-rP-kIm" firstAttribute="centerY" secondItem="ygn-N2-7s2" secondAttribute="centerY" id="vjc-ID-hks"/>
+                    <constraint firstItem="cHN-7n-fny" firstAttribute="leading" secondItem="ygn-N2-7s2" secondAttribute="trailing" constant="3" id="vyj-84-fXa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="ExpressCollectionView" destination="K2N-3W-l0R" id="atH-IB-CrX"/>
+                <outlet property="YogiyoLabel" destination="ygn-N2-7s2" id="eJQ-Hl-bPW"/>
+                <outlet property="moreBtn" destination="IEo-rP-kIm" id="ScZ-gb-4pL"/>
+            </connections>
+            <point key="canvasLocation" x="-39.130434782608695" y="112.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chevron.right" catalog="system" width="96" height="128"/>
+        <image name="info.circle" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

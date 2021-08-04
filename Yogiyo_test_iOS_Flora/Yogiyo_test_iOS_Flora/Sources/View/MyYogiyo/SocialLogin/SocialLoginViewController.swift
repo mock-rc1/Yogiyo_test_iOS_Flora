@@ -28,17 +28,18 @@ class SocialLoginViewController: UIViewController, NaverThirdPartyLoginConnectio
         super.viewDidLoad()
         // 네이버
         loginInstance?.delegate = self
+        setStyle()
         
-        // 페이스북 버튼
-        let loginButton = FBLoginButton()
-        loginButton.center = view.center
-        view.addSubview(loginButton)
         
-        // Facebook 로그인 버튼의 읽기 권한 (권한요청)
-         loginButton.permissions = ["public_profile", "email"]
+        
         
     }
     
+    func setStyle() {
+        emailSignUpBtn.layer.cornerRadius = 10
+        emailSignUpBtn.layer.borderWidth = 0.5
+        emailSignUpBtn.layer.borderColor = #colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1)
+    }
         
     
     
@@ -91,6 +92,7 @@ class SocialLoginViewController: UIViewController, NaverThirdPartyLoginConnectio
         }
         // 시뮬레이터에서 실행
         else {
+            
             UserApi.shared.loginWithKakaoAccount {(oauthToken, error) in
                 if let error = error {
                     print(error)
@@ -197,21 +199,55 @@ class SocialLoginViewController: UIViewController, NaverThirdPartyLoginConnectio
     
     @IBAction func facebookBtnTap(_ sender: Any) {
         
-        // 페이스북 현재 로그인 상태 확인
-        if let token = AccessToken.current, !token.isExpired {
-            // User is logged in, do work such as go to next view controller.
-            
-            
-            
-            // 로그인 성공시
-            guard let dvc = self.storyboard?.instantiateViewController(identifier: "MyYogiyoViewController") as? MyYogiyoViewController else {return}
-            self.navigationController?.pushViewController(dvc, animated: true)
-            
+        LoginManager().logIn(permissions: ["public_profile", "email", "user_birthday", "user_gender"], from: self, handler: { (result, error) in
+            guard let result = result, error == nil && !result.isCancelled else {
+                print("error: \(error)")
+                // 로그인 취소/에러
+                return
+            }
+            GraphRequest(graphPath: "me", parameters: ["fields": "id, name, email, picture, birthday, gender"]).start(completionHandler: { (connection, result, error) -> Void in
+                print("error: \(error)")
+                if (error != nil) {
+                    // 로그인 에러
+                    return
+                }
+                guard let facebook = result as? [String: AnyObject] else { return }
+
+                let token = facebook["id"] as? String
+                let name = facebook["name"] as? String
+                let email = facebook["email"] as? String
+                var profile = ""
+                if let picture = facebook["picture"] as? [String: AnyObject], let data = picture["data"] as? [String: AnyObject] {
+                    profile = data["url"] as? String ?? ""
+                }
+                let largeProfile = "https://graph.facebook.com/\((token ?? ""))/picture?type=large"
+                let gender = facebook["gender"] as? String
+                var birthdayDate: Date?
+                if let birthday = facebook["birthday"] as? String, birthday != "" {
+                    let dateFormatter = DateFormatter()
+                    dateFormatter.dateFormat = "MM/dd/yyyy"
+                    birthdayDate = dateFormatter.date(from: birthday)
+                }
+                
+                
+                // 로그인 성공시
+                guard let dvc = self.storyboard?.instantiateViewController(identifier: "MyYogiyoViewController") as? MyYogiyoViewController else {return}
+                self.navigationController?.pushViewController(dvc, animated: true)
+
+                print("token: \(token)")
+                print("name: \(name)")
+                print("email: \(email)")
+                print("profile: \(profile)")
+                print("largeProfile: \(largeProfile)")
+                print("gender: \(gender)")
+                print("birthdayDate: \(birthdayDate)")
+            })
+        })
             
         }
         
     }
     
-}
+
 
 
