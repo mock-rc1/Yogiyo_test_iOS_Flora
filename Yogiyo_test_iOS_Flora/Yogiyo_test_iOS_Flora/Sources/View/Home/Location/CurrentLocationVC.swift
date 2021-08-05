@@ -16,24 +16,24 @@ class CurrentLocationVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        locationTableView.delegate = self
-        locationTableView.dataSource = self
+        //locationTableView.delegate = self
+        //locationTableView.dataSource = self
 
     }
     
 
 }
 
-extension CurrentLocationVC : UITableViewDelegate, UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return address.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
-    }
-    
-   
-    
-    
-}
+//extension CurrentLocationVC : UITableViewDelegate, UITableViewDataSource {
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        return address.count
+//    }
+//
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        <#code#>
+//    }
+//
+//
+//
+//
+//}
