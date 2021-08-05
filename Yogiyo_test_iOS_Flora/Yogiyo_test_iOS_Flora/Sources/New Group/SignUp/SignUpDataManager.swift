@@ -31,6 +31,10 @@ struct SignUpDataManager {
                         case 2019: delegate.failedToRequest(message: "비밀번호를 입력해주세요.")
                         case 2020: delegate.failedToRequest(message: "영문/숫자/특수문자 중 2가지 이상을 조합한 8~20자 비밀번호로 입력해주세요.")
                         case 2021: delegate.failedToRequest(message: "닉네임은 45자 이하여야합니다.")
+                        case 2022: delegate.failedToRequest(message: "이용약관에 동의하셔야 합니다.")
+                        case 2023: delegate.failedToRequest(message: "개인정보 수집 및 이용 동의를 하셔야 합니다.")
+                        case 2024: delegate.failedToRequest(message: "전자금융거래 이용약관에 동의하셔야 합니다.")
+                        case 2025: delegate.failedToRequest(message: "만 14세 이상 이용자만 가입이 가능합니다.")
                         default: delegate.failedToRequest(message: "피드백을 주세요")
                         }
                     }

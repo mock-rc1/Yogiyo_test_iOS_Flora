@@ -8,10 +8,18 @@
 import UIKit
 
 class MiddleBannerCVCell: UICollectionViewCell {
+    
+    @IBOutlet weak var middleBannerImageView: UIImageView!
+    
+    static let identifier = "MiddleBannerCVCell"
 
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+    }
+    
+    static func nib() -> UINib {
+        return UINib(nibName: "MiddleBannerCVCell", bundle: nil)
     }
 
 }

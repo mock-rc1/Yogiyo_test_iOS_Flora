@@ -71,6 +71,20 @@
 		DD3F905A26BA9E3F00F98C1D /* ExpressTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3F905826BA9E3E00F98C1D /* ExpressTVCell.xib */; };
 		DD3F905D26BAA3A000F98C1D /* ExpressCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F905B26BAA3A000F98C1D /* ExpressCVCell.swift */; };
 		DD3F905E26BAA3A000F98C1D /* ExpressCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3F905C26BAA3A000F98C1D /* ExpressCVCell.xib */; };
+		DD3F906126BAF2A100F98C1D /* SignInDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F906026BAF2A000F98C1D /* SignInDataManager.swift */; };
+		DD3F906426BAF2C800F98C1D /* SignInResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F906326BAF2C800F98C1D /* SignInResponse.swift */; };
+		DD3F906626BAF2D800F98C1D /* SignInRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F906526BAF2D800F98C1D /* SignInRequest.swift */; };
+		DD3F906E26BBB30000F98C1D /* MiddleBannerTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F906C26BBB30000F98C1D /* MiddleBannerTVCell.swift */; };
+		DD3F906F26BBB30000F98C1D /* MiddleBannerTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3F906D26BBB30000F98C1D /* MiddleBannerTVCell.xib */; };
+		DD3F907226BBB31C00F98C1D /* MiddleBannerCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F907026BBB31C00F98C1D /* MiddleBannerCVCell.swift */; };
+		DD3F907326BBB31C00F98C1D /* MiddleBannerCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3F907126BBB31C00F98C1D /* MiddleBannerCVCell.xib */; };
+		DD3F907A26BBBF0400F98C1D /* HotOurStoreTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F907826BBBF0400F98C1D /* HotOurStoreTVCell.swift */; };
+		DD3F907B26BBBF0400F98C1D /* HotOurStoreTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3F907926BBBF0400F98C1D /* HotOurStoreTVCell.xib */; };
+		DD3F907E26BBBF3100F98C1D /* HotOurStoreCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F907C26BBBF3100F98C1D /* HotOurStoreCVCell.swift */; };
+		DD3F907F26BBBF3100F98C1D /* HotOurStoreCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3F907D26BBBF3100F98C1D /* HotOurStoreCVCell.xib */; };
+		DD3F908326BBE16F00F98C1D /* CurrentLocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F908226BBE16F00F98C1D /* CurrentLocationVC.swift */; };
+		DD3F908726BBE20400F98C1D /* CurrentLocationTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F908526BBE20400F98C1D /* CurrentLocationTVCell.swift */; };
+		DD3F908826BBE20400F98C1D /* CurrentLocationTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3F908626BBE20400F98C1D /* CurrentLocationTVCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -141,6 +155,20 @@
 		DD3F905826BA9E3E00F98C1D /* ExpressTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExpressTVCell.xib; sourceTree = "<group>"; };
 		DD3F905B26BAA3A000F98C1D /* ExpressCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpressCVCell.swift; sourceTree = "<group>"; };
 		DD3F905C26BAA3A000F98C1D /* ExpressCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExpressCVCell.xib; sourceTree = "<group>"; };
+		DD3F906026BAF2A000F98C1D /* SignInDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInDataManager.swift; sourceTree = "<group>"; };
+		DD3F906326BAF2C800F98C1D /* SignInResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInResponse.swift; sourceTree = "<group>"; };
+		DD3F906526BAF2D800F98C1D /* SignInRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInRequest.swift; sourceTree = "<group>"; };
+		DD3F906C26BBB30000F98C1D /* MiddleBannerTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddleBannerTVCell.swift; sourceTree = "<group>"; };
+		DD3F906D26BBB30000F98C1D /* MiddleBannerTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MiddleBannerTVCell.xib; sourceTree = "<group>"; };
+		DD3F907026BBB31C00F98C1D /* MiddleBannerCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddleBannerCVCell.swift; sourceTree = "<group>"; };
+		DD3F907126BBB31C00F98C1D /* MiddleBannerCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MiddleBannerCVCell.xib; sourceTree = "<group>"; };
+		DD3F907826BBBF0400F98C1D /* HotOurStoreTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotOurStoreTVCell.swift; sourceTree = "<group>"; };
+		DD3F907926BBBF0400F98C1D /* HotOurStoreTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HotOurStoreTVCell.xib; sourceTree = "<group>"; };
+		DD3F907C26BBBF3100F98C1D /* HotOurStoreCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotOurStoreCVCell.swift; sourceTree = "<group>"; };
+		DD3F907D26BBBF3100F98C1D /* HotOurStoreCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HotOurStoreCVCell.xib; sourceTree = "<group>"; };
+		DD3F908226BBE16F00F98C1D /* CurrentLocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocationVC.swift; sourceTree = "<group>"; };
+		DD3F908526BBE20400F98C1D /* CurrentLocationTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocationTVCell.swift; sourceTree = "<group>"; };
+		DD3F908626BBE20400F98C1D /* CurrentLocationTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrentLocationTVCell.xib; sourceTree = "<group>"; };
 		F9C1772B30741BA88AC342B9 /* Pods-Yogiyo_test_iOS_Flora.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yogiyo_test_iOS_Flora.release.xcconfig"; path = "Target Support Files/Pods-Yogiyo_test_iOS_Flora/Pods-Yogiyo_test_iOS_Flora.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -250,6 +278,7 @@
 			children = (
 				DD3029A426B5761700ABEB63 /* HomeStoryboard.storyboard */,
 				DD3F902D26BA42E500F98C1D /* HomeTab */,
+				DD3F908126BBE13800F98C1D /* Location */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -421,6 +450,7 @@
 		DD3F901926B9584200F98C1D /* New Group */ = {
 			isa = PBXGroup;
 			children = (
+				DD3F905F26BAF27400F98C1D /* SignIn */,
 				DD3F901A26B9588100F98C1D /* SignUp */,
 			);
 			path = "New Group";
@@ -468,6 +498,9 @@
 				DD3F903A26BA57BF00F98C1D /* FourthButton */,
 				DD3F904426BA728200F98C1D /* FoodCategory */,
 				DD3F905426BA976F00F98C1D /* Express */,
+				DD3F906926BBB25400F98C1D /* MiddleBanner */,
+				DD3F907526BBBEC500F98C1D /* HotOurStore */,
+				DD3F908026BBCD3800F98C1D /* TodayHere */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -574,6 +607,103 @@
 			path = CollectionView;
 			sourceTree = "<group>";
 		};
+		DD3F905F26BAF27400F98C1D /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F906026BAF2A000F98C1D /* SignInDataManager.swift */,
+				DD3F906226BAF2AF00F98C1D /* Entity */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		DD3F906226BAF2AF00F98C1D /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F906326BAF2C800F98C1D /* SignInResponse.swift */,
+				DD3F906526BAF2D800F98C1D /* SignInRequest.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		DD3F906926BBB25400F98C1D /* MiddleBanner */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F906A26BBB2D200F98C1D /* TableView */,
+			);
+			path = MiddleBanner;
+			sourceTree = "<group>";
+		};
+		DD3F906A26BBB2D200F98C1D /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F906C26BBB30000F98C1D /* MiddleBannerTVCell.swift */,
+				DD3F906D26BBB30000F98C1D /* MiddleBannerTVCell.xib */,
+				DD3F906B26BBB2E100F98C1D /* CollectionView */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		DD3F906B26BBB2E100F98C1D /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F907026BBB31C00F98C1D /* MiddleBannerCVCell.swift */,
+				DD3F907126BBB31C00F98C1D /* MiddleBannerCVCell.xib */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		DD3F907526BBBEC500F98C1D /* HotOurStore */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F907626BBBEDB00F98C1D /* TableView */,
+			);
+			path = HotOurStore;
+			sourceTree = "<group>";
+		};
+		DD3F907626BBBEDB00F98C1D /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F907826BBBF0400F98C1D /* HotOurStoreTVCell.swift */,
+				DD3F907926BBBF0400F98C1D /* HotOurStoreTVCell.xib */,
+				DD3F907726BBBEE100F98C1D /* CollectionView */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		DD3F907726BBBEE100F98C1D /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F907C26BBBF3100F98C1D /* HotOurStoreCVCell.swift */,
+				DD3F907D26BBBF3100F98C1D /* HotOurStoreCVCell.xib */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		DD3F908026BBCD3800F98C1D /* TodayHere */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TodayHere;
+			sourceTree = "<group>";
+		};
+		DD3F908126BBE13800F98C1D /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F908226BBE16F00F98C1D /* CurrentLocationVC.swift */,
+				DD3F908426BBE1E000F98C1D /* Cell */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		DD3F908426BBE1E000F98C1D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F908526BBE20400F98C1D /* CurrentLocationTVCell.swift */,
+				DD3F908626BBE20400F98C1D /* CurrentLocationTVCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -635,6 +765,7 @@
 			files = (
 				DD30296B26B53EB700ABEB63 /* LaunchScreen.storyboard in Resources */,
 				DD3029AF26B5771300ABEB63 /* SearchStoryboard.storyboard in Resources */,
+				DD3F907B26BBBF0400F98C1D /* HotOurStoreTVCell.xib in Resources */,
 				DD3F903226BA474700F98C1D /* BannerTVCell.xib in Resources */,
 				DD3F905326BA820700F98C1D /* HashTageCVCell.xib in Resources */,
 				DD3F903E26BA582F00F98C1D /* FourthButtonTVCell.xib in Resources */,
@@ -642,6 +773,7 @@
 				DD3F8FF726B8531800F98C1D /* BeforeLoginConVC.xib in Resources */,
 				DD30298726B5612600ABEB63 /* Images.xcassets in Resources */,
 				DD3F8FFB26B8DFA200F98C1D /* completeLoginTVCell.xib in Resources */,
+				DD3F908826BBE20400F98C1D /* CurrentLocationTVCell.xib in Resources */,
 				DD3029B126B5773300ABEB63 /* OrderStoryboard.storyboard in Resources */,
 				DD3029A526B5761700ABEB63 /* HomeStoryboard.storyboard in Resources */,
 				DD30297B26B54F9B00ABEB63 /* MyYogiyoStoryboard.storyboard in Resources */,
@@ -649,12 +781,15 @@
 				DD3F900C26B8EAF200F98C1D /* CouponConVC.xib in Resources */,
 				DD3F904D26BA72FC00F98C1D /* CategoryFoodConVC.xib in Resources */,
 				DD3F903626BA4BA300F98C1D /* BannerCVCell.xib in Resources */,
+				DD3F906F26BBB30000F98C1D /* MiddleBannerTVCell.xib in Resources */,
 				DD3F8FF126B8520F00F98C1D /* beforeLoginTVCell.xib in Resources */,
 				DD3F8FFF26B8DFE000F98C1D /* CompleteLoginVC.xib in Resources */,
+				DD3F907F26BBBF3100F98C1D /* HotOurStoreCVCell.xib in Resources */,
 				DD3F904326BA63BE00F98C1D /* FourthBtnConVC.xib in Resources */,
 				DD3F901826B9045C00F98C1D /* CategotyViewController.xib in Resources */,
 				DD3F901426B9044000F98C1D /* categoryTableViewCell.xib in Resources */,
 				DD3F904826BA72C200F98C1D /* FoodCategoryTVCell.xib in Resources */,
+				DD3F907326BBB31C00F98C1D /* MiddleBannerCVCell.xib in Resources */,
 				DD3F905A26BA9E3F00F98C1D /* ExpressTVCell.xib in Resources */,
 				DD3029A926B576DC00ABEB63 /* JjimStoryboard.storyboard in Resources */,
 				DD3F905E26BAA3A000F98C1D /* ExpressCVCell.xib in Resources */,
@@ -710,7 +845,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD3F908726BBE20400F98C1D /* CurrentLocationTVCell.swift in Sources */,
 				DD3F8FFA26B8DFA200F98C1D /* completeLoginTVCell.swift in Sources */,
+				DD3F907226BBB31C00F98C1D /* MiddleBannerCVCell.swift in Sources */,
 				DD3F900E26B8FB6200F98C1D /* Border.swift in Sources */,
 				DD3F901F26B95BF400F98C1D /* SignUpDataManager.swift in Sources */,
 				DD3F903D26BA582F00F98C1D /* FourthButtonTVCell.swift in Sources */,
@@ -726,19 +863,24 @@
 				DD3029B326B5774300ABEB63 /* OrderViewController.swift in Sources */,
 				DD3F8FF026B8520F00F98C1D /* beforeLoginTVCell.swift in Sources */,
 				DD30298026B5515800ABEB63 /* SocialLoginViewController.swift in Sources */,
+				DD3F908326BBE16F00F98C1D /* CurrentLocationVC.swift in Sources */,
 				DD3F905926BA9E3F00F98C1D /* ExpressTVCell.swift in Sources */,
 				DD30299926B5695500ABEB63 /* emailLoginViewController.swift in Sources */,
 				DD3F900B26B8EAF200F98C1D /* CouponConVC.swift in Sources */,
 				DD3029A726B5762A00ABEB63 /* HomeViewController.swift in Sources */,
 				DD3F902826B9979800F98C1D /* AlertViewController.swift in Sources */,
+				DD3F906626BAF2D800F98C1D /* SignInRequest.swift in Sources */,
 				DD3F902C26B9A05A00F98C1D /* SignUpRequest.swift in Sources */,
+				DD3F907A26BBBF0400F98C1D /* HotOurStoreTVCell.swift in Sources */,
 				DD3F905226BA820700F98C1D /* HashTageCVCell.swift in Sources */,
 				DD3029AD26B5770900ABEB63 /* SearchViewController.swift in Sources */,
 				DD30299B26B5696400ABEB63 /* EmailSignUpViewController.swift in Sources */,
 				DD3F904726BA72C200F98C1D /* FoodCategoryTVCell.swift in Sources */,
+				DD3F907E26BBBF3100F98C1D /* HotOurStoreCVCell.swift in Sources */,
 				DD3F900626B8EAB600F98C1D /* couponTableViewCell.swift in Sources */,
 				DD3F901D26B95A0B00F98C1D /* SignUpData.swift in Sources */,
 				DD3F8FEC26B7FB8900F98C1D /* UIViewController.swift in Sources */,
+				DD3F906126BAF2A100F98C1D /* SignInDataManager.swift in Sources */,
 				DD3F905D26BAA3A000F98C1D /* ExpressCVCell.swift in Sources */,
 				DD30295F26B53EB500ABEB63 /* AppDelegate.swift in Sources */,
 				DD3F903126BA474700F98C1D /* BannerTVCell.swift in Sources */,
@@ -746,7 +888,9 @@
 				DD3F8FFE26B8DFE000F98C1D /* CompleteLoginVC.swift in Sources */,
 				DD3F903526BA4BA300F98C1D /* BannerCVCell.swift in Sources */,
 				DD30296126B53EB500ABEB63 /* SceneDelegate.swift in Sources */,
+				DD3F906E26BBB30000F98C1D /* MiddleBannerTVCell.swift in Sources */,
 				DD3F8FF626B8531800F98C1D /* BeforeLoginConVC.swift in Sources */,
+				DD3F906426BAF2C800F98C1D /* SignInResponse.swift in Sources */,
 				DD3F901326B9044000F98C1D /* categoryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

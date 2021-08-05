@@ -82,7 +82,7 @@
                             <constraint firstItem="QMM-jU-FYN" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="tRq-W4-orz"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="마이요기요" image="yogiyonontab" selectedImage="yogiyoTab" id="OJ3-TQ-Z1r"/>
+                    <tabBarItem key="tabBarItem" title="마이요기요" image="마이요기요안눌린거" selectedImage="마이요기요눌린거" id="OJ3-TQ-Z1r"/>
                     <navigationItem key="navigationItem" id="qqb-wr-yaL"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -608,7 +608,7 @@
                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20" scale="large" weight="thin"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="useAgreeBtnTap:" destination="lS0-XK-egP" eventType="touchUpInside" id="gvt-1U-lhR"/>
+                                                    <action selector="btn1:" destination="lS0-XK-egP" eventType="touchUpInside" id="4An-61-3CS"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이용약관 동의 (필수)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fUj-Fu-p5q">
@@ -629,7 +629,7 @@
                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20" scale="large" weight="thin"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="privacyAgreeBtnTap:" destination="lS0-XK-egP" eventType="touchUpInside" id="5ic-yr-uZA"/>
+                                                    <action selector="btn2:" destination="lS0-XK-egP" eventType="touchUpInside" id="fgA-ha-r99"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="개인정보 수집 및 이용동의 (필수)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tPz-Zn-8Xd">
@@ -650,7 +650,7 @@
                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20" scale="large" weight="thin"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="financeAgreeBtnTap:" destination="lS0-XK-egP" eventType="touchUpInside" id="R6E-3t-Duc"/>
+                                                    <action selector="btn3:" destination="lS0-XK-egP" eventType="touchUpInside" id="2XV-Os-DdV"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="전자금융거래 이용약관 (필수)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPB-nM-8L7">
@@ -671,7 +671,7 @@
                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20" scale="large" weight="thin"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="ageAgreeBtnTap:" destination="lS0-XK-egP" eventType="touchUpInside" id="0lU-EN-kte"/>
+                                                    <action selector="btn4:" destination="lS0-XK-egP" eventType="touchUpInside" id="XkE-ab-yWw"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="만 14세 이상 이용자 (필수)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wA3-pA-ad4">
@@ -692,7 +692,7 @@
                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20" scale="large" weight="thin"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="yogiyoAgreeBtnTap:" destination="lS0-XK-egP" eventType="touchUpInside" id="AQI-BM-dBh"/>
+                                                    <action selector="btn5:" destination="lS0-XK-egP" eventType="touchUpInside" id="C8h-H1-dcm"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="요기요 혜택 알림 동의 (선택)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgV-GG-5cy">
@@ -836,20 +836,20 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="ageAgreeBtn" destination="u5o-8n-1bQ" id="n2o-Yo-AXX"/>
-                        <outlet property="allAgreeBtn" destination="tqB-6j-Hph" id="P2K-xl-w4b"/>
+                        <outlet property="allAgreeBtn" destination="tqB-6j-Hph" id="Pv5-ec-ZRH"/>
                         <outlet property="contentBtn1" destination="A1I-CD-vX5" id="sgM-z4-2we"/>
                         <outlet property="contentBtn2" destination="GNa-Ne-yQH" id="feA-l3-uvb"/>
                         <outlet property="contentBtn3" destination="waV-Hp-5GA" id="ycB-67-0DP"/>
                         <outlet property="contentBtn4" destination="9tJ-S3-4C7" id="F5F-vi-7KY"/>
                         <outlet property="emailInputTextField" destination="lRN-4M-7Gd" id="Dav-lJ-Q56"/>
-                        <outlet property="moneyAgreeBtn" destination="YdN-4c-vRX" id="5bv-K9-CPE"/>
                         <outlet property="nextPageBtn" destination="xwY-TO-hnb" id="D7C-Sc-6SS"/>
                         <outlet property="nickNameInputTextField" destination="r6T-Wz-4qt" id="Ci5-pa-FOq"/>
                         <outlet property="passwordInputTextField" destination="cr6-ak-ETJ" id="bCX-yP-YUG"/>
-                        <outlet property="privacyAgreeBtn" destination="S1S-yI-553" id="S8u-ef-N6z"/>
-                        <outlet property="saleAgreeBtn" destination="ixA-lX-gf6" id="yfC-bg-4TJ"/>
-                        <outlet property="useAgreeBtn" destination="IP9-0Z-hRd" id="gre-Tu-Upq"/>
+                        <outletCollection property="btns" destination="IP9-0Z-hRd" collectionClass="NSMutableArray" id="pCF-pG-azY"/>
+                        <outletCollection property="btns" destination="S1S-yI-553" collectionClass="NSMutableArray" id="EJ9-r8-if9"/>
+                        <outletCollection property="btns" destination="YdN-4c-vRX" collectionClass="NSMutableArray" id="8Cm-fp-Hey"/>
+                        <outletCollection property="btns" destination="u5o-8n-1bQ" collectionClass="NSMutableArray" id="F2G-mD-Deu"/>
+                        <outletCollection property="btns" destination="ixA-lX-gf6" collectionClass="NSMutableArray" id="71N-wN-ewg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fk6-Bq-sHi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -868,8 +868,8 @@
         <image name="settingIcon" width="101" height="97"/>
         <image name="square" catalog="system" width="128" height="114"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
-        <image name="yogiyoTab" width="84" height="79.5"/>
-        <image name="yogiyonontab" width="73" height="77.5"/>
+        <image name="마이요기요눌린거" width="35" height="29"/>
+        <image name="마이요기요안눌린거" width="39" height="29"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

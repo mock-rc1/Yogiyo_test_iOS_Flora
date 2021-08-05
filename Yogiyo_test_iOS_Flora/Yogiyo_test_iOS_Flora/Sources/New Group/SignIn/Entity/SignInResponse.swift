@@ -6,3 +6,19 @@
 //
 
 import Foundation
+
+// MARK: - SignInResponse
+struct SignInResponse: Codable {
+    let isSuccess: Bool
+    let code: Int
+    let message: String
+    let result: SignInResult?
+}
+
+// MARK: - SignInResult
+struct SignInResult: Codable {
+    let userIdx: Int
+    let jwt: String
+}
+
+

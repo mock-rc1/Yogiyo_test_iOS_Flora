@@ -8,8 +8,11 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+    // 섹션헤더뷰에 컬렉션뷰 넣을 수 있나? 아니면 셀 만들어서 그걸 코드로 넣을 수 있나? 해보기
+    // 요즘뜨는 우리동네 부분 유아이 이상하니까 그냥 요기요 익스프레스 셀로 뿌려줘
+    let sections: [String] = ["배너", "버튼4개", "서치바아이콘", "요기요익스프레스","광고","요즘뜨는 우리동네가게", "요기서먹어요"]
     
-    let sections: [String] = ["배너", "버튼4개", "서치바아이콘", "요기요익스프레스","광고", "요기서먹어요"]
+    var hotStore = [1,2,3]
     
     // 버튼 네개 있는 셀
     var fourthBtnVC : FourthBtnConVC?
@@ -29,7 +32,8 @@ class HomeViewController: UIViewController {
         setDelegate()
         setStyle()
         setCellRegister()
-        
+        //mainTableView.estimatedSectionHeaderHeight = 50
+        //mainTableView.sectionHeaderHeight = UITableView.automaticDimension
     }
     
     // MARK: - Fuction
@@ -50,6 +54,9 @@ class HomeViewController: UIViewController {
         // cell
         self.mainTableView.register(BannerTVCell.nib(), forCellReuseIdentifier: BannerTVCell.identifier)
         self.mainTableView.register(ExpressTVCell.nib(), forCellReuseIdentifier: ExpressTVCell.identifier)
+        self.mainTableView.register(MiddleBannerTVCell.nib(), forCellReuseIdentifier: MiddleBannerTVCell.identifier)
+        self.mainTableView.register(HotOurStoreTVCell.nib(), forCellReuseIdentifier: HotOurStoreTVCell.identifier)
+        
         // controller cell
         self.mainTableView.register(UINib(nibName: "FourthButtonTVCell", bundle: nil),
                                    forCellReuseIdentifier: "FourthButtonTVCell")
@@ -76,6 +83,12 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             return 1
         }
         else if section == 4 {
+            return 1
+        }
+        else if section == 5 {
+            return hotStore.count
+        }
+        else if section == 6 {
             return 1
         }
         else {
@@ -149,6 +162,20 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             return cell
         }
         
+        if indexPath.section == 4 {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: MiddleBannerTVCell.identifier) as? MiddleBannerTVCell else{
+                return UITableViewCell()
+            }
+            return cell
+        }
+        
+        if indexPath.section == 5 {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: HotOurStoreTVCell.identifier) as? HotOurStoreTVCell else{
+                return UITableViewCell()
+            }
+            return cell
+        }
+        
         return UITableViewCell()
     }
     
@@ -169,13 +196,78 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             return 480
         }
         else if indexPath.section == 3 {
-            return 500
+            return 260
         }
         else if indexPath.section == 4 {
+            return 130
+        }
+        else if indexPath.section == 5 {
+            return 260
+        }
+        else if indexPath.section == 6 {
             return 150
         }
         else {
             return 0
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        if section == 0 {
+            return 0
+        }
+        if section == 1 {
+            return 0
+        }
+        if section == 2 {
+            return 0
+        }
+        if section == 3 {
+            return 0
+        }
+        if section == 4 {
+            return 0
+        }
+        if section == 5 {
+            return 0
+        }
+        else {
+            return 50
+        }
+        
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        if section == 0 {
+            return UIView(frame: .null)
+        }
+        if section == 1 {
+          return UIView(frame: .null)
+        }
+        if section == 2 {
+          return UIView(frame: .null)
+        }
+        if section == 3 {
+          return UIView(frame: .null)
+        }
+        if section == 4 {
+          return UIView(frame: .null)
+        }
+        if section == 5 {
+          return UIView(frame: .null)
+        }
+        else {
+          let headerView = UIView()
+          headerView.backgroundColor = .red
+          headerView.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: 50)
+          
+          let titleLabel = UILabel()
+          titleLabel.textColor = .white
+          titleLabel.text = "Section1 헤더 뷰"
+          titleLabel.frame = CGRect(x: 0, y: 0, width: headerView.frame.width, height: headerView.frame.height)
+          headerView.addSubview(titleLabel)
+          
+          return headerView
         }
     }
     

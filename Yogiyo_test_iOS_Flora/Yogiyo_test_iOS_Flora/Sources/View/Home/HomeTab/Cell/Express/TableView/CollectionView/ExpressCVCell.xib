@@ -11,23 +11,23 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ExpressCVCell" customModule="Yogiyo_test_iOS_Flora" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="152" height="262"/>
+            <rect key="frame" x="0.0" y="0.0" width="177" height="262"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="152" height="262"/>
+                <rect key="frame" x="0.0" y="0.0" width="177" height="262"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U6P-XX-5qI">
-                        <rect key="frame" x="0.0" y="0.0" width="152" height="262"/>
+                        <rect key="frame" x="0.0" y="0.0" width="177" height="262"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test" translatesAutoresizingMaskIntoConstraints="NO" id="js7-bN-6Pt">
-                                <rect key="frame" x="0.0" y="0.0" width="152" height="152"/>
+                                <rect key="frame" x="0.0" y="0.0" width="177" height="177"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="js7-bN-6Pt" secondAttribute="height" multiplier="1:1" id="K0E-Vq-yVe"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="esO-j0-SOa">
-                                <rect key="frame" x="0.0" y="160" width="103.5" height="50"/>
+                                <rect key="frame" x="0.0" y="185" width="103.5" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="질할브로스-홍대점" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bvv-M2-1s8">
                                         <rect key="frame" x="0.0" y="0.0" width="103.5" height="17"/>
@@ -102,7 +102,7 @@
                 <constraint firstAttribute="bottom" secondItem="U6P-XX-5qI" secondAttribute="bottom" id="fw1-0H-S4s"/>
                 <constraint firstAttribute="trailing" secondItem="U6P-XX-5qI" secondAttribute="trailing" id="tGK-ue-H51"/>
             </constraints>
-            <size key="customSize" width="152" height="262"/>
+            <size key="customSize" width="177" height="262"/>
             <connections>
                 <outlet property="expressTimeLabel" destination="XL2-w1-Ktf" id="B2g-Gz-Fg9"/>
                 <outlet property="imageView" destination="js7-bN-6Pt" id="7S9-m0-ry2"/>
@@ -110,7 +110,7 @@
                 <outlet property="starScoreBtn" destination="wWx-Ms-RX9" id="PAo-gT-1CN"/>
                 <outlet property="titleLabel" destination="Bvv-M2-1s8" id="i4L-fN-DWU"/>
             </connections>
-            <point key="canvasLocation" x="83" y="-4"/>
+            <point key="canvasLocation" x="100.72463768115942" y="-4.0178571428571423"/>
         </collectionViewCell>
     </objects>
     <resources>

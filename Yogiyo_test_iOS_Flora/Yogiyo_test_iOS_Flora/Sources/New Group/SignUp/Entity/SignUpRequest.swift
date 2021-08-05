@@ -11,4 +11,10 @@ struct SignUpRequest: Encodable {
     var userEmail: String
     var userPassword: String
     var userNickname: String
+    
+    var termsAndConditions: Int
+    var personalInfo: Int
+    var financialTrans: Int
+    var aboveFourteen: Int
+    var benefitAlarm: Int
 }

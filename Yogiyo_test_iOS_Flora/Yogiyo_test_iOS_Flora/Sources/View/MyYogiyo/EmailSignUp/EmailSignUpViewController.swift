@@ -13,17 +13,15 @@ import UIKit
 
 class EmailSignUpViewController: BaseViewController {
     lazy var dataManager: SignUpDataManager = SignUpDataManager()
-    var tureOrFalse = Bool()
+    
+    @IBOutlet var btns: [UIButton]!
+    var terms = Array(repeating: false, count: 5)
+    
     
     @IBOutlet weak var emailInputTextField: UITextField!
     @IBOutlet weak var passwordInputTextField: UITextField!
     @IBOutlet weak var nickNameInputTextField: UITextField!
     @IBOutlet weak var allAgreeBtn: UIButton!
-    @IBOutlet weak var useAgreeBtn: UIButton!
-    @IBOutlet weak var privacyAgreeBtn: UIButton!
-    @IBOutlet weak var moneyAgreeBtn: UIButton!
-    @IBOutlet weak var ageAgreeBtn: UIButton!
-    @IBOutlet weak var saleAgreeBtn: UIButton!
     @IBOutlet weak var nextPageBtn: UIButton!
     @IBOutlet weak var contentBtn1: UIButton!
     @IBOutlet weak var contentBtn2: UIButton!
@@ -33,7 +31,15 @@ class EmailSignUpViewController: BaseViewController {
     let overlayButton = UIButton(type: .system)
     var iconClick = true
     var buttonClick = true
-
+    
+    var buttonState = 0
+    var useAgreeBtn = 0
+    var privacyAgreeBtn = 0
+    var moneyAgreeBtn = 0
+    var ageAgreeBtn = 0
+    var saleAgreeBtn = 0
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         dismissKeyboardWhenTappedAround()
@@ -52,20 +58,8 @@ class EmailSignUpViewController: BaseViewController {
         nextPageBtn.layer.cornerRadius = 5
     }
     
-    // 약관동의버튼
-    func allAgree(_ value: Bool) {
-        if useAgreeBtn.isSelected == true && privacyAgreeBtn.isSelected == true && moneyAgreeBtn.isSelected  == true && ageAgreeBtn.isSelected == true && saleAgreeBtn.isSelected == true {
-            allAgreeBtn.isSelected = true
-        } else {
-            allAgreeBtn.isSelected = false
-        }
-    }
     
     @IBAction func completeBtnTap(_ sender: Any) {
-        
-        // 페이지 생성할건지 말건지 알게되면 그때 하자
-        guard let dvc = self.storyboard?.instantiateViewController(identifier: "MyYogiyoViewController")else{return}
-        self.present(dvc, animated: true, completion:nil)
         
         guard let id = emailInputTextField.text?.trim, id.isExists else {
             self.presentAlert(title: "아이디를 입력해주세요")
@@ -77,7 +71,7 @@ class EmailSignUpViewController: BaseViewController {
             self.presentAlert(title: "비밀번호를 입력해주세요")
             return
         }
-        guard let nickName = nickNameInputTextField.text?.trim, id.isExists else {
+        guard let nickName = nickNameInputTextField.text?.trim, nickName.isExists else {
             self.presentAlert(title: "닉네임을 입력해주세요")
             return
         }
@@ -85,11 +79,11 @@ class EmailSignUpViewController: BaseViewController {
         // Requst Sign In
         self.dismissKeyboard()
         //self.showIndicator()
-        let input = SignUpRequest(userEmail: id, userPassword: password, userNickname: nickName)
+        let input = SignUpRequest(userEmail: id, userPassword: password, userNickname: nickName, termsAndConditions: useAgreeBtn, personalInfo: privacyAgreeBtn, financialTrans: moneyAgreeBtn, aboveFourteen: ageAgreeBtn, benefitAlarm: saleAgreeBtn)
         dataManager.postSignUp(input, delegate: self)
         
     }
-
+    
     // 텍스트필드 안에 '가리기','보기' 버튼
     func textFieldInShowHide() {
         overlayButton.setTitle("보기", for: .normal)
@@ -110,125 +104,107 @@ class EmailSignUpViewController: BaseViewController {
         iconClick = !iconClick
     }
     
-//    func buttonTag() {
-//        allAgreeBtn.tag = 1
-//        useAgreeBtn.tag = 2
-//        privacyAgreeBtn.tag = 3
-//        moneyAgreeBtn.tag = 4
-//        ageAgreeBtn.tag = 5
-//        saleAgreeBtn.tag = 6
-//    }
-    
     // 취소 버튼
     @IBAction func backBtnTap(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
     
+    // 버튼 클릭시 호출시키기
+    func checkAgree(_ idx: Int) {
+        
+        terms[idx] = !terms[idx]
+        setAgreeImage(idx)
+        
+        // 약관 동의 배열이 전부 True라면
+        if terms.allSatisfy({$0}) {
+            // 전체 동의 체크 및 이미지 변경
+            allAgreeBtn.setImage(UIImage(systemName: "checkmark.square"), for: .normal)
+            allAgreeBtn.tintColor = #colorLiteral(red: 0.9745565057, green: 0.008201596327, blue: 0.3125460446, alpha: 1)
+        }
+        else {
+            allAgreeBtn.setImage(UIImage(systemName: "squareshape"), for: .normal)
+            allAgreeBtn.tintColor = #colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1)
+        }
+    }
+    
+    // 버튼의 체크 이미지 변경
+    func setAgreeImage(_ idx: Int) {
+        if terms[idx] {
+            btns[idx].setImage(UIImage(systemName: "checkmark.square"), for: .normal)
+            btns[idx].tintColor = #colorLiteral(red: 0.9745565057, green: 0.008201596327, blue: 0.3125460446, alpha: 1)
+            buttonState = 1
+            useAgreeBtn = 1
+            privacyAgreeBtn = 1
+            moneyAgreeBtn = 1
+            ageAgreeBtn = 1
+            saleAgreeBtn = 1
+        } else {
+            btns[idx].setImage(UIImage(systemName: "squareshape"), for: .normal)
+            btns[idx].tintColor = #colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1)
+            buttonState = 0
+            useAgreeBtn = 0
+            privacyAgreeBtn = 0
+            moneyAgreeBtn = 0
+            ageAgreeBtn = 0
+            saleAgreeBtn = 0
+        }
+    }
+    
     // 약관 동의 버튼
     @IBAction func allAgreeBtnTap (_ sender: UIButton) {
         print("눌린다")
-        if (buttonClick == true) {
-            allAgree(true)
-            allAgreeBtn.tintColor = #colorLiteral(red: 0.9745565057, green: 0.008201596327, blue: 0.3125460446, alpha: 1)
-            useAgreeBtn.tintColor = #colorLiteral(red: 0.9745565057, green: 0.008201596327, blue: 0.3125460446, alpha: 1)
-            privacyAgreeBtn.tintColor = #colorLiteral(red: 0.9745565057, green: 0.008201596327, blue: 0.3125460446, alpha: 1)
-            moneyAgreeBtn.tintColor = #colorLiteral(red: 0.9745565057, green: 0.008201596327, blue: 0.3125460446, alpha: 1)
-            ageAgreeBtn.tintColor = #colorLiteral(red: 0.9745565057, green: 0.008201596327, blue: 0.3125460446, alpha: 1)
-            saleAgreeBtn.tintColor = #colorLiteral(red: 0.9745565057, green: 0.008201596327, blue: 0.3125460446, alpha: 1)
-            allAgreeBtn.setImage(UIImage(systemName: "checkmark.square"), for: .normal)
-            useAgreeBtn.setImage(UIImage(systemName: "checkmark.square"), for: .normal)
-            privacyAgreeBtn.setImage(UIImage(systemName: "checkmark.square"), for: .normal)
-            moneyAgreeBtn.setImage(UIImage(systemName: "checkmark.square"), for: .normal)
-            ageAgreeBtn.setImage(UIImage(systemName: "checkmark.square"), for: .normal)
-            saleAgreeBtn.setImage(UIImage(systemName: "checkmark.square"), for: .normal)
+        
+        if terms.allSatisfy({$0}){
+            allAgreeBtn.setImage(UIImage(systemName: "squareshape"), for: .normal)
+            allAgreeBtn.tintColor = #colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1)
+            
+            terms = Array(repeating: false, count: 5)
         }
         else {
-            allAgree(false)
-            allAgreeBtn.tintColor = #colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1)
-            useAgreeBtn.tintColor = #colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1)
-            privacyAgreeBtn.tintColor = #colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1)
-            moneyAgreeBtn.tintColor = #colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1)
-            ageAgreeBtn.tintColor = #colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1)
-            saleAgreeBtn.tintColor = #colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1)
-            allAgreeBtn.setImage(UIImage(systemName: "squareshape"), for: .normal)
-            useAgreeBtn.setImage(UIImage(systemName: "squareshape"), for: .normal)
-            privacyAgreeBtn.setImage(UIImage(systemName: "squareshape"), for: .normal)
-            moneyAgreeBtn.setImage(UIImage(systemName: "squareshape"), for: .normal)
-            ageAgreeBtn.setImage(UIImage(systemName: "squareshape"), for: .normal)
-            saleAgreeBtn.setImage(UIImage(systemName: "squareshape"), for: .normal)
+            
+            allAgreeBtn.setImage(UIImage(systemName: "checkmark.square"), for: .normal)
+            allAgreeBtn.tintColor = #colorLiteral(red: 0.9745565057, green: 0.008201596327, blue: 0.3125460446, alpha: 1)
+            
+            terms = Array(repeating: true, count: 5)
         }
-        //buttonClick = !buttonClick
-    }
+        for idx in 0..<terms.count {
+            setAgreeImage(idx)
+        }
+        
+
     
-    @IBAction func useAgreeBtnTap (_ sender: UIButton) {
-        if (buttonClick == true) {
-            allAgree(true)
-            useAgreeBtn.setImage(UIImage(systemName: "checkmark.square"), for: .normal)
-            useAgreeBtn.tintColor = #colorLiteral(red: 0.9745565057, green: 0.008201596327, blue: 0.3125460446, alpha: 1)
-        }else{
-            allAgree(false)
-            useAgreeBtn.tintColor = #colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1)
-            useAgreeBtn.setImage(UIImage(systemName: "squareshape"), for: .normal)
+}
+
+        @IBAction func btn1(_ sender: UIButton) {
+            checkAgree(0)
+            
         }
-        //buttonClick = !buttonClick
-    }
+        @IBAction func btn2(_ sender: UIButton) {
+            checkAgree(1)
     
-    @IBAction func privacyAgreeBtnTap (_ sender: UIButton) {
-        if (buttonClick == true) {
-            allAgree(true)
-            privacyAgreeBtn.setImage(UIImage(systemName: "checkmark.square"), for: .normal)
-            privacyAgreeBtn.tintColor = #colorLiteral(red: 0.9745565057, green: 0.008201596327, blue: 0.3125460446, alpha: 1)
-        }else{
-            allAgree(false)
-            privacyAgreeBtn.tintColor = #colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1)
-            privacyAgreeBtn.setImage(UIImage(systemName: "squareshape"), for: .normal)
         }
-        //buttonClick = !buttonClick
-    }
+        @IBAction func btn3(_ sender: UIButton) {
+        checkAgree(2)
     
-    @IBAction func financeAgreeBtnTap (_ sender: UIButton) {
-        if (buttonClick == true) {
-            allAgree(true)
-            moneyAgreeBtn.setImage(UIImage(systemName: "checkmark.square"), for: .normal)
-            moneyAgreeBtn.tintColor = #colorLiteral(red: 0.9745565057, green: 0.008201596327, blue: 0.3125460446, alpha: 1)
-        }else{
-            allAgree(false)
-            moneyAgreeBtn.tintColor = #colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1)
-            moneyAgreeBtn.setImage(UIImage(systemName: "squareshape"), for: .normal)
         }
-        //buttonClick = !buttonClick
-    }
+        @IBAction func btn4(_ sender: UIButton) {
+        checkAgree(3)
     
-    @IBAction func ageAgreeBtnTap (_ sender: UIButton) {
-        if (buttonClick == true) {
-            allAgree(true)
-            ageAgreeBtn.setImage(UIImage(systemName: "checkmark.square"), for: .normal)
-            ageAgreeBtn.tintColor = #colorLiteral(red: 0.9745565057, green: 0.008201596327, blue: 0.3125460446, alpha: 1)
-        }else{
-            allAgree(false)
-            ageAgreeBtn.tintColor = #colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1)
-            ageAgreeBtn.setImage(UIImage(systemName: "squareshape"), for: .normal)
         }
-        //buttonClick = !buttonClick
-    }
+        @IBAction func btn5(_ sender: UIButton) {
+        checkAgree(4)
     
-    @IBAction func yogiyoAgreeBtnTap (_ sender: UIButton) {
-        if (buttonClick == true) {
-            allAgree(true)
-            saleAgreeBtn.setImage(UIImage(systemName: "checkmark.square"), for: .normal)
-            saleAgreeBtn.tintColor = #colorLiteral(red: 0.9745565057, green: 0.008201596327, blue: 0.3125460446, alpha: 1)
-        }else{
-            allAgree(false)
-            saleAgreeBtn.tintColor = #colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1)
-            saleAgreeBtn.setImage(UIImage(systemName: "squareshape"), for: .normal)
-        }
-        //buttonClick = !buttonClick
     }
+
 }
 
 extension EmailSignUpViewController {
     func didSuccessSignUp(_ result: SignUpResult) {
-        self.presentAlert(title: "로그인에 성공하였습니다", message: result.jwt)
+        guard let dvc = self.storyboard?.instantiateViewController(identifier: "MyYogiyoViewController")else{return}
+        self.navigationController?.pushViewController(dvc, animated: true)
+        self.presentAlert(title: "회원가입에 성공하였습니다", message: result.jwt)
+                
+                
     }
     
     func failedToRequest(message: String) {

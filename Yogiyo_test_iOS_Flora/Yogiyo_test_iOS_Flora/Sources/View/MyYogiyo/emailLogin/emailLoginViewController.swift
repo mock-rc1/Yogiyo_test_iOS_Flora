@@ -8,6 +8,7 @@
 import UIKit
 
 class emailLoginViewController: UIViewController {
+    lazy var dataManager: SignInDataManager = SignInDataManager()
 
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var emailLoginBtn: UIButton!
@@ -58,7 +59,23 @@ class emailLoginViewController: UIViewController {
     
     @IBAction func emailLoginBtnTap(_ sender: Any) {
         
-        self.dismiss(animated: true, completion: nil)
+        //self.dismiss(animated: true, completion: nil)
+        guard let id = emailTextField.text?.trim, id.isExists else {
+            self.presentAlert(title: "아이디를 입력해주세요")
+            return
+        }
+        
+        // Password validation
+        guard let password = passwordTextField.text, password.isExists else {
+            self.presentAlert(title: "비밀번호를 입력해주세요")
+            return
+        }
+        
+        // Requst Sign In
+        self.dismissKeyboard()
+        //self.showIndicator()
+        let input = SignInRequest(userEmail: id, userPassword: password)
+        dataManager.postSignIn(input, delegate: self)
     }
    
     @IBAction func emailSignUpBtnTap(_ sender: Any) {
@@ -74,4 +91,17 @@ extension emailLoginViewController: UITextFieldDelegate {
 //        emailTextField.layer.borderColor = UIColor.red.cgColor
         print("textFieldDidBeginEditing: \((textField.text) ?? "Empty")") }
 
+}
+
+extension emailLoginViewController {
+    func didSuccessSignIn(_ result: SignInResult) {
+        guard let dvc = self.storyboard?.instantiateViewController(identifier: "YogiyoTabBarVC")else{return}
+        self.navigationController?.pushViewController(dvc, animated: true)
+        self.presentAlert(title: "로그인에 성공하였습니다", message: result.jwt)
+        
+    }
+    
+    func failedToRequest(message: String) {
+        self.presentAlert(title: message)
+    }
 }
