@@ -85,6 +85,29 @@
 		DD3F908326BBE16F00F98C1D /* CurrentLocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F908226BBE16F00F98C1D /* CurrentLocationVC.swift */; };
 		DD3F908726BBE20400F98C1D /* CurrentLocationTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F908526BBE20400F98C1D /* CurrentLocationTVCell.swift */; };
 		DD3F908826BBE20400F98C1D /* CurrentLocationTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3F908626BBE20400F98C1D /* CurrentLocationTVCell.xib */; };
+		DD3F908C26BCBDA500F98C1D /* TransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F908B26BCBDA500F98C1D /* TransitionViewController.swift */; };
+		DD3F909926BCF5C800F98C1D /* ParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F909826BCF5C800F98C1D /* ParentViewController.swift */; };
+		DD3F909B26BCF6EA00F98C1D /* AllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F909A26BCF6EA00F98C1D /* AllViewController.swift */; };
+		DD3F909D26BD001D00F98C1D /* ChineseFoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F909C26BD001D00F98C1D /* ChineseFoodViewController.swift */; };
+		DD3F90A126BD12B900F98C1D /* ChickenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F90A026BD12B900F98C1D /* ChickenViewController.swift */; };
+		DD3F90A326BD132E00F98C1D /* KoreaFoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F90A226BD132E00F98C1D /* KoreaFoodViewController.swift */; };
+		DD3F90A526BD137000F98C1D /* BurgerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F90A426BD137000F98C1D /* BurgerViewController.swift */; };
+		DD3F90A726BD13BB00F98C1D /* PizzaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F90A626BD13BB00F98C1D /* PizzaViewController.swift */; };
+		DD3F90A926BD140600F98C1D /* TangViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F90A826BD140600F98C1D /* TangViewController.swift */; };
+		DD3F90AB26BD144700F98C1D /* CafeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F90AA26BD144700F98C1D /* CafeViewController.swift */; };
+		DD3F90AD26BD148600F98C1D /* BunsikViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F90AC26BD148600F98C1D /* BunsikViewController.swift */; };
+		DD3F90AF26BD14C900F98C1D /* OnePersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F90AE26BD14C900F98C1D /* OnePersonViewController.swift */; };
+		DD3F90B126BD150C00F98C1D /* JapaneseFoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F90B026BD150C00F98C1D /* JapaneseFoodViewController.swift */; };
+		DD3F90B326BD157400F98C1D /* NightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F90B226BD157400F98C1D /* NightViewController.swift */; };
+		DD3F90B526BD15B400F98C1D /* BossamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F90B426BD15B400F98C1D /* BossamViewController.swift */; };
+		DD3F90B726BD160700F98C1D /* FranchiseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F90B626BD160700F98C1D /* FranchiseViewController.swift */; };
+		DD3F90B926BD165100F98C1D /* MartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F90B826BD165100F98C1D /* MartViewController.swift */; };
+		DD3F90BB26BD16B300F98C1D /* HealthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F90BA26BD16B300F98C1D /* HealthViewController.swift */; };
+		DD3F90BD26BD16E700F98C1D /* PetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F90BC26BD16E700F98C1D /* PetViewController.swift */; };
+		DD3F90C126BD209A00F98C1D /* MyStoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F90BF26BD209A00F98C1D /* MyStoreTableViewCell.swift */; };
+		DD3F90C226BD209A00F98C1D /* MyStoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3F90C026BD209A00F98C1D /* MyStoreTableViewCell.xib */; };
+		DD3F90C926BD614C00F98C1D /* hashTagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F90C726BD614C00F98C1D /* hashTagCollectionViewCell.swift */; };
+		DD3F90CA26BD614C00F98C1D /* hashTagCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3F90C826BD614C00F98C1D /* hashTagCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -169,6 +192,29 @@
 		DD3F908226BBE16F00F98C1D /* CurrentLocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocationVC.swift; sourceTree = "<group>"; };
 		DD3F908526BBE20400F98C1D /* CurrentLocationTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocationTVCell.swift; sourceTree = "<group>"; };
 		DD3F908626BBE20400F98C1D /* CurrentLocationTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrentLocationTVCell.xib; sourceTree = "<group>"; };
+		DD3F908B26BCBDA500F98C1D /* TransitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionViewController.swift; sourceTree = "<group>"; };
+		DD3F909826BCF5C800F98C1D /* ParentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ParentViewController.swift; path = ../ParentViewController.swift; sourceTree = "<group>"; };
+		DD3F909A26BCF6EA00F98C1D /* AllViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AllViewController.swift; path = ../AllViewController.swift; sourceTree = "<group>"; };
+		DD3F909C26BD001D00F98C1D /* ChineseFoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChineseFoodViewController.swift; path = ../ChineseFoodViewController.swift; sourceTree = "<group>"; };
+		DD3F90A026BD12B900F98C1D /* ChickenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChickenViewController.swift; path = ../ChickenViewController.swift; sourceTree = "<group>"; };
+		DD3F90A226BD132E00F98C1D /* KoreaFoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoreaFoodViewController.swift; sourceTree = "<group>"; };
+		DD3F90A426BD137000F98C1D /* BurgerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurgerViewController.swift; sourceTree = "<group>"; };
+		DD3F90A626BD13BB00F98C1D /* PizzaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaViewController.swift; sourceTree = "<group>"; };
+		DD3F90A826BD140600F98C1D /* TangViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TangViewController.swift; sourceTree = "<group>"; };
+		DD3F90AA26BD144700F98C1D /* CafeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeViewController.swift; sourceTree = "<group>"; };
+		DD3F90AC26BD148600F98C1D /* BunsikViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BunsikViewController.swift; sourceTree = "<group>"; };
+		DD3F90AE26BD14C900F98C1D /* OnePersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnePersonViewController.swift; sourceTree = "<group>"; };
+		DD3F90B026BD150C00F98C1D /* JapaneseFoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapaneseFoodViewController.swift; sourceTree = "<group>"; };
+		DD3F90B226BD157400F98C1D /* NightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightViewController.swift; sourceTree = "<group>"; };
+		DD3F90B426BD15B400F98C1D /* BossamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BossamViewController.swift; sourceTree = "<group>"; };
+		DD3F90B626BD160700F98C1D /* FranchiseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FranchiseViewController.swift; sourceTree = "<group>"; };
+		DD3F90B826BD165100F98C1D /* MartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MartViewController.swift; sourceTree = "<group>"; };
+		DD3F90BA26BD16B300F98C1D /* HealthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthViewController.swift; sourceTree = "<group>"; };
+		DD3F90BC26BD16E700F98C1D /* PetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetViewController.swift; sourceTree = "<group>"; };
+		DD3F90BF26BD209A00F98C1D /* MyStoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStoreTableViewCell.swift; sourceTree = "<group>"; };
+		DD3F90C026BD209A00F98C1D /* MyStoreTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyStoreTableViewCell.xib; sourceTree = "<group>"; };
+		DD3F90C726BD614C00F98C1D /* hashTagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hashTagCollectionViewCell.swift; sourceTree = "<group>"; };
+		DD3F90C826BD614C00F98C1D /* hashTagCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = hashTagCollectionViewCell.xib; sourceTree = "<group>"; };
 		F9C1772B30741BA88AC342B9 /* Pods-Yogiyo_test_iOS_Flora.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yogiyo_test_iOS_Flora.release.xcconfig"; path = "Target Support Files/Pods-Yogiyo_test_iOS_Flora/Pods-Yogiyo_test_iOS_Flora.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -279,6 +325,7 @@
 				DD3029A426B5761700ABEB63 /* HomeStoryboard.storyboard */,
 				DD3F902D26BA42E500F98C1D /* HomeTab */,
 				DD3F908126BBE13800F98C1D /* Location */,
+				DD3F908D26BCDC0100F98C1D /* FoodCategory */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -477,7 +524,8 @@
 		DD3F902426B9977000F98C1D /* Action */ = {
 			isa = PBXGroup;
 			children = (
-				DD3F902726B9979800F98C1D /* AlertViewController.swift */,
+				DD3F908A26BCBD6E00F98C1D /* Transition */,
+				DD3F908926BCBD5F00F98C1D /* Alert */,
 			);
 			path = Action;
 			sourceTree = "<group>";
@@ -704,6 +752,67 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		DD3F908926BCBD5F00F98C1D /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F902726B9979800F98C1D /* AlertViewController.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		DD3F908A26BCBD6E00F98C1D /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F908B26BCBDA500F98C1D /* TransitionViewController.swift */,
+			);
+			path = Transition;
+			sourceTree = "<group>";
+		};
+		DD3F908D26BCDC0100F98C1D /* FoodCategory */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F909826BCF5C800F98C1D /* ParentViewController.swift */,
+				DD3F90CB26BD656500F98C1D /* hashTagCollectionView */,
+				DD3F909A26BCF6EA00F98C1D /* AllViewController.swift */,
+				DD3F90BE26BD203E00F98C1D /* Cell */,
+				DD3F909C26BD001D00F98C1D /* ChineseFoodViewController.swift */,
+				DD3F90A026BD12B900F98C1D /* ChickenViewController.swift */,
+				DD3F90A226BD132E00F98C1D /* KoreaFoodViewController.swift */,
+				DD3F90A426BD137000F98C1D /* BurgerViewController.swift */,
+				DD3F90A626BD13BB00F98C1D /* PizzaViewController.swift */,
+				DD3F90A826BD140600F98C1D /* TangViewController.swift */,
+				DD3F90AA26BD144700F98C1D /* CafeViewController.swift */,
+				DD3F90AC26BD148600F98C1D /* BunsikViewController.swift */,
+				DD3F90AE26BD14C900F98C1D /* OnePersonViewController.swift */,
+				DD3F90B026BD150C00F98C1D /* JapaneseFoodViewController.swift */,
+				DD3F90B226BD157400F98C1D /* NightViewController.swift */,
+				DD3F90B426BD15B400F98C1D /* BossamViewController.swift */,
+				DD3F90B626BD160700F98C1D /* FranchiseViewController.swift */,
+				DD3F90B826BD165100F98C1D /* MartViewController.swift */,
+				DD3F90BA26BD16B300F98C1D /* HealthViewController.swift */,
+				DD3F90BC26BD16E700F98C1D /* PetViewController.swift */,
+			);
+			path = FoodCategory;
+			sourceTree = "<group>";
+		};
+		DD3F90BE26BD203E00F98C1D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F90BF26BD209A00F98C1D /* MyStoreTableViewCell.swift */,
+				DD3F90C026BD209A00F98C1D /* MyStoreTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		DD3F90CB26BD656500F98C1D /* hashTagCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F90C726BD614C00F98C1D /* hashTagCollectionViewCell.swift */,
+				DD3F90C826BD614C00F98C1D /* hashTagCollectionViewCell.xib */,
+			);
+			path = hashTagCollectionView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -784,6 +893,7 @@
 				DD3F906F26BBB30000F98C1D /* MiddleBannerTVCell.xib in Resources */,
 				DD3F8FF126B8520F00F98C1D /* beforeLoginTVCell.xib in Resources */,
 				DD3F8FFF26B8DFE000F98C1D /* CompleteLoginVC.xib in Resources */,
+				DD3F90CA26BD614C00F98C1D /* hashTagCollectionViewCell.xib in Resources */,
 				DD3F907F26BBBF3100F98C1D /* HotOurStoreCVCell.xib in Resources */,
 				DD3F904326BA63BE00F98C1D /* FourthBtnConVC.xib in Resources */,
 				DD3F901826B9045C00F98C1D /* CategotyViewController.xib in Resources */,
@@ -793,6 +903,7 @@
 				DD3F905A26BA9E3F00F98C1D /* ExpressTVCell.xib in Resources */,
 				DD3029A926B576DC00ABEB63 /* JjimStoryboard.storyboard in Resources */,
 				DD3F905E26BAA3A000F98C1D /* ExpressCVCell.xib in Resources */,
+				DD3F90C226BD209A00F98C1D /* MyStoreTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -846,36 +957,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD3F908726BBE20400F98C1D /* CurrentLocationTVCell.swift in Sources */,
+				DD3F90AF26BD14C900F98C1D /* OnePersonViewController.swift in Sources */,
 				DD3F8FFA26B8DFA200F98C1D /* completeLoginTVCell.swift in Sources */,
 				DD3F907226BBB31C00F98C1D /* MiddleBannerCVCell.swift in Sources */,
 				DD3F900E26B8FB6200F98C1D /* Border.swift in Sources */,
+				DD3F90A926BD140600F98C1D /* TangViewController.swift in Sources */,
+				DD3F90B926BD165100F98C1D /* MartViewController.swift in Sources */,
 				DD3F901F26B95BF400F98C1D /* SignUpDataManager.swift in Sources */,
 				DD3F903D26BA582F00F98C1D /* FourthButtonTVCell.swift in Sources */,
 				DD3F902326B9973E00F98C1D /* String.swift in Sources */,
+				DD3F90BD26BD16E700F98C1D /* PetViewController.swift in Sources */,
 				DD3F901726B9045C00F98C1D /* CategotyViewController.swift in Sources */,
 				DD3029BD26B61A8900ABEB63 /* NavigationViewController.swift in Sources */,
+				DD3F90A326BD132E00F98C1D /* KoreaFoodViewController.swift in Sources */,
 				DD3F8FE926B7B14800F98C1D /* userDataTest.swift in Sources */,
 				DD3F904226BA63BE00F98C1D /* FourthBtnConVC.swift in Sources */,
 				DD3F904C26BA72FC00F98C1D /* CategoryFoodConVC.swift in Sources */,
+				DD3F90AB26BD144700F98C1D /* CafeViewController.swift in Sources */,
 				DD30297E26B5512E00ABEB63 /* MyYogiyoViewController.swift in Sources */,
 				DD30297726B5482000ABEB63 /* BaseViewController.swift in Sources */,
+				DD3F90A726BD13BB00F98C1D /* PizzaViewController.swift in Sources */,
+				DD3F90C126BD209A00F98C1D /* MyStoreTableViewCell.swift in Sources */,
+				DD3F90A126BD12B900F98C1D /* ChickenViewController.swift in Sources */,
 				DD3F902A26B9986700F98C1D /* UIButton.swift in Sources */,
 				DD3029B326B5774300ABEB63 /* OrderViewController.swift in Sources */,
+				DD3F90B726BD160700F98C1D /* FranchiseViewController.swift in Sources */,
+				DD3F90BB26BD16B300F98C1D /* HealthViewController.swift in Sources */,
 				DD3F8FF026B8520F00F98C1D /* beforeLoginTVCell.swift in Sources */,
 				DD30298026B5515800ABEB63 /* SocialLoginViewController.swift in Sources */,
 				DD3F908326BBE16F00F98C1D /* CurrentLocationVC.swift in Sources */,
+				DD3F908C26BCBDA500F98C1D /* TransitionViewController.swift in Sources */,
 				DD3F905926BA9E3F00F98C1D /* ExpressTVCell.swift in Sources */,
 				DD30299926B5695500ABEB63 /* emailLoginViewController.swift in Sources */,
 				DD3F900B26B8EAF200F98C1D /* CouponConVC.swift in Sources */,
+				DD3F90AD26BD148600F98C1D /* BunsikViewController.swift in Sources */,
 				DD3029A726B5762A00ABEB63 /* HomeViewController.swift in Sources */,
+				DD3F909926BCF5C800F98C1D /* ParentViewController.swift in Sources */,
 				DD3F902826B9979800F98C1D /* AlertViewController.swift in Sources */,
+				DD3F909D26BD001D00F98C1D /* ChineseFoodViewController.swift in Sources */,
+				DD3F90B126BD150C00F98C1D /* JapaneseFoodViewController.swift in Sources */,
+				DD3F909B26BCF6EA00F98C1D /* AllViewController.swift in Sources */,
 				DD3F906626BAF2D800F98C1D /* SignInRequest.swift in Sources */,
 				DD3F902C26B9A05A00F98C1D /* SignUpRequest.swift in Sources */,
 				DD3F907A26BBBF0400F98C1D /* HotOurStoreTVCell.swift in Sources */,
 				DD3F905226BA820700F98C1D /* HashTageCVCell.swift in Sources */,
 				DD3029AD26B5770900ABEB63 /* SearchViewController.swift in Sources */,
+				DD3F90B526BD15B400F98C1D /* BossamViewController.swift in Sources */,
 				DD30299B26B5696400ABEB63 /* EmailSignUpViewController.swift in Sources */,
 				DD3F904726BA72C200F98C1D /* FoodCategoryTVCell.swift in Sources */,
+				DD3F90C926BD614C00F98C1D /* hashTagCollectionViewCell.swift in Sources */,
 				DD3F907E26BBBF3100F98C1D /* HotOurStoreCVCell.swift in Sources */,
 				DD3F900626B8EAB600F98C1D /* couponTableViewCell.swift in Sources */,
 				DD3F901D26B95A0B00F98C1D /* SignUpData.swift in Sources */,
@@ -886,6 +1016,8 @@
 				DD3F903126BA474700F98C1D /* BannerTVCell.swift in Sources */,
 				DD3029AB26B576EE00ABEB63 /* JjimViewController.swift in Sources */,
 				DD3F8FFE26B8DFE000F98C1D /* CompleteLoginVC.swift in Sources */,
+				DD3F90A526BD137000F98C1D /* BurgerViewController.swift in Sources */,
+				DD3F90B326BD157400F98C1D /* NightViewController.swift in Sources */,
 				DD3F903526BA4BA300F98C1D /* BannerCVCell.swift in Sources */,
 				DD30296126B53EB500ABEB63 /* SceneDelegate.swift in Sources */,
 				DD3F906E26BBB30000F98C1D /* MiddleBannerTVCell.swift in Sources */,

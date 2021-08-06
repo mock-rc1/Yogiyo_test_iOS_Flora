@@ -9,7 +9,9 @@ import Foundation
 import Alamofire
 
 struct SignUpDataManager {
+    // 싱글톤 인스턴스 생성 (여러 뷰컨에서 shared로 접근하면 같은 인스턴스에 접근 가능)
     static let shared = SignUpDataManager()
+    // 회원가입 URL
     let URL = "https://rc1-hardy.shop/users"
     
     func postSignUp(_ parameters: SignUpRequest, delegate: EmailSignUpViewController) {
@@ -20,7 +22,6 @@ struct SignUpDataManager {
                     // 성공했을 때
                     if response.isSuccess, let result = response.result {
                         delegate.didSuccessSignUp(result)
-                        
                     }
                     // 실패했을 때
                     else {

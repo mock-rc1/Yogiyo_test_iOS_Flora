@@ -53,6 +53,9 @@ class AlertViewController: BaseViewController {
         let cancelAction = UIAlertAction(title: "원래대로 돌리기", style: .cancel) { action in
             self.view.backgroundColor = .white
         }
+        let okAction = UIAlertAction(title: "확인", style: .default) { action in
+            
+        }
         //self.presentAlert(
           //  title: "커스텀 Action을 등록할 수 있습니다",
            // with: actionR, actionG, actionB, cancelAction

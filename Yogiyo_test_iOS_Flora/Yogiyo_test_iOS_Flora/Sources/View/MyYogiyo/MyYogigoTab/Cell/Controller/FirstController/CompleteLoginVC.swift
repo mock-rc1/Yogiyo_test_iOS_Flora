@@ -9,9 +9,17 @@ import UIKit
 
 class CompleteLoginVC: UIViewController {
 
+    @IBOutlet weak var userNameLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
     }
+    
+}
 
+extension CompleteLoginVC {
+    func didSuccessSignUp(_ result: SignUpResult) {
+            userNameLabel.text = result.jwt
+    }
 }

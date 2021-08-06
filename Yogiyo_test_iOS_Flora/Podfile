@@ -10,6 +10,7 @@ target 'Yogiyo_test_iOS_Flora' do
   pod 'naveridlogin-sdk-ios'
   pod 'FBSDKLoginKit'
   pod 'Alamofire', '~> 5.4'
+  pod 'XLPagerTabStrip', '~> 9.0'
   # Pods for Yogiyo_test_iOS_Flora
 
 end

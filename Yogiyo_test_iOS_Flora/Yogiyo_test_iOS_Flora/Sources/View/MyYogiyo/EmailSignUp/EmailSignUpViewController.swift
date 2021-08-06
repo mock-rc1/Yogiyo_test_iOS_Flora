@@ -7,6 +7,7 @@
 
 // 해당 페이지에서 고칠 것
 // 1. 가리기보기 버튼이 너무 오른쪽에 붙어있음
+// 2. 회원가입 되면 탭 요기요 쪽으로 화면전환
 
 import UIKit
 
@@ -171,9 +172,11 @@ class EmailSignUpViewController: BaseViewController {
 extension EmailSignUpViewController {
     // 회원가입에 성공했을 때
     func didSuccessSignUp(_ result: SignUpResult) {
-        guard let dvc = self.storyboard?.instantiateViewController(identifier: "MyYogiyoViewController")else{return}
-        self.navigationController?.pushViewController(dvc, animated: true)
-        self.presentAlert(title: "회원가입에 성공하였습니다", message: result.jwt)
+        self.presentAlert(title: "회원가입에 성공하였습니다", message: result.jwt, isCancelActionIncluded: true) { action in
+        
+            let mainTabBarController = UIStoryboard(name: "MyYogiyoStoryboard", bundle: nil).instantiateViewController(identifier: "MyYogiyoViewController")
+            self.changeRootViewController(mainTabBarController)
+        }
     }
     // 회원가입에 실패했을 때
     func failedToRequest(message: String) {

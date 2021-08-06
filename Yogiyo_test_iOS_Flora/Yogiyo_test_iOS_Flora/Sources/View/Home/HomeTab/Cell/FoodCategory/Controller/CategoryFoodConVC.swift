@@ -9,6 +9,8 @@ import UIKit
 
 class CategoryFoodConVC: UIViewController {
 
+    @IBOutlet weak var allFoodBtn: UIButton!
+
     var hashTag = ["#냉면","#갈비탕","#아이스크림","#밥","#식혜","#과자","#음료수"]
     @IBOutlet weak var hashTagCollectionView: UICollectionView!
     
@@ -27,7 +29,19 @@ class CategoryFoodConVC: UIViewController {
         hashTagCollectionView.delegate = self
         hashTagCollectionView.dataSource = self
     }
-
+    
+    @IBAction func allFoodBtnTap(_ sender: Any) {
+        
+        //let mainTabBarController = UIStoryboard(name: "HomeStoryboard", bundle: nil).instantiateViewController(identifier: "TabNavigationViewController")
+            //self.changeRootViewController(mainTabBarController)
+        
+        let storyboardVC = UIStoryboard(name: "HomeStoryboard", bundle: Bundle(for: ParentViewController.self)).instantiateViewController(withIdentifier: "ParentViewController") as! ParentViewController
+        
+        //navigationController?.pushViewController(storyboardVC, animated: true)
+        self.modalPresentationStyle = .fullScreen
+        present(storyboardVC, animated: true, completion: nil)
+    }
+    
 }
 
 extension CategoryFoodConVC: UICollectionViewDataSource, UICollectionViewDelegate {

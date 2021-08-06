@@ -1,5 +1,5 @@
 //
-//  ChickenViewController.swift
+//  JapaneseFoodViewController.swift
 //  Yogiyo_test_iOS_Flora
 //
 //  Created by 김수정 on 2021/08/06.
@@ -8,12 +8,12 @@
 import UIKit
 import XLPagerTabStrip
 
-class ChickenViewController: UINavigationController, IndicatorInfoProvider {
+class JapaneseFoodViewController: UINavigationController, IndicatorInfoProvider {
 
         override func viewDidLoad() {
             super.viewDidLoad()
 
-            
+            // Do any additional setup after loading the view.
         }
         
 
@@ -22,7 +22,7 @@ class ChickenViewController: UINavigationController, IndicatorInfoProvider {
         }
         
         func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
-            return IndicatorInfo(title: "치킨")
+            return IndicatorInfo(title: "일식/돈까스")
         }
 
     }

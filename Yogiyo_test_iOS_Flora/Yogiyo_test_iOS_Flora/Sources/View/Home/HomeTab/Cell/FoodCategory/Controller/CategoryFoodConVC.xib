@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CategoryFoodConVC" customModule="Yogiyo_test_iOS_Flora" customModuleProvider="target">
             <connections>
+                <outlet property="allFoodBtn" destination="RFo-06-pey" id="OLe-7n-C7W"/>
                 <outlet property="hashTagCollectionView" destination="NL7-Xh-Lw8" id="oeH-q7-Tdw"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -59,6 +60,9 @@
                                                                 <constraint firstAttribute="height" constant="58" id="oec-Re-cGf"/>
                                                             </constraints>
                                                             <state key="normal" image="전체"/>
+                                                            <connections>
+                                                                <action selector="allFoodBtnTap:" destination="-1" eventType="touchUpInside" id="Ymv-V7-qVa"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4qV-hm-rXO">
                                                             <rect key="frame" x="20.5" y="58" width="30" height="24"/>

@@ -9,10 +9,12 @@ import UIKit
 
 class MyYogiyoViewController: UIViewController {
     
+    lazy var dataManager: SignUpDataManager = SignUpDataManager()
+    
     @IBOutlet weak var MyYogiyoTableView: UITableView!
     
     // 로그인되면 화면 변경해주는거
-    var isLogin: Bool = false {
+    var isLogin: Bool = true {
         didSet { MyYogiyoTableView.reloadData() }
     }
     
@@ -86,7 +88,6 @@ extension MyYogiyoViewController: UITableViewDataSource, UITableViewDelegate {
                 
                 completeLoginVC = CompleteLoginVC(nibName: "CompleteLoginVC",
                                                   bundle: nil)
-                
                 // 셀에 컨트롤러의 View를 추가
                 cell.addSubview(completeLoginVC!.view)
                 
@@ -211,9 +212,9 @@ extension MyYogiyoViewController: UITableViewDataSource, UITableViewDelegate {
 //MARK: - API
 extension MyYogiyoViewController {
     
-    func didSuccessLoginAPI() {
-        
-        self.isLogin = true
-        
+    func didSuccessLoginAPI(_ result: SignUpResult) {
+        // 회원가입에 성공했을 때
+            self.isLogin = true
+            
     }
 }
