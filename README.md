@@ -226,7 +226,7 @@
 </details>
 
 <details>       
-<summary> 2021.08.06 금 </summary>      
+<summary> 2021.08.07 토 </summary>      
 <div markdown="1"> 
 
     1. 기획서의 변동사항 ❌
