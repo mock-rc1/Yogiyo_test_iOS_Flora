@@ -8,7 +8,7 @@
 import UIKit
 import XLPagerTabStrip
 
-class JapaneseFoodViewController: UINavigationController, IndicatorInfoProvider {
+class JapaneseFoodViewController: UIViewController, IndicatorInfoProvider {
 
         override func viewDidLoad() {
             super.viewDidLoad()

@@ -91,7 +91,7 @@ extension AllViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 40
+        return 30
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -99,7 +99,7 @@ extension AllViewController: UITableViewDelegate, UITableViewDataSource {
         if section == 0 {
             let headerView = UIView()
             headerView.backgroundColor = .white
-            headerView.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: 40)
+            headerView.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: 30)
             
             let titleLabel = UILabel()
             titleLabel.textColor = .black
@@ -113,7 +113,7 @@ extension AllViewController: UITableViewDelegate, UITableViewDataSource {
         else if section == 1 {
           let headerView = UIView()
           headerView.backgroundColor = .white
-          headerView.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: 40)
+          headerView.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: 30)
           
           let titleLabel = UILabel()
           titleLabel.textColor = .black
@@ -126,67 +126,4 @@ extension AllViewController: UITableViewDelegate, UITableViewDataSource {
         }
         return UIView()
     }
-    
-    
-//    // Returns the title of the section.
-//    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-//        return sections[section]
-//
-//    }
-    
-
-    
-//    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-//
-//        if section == 0 {
-//            let headerView = UIView()
-//            headerView.backgroundColor = .white
-//            headerView.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: 50)
-//
-//            let titleLabel = UILabel()
-//            titleLabel.textColor = .black
-//            titleLabel.text = "우리동네 플러스"
-//            titleLabel.frame = CGRect(x: 20, y: 0, width: headerView.frame.width, height: headerView.frame.height)
-//            headerView.addSubview(titleLabel)
-//
-//            return headerView
-//        }
-//        else if section == 1 {
-//          let headerView = UIView()
-//          headerView.backgroundColor = .white
-//          headerView.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: 30)
-//
-//          let titleLabel = UILabel()
-//          titleLabel.textColor = .black
-//          titleLabel.text = "요기요 등록 가게"
-//          titleLabel.frame = CGRect(x: 20, y: 0, width: headerView.frame.width, height: headerView.frame.height)
-//          headerView.addSubview(titleLabel)
-//
-//          return headerView
-//
-//        }
-//        return UIView()
-//    }
-    
-    
-//    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-//
-//        let headerHeight: CGFloat
-//        headerHeight = 21
-//
-////        switch section {
-////        case 0:
-////
-////        // hide the header
-////            //headerHeight = CGFloat.leastNonzeroMagnitude
-////        default:
-////            headerHeight = 21
-////        }
-//
-//        return headerHeight
-//    }
-    
-
-    
-    
 }

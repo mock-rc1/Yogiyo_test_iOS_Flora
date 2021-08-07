@@ -14,8 +14,9 @@ class MyYogiyoViewController: UIViewController {
     @IBOutlet weak var MyYogiyoTableView: UITableView!
     
     // 로그인되면 화면 변경해주는거
-    var isLogin: Bool = true {
-        didSet { MyYogiyoTableView.reloadData() }
+    var isLogin = true {
+        didSet {
+                MyYogiyoTableView.reloadData() }
     }
     
     // 로그인전
@@ -34,7 +35,6 @@ class MyYogiyoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //didSuccessLoginAPI()
         // 테이블뷰델리게이트
         MyYogiyoTableView.delegate = self
         MyYogiyoTableView.dataSource = self
@@ -56,7 +56,6 @@ class MyYogiyoViewController: UIViewController {
         MyYogiyoTableView.register(UINib(nibName: "categoryTableViewCell", bundle: nil),
                                    forCellReuseIdentifier: "categoryTableViewCell")
     }
-    
 }
 
 extension MyYogiyoViewController: UITableViewDataSource, UITableViewDelegate {
@@ -130,6 +129,7 @@ extension MyYogiyoViewController: UITableViewDataSource, UITableViewDelegate {
                 beforeLoginVC!.didMove(toParent: self)
                 
                 return cell
+                
             }
             
         case 1:
@@ -157,7 +157,6 @@ extension MyYogiyoViewController: UITableViewDataSource, UITableViewDelegate {
             couponVC!.didMove(toParent: self)
             
             return cell
-            
             
         case 2:
             
@@ -214,7 +213,8 @@ extension MyYogiyoViewController {
     
     func didSuccessLoginAPI(_ result: SignUpResult) {
         // 회원가입에 성공했을 때
-            self.isLogin = true
-            
+        self.isLogin = true
+        
+        
     }
 }

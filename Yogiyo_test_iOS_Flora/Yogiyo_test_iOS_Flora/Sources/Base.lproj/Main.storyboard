@@ -6,10 +6,24 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Item-->
+        <scene sceneID="BEQ-dF-JHK">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="gLP-Pc-WNA" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="FoW-DE-R5g"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nZD-zw-oea">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bRe-Zd-9Yh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1988" y="-21"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Uoj-z3-BNR">
             <objects>
                 <tabBarController storyboardIdentifier="MainTabBarController" id="z7p-Qn-5gZ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="btz-Z0-bko"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sNm-OZ-L9u">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -27,27 +41,29 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dpC-Ou-R2K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="87" y="-87"/>
+            <point key="canvasLocation" x="-971" y="-61"/>
         </scene>
         <!--HomeViewController-->
         <scene sceneID="cOf-EY-5e4">
             <objects>
-                <viewControllerPlaceholder storyboardName="HomeStoryboard" referencedIdentifier="HomeViewController" id="rhw-uh-pMN" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="HomeViewController" storyboardName="HomeStoryboard" referencedIdentifier="HomeViewController" id="rhw-uh-pMN" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="cLb-yw-KVP"/>
+                    <navigationItem key="navigationItem" id="m1L-R4-lON"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yC0-Sc-jKp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="898" y="-253"/>
+            <point key="canvasLocation" x="8" y="-196"/>
         </scene>
         <!--JjimViewController-->
         <scene sceneID="uOe-pP-YEu">
             <objects>
                 <viewControllerPlaceholder storyboardName="JjimStoryboard" referencedIdentifier="JjimViewController" id="urg-Jq-h2n" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="b7T-mb-fcn"/>
+                    <navigationItem key="navigationItem" id="LpE-Py-g5x"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hOa-dr-5hQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="891" y="-198"/>
+            <point key="canvasLocation" x="1" y="-141"/>
         </scene>
         <!--SearchViewController-->
         <scene sceneID="vU0-mQ-6nD">
@@ -57,7 +73,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5pw-tV-Ck3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="903" y="-139"/>
+            <point key="canvasLocation" x="13" y="-82"/>
         </scene>
         <!--OrderViewController-->
         <scene sceneID="sa8-A4-6VD">
@@ -67,7 +83,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="idZ-54-zB4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="898" y="-78"/>
+            <point key="canvasLocation" x="8" y="-21"/>
         </scene>
         <!--MyYogiyoViewController-->
         <scene sceneID="aPu-oL-uML">
@@ -77,7 +93,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E3e-XF-QGD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="914" y="-21"/>
+            <point key="canvasLocation" x="23" y="36"/>
         </scene>
     </scenes>
 </document>

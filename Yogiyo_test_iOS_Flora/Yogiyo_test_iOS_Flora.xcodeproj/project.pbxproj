@@ -108,6 +108,9 @@
 		DD3F90C226BD209A00F98C1D /* MyStoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3F90C026BD209A00F98C1D /* MyStoreTableViewCell.xib */; };
 		DD3F90C926BD614C00F98C1D /* hashTagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F90C726BD614C00F98C1D /* hashTagCollectionViewCell.swift */; };
 		DD3F90CA26BD614C00F98C1D /* hashTagCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3F90C826BD614C00F98C1D /* hashTagCollectionViewCell.xib */; };
+		DD3F90CD26BD91B900F98C1D /* restaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F90CC26BD91B900F98C1D /* restaurantViewController.swift */; };
+		DD3F90F726BE10DF00F98C1D /* HashTagVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F90F526BE10DF00F98C1D /* HashTagVC.swift */; };
+		DD3F90F826BE10DF00F98C1D /* HashTagVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3F90F626BE10DF00F98C1D /* HashTagVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -215,6 +218,9 @@
 		DD3F90C026BD209A00F98C1D /* MyStoreTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyStoreTableViewCell.xib; sourceTree = "<group>"; };
 		DD3F90C726BD614C00F98C1D /* hashTagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hashTagCollectionViewCell.swift; sourceTree = "<group>"; };
 		DD3F90C826BD614C00F98C1D /* hashTagCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = hashTagCollectionViewCell.xib; sourceTree = "<group>"; };
+		DD3F90CC26BD91B900F98C1D /* restaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = restaurantViewController.swift; sourceTree = "<group>"; };
+		DD3F90F526BE10DF00F98C1D /* HashTagVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashTagVC.swift; sourceTree = "<group>"; };
+		DD3F90F626BE10DF00F98C1D /* HashTagVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HashTagVC.xib; sourceTree = "<group>"; };
 		F9C1772B30741BA88AC342B9 /* Pods-Yogiyo_test_iOS_Flora.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yogiyo_test_iOS_Flora.release.xcconfig"; path = "Target Support Files/Pods-Yogiyo_test_iOS_Flora/Pods-Yogiyo_test_iOS_Flora.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -285,7 +291,7 @@
 				DD30296426B53EB500ABEB63 /* Main.storyboard */,
 				DD3F902426B9977000F98C1D /* Action */,
 				DD3029B626B6195500ABEB63 /* View */,
-				DD3F901926B9584200F98C1D /* New Group */,
+				DD3F901926B9584200F98C1D /* Networkk */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -293,7 +299,7 @@
 		DD30297426B547D600ABEB63 /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
-				DD3F8FEA26B7FB4900F98C1D /* New Group */,
+				DD3F8FEA26B7FB4900F98C1D /* Extensionn */,
 				DD30297526B547FE00ABEB63 /* Base */,
 			);
 			path = Configuration;
@@ -326,6 +332,7 @@
 				DD3F902D26BA42E500F98C1D /* HomeTab */,
 				DD3F908126BBE13800F98C1D /* Location */,
 				DD3F908D26BCDC0100F98C1D /* FoodCategory */,
+				DD3F90CE26BD91C700F98C1D /* Restaurant */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -363,7 +370,7 @@
 				DD30297A26B54F9B00ABEB63 /* MyYogiyoStoryboard.storyboard */,
 				DD3029C826B66CDC00ABEB63 /* MyYogigoTab */,
 				DD3029C926B66D1700ABEB63 /* SocialLogin */,
-				DD3029CA26B66D4C00ABEB63 /* emailLogin */,
+				DD3029CA26B66D4C00ABEB63 /* EmailLogin */,
 				DD3029CB26B66D8C00ABEB63 /* EmailSignUp */,
 			);
 			path = MyYogiyo;
@@ -388,12 +395,12 @@
 			path = SocialLogin;
 			sourceTree = "<group>";
 		};
-		DD3029CA26B66D4C00ABEB63 /* emailLogin */ = {
+		DD3029CA26B66D4C00ABEB63 /* EmailLogin */ = {
 			isa = PBXGroup;
 			children = (
 				DD30299826B5695500ABEB63 /* emailLoginViewController.swift */,
 			);
-			path = emailLogin;
+			path = EmailLogin;
 			sourceTree = "<group>";
 		};
 		DD3029CB26B66D8C00ABEB63 /* EmailSignUp */ = {
@@ -404,7 +411,7 @@
 			path = EmailSignUp;
 			sourceTree = "<group>";
 		};
-		DD3F8FEA26B7FB4900F98C1D /* New Group */ = {
+		DD3F8FEA26B7FB4900F98C1D /* Extensionn */ = {
 			isa = PBXGroup;
 			children = (
 				DD3F8FEB26B7FB8900F98C1D /* UIViewController.swift */,
@@ -412,7 +419,7 @@
 				DD3F902226B9973E00F98C1D /* String.swift */,
 				DD3F902926B9986700F98C1D /* UIButton.swift */,
 			);
-			path = "New Group";
+			path = Extensionn;
 			sourceTree = "<group>";
 		};
 		DD3F8FF226B8521D00F98C1D /* Cell */ = {
@@ -494,13 +501,13 @@
 			path = ThirdController;
 			sourceTree = "<group>";
 		};
-		DD3F901926B9584200F98C1D /* New Group */ = {
+		DD3F901926B9584200F98C1D /* Networkk */ = {
 			isa = PBXGroup;
 			children = (
 				DD3F905F26BAF27400F98C1D /* SignIn */,
 				DD3F901A26B9588100F98C1D /* SignUp */,
 			);
-			path = "New Group";
+			path = Networkk;
 			sourceTree = "<group>";
 		};
 		DD3F901A26B9588100F98C1D /* SignUp */ = {
@@ -772,6 +779,8 @@
 			isa = PBXGroup;
 			children = (
 				DD3F909826BCF5C800F98C1D /* ParentViewController.swift */,
+				DD3F90F526BE10DF00F98C1D /* HashTagVC.swift */,
+				DD3F90F626BE10DF00F98C1D /* HashTagVC.xib */,
 				DD3F90CB26BD656500F98C1D /* hashTagCollectionView */,
 				DD3F909A26BCF6EA00F98C1D /* AllViewController.swift */,
 				DD3F90BE26BD203E00F98C1D /* Cell */,
@@ -811,6 +820,14 @@
 				DD3F90C826BD614C00F98C1D /* hashTagCollectionViewCell.xib */,
 			);
 			path = hashTagCollectionView;
+			sourceTree = "<group>";
+		};
+		DD3F90CE26BD91C700F98C1D /* Restaurant */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F90CC26BD91B900F98C1D /* restaurantViewController.swift */,
+			);
+			path = Restaurant;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -894,6 +911,7 @@
 				DD3F8FF126B8520F00F98C1D /* beforeLoginTVCell.xib in Resources */,
 				DD3F8FFF26B8DFE000F98C1D /* CompleteLoginVC.xib in Resources */,
 				DD3F90CA26BD614C00F98C1D /* hashTagCollectionViewCell.xib in Resources */,
+				DD3F90F826BE10DF00F98C1D /* HashTagVC.xib in Resources */,
 				DD3F907F26BBBF3100F98C1D /* HotOurStoreCVCell.xib in Resources */,
 				DD3F904326BA63BE00F98C1D /* FourthBtnConVC.xib in Resources */,
 				DD3F901826B9045C00F98C1D /* CategotyViewController.xib in Resources */,
@@ -1011,8 +1029,10 @@
 				DD3F901D26B95A0B00F98C1D /* SignUpData.swift in Sources */,
 				DD3F8FEC26B7FB8900F98C1D /* UIViewController.swift in Sources */,
 				DD3F906126BAF2A100F98C1D /* SignInDataManager.swift in Sources */,
+				DD3F90F726BE10DF00F98C1D /* HashTagVC.swift in Sources */,
 				DD3F905D26BAA3A000F98C1D /* ExpressCVCell.swift in Sources */,
 				DD30295F26B53EB500ABEB63 /* AppDelegate.swift in Sources */,
+				DD3F90CD26BD91B900F98C1D /* restaurantViewController.swift in Sources */,
 				DD3F903126BA474700F98C1D /* BannerTVCell.swift in Sources */,
 				DD3029AB26B576EE00ABEB63 /* JjimViewController.swift in Sources */,
 				DD3F8FFE26B8DFE000F98C1D /* CompleteLoginVC.swift in Sources */,

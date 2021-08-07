@@ -32,14 +32,14 @@ class CategoryFoodConVC: UIViewController {
     
     @IBAction func allFoodBtnTap(_ sender: Any) {
         
-        //let mainTabBarController = UIStoryboard(name: "HomeStoryboard", bundle: nil).instantiateViewController(identifier: "TabNavigationViewController")
+        //let mainTabBarController = UIStoryboard(name: "HomeStoryboard", bundle: nil).instantiateViewController(identifier: "HomeViewController")
             //self.changeRootViewController(mainTabBarController)
         
-        let storyboardVC = UIStoryboard(name: "HomeStoryboard", bundle: Bundle(for: ParentViewController.self)).instantiateViewController(withIdentifier: "ParentViewController") as! ParentViewController
+        //let storyboardVC = UIStoryboard(name: "HomeStoryboard", bundle: Bundle(for: HomeViewController.self)).instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
         
         //navigationController?.pushViewController(storyboardVC, animated: true)
-        self.modalPresentationStyle = .fullScreen
-        present(storyboardVC, animated: true, completion: nil)
+        //self.modalPresentationStyle = .fullScreen
+        //present(storyboardVC, animated: true, completion: nil)
     }
     
 }

@@ -8,7 +8,7 @@
 import UIKit
 import XLPagerTabStrip
 
-class BossamViewController: UINavigationController, IndicatorInfoProvider {
+class BossamViewController: UIViewController, IndicatorInfoProvider {
 
         override func viewDidLoad() {
             super.viewDidLoad()

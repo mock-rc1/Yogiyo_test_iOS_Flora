@@ -8,7 +8,7 @@
 import UIKit
 import XLPagerTabStrip
 
-class NightViewController: UINavigationController, IndicatorInfoProvider {
+class NightViewController: UIViewController, IndicatorInfoProvider {
 
         override func viewDidLoad() {
             super.viewDidLoad()

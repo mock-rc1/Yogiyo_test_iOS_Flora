@@ -20,8 +20,8 @@ class hashTagCollectionViewCell: UICollectionViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        hashTagUIVIew.layer.cornerRadius = 20
-        hashTagUIVIew.layer.borderColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
+        hashTagUIVIew.layer.cornerRadius = 15
+        hashTagUIVIew.layer.borderColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
         hashTagUIVIew.layer.borderWidth = 0.5
     }
 

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+
 // 변수명 에이피아이 명세서랑 같게
 struct SignUpRequest: Encodable {
     var userEmail: String

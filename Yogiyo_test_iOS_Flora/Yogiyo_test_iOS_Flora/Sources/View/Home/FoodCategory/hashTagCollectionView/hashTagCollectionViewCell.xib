@@ -11,21 +11,20 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="hashTagCollectionViewCell" id="gTV-IL-0wX" customClass="hashTagCollectionViewCell" customModule="Yogiyo_test_iOS_Flora" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="108" height="64"/>
+            <rect key="frame" x="0.0" y="0.0" width="330" height="64"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="108" height="64"/>
+                <rect key="frame" x="0.0" y="0.0" width="330" height="64"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="70J-DN-XgO">
-                        <rect key="frame" x="20" y="0.0" width="68" height="64"/>
+                        <rect key="frame" x="0.0" y="0.0" width="330" height="64"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dTJ-z8-QMh">
-                                <rect key="frame" x="0.0" y="10" width="68" height="44"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <rect key="frame" x="0.0" y="10" width="330" height="44"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTe-lE-5fV">
-                                <rect key="frame" x="8" y="24" width="52.5" height="16"/>
+                                <rect key="frame" x="139" y="24" width="52.5" height="16"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button" image="chevron.down" catalog="system">
@@ -50,24 +49,21 @@
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="70J-DN-XgO" secondAttribute="bottom" id="ERD-BE-Um8"/>
                 <constraint firstItem="70J-DN-XgO" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="F8O-Pw-k03"/>
-                <constraint firstAttribute="trailing" secondItem="70J-DN-XgO" secondAttribute="trailing" constant="20" id="m5t-dx-aOM"/>
-                <constraint firstItem="70J-DN-XgO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="q9J-K8-0Qu"/>
+                <constraint firstAttribute="trailing" secondItem="70J-DN-XgO" secondAttribute="trailing" id="m5t-dx-aOM"/>
+                <constraint firstItem="70J-DN-XgO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="q9J-K8-0Qu"/>
             </constraints>
-            <size key="customSize" width="108" height="64"/>
+            <size key="customSize" width="330" height="64"/>
             <connections>
                 <outlet property="hashTagBtn" destination="PTe-lE-5fV" id="Nvs-J9-DdO"/>
                 <outlet property="hashTagUIVIew" destination="dTJ-z8-QMh" id="sEn-uH-rSa"/>
             </connections>
-            <point key="canvasLocation" x="82.608695652173921" y="87.053571428571431"/>
+            <point key="canvasLocation" x="243.47826086956525" y="87.053571428571431"/>
         </collectionViewCell>
     </objects>
     <resources>
         <image name="chevron.down" catalog="system" width="128" height="72"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

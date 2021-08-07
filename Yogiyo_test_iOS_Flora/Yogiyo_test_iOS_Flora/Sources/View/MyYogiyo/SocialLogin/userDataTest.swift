@@ -10,8 +10,6 @@ import UIKit
 
 class userMainData {
     static let shared = userMainData()
-    
     var loginUser : String?
-    
     private init(){}
 }

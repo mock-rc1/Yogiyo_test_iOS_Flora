@@ -8,14 +8,14 @@
 import UIKit
 
 class CompleteLoginVC: UIViewController {
+    
+    lazy var dataManager: SignInDataManager = SignInDataManager()
 
     @IBOutlet weak var userNameLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
 
     }
-    
 }
 
 extension CompleteLoginVC {

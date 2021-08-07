@@ -8,7 +8,7 @@
 import UIKit
 import XLPagerTabStrip
 
-class PizzaViewController: UINavigationController, IndicatorInfoProvider {
+class PizzaViewController: UIViewController, IndicatorInfoProvider {
 
         override func viewDidLoad() {
             super.viewDidLoad()

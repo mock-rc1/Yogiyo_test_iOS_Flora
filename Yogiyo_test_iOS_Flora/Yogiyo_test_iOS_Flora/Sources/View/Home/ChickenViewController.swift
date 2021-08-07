@@ -8,7 +8,7 @@
 import UIKit
 import XLPagerTabStrip
 
-class ChickenViewController: UINavigationController, IndicatorInfoProvider {
+class ChickenViewController: UIViewController, IndicatorInfoProvider {
 
         override func viewDidLoad() {
             super.viewDidLoad()

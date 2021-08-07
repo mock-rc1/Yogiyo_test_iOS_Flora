@@ -5,10 +5,13 @@ import XLPagerTabStrip
 
 class ParentViewController: ButtonBarPagerTabStripViewController {
     
-    @IBOutlet weak var hashTagCollectionView: UICollectionView!
+    @IBOutlet weak var hashTagUIView: UIView!
+    var hashTagController : HashTagVC?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setController()
         
         // change selected bar color
         settings.style.buttonBarBackgroundColor = .white
@@ -57,6 +60,30 @@ class ParentViewController: ButtonBarPagerTabStripViewController {
         return [child_1, child_2, child_3, child_4,child_5,child_6,child_7,child_8,child_9,child_10,child_11,child_12,child_13,child_14,child_15,child_16,child_17]
     }
     
+    func setController() {
+        hashTagController = HashTagVC(nibName: "HashTagVC",
+                                          bundle: nil)
+        
+        // 셀에 컨트롤러의 View를 추가
+        hashTagUIView.addSubview(hashTagController!.view)
+        
+        // 하위 컨트롤러를 상위 컨트롤러에 추가
+        self.addChild(hashTagController!)
+        
+        // autolayout
+        hashTagController!.view.translatesAutoresizingMaskIntoConstraints = false
+
+        //        row1.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: space).isActive = true row1.rightAnchor.constraint(equalTo: self.view.rightAnchor, constant: -space).isActive = true row1.heightAnchor.constraint(equalToConstant: self.width).isActive = true row1.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -self.space-10).isActive = true
+
+     
+        hashTagController!.view.topAnchor.constraint(equalTo: self.hashTagUIView.topAnchor).isActive = true
+        hashTagController!.view.bottomAnchor.constraint(equalTo: self.hashTagUIView.bottomAnchor).isActive = true
+        hashTagController!.view.leftAnchor.constraint(equalTo: self.hashTagUIView.leftAnchor).isActive = true
+        hashTagController!.view.rightAnchor.constraint(equalTo: self.hashTagUIView.rightAnchor).isActive = true
+        
+        // 하위 컨트롤러가 컨트롤러 권한을 상위컨트롤러로 위임
+        hashTagController!.didMove(toParent: self)
+    }
   
     
 }

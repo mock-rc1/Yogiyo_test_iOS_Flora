@@ -8,7 +8,7 @@
 import UIKit
 import XLPagerTabStrip
 
-class BunsikViewController: UINavigationController, IndicatorInfoProvider {
+class BunsikViewController: UIViewController, IndicatorInfoProvider {
 
         override func viewDidLoad() {
             super.viewDidLoad()

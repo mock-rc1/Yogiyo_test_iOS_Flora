@@ -8,7 +8,7 @@
 import UIKit
 import XLPagerTabStrip
 
-class PetViewController: UINavigationController, IndicatorInfoProvider {
+class PetViewController: UIViewController, IndicatorInfoProvider {
         override func viewDidLoad() {
             super.viewDidLoad()
 

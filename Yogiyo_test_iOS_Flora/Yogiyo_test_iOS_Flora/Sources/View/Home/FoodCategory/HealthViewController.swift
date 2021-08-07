@@ -8,7 +8,7 @@
 import UIKit
 import XLPagerTabStrip
 
-class HealthViewController: UINavigationController, IndicatorInfoProvider {
+class HealthViewController: UIViewController, IndicatorInfoProvider {
 
         override func viewDidLoad() {
             super.viewDidLoad()

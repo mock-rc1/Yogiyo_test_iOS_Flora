@@ -8,7 +8,7 @@
 import UIKit
 import XLPagerTabStrip
 
-class TangViewController: UINavigationController, IndicatorInfoProvider {
+class TangViewController: UIViewController, IndicatorInfoProvider {
 
         override func viewDidLoad() {
             super.viewDidLoad()

@@ -8,7 +8,7 @@
 import UIKit
 import XLPagerTabStrip
 
-class MartViewController: UINavigationController, IndicatorInfoProvider {
+class MartViewController: UIViewController, IndicatorInfoProvider {
     
     override func viewDidLoad() {
         super.viewDidLoad()
