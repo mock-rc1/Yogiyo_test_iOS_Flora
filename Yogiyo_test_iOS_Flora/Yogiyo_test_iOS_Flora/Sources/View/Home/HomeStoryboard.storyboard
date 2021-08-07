@@ -111,6 +111,9 @@
                                         <state key="normal" image="chevron.left" catalog="system">
                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="18" scale="large" weight="thin"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="6bl-zi-Vhh" kind="show" id="fR1-IR-DwE"/>
+                                        </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="CdY-Et-hu1">
                                         <rect key="frame" x="158" y="16.5" width="98" height="13"/>
@@ -205,7 +208,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sk1-FA-mZj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-920" y="63"/>
+            <point key="canvasLocation" x="-100" y="797"/>
         </scene>
         <!--Cafe View Controller-->
         <scene sceneID="vTc-WS-ILP">
@@ -234,7 +237,7 @@
         <!--Restaurant View Controller-->
         <scene sceneID="bpa-j9-1zb">
             <objects>
-                <viewController storyboardIdentifier="restaurantViewController" id="6bl-zi-Vhh" customClass="restaurantViewController" customModule="Yogiyo_test_iOS_Flora" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="restaurantViewController" modalPresentationStyle="fullScreen" id="6bl-zi-Vhh" customClass="restaurantViewController" customModule="Yogiyo_test_iOS_Flora" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4sX-uB-oio">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -297,6 +300,7 @@
                             <constraint firstItem="EIa-lx-n9R" firstAttribute="top" secondItem="qKc-Ms-6Z2" secondAttribute="top" constant="12" id="x6f-BA-sQL"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="xtf-e9-bLr"/>
                     <connections>
                         <outlet property="RestaurantTableView" destination="GXS-oc-714" id="uHd-do-eKm"/>
                         <outlet property="backBtn" destination="EIa-lx-n9R" id="z7S-vS-3LD"/>
@@ -308,7 +312,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eQG-kF-OtN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-113.04347826086958" y="2341.0714285714284"/>
+            <point key="canvasLocation" x="-1036.231884057971" y="789.50892857142856"/>
         </scene>
         <!--Bunsik View Controller-->
         <scene sceneID="HJ3-3Y-Yvl">

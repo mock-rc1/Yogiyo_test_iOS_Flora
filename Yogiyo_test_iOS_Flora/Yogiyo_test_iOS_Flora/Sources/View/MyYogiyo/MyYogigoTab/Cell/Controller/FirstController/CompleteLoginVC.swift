@@ -14,7 +14,7 @@ class CompleteLoginVC: UIViewController {
     @IBOutlet weak var userNameLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print("CompleteLoginVC ViewDidLoad 호출 됐음!")
     }
 }
 

@@ -81,6 +81,8 @@ class emailLoginViewController: UIViewController {
         //self.showIndicator()
         let input = SignInRequest(userEmail: id, userPassword: password)
         dataManager.postSignIn(input, delegate: self)
+        UserDefaults.standard.set(id, forKey: "userId")
+        UserDefaults.standard.set(password, forKey: "userPw")
     }
     
     // '이메일로 회원가입' 버튼
@@ -116,6 +118,8 @@ extension emailLoginViewController {
         
         self.presentAlert(title: "로그인에 성공하였습니다", message: result.jwt, isCancelActionIncluded: true) {
             action in
+//            print("뭐나오나보장",result)
+            UserDefaults.standard.set(result.jwt, forKey: "userToken") // 토큰 저장
             guard let dvc = self.storyboard?.instantiateViewController(identifier: "MyYogiyoViewController")else{return}
             self.navigationController?.pushViewController(dvc, animated: true)
         }
@@ -123,5 +127,8 @@ extension emailLoginViewController {
     
     func failedToRequest(message: String) {
         self.presentAlert(title: message)
+        // 로그인 실패했을 시 저장했던 값 없애주기
+        UserDefaults.standard.removeObject(forKey: "userId")
+        UserDefaults.standard.removeObject(forKey: "userPw")
     }
 }

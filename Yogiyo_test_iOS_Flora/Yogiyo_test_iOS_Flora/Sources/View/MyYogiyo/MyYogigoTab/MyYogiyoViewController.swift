@@ -14,10 +14,10 @@ class MyYogiyoViewController: UIViewController {
     @IBOutlet weak var MyYogiyoTableView: UITableView!
     
     // 로그인되면 화면 변경해주는거
-    var isLogin = true {
-        didSet {
-                MyYogiyoTableView.reloadData() }
-    }
+//    var isLogin = false {
+//        didSet {
+//            MyYogiyoTableView.reloadData() }
+//    }
     
     // 로그인전
     var beforeLoginVC : BeforeLoginConVC?
@@ -56,7 +56,19 @@ class MyYogiyoViewController: UIViewController {
         MyYogiyoTableView.register(UINib(nibName: "categoryTableViewCell", bundle: nil),
                                    forCellReuseIdentifier: "categoryTableViewCell")
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+//        if let userToken = UserDefaults.standard.string(forKey: "userToken") {
+//            // 사용자가 로그인을 했다.
+//            // 로그인을 했으니 토큰이 있을 것이고 그 토큰을 가지고 유저 정보를 조회하는 API를 호출한다.
+//            // 그 API의 데이터를 뷰에 넣어준다.
+//        } else {
+//            // 사용자가 로그인을 하기 전이다.
+//        }
+    }
 }
+
 
 extension MyYogiyoViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -81,7 +93,7 @@ extension MyYogiyoViewController: UITableViewDataSource, UITableViewDelegate {
             // 로그인 성공 시, 호출되는 Cell
             // - true  : 유저의 정보를 보여주는 cell
             // - false : 비회원 상태를 보여주는 cell
-            if isLogin == true {
+            if let userToken = UserDefaults.standard.string(forKey: "userToken") {
                 // 로그인 성공 화면
                 let cell = MyYogiyoTableView.dequeueReusableCell(withIdentifier: "completeLoginTVCell",for: indexPath) as! completeLoginTVCell
                 
@@ -105,7 +117,7 @@ extension MyYogiyoViewController: UITableViewDataSource, UITableViewDelegate {
                 
                 return cell
                 
-            }else {
+            } else {
                 // 로그인 전 화면
                 let cell = MyYogiyoTableView.dequeueReusableCell(withIdentifier: "beforeLoginTVCell",for: indexPath) as! beforeLoginTVCell
                 
@@ -213,7 +225,7 @@ extension MyYogiyoViewController {
     
     func didSuccessLoginAPI(_ result: SignUpResult) {
         // 회원가입에 성공했을 때
-        self.isLogin = true
+//        self.isLogin = true
         
         
     }
