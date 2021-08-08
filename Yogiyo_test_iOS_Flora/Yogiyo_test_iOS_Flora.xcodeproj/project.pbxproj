@@ -111,6 +111,10 @@
 		DD3F90CD26BD91B900F98C1D /* restaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F90CC26BD91B900F98C1D /* restaurantViewController.swift */; };
 		DD3F90F726BE10DF00F98C1D /* HashTagVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F90F526BE10DF00F98C1D /* HashTagVC.swift */; };
 		DD3F90F826BE10DF00F98C1D /* HashTagVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3F90F626BE10DF00F98C1D /* HashTagVC.xib */; };
+		DD3F90FB26BEF25D00F98C1D /* HomeHashTagVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F90F926BEF25C00F98C1D /* HomeHashTagVC.swift */; };
+		DD3F90FC26BEF25D00F98C1D /* HomeHashTagVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3F90FA26BEF25C00F98C1D /* HomeHashTagVC.xib */; };
+		DD3F90FF26BEF73A00F98C1D /* TodayYogiTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F90FD26BEF73A00F98C1D /* TodayYogiTVCell.swift */; };
+		DD3F910026BEF73A00F98C1D /* TodayYogiTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3F90FE26BEF73A00F98C1D /* TodayYogiTVCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -221,6 +225,10 @@
 		DD3F90CC26BD91B900F98C1D /* restaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = restaurantViewController.swift; sourceTree = "<group>"; };
 		DD3F90F526BE10DF00F98C1D /* HashTagVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashTagVC.swift; sourceTree = "<group>"; };
 		DD3F90F626BE10DF00F98C1D /* HashTagVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HashTagVC.xib; sourceTree = "<group>"; };
+		DD3F90F926BEF25C00F98C1D /* HomeHashTagVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHashTagVC.swift; sourceTree = "<group>"; };
+		DD3F90FA26BEF25C00F98C1D /* HomeHashTagVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeHashTagVC.xib; sourceTree = "<group>"; };
+		DD3F90FD26BEF73A00F98C1D /* TodayYogiTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayYogiTVCell.swift; sourceTree = "<group>"; };
+		DD3F90FE26BEF73A00F98C1D /* TodayYogiTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodayYogiTVCell.xib; sourceTree = "<group>"; };
 		F9C1772B30741BA88AC342B9 /* Pods-Yogiyo_test_iOS_Flora.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yogiyo_test_iOS_Flora.release.xcconfig"; path = "Target Support Files/Pods-Yogiyo_test_iOS_Flora/Pods-Yogiyo_test_iOS_Flora.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -541,6 +549,10 @@
 			isa = PBXGroup;
 			children = (
 				DD3029A626B5762A00ABEB63 /* HomeViewController.swift */,
+				DD3F90F926BEF25C00F98C1D /* HomeHashTagVC.swift */,
+				DD3F90FA26BEF25C00F98C1D /* HomeHashTagVC.xib */,
+				DD3F90FD26BEF73A00F98C1D /* TodayYogiTVCell.swift */,
+				DD3F90FE26BEF73A00F98C1D /* TodayYogiTVCell.xib */,
 				DD3F902E26BA46D800F98C1D /* Cell */,
 			);
 			path = HomeTab;
@@ -893,6 +905,8 @@
 				DD3029AF26B5771300ABEB63 /* SearchStoryboard.storyboard in Resources */,
 				DD3F907B26BBBF0400F98C1D /* HotOurStoreTVCell.xib in Resources */,
 				DD3F903226BA474700F98C1D /* BannerTVCell.xib in Resources */,
+				DD3F90FC26BEF25D00F98C1D /* HomeHashTagVC.xib in Resources */,
+				DD3F910026BEF73A00F98C1D /* TodayYogiTVCell.xib in Resources */,
 				DD3F905326BA820700F98C1D /* HashTageCVCell.xib in Resources */,
 				DD3F903E26BA582F00F98C1D /* FourthButtonTVCell.xib in Resources */,
 				DD3F900726B8EAB600F98C1D /* couponTableViewCell.xib in Resources */,
@@ -985,6 +999,7 @@
 				DD3F903D26BA582F00F98C1D /* FourthButtonTVCell.swift in Sources */,
 				DD3F902326B9973E00F98C1D /* String.swift in Sources */,
 				DD3F90BD26BD16E700F98C1D /* PetViewController.swift in Sources */,
+				DD3F90FB26BEF25D00F98C1D /* HomeHashTagVC.swift in Sources */,
 				DD3F901726B9045C00F98C1D /* CategotyViewController.swift in Sources */,
 				DD3029BD26B61A8900ABEB63 /* NavigationViewController.swift in Sources */,
 				DD3F90A326BD132E00F98C1D /* KoreaFoodViewController.swift in Sources */,
@@ -1008,6 +1023,7 @@
 				DD3F905926BA9E3F00F98C1D /* ExpressTVCell.swift in Sources */,
 				DD30299926B5695500ABEB63 /* emailLoginViewController.swift in Sources */,
 				DD3F900B26B8EAF200F98C1D /* CouponConVC.swift in Sources */,
+				DD3F90FF26BEF73A00F98C1D /* TodayYogiTVCell.swift in Sources */,
 				DD3F90AD26BD148600F98C1D /* BunsikViewController.swift in Sources */,
 				DD3029A726B5762A00ABEB63 /* HomeViewController.swift in Sources */,
 				DD3F909926BCF5C800F98C1D /* ParentViewController.swift in Sources */,

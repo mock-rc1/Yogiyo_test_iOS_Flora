@@ -72,9 +72,6 @@ class ParentViewController: ButtonBarPagerTabStripViewController {
         
         // autolayout
         hashTagController!.view.translatesAutoresizingMaskIntoConstraints = false
-
-        //        row1.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: space).isActive = true row1.rightAnchor.constraint(equalTo: self.view.rightAnchor, constant: -space).isActive = true row1.heightAnchor.constraint(equalToConstant: self.width).isActive = true row1.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -self.space-10).isActive = true
-
      
         hashTagController!.view.topAnchor.constraint(equalTo: self.hashTagUIView.topAnchor).isActive = true
         hashTagController!.view.bottomAnchor.constraint(equalTo: self.hashTagUIView.bottomAnchor).isActive = true

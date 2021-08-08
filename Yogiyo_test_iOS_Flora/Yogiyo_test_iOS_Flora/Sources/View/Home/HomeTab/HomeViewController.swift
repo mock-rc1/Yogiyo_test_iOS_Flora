@@ -10,14 +10,17 @@ import UIKit
 class HomeViewController: UIViewController {
     // 섹션헤더뷰에 컬렉션뷰 넣을 수 있나? 아니면 셀 만들어서 그걸 코드로 넣을 수 있나? 해보기
     // 요즘뜨는 우리동네 부분 유아이 이상하니까 그냥 요기요 익스프레스 셀로 뿌려줘
-    let sections: [String] = ["배너", "버튼4개", "서치바아이콘", "요기요익스프레스","광고","요즘뜨는 우리동네가게", "요기서먹어요"]
+    let sections: [String] = ["배너", "버튼4개", "서치바아이콘", "요기요익스프레스","광고","요즘뜨는 우리동네가게", "요기서먹어요헤더","요기서먹어요"]
     
     var hotStore = [1,2,3]
+    var todayYogi = [1,2,3,4,5,6]
     
     // 버튼 네개 있는 셀
     var fourthBtnVC : FourthBtnConVC?
     // 음식 카테고리
     var foodCategoryVC : CategoryFoodConVC?
+    // 해시태그 헤더
+    var homeHashTagVC : HomeHashTagVC?
     
     
     // MARK: - Properties
@@ -56,6 +59,7 @@ class HomeViewController: UIViewController {
         self.mainTableView.register(ExpressTVCell.nib(), forCellReuseIdentifier: ExpressTVCell.identifier)
         self.mainTableView.register(MiddleBannerTVCell.nib(), forCellReuseIdentifier: MiddleBannerTVCell.identifier)
         self.mainTableView.register(HotOurStoreTVCell.nib(), forCellReuseIdentifier: HotOurStoreTVCell.identifier)
+        self.mainTableView.register(TodayYogiTVCell.nib(), forCellReuseIdentifier: TodayYogiTVCell.identifier)
         
         // controller cell
         self.mainTableView.register(UINib(nibName: "FourthButtonTVCell", bundle: nil),
@@ -89,7 +93,10 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             return hotStore.count
         }
         else if section == 6 {
-            return 1
+            return 0
+        }
+        else if section == 7 {
+            return todayYogi.count
         }
         else {
             return 0
@@ -175,7 +182,12 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             }
             return cell
         }
-        
+        if indexPath.section == 7 {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: TodayYogiTVCell.identifier) as? TodayYogiTVCell else{
+                return UITableViewCell()
+            }
+            return cell
+        }
         return UITableViewCell()
     }
     
@@ -202,10 +214,10 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             return 130
         }
         else if indexPath.section == 5 {
-            return 260
+            return 270
         }
-        else if indexPath.section == 6 {
-            return 150
+        else if indexPath.section == 7 {
+            return 200
         }
         else {
             return 0
@@ -231,10 +243,12 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         if section == 5 {
             return 0
         }
+        if section == 6 {
+            return 50
+        }
         else {
             return 50
         }
-        
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -256,16 +270,41 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         if section == 5 {
           return UIView(frame: .null)
         }
+        if section == 6 {
+          let headerView = UIView()
+          headerView.backgroundColor = .white
+          headerView.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: 50)
+          
+          let titleLabel = UILabel()
+          titleLabel.textColor = .black
+          titleLabel.text = "오늘은 요기서 먹어요"
+          titleLabel.frame = CGRect(x: 20, y: 0, width: headerView.frame.width, height: headerView.frame.height)
+          headerView.addSubview(titleLabel)
+          
+          return headerView
+        }
         else {
+            homeHashTagVC = HomeHashTagVC(nibName: "HomeHashTagVC", bundle: nil)
+            
           let headerView = UIView()
           headerView.backgroundColor = .red
           headerView.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: 50)
           
-          let titleLabel = UILabel()
-          titleLabel.textColor = .white
-          titleLabel.text = "Section1 헤더 뷰"
-          titleLabel.frame = CGRect(x: 0, y: 0, width: headerView.frame.width, height: headerView.frame.height)
-          headerView.addSubview(titleLabel)
+            headerView.addSubview(homeHashTagVC!.view)
+            
+            self.addChild(homeHashTagVC!)
+            
+            // autolayout
+            homeHashTagVC!.view.translatesAutoresizingMaskIntoConstraints = false
+         
+            homeHashTagVC!.view.topAnchor.constraint(equalTo: headerView.topAnchor).isActive = true
+            homeHashTagVC!.view.bottomAnchor.constraint(equalTo: headerView.bottomAnchor).isActive = true
+            homeHashTagVC!.view.leftAnchor.constraint(equalTo: headerView.leftAnchor).isActive = true
+            homeHashTagVC!.view.rightAnchor.constraint(equalTo: headerView.rightAnchor).isActive = true
+            
+            // 하위 컨트롤러가 컨트롤러 권한을 상위컨트롤러로 위임
+            homeHashTagVC!.didMove(toParent: self)
+
           
           return headerView
         }
