@@ -115,6 +115,13 @@
 		DD3F90FC26BEF25D00F98C1D /* HomeHashTagVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3F90FA26BEF25C00F98C1D /* HomeHashTagVC.xib */; };
 		DD3F90FF26BEF73A00F98C1D /* TodayYogiTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F90FD26BEF73A00F98C1D /* TodayYogiTVCell.swift */; };
 		DD3F910026BEF73A00F98C1D /* TodayYogiTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3F90FE26BEF73A00F98C1D /* TodayYogiTVCell.xib */; };
+		DD3F910226BF7B9200F98C1D /* MyInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F910126BF7B9200F98C1D /* MyInfoViewController.swift */; };
+		DD3F910E26BF9FDF00F98C1D /* MyInfoTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F910C26BF9FDF00F98C1D /* MyInfoTVCell.swift */; };
+		DD3F910F26BF9FDF00F98C1D /* MyInfoTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3F910D26BF9FDF00F98C1D /* MyInfoTVCell.xib */; };
+		DD3F911626BFB42C00F98C1D /* LoginLogoutTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F911426BFB42C00F98C1D /* LoginLogoutTVCell.swift */; };
+		DD3F911726BFB42C00F98C1D /* LoginLogoutTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3F911526BFB42C00F98C1D /* LoginLogoutTVCell.xib */; };
+		DD3F911A26BFB53300F98C1D /* LoginLogoutConVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F911826BFB53200F98C1D /* LoginLogoutConVC.swift */; };
+		DD3F911B26BFB53300F98C1D /* LoginLogoutConVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3F911926BFB53300F98C1D /* LoginLogoutConVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -229,6 +236,13 @@
 		DD3F90FA26BEF25C00F98C1D /* HomeHashTagVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeHashTagVC.xib; sourceTree = "<group>"; };
 		DD3F90FD26BEF73A00F98C1D /* TodayYogiTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayYogiTVCell.swift; sourceTree = "<group>"; };
 		DD3F90FE26BEF73A00F98C1D /* TodayYogiTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodayYogiTVCell.xib; sourceTree = "<group>"; };
+		DD3F910126BF7B9200F98C1D /* MyInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInfoViewController.swift; sourceTree = "<group>"; };
+		DD3F910C26BF9FDF00F98C1D /* MyInfoTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInfoTVCell.swift; sourceTree = "<group>"; };
+		DD3F910D26BF9FDF00F98C1D /* MyInfoTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyInfoTVCell.xib; sourceTree = "<group>"; };
+		DD3F911426BFB42C00F98C1D /* LoginLogoutTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginLogoutTVCell.swift; sourceTree = "<group>"; };
+		DD3F911526BFB42C00F98C1D /* LoginLogoutTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginLogoutTVCell.xib; sourceTree = "<group>"; };
+		DD3F911826BFB53200F98C1D /* LoginLogoutConVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginLogoutConVC.swift; sourceTree = "<group>"; };
+		DD3F911926BFB53300F98C1D /* LoginLogoutConVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginLogoutConVC.xib; sourceTree = "<group>"; };
 		F9C1772B30741BA88AC342B9 /* Pods-Yogiyo_test_iOS_Flora.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yogiyo_test_iOS_Flora.release.xcconfig"; path = "Target Support Files/Pods-Yogiyo_test_iOS_Flora/Pods-Yogiyo_test_iOS_Flora.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -376,7 +390,8 @@
 			isa = PBXGroup;
 			children = (
 				DD30297A26B54F9B00ABEB63 /* MyYogiyoStoryboard.storyboard */,
-				DD3029C826B66CDC00ABEB63 /* MyYogigoTab */,
+				DD3029C826B66CDC00ABEB63 /* MyYogiyoTab */,
+				DD3F910326BF84A900F98C1D /* MyInfo */,
 				DD3029C926B66D1700ABEB63 /* SocialLogin */,
 				DD3029CA26B66D4C00ABEB63 /* EmailLogin */,
 				DD3029CB26B66D8C00ABEB63 /* EmailSignUp */,
@@ -384,13 +399,14 @@
 			path = MyYogiyo;
 			sourceTree = "<group>";
 		};
-		DD3029C826B66CDC00ABEB63 /* MyYogigoTab */ = {
+		DD3029C826B66CDC00ABEB63 /* MyYogiyoTab */ = {
 			isa = PBXGroup;
 			children = (
 				DD30297D26B5512E00ABEB63 /* MyYogiyoViewController.swift */,
 				DD3F8FF226B8521D00F98C1D /* Cell */,
+				DD3F8FF326B852EC00F98C1D /* Controller */,
 			);
-			path = MyYogigoTab;
+			path = MyYogiyoTab;
 			sourceTree = "<group>";
 		};
 		DD3029C926B66D1700ABEB63 /* SocialLogin */ = {
@@ -436,7 +452,6 @@
 				DD3F900026B8E7B200F98C1D /* FirstCell */,
 				DD3F900326B8E81900F98C1D /* SecondCell */,
 				DD3F900F26B9040300F98C1D /* ThirdCell */,
-				DD3F8FF326B852EC00F98C1D /* Controller */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -549,10 +564,6 @@
 			isa = PBXGroup;
 			children = (
 				DD3029A626B5762A00ABEB63 /* HomeViewController.swift */,
-				DD3F90F926BEF25C00F98C1D /* HomeHashTagVC.swift */,
-				DD3F90FA26BEF25C00F98C1D /* HomeHashTagVC.xib */,
-				DD3F90FD26BEF73A00F98C1D /* TodayYogiTVCell.swift */,
-				DD3F90FE26BEF73A00F98C1D /* TodayYogiTVCell.xib */,
 				DD3F902E26BA46D800F98C1D /* Cell */,
 			);
 			path = HomeTab;
@@ -749,6 +760,10 @@
 		DD3F908026BBCD3800F98C1D /* TodayHere */ = {
 			isa = PBXGroup;
 			children = (
+				DD3F90F926BEF25C00F98C1D /* HomeHashTagVC.swift */,
+				DD3F90FA26BEF25C00F98C1D /* HomeHashTagVC.xib */,
+				DD3F90FD26BEF73A00F98C1D /* TodayYogiTVCell.swift */,
+				DD3F90FE26BEF73A00F98C1D /* TodayYogiTVCell.xib */,
 			);
 			path = TodayHere;
 			sourceTree = "<group>";
@@ -842,6 +857,20 @@
 			path = Restaurant;
 			sourceTree = "<group>";
 		};
+		DD3F910326BF84A900F98C1D /* MyInfo */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F910126BF7B9200F98C1D /* MyInfoViewController.swift */,
+				DD3F910C26BF9FDF00F98C1D /* MyInfoTVCell.swift */,
+				DD3F910D26BF9FDF00F98C1D /* MyInfoTVCell.xib */,
+				DD3F911426BFB42C00F98C1D /* LoginLogoutTVCell.swift */,
+				DD3F911526BFB42C00F98C1D /* LoginLogoutTVCell.xib */,
+				DD3F911826BFB53200F98C1D /* LoginLogoutConVC.swift */,
+				DD3F911926BFB53300F98C1D /* LoginLogoutConVC.xib */,
+			);
+			path = MyInfo;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -911,6 +940,7 @@
 				DD3F903E26BA582F00F98C1D /* FourthButtonTVCell.xib in Resources */,
 				DD3F900726B8EAB600F98C1D /* couponTableViewCell.xib in Resources */,
 				DD3F8FF726B8531800F98C1D /* BeforeLoginConVC.xib in Resources */,
+				DD3F911726BFB42C00F98C1D /* LoginLogoutTVCell.xib in Resources */,
 				DD30298726B5612600ABEB63 /* Images.xcassets in Resources */,
 				DD3F8FFB26B8DFA200F98C1D /* completeLoginTVCell.xib in Resources */,
 				DD3F908826BBE20400F98C1D /* CurrentLocationTVCell.xib in Resources */,
@@ -926,6 +956,7 @@
 				DD3F8FFF26B8DFE000F98C1D /* CompleteLoginVC.xib in Resources */,
 				DD3F90CA26BD614C00F98C1D /* hashTagCollectionViewCell.xib in Resources */,
 				DD3F90F826BE10DF00F98C1D /* HashTagVC.xib in Resources */,
+				DD3F910F26BF9FDF00F98C1D /* MyInfoTVCell.xib in Resources */,
 				DD3F907F26BBBF3100F98C1D /* HotOurStoreCVCell.xib in Resources */,
 				DD3F904326BA63BE00F98C1D /* FourthBtnConVC.xib in Resources */,
 				DD3F901826B9045C00F98C1D /* CategotyViewController.xib in Resources */,
@@ -934,6 +965,7 @@
 				DD3F907326BBB31C00F98C1D /* MiddleBannerCVCell.xib in Resources */,
 				DD3F905A26BA9E3F00F98C1D /* ExpressTVCell.xib in Resources */,
 				DD3029A926B576DC00ABEB63 /* JjimStoryboard.storyboard in Resources */,
+				DD3F911B26BFB53300F98C1D /* LoginLogoutConVC.xib in Resources */,
 				DD3F905E26BAA3A000F98C1D /* ExpressCVCell.xib in Resources */,
 				DD3F90C226BD209A00F98C1D /* MyStoreTableViewCell.xib in Resources */,
 			);
@@ -997,6 +1029,7 @@
 				DD3F90B926BD165100F98C1D /* MartViewController.swift in Sources */,
 				DD3F901F26B95BF400F98C1D /* SignUpDataManager.swift in Sources */,
 				DD3F903D26BA582F00F98C1D /* FourthButtonTVCell.swift in Sources */,
+				DD3F911626BFB42C00F98C1D /* LoginLogoutTVCell.swift in Sources */,
 				DD3F902326B9973E00F98C1D /* String.swift in Sources */,
 				DD3F90BD26BD16E700F98C1D /* PetViewController.swift in Sources */,
 				DD3F90FB26BEF25D00F98C1D /* HomeHashTagVC.swift in Sources */,
@@ -1012,6 +1045,7 @@
 				DD3F90A726BD13BB00F98C1D /* PizzaViewController.swift in Sources */,
 				DD3F90C126BD209A00F98C1D /* MyStoreTableViewCell.swift in Sources */,
 				DD3F90A126BD12B900F98C1D /* ChickenViewController.swift in Sources */,
+				DD3F911A26BFB53300F98C1D /* LoginLogoutConVC.swift in Sources */,
 				DD3F902A26B9986700F98C1D /* UIButton.swift in Sources */,
 				DD3029B326B5774300ABEB63 /* OrderViewController.swift in Sources */,
 				DD3F90B726BD160700F98C1D /* FranchiseViewController.swift in Sources */,
@@ -1023,6 +1057,7 @@
 				DD3F905926BA9E3F00F98C1D /* ExpressTVCell.swift in Sources */,
 				DD30299926B5695500ABEB63 /* emailLoginViewController.swift in Sources */,
 				DD3F900B26B8EAF200F98C1D /* CouponConVC.swift in Sources */,
+				DD3F910226BF7B9200F98C1D /* MyInfoViewController.swift in Sources */,
 				DD3F90FF26BEF73A00F98C1D /* TodayYogiTVCell.swift in Sources */,
 				DD3F90AD26BD148600F98C1D /* BunsikViewController.swift in Sources */,
 				DD3029A726B5762A00ABEB63 /* HomeViewController.swift in Sources */,
@@ -1032,6 +1067,7 @@
 				DD3F90B126BD150C00F98C1D /* JapaneseFoodViewController.swift in Sources */,
 				DD3F909B26BCF6EA00F98C1D /* AllViewController.swift in Sources */,
 				DD3F906626BAF2D800F98C1D /* SignInRequest.swift in Sources */,
+				DD3F910E26BF9FDF00F98C1D /* MyInfoTVCell.swift in Sources */,
 				DD3F902C26B9A05A00F98C1D /* SignUpRequest.swift in Sources */,
 				DD3F907A26BBBF0400F98C1D /* HotOurStoreTVCell.swift in Sources */,
 				DD3F905226BA820700F98C1D /* HashTageCVCell.swift in Sources */,

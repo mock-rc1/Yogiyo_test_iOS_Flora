@@ -98,27 +98,17 @@ extension emailLoginViewController: UITextFieldDelegate {
         
         //        emailTextField.layer.borderWidth = 1
         //        emailTextField.layer.borderColor = UIColor.red.cgColor
-        print("textFieldDidBeginEditing: \((textField.text) ?? "Empty")") }
-    
+        print("textFieldDidBeginEditing: \((textField.text) ?? "Empty")")
+        
+    }
 }
 
 // 로그인 성공 or 실패
 extension emailLoginViewController {
     
-    //    func didSuccessSignUp(_ result: SignUpResult) {
-    //        self.presentAlert(title: "회원가입에 성공하였습니다", message: result.jwt, isCancelActionIncluded: true) { action in
-    //
-    //            let mainTabBarController = UIStoryboard(name: "MyYogiyoStoryboard", bundle: nil).instantiateViewController(identifier: "MyYogiyoViewController")
-    //            self.changeRootViewController(mainTabBarController)
-    //        }
-    //    }
-    
-    
     func didSuccessSignIn(_ result: SignInResult) {
-        
         self.presentAlert(title: "로그인에 성공하였습니다", message: result.jwt, isCancelActionIncluded: true) {
             action in
-//            print("뭐나오나보장",result)
             UserDefaults.standard.set(result.jwt, forKey: "userToken") // 토큰 저장
             guard let dvc = self.storyboard?.instantiateViewController(identifier: "MyYogiyoViewController")else{return}
             self.navigationController?.pushViewController(dvc, animated: true)
