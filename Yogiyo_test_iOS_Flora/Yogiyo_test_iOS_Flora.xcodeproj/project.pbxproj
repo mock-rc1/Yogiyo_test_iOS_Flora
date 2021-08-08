@@ -123,6 +123,8 @@
 		DD3F911A26BFB53300F98C1D /* LoginLogoutConVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F911826BFB53200F98C1D /* LoginLogoutConVC.swift */; };
 		DD3F911B26BFB53300F98C1D /* LoginLogoutConVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3F911926BFB53300F98C1D /* LoginLogoutConVC.xib */; };
 		DD3F912326BFD61B00F98C1D /* NickNameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F912226BFD61A00F98C1D /* NickNameVC.swift */; };
+		DD3F912726C0086200F98C1D /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F912626C0086200F98C1D /* UserInfo.swift */; };
+		DD3F912926C008AD00F98C1D /* UserInfoDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F912826C008AD00F98C1D /* UserInfoDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -245,6 +247,8 @@
 		DD3F911826BFB53200F98C1D /* LoginLogoutConVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginLogoutConVC.swift; sourceTree = "<group>"; };
 		DD3F911926BFB53300F98C1D /* LoginLogoutConVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginLogoutConVC.xib; sourceTree = "<group>"; };
 		DD3F912226BFD61A00F98C1D /* NickNameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NickNameVC.swift; sourceTree = "<group>"; };
+		DD3F912626C0086200F98C1D /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		DD3F912826C008AD00F98C1D /* UserInfoDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoDataManager.swift; sourceTree = "<group>"; };
 		F9C1772B30741BA88AC342B9 /* Pods-Yogiyo_test_iOS_Flora.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yogiyo_test_iOS_Flora.release.xcconfig"; path = "Target Support Files/Pods-Yogiyo_test_iOS_Flora/Pods-Yogiyo_test_iOS_Flora.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -530,6 +534,7 @@
 		DD3F901926B9584200F98C1D /* Networkk */ = {
 			isa = PBXGroup;
 			children = (
+				DD3F912426C007C400F98C1D /* UserInfo */,
 				DD3F905F26BAF27400F98C1D /* SignIn */,
 				DD3F901A26B9588100F98C1D /* SignUp */,
 			);
@@ -914,6 +919,23 @@
 			path = NickName;
 			sourceTree = "<group>";
 		};
+		DD3F912426C007C400F98C1D /* UserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F912826C008AD00F98C1D /* UserInfoDataManager.swift */,
+				DD3F912526C007D300F98C1D /* Entity */,
+			);
+			path = UserInfo;
+			sourceTree = "<group>";
+		};
+		DD3F912526C007D300F98C1D /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F912626C0086200F98C1D /* UserInfo.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1097,6 +1119,7 @@
 				DD3F8FF026B8520F00F98C1D /* beforeLoginTVCell.swift in Sources */,
 				DD30298026B5515800ABEB63 /* SocialLoginViewController.swift in Sources */,
 				DD3F908326BBE16F00F98C1D /* CurrentLocationVC.swift in Sources */,
+				DD3F912726C0086200F98C1D /* UserInfo.swift in Sources */,
 				DD3F908C26BCBDA500F98C1D /* TransitionViewController.swift in Sources */,
 				DD3F905926BA9E3F00F98C1D /* ExpressTVCell.swift in Sources */,
 				DD30299926B5695500ABEB63 /* emailLoginViewController.swift in Sources */,
@@ -1123,6 +1146,7 @@
 				DD3F907E26BBBF3100F98C1D /* HotOurStoreCVCell.swift in Sources */,
 				DD3F900626B8EAB600F98C1D /* couponTableViewCell.swift in Sources */,
 				DD3F901D26B95A0B00F98C1D /* SignUpData.swift in Sources */,
+				DD3F912926C008AD00F98C1D /* UserInfoDataManager.swift in Sources */,
 				DD3F8FEC26B7FB8900F98C1D /* UIViewController.swift in Sources */,
 				DD3F906126BAF2A100F98C1D /* SignInDataManager.swift in Sources */,
 				DD3F90F726BE10DF00F98C1D /* HashTagVC.swift in Sources */,

@@ -30,7 +30,7 @@ class MyYogiyoViewController: UIViewController {
     
     
     let sections: [String] = ["로그인전후화면", "쿠폰함", "카테고리"]
-    let category = [1,2,3,4,5,6,7]
+    var myYogiyoBtn = ["요기요 선물하기", "요기서 1초결제 관리", "이벤트 및 공지사항", "요기요 안내", "고객만족센터", "요기요 제휴카드", "서비스 약관"]
     //var userName : String?
     
     override func viewDidLoad() {
@@ -79,7 +79,7 @@ extension MyYogiyoViewController: UITableViewDataSource, UITableViewDelegate {
             return 1
         }
         else if section == 2 {
-            return category.count
+            return myYogiyoBtn.count
         }
         else {
             return 0

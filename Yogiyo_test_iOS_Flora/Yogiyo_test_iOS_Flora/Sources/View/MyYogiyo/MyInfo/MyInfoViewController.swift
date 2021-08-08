@@ -8,12 +8,17 @@
 import UIKit
 
 class MyInfoViewController: UIViewController {
+    
+    lazy var dataManager: UserInfoDataManager = UserInfoDataManager()
 
+    @IBOutlet weak var backBtn: UIButton!
     @IBOutlet weak var MyInfoTableView: UITableView!
     
     var loginLogoutVC : LoginLogoutConVC?
     var myInfo = ["이메일","패스워드","전화번호","닉네임"]
     var sections = ["이메일셀","로그인로그아웃버튼셀"]
+    
+    var userInfo: UserResult
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,6 +53,9 @@ class MyInfoViewController: UIViewController {
                                    forCellReuseIdentifier: "LoginLogoutTVCell")
     }
  
+    @IBAction func backBtnTap(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
 }
 
 extension MyInfoViewController: UITableViewDelegate, UITableViewDataSource {
@@ -70,6 +78,7 @@ extension MyInfoViewController: UITableViewDelegate, UITableViewDataSource {
                 if indexPath.row == 0 {
                     cell.titleNameLabel.text = "이메일 아이디"
                     cell.changeBtn.isHidden = true
+                    cell.myInfoLabel.text = userInfo.userEmail
                 } else if indexPath.row == 1 {
                     cell.titleNameLabel.text = "비밀번호"
                     cell.changeBtn.isHidden = true
@@ -137,5 +146,18 @@ extension MyInfoViewController: UITableViewDelegate, UITableViewDataSource {
         else {
             return 0
         }
+    }
+}
+
+extension MyInfoViewController {
+    func didSuccessUserInfo(result: UserResult) {
+        //self.dismissIndicator()
+        
+        userInfo = result
+        
+    }
+    
+    func failedToRequest(message: String) {
+        self.presentAlert(title: message)
     }
 }

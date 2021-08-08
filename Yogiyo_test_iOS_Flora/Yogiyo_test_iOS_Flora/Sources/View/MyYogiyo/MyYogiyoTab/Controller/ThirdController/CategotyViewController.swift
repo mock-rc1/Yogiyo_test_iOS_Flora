@@ -9,11 +9,11 @@ import UIKit
 
 class CategotyViewController: UIViewController {
 
+    @IBOutlet weak var categoryNameLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
     }
 
+    
 
 }

@@ -66,7 +66,6 @@ class emailLoginViewController: UIViewController {
     // 로그인 버튼
     @IBAction func emailLoginBtnTap(_ sender: Any) {
         
-        //self.dismiss(animated: true, completion: nil)
         guard let id = emailTextField.text?.trim, id.isExists else {
             self.presentAlert(title: "아이디를 입력해주세요")
             return
@@ -110,8 +109,10 @@ extension emailLoginViewController {
         self.presentAlert(title: "로그인에 성공하였습니다", message: result.jwt, isCancelActionIncluded: true) {
             action in
             UserDefaults.standard.set(result.jwt, forKey: "userToken") // 토큰 저장
-            guard let dvc = self.storyboard?.instantiateViewController(identifier: "MyYogiyoViewController")else{return}
-            self.navigationController?.pushViewController(dvc, animated: true)
+            
+            let storyboardVC = UIStoryboard(name: "MyYogiyoStoryboard", bundle: Bundle(for: MyYogiyoViewController.self)).instantiateViewController(withIdentifier: "MyYogiyoViewController") as! MyYogiyoViewController
+
+            self.navigationController?.pushViewController(storyboardVC, animated: true)
         }
     }
     

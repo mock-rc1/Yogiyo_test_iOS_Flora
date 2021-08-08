@@ -42,9 +42,6 @@
                                         <state key="normal" image="settingIcon">
                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
                                         </state>
-                                        <connections>
-                                            <segue destination="6dr-1f-rz5" kind="show" id="uFh-YS-m8M"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -113,6 +110,9 @@
                                         <state key="normal" image="chevron.left" catalog="system">
                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="18" scale="large" weight="thin"/>
                                         </state>
+                                        <connections>
+                                            <action selector="backBtnTap:" destination="6dr-1f-rz5" eventType="touchUpInside" id="iUW-Jy-W8z"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="내 정보 수정" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GY8-6o-gYg">
                                         <rect key="frame" x="165.5" y="12.5" width="83" height="21"/>
@@ -160,11 +160,12 @@
                     <navigationItem key="navigationItem" id="dOk-1d-X6H"/>
                     <connections>
                         <outlet property="MyInfoTableView" destination="tUr-wb-9uj" id="2lw-ZE-4JV"/>
+                        <outlet property="backBtn" destination="cbM-oz-bhk" id="uTq-hs-JQv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bzs-de-3nk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-574" y="106"/>
+            <point key="canvasLocation" x="-629" y="106"/>
         </scene>
         <!--Nick NameVC-->
         <scene sceneID="AjQ-SM-6dZ">
@@ -262,7 +263,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nmS-eX-K8q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="877" y="104"/>
+            <point key="canvasLocation" x="-1349" y="818"/>
         </scene>
         <!--Social Login View Controller-->
         <scene sceneID="L9D-vM-H2s">
@@ -421,7 +422,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nFX-uR-EMp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1638" y="104"/>
+            <point key="canvasLocation" x="-630" y="818"/>
         </scene>
         <!--Email Login View Controller-->
         <scene sceneID="nUs-tM-eAe">
@@ -587,7 +588,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kZ5-K2-7I7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2438" y="-157"/>
+            <point key="canvasLocation" x="93" y="818"/>
         </scene>
         <!--Email Sign Up View Controller-->
         <scene sceneID="ZPi-lz-dLK">
@@ -1010,7 +1011,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fk6-Bq-sHi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2438" y="526"/>
+            <point key="canvasLocation" x="799" y="818"/>
         </scene>
     </scenes>
     <resources>

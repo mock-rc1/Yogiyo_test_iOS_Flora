@@ -19,12 +19,14 @@ class CouponConVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        couponUIView.layer.addBorder([.right], color:#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1), width: 0.5)
-        pointUIView.layer.addBorder([.right], color:#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1), width: 0.5)
-        giftUIView.layer.addBorder([.right], color:#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1), width: 0.5)
-
-
         
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        couponUIView.layer.addBorder([.right], color: .systemGray5, width: 0.5)
+        pointUIView.layer.addBorder([.right], color:.systemGray5, width: 0.5)
+        giftUIView.layer.addBorder([.right], color:.systemGray5, width: 0.5)
     }
 
 
