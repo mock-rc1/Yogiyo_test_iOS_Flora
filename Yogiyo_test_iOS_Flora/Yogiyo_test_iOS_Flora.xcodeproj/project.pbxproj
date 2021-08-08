@@ -122,6 +122,7 @@
 		DD3F911726BFB42C00F98C1D /* LoginLogoutTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3F911526BFB42C00F98C1D /* LoginLogoutTVCell.xib */; };
 		DD3F911A26BFB53300F98C1D /* LoginLogoutConVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F911826BFB53200F98C1D /* LoginLogoutConVC.swift */; };
 		DD3F911B26BFB53300F98C1D /* LoginLogoutConVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3F911926BFB53300F98C1D /* LoginLogoutConVC.xib */; };
+		DD3F912326BFD61B00F98C1D /* NickNameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F912226BFD61A00F98C1D /* NickNameVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -243,6 +244,7 @@
 		DD3F911526BFB42C00F98C1D /* LoginLogoutTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginLogoutTVCell.xib; sourceTree = "<group>"; };
 		DD3F911826BFB53200F98C1D /* LoginLogoutConVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginLogoutConVC.swift; sourceTree = "<group>"; };
 		DD3F911926BFB53300F98C1D /* LoginLogoutConVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginLogoutConVC.xib; sourceTree = "<group>"; };
+		DD3F912226BFD61A00F98C1D /* NickNameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NickNameVC.swift; sourceTree = "<group>"; };
 		F9C1772B30741BA88AC342B9 /* Pods-Yogiyo_test_iOS_Flora.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yogiyo_test_iOS_Flora.release.xcconfig"; path = "Target Support Files/Pods-Yogiyo_test_iOS_Flora/Pods-Yogiyo_test_iOS_Flora.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -392,6 +394,7 @@
 				DD30297A26B54F9B00ABEB63 /* MyYogiyoStoryboard.storyboard */,
 				DD3029C826B66CDC00ABEB63 /* MyYogiyoTab */,
 				DD3F910326BF84A900F98C1D /* MyInfo */,
+				DD3F912126BFD5ED00F98C1D /* NickName */,
 				DD3029C926B66D1700ABEB63 /* SocialLogin */,
 				DD3029CA26B66D4C00ABEB63 /* EmailLogin */,
 				DD3029CB26B66D8C00ABEB63 /* EmailSignUp */,
@@ -861,14 +864,54 @@
 			isa = PBXGroup;
 			children = (
 				DD3F910126BF7B9200F98C1D /* MyInfoViewController.swift */,
+				DD3F911C26BFD57400F98C1D /* Cell */,
+			);
+			path = MyInfo;
+			sourceTree = "<group>";
+		};
+		DD3F911C26BFD57400F98C1D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F911D26BFD58F00F98C1D /* FirstCell */,
+				DD3F911F26BFD5A300F98C1D /* SecondCell */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		DD3F911D26BFD58F00F98C1D /* FirstCell */ = {
+			isa = PBXGroup;
+			children = (
 				DD3F910C26BF9FDF00F98C1D /* MyInfoTVCell.swift */,
 				DD3F910D26BF9FDF00F98C1D /* MyInfoTVCell.xib */,
+			);
+			path = FirstCell;
+			sourceTree = "<group>";
+		};
+		DD3F911F26BFD5A300F98C1D /* SecondCell */ = {
+			isa = PBXGroup;
+			children = (
 				DD3F911426BFB42C00F98C1D /* LoginLogoutTVCell.swift */,
 				DD3F911526BFB42C00F98C1D /* LoginLogoutTVCell.xib */,
+				DD3F912026BFD5BA00F98C1D /* Controller */,
+			);
+			path = SecondCell;
+			sourceTree = "<group>";
+		};
+		DD3F912026BFD5BA00F98C1D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
 				DD3F911826BFB53200F98C1D /* LoginLogoutConVC.swift */,
 				DD3F911926BFB53300F98C1D /* LoginLogoutConVC.xib */,
 			);
-			path = MyInfo;
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DD3F912126BFD5ED00F98C1D /* NickName */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F912226BFD61A00F98C1D /* NickNameVC.swift */,
+			);
+			path = NickName;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1032,6 +1075,7 @@
 				DD3F911626BFB42C00F98C1D /* LoginLogoutTVCell.swift in Sources */,
 				DD3F902326B9973E00F98C1D /* String.swift in Sources */,
 				DD3F90BD26BD16E700F98C1D /* PetViewController.swift in Sources */,
+				DD3F912326BFD61B00F98C1D /* NickNameVC.swift in Sources */,
 				DD3F90FB26BEF25D00F98C1D /* HomeHashTagVC.swift in Sources */,
 				DD3F901726B9045C00F98C1D /* CategotyViewController.swift in Sources */,
 				DD3029BD26B61A8900ABEB63 /* NavigationViewController.swift in Sources */,
