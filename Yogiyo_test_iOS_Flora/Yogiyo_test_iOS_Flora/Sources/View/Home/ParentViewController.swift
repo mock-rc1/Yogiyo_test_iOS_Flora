@@ -8,6 +8,8 @@ class ParentViewController: ButtonBarPagerTabStripViewController {
     @IBOutlet weak var hashTagUIView: UIView!
     var hashTagController : HashTagVC?
     
+    @IBOutlet weak var backBtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,6 +32,9 @@ class ParentViewController: ButtonBarPagerTabStripViewController {
             oldCell?.label.textColor = .systemGray
             newCell?.label.textColor = .black
         }
+    }
+    @IBAction func backBtnTap(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
     }
     
     override func viewControllers(for pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {

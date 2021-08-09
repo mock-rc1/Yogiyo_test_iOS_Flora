@@ -23,6 +23,10 @@ class restaurantViewController: UIViewController, UIScrollViewDelegate {
 
     }
     
+    @IBAction func backBtnTap(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
 //        if ((navigationBarUIView == nil)) {
 //            self.navigationBarUIView.isHidden = true

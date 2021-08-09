@@ -15,7 +15,7 @@ class CompleteLoginVC: UIViewController {
         super.viewDidLoad()
         tapGesture()
         print("CompleteLoginVC ViewDidLoad 호출 됐음!")
-        userNameLabel.text = UserDefaults.standard.string(forKey: "userId")
+        userNameLabel.text = UserDefaults.standard.string(forKey: "userNickname")
     }
     
     // MARK: UIView tap gesture

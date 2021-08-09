@@ -159,7 +159,8 @@ extension MyInfoViewController {
         //self.dismissIndicator()
         
         self.userInfo = result
-        MyInfoTableView.reloadData() 
+        UserDefaults.standard.set(result.userNickname, forKey: "userNickname")
+        MyInfoTableView.reloadData()
     }
     
     func failedToRequest(message: String) {

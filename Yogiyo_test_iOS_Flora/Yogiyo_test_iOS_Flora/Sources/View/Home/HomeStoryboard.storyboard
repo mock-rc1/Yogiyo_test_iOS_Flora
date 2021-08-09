@@ -26,9 +26,6 @@
                                             <constraint firstAttribute="height" constant="32" id="xbU-4Y-Tmk"/>
                                         </constraints>
                                         <state key="normal" image="alertIcon"/>
-                                        <connections>
-                                            <segue destination="wrW-h2-shn" kind="show" id="LxC-ui-nNd"/>
-                                        </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xXv-aF-Qsu">
                                         <rect key="frame" x="157" y="16.5" width="100" height="13"/>
@@ -42,7 +39,7 @@
                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="15" scale="small"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="Tnn-sK-fiv" kind="show" id="1BK-dO-vV1"/>
+                                                    <action selector="currentLocationBtnTap:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="AhR-Fq-6tz"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KeL-Nw-wTj">
@@ -112,7 +109,7 @@
                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="18" scale="large" weight="thin"/>
                                         </state>
                                         <connections>
-                                            <segue destination="6bl-zi-Vhh" kind="show" id="fR1-IR-DwE"/>
+                                            <action selector="backBtnTap:" destination="wrW-h2-shn" eventType="touchUpInside" id="yUJ-Xu-AWb"/>
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="CdY-Et-hu1">
@@ -201,6 +198,7 @@
                     <navigationItem key="navigationItem" id="sKu-m1-cdS"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="backBtn" destination="rDU-LY-qEc" id="j8i-or-ynH"/>
                         <outlet property="buttonBarView" destination="MiC-zy-386" id="ZDp-0Q-Lyl"/>
                         <outlet property="containerView" destination="1Sl-aZ-JSf" id="YQF-AM-6tR"/>
                         <outlet property="hashTagUIView" destination="vLn-Bu-oDe" id="cGf-mH-jsO"/>
@@ -275,6 +273,9 @@
                                 <state key="normal" image="chevron.left" catalog="system">
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="18" scale="large" weight="thin"/>
                                 </state>
+                                <connections>
+                                    <action selector="backBtnTap:" destination="6bl-zi-Vhh" eventType="touchUpInside" id="SSd-cr-mkW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o2m-ze-Bmm">
                                 <rect key="frame" x="368" y="55" width="26" height="24"/>
@@ -312,7 +313,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eQG-kF-OtN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1036.231884057971" y="789.50892857142856"/>
+            <point key="canvasLocation" x="1516" y="63"/>
         </scene>
         <!--Bunsik View Controller-->
         <scene sceneID="HJ3-3Y-Yvl">
@@ -736,6 +737,9 @@
                                         <state key="normal" image="xmark" catalog="system">
                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="18" scale="large" weight="thin"/>
                                         </state>
+                                        <connections>
+                                            <action selector="backBtnTap:" destination="Tnn-sK-fiv" eventType="touchUpInside" id="y2Z-Wf-a3I"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="배달 주소 설정" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5z0-Eh-mi1">
                                         <rect key="frame" x="158.5" y="13" width="97" height="20.5"/>
@@ -826,6 +830,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="3Me-sm-hcp"/>
                     <connections>
+                        <outlet property="backBtn" destination="7RP-GY-vji" id="oCN-sz-PHD"/>
                         <outlet property="locationTableView" destination="s8l-LQ-YS6" id="b94-NW-8JI"/>
                     </connections>
                 </viewController>

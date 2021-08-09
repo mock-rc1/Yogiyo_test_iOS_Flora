@@ -13,6 +13,7 @@ class CurrentLocationVC: UIViewController {
     
     var address = [1,2,3]
     
+    @IBOutlet weak var backBtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,7 +22,10 @@ class CurrentLocationVC: UIViewController {
 
     }
     
-
+    @IBAction func backBtnTap(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
 }
 
 //extension CurrentLocationVC : UITableViewDelegate, UITableViewDataSource {

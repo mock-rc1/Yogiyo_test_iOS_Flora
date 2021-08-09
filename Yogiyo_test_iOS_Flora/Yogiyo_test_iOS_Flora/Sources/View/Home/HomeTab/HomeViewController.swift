@@ -68,6 +68,13 @@ class HomeViewController: UIViewController {
                                    forCellReuseIdentifier: "FoodCategoryTVCell")
     }
     
+    @IBAction func currentLocationBtnTap(_ sender: Any) {
+        let storyboardVC = UIStoryboard(name: "HomeStoryboard", bundle: Bundle(for: CurrentLocationVC.self)).instantiateViewController(withIdentifier: "CurrentLocationVC") as! CurrentLocationVC
+        
+        storyboardVC.modalPresentationStyle = .fullScreen
+        self.present(storyboardVC, animated: true, completion: nil)
+        
+    }
 }
 
 // MARK: - Extension
