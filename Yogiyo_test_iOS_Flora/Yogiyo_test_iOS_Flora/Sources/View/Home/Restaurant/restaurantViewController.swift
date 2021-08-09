@@ -8,39 +8,29 @@
 import UIKit
 
 class restaurantViewController: UIViewController, UIScrollViewDelegate {
+    
+    var sections = ["탭바전까지셀","찜공유컨트롤러","탭바"]
 
+    @IBOutlet weak var restaurantLabel: UILabel!
     @IBOutlet weak var backBtn: UIButton!
     @IBOutlet weak var navigationBarUIView: UIView!
     @IBOutlet weak var searchBtn: UIButton!
     @IBOutlet weak var headerViewImage: UIImageView!
     @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var RestaurantTableView: UITableView!
-    var lastContentOffset: CGFloat = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationBarUIView.isHidden = true
-
+        restaurantLabel.isHidden = true
+        
+        //self.locationTableView.register(CurrentLocationTVCell.nib(), forCellReuseIdentifier: CurrentLocationTVCell.identifier)
     }
     
     @IBAction func backBtnTap(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
     
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-//        if ((navigationBarUIView == nil)) {
-//            self.navigationBarUIView.isHidden = true
-//            return
-//        }
-        
-        if (self.lastContentOffset <= 0 || self.lastContentOffset > scrollView.contentOffset.y) {
-            self.navigationBarUIView.isHidden = true
-        }
-        else if (self.lastContentOffset < scrollView.contentOffset.y) {
-            self.navigationBarUIView.isHidden = false
-        }
-        self.lastContentOffset = scrollView.contentOffset.y
-    }
+    
 
 }
-

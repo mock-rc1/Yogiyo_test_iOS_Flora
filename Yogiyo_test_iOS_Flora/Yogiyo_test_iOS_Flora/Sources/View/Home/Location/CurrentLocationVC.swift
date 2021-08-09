@@ -21,6 +21,7 @@ class CurrentLocationVC: UIViewController {
         locationTableView.delegate = self
         locationTableView.dataSource = self
         setStyle()
+        
         self.locationTableView.register(CurrentLocationTVCell.nib(), forCellReuseIdentifier: CurrentLocationTVCell.identifier)
         
         locationTableView.separatorColor = UIColor.clear

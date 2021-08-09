@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AddTVCell" id="KGk-i7-Jjw" customClass="AddTVCell" customModule="Yogiyo_test_iOS_Flora" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wep-Iz-bqX">
+                        <rect key="frame" x="20" y="0.0" width="280" height="44"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gd3-04-tjF">
+                                <rect key="frame" x="0.0" y="10" width="23" height="22"/>
+                                <color key="tintColor" systemColor="systemGray2Color"/>
+                                <state key="normal" image="square" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="thin"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJr-wL-bd0">
+                                <rect key="frame" x="33" y="12" width="38" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Te-pC-zea">
+                                <rect key="frame" x="249" y="13.5" width="31" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Gd3-04-tjF" firstAttribute="top" secondItem="Wep-Iz-bqX" secondAttribute="top" constant="10" id="Hwf-rv-QK4"/>
+                            <constraint firstItem="GJr-wL-bd0" firstAttribute="leading" secondItem="Gd3-04-tjF" secondAttribute="trailing" constant="10" id="PKT-X6-7O2"/>
+                            <constraint firstAttribute="trailing" secondItem="6Te-pC-zea" secondAttribute="trailing" id="Qtf-aV-07l"/>
+                            <constraint firstItem="GJr-wL-bd0" firstAttribute="centerY" secondItem="Gd3-04-tjF" secondAttribute="centerY" id="SVN-0A-z4W"/>
+                            <constraint firstItem="Gd3-04-tjF" firstAttribute="leading" secondItem="Wep-Iz-bqX" secondAttribute="leading" id="lTP-mV-BeG"/>
+                            <constraint firstItem="6Te-pC-zea" firstAttribute="centerY" secondItem="GJr-wL-bd0" secondAttribute="centerY" id="nsl-Go-TaV"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Wep-Iz-bqX" secondAttribute="bottom" id="AYP-hF-qcv"/>
+                    <constraint firstItem="Wep-Iz-bqX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="KyG-fL-pkC"/>
+                    <constraint firstItem="Wep-Iz-bqX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="O6o-ke-JMO"/>
+                    <constraint firstAttribute="trailing" secondItem="Wep-Iz-bqX" secondAttribute="trailing" constant="20" id="qR1-O4-1D4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="addCostLabel" destination="6Te-pC-zea" id="Hpp-B7-6GB"/>
+                <outlet property="addFoodLabel" destination="GJr-wL-bd0" id="OEu-mb-j8j"/>
+                <outlet property="checkBoxBtn" destination="Gd3-04-tjF" id="gS0-Cp-byT"/>
+            </connections>
+            <point key="canvasLocation" x="117" y="83"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="square" catalog="system" width="128" height="114"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

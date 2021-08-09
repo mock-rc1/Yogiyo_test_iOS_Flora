@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SelectTVCell" rowHeight="42" id="KGk-i7-Jjw" customClass="SelectTVCell" customModule="Yogiyo_test_iOS_Flora" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="42"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="42"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="88a-dp-6eJ">
+                        <rect key="frame" x="20" y="0.0" width="280" height="42"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ytW-6Q-1zO">
+                                <rect key="frame" x="0.0" y="10" width="24" height="23"/>
+                                <color key="tintColor" systemColor="systemGray2Color"/>
+                                <state key="normal" image="circle" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="thin"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JUd-nQ-cEr">
+                                <rect key="frame" x="34" y="12.5" width="38" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EoW-Y4-PcJ">
+                                <rect key="frame" x="249" y="14" width="31" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ytW-6Q-1zO" firstAttribute="leading" secondItem="88a-dp-6eJ" secondAttribute="leading" id="5Es-qu-6rO"/>
+                            <constraint firstItem="ytW-6Q-1zO" firstAttribute="top" secondItem="88a-dp-6eJ" secondAttribute="top" constant="10" id="6Dj-Wt-oPG"/>
+                            <constraint firstItem="EoW-Y4-PcJ" firstAttribute="centerY" secondItem="JUd-nQ-cEr" secondAttribute="centerY" id="Anl-AC-pxQ"/>
+                            <constraint firstItem="JUd-nQ-cEr" firstAttribute="leading" secondItem="ytW-6Q-1zO" secondAttribute="trailing" constant="10" id="PCf-Z3-umu"/>
+                            <constraint firstAttribute="trailing" secondItem="EoW-Y4-PcJ" secondAttribute="trailing" id="rBX-Mx-NfI"/>
+                            <constraint firstItem="JUd-nQ-cEr" firstAttribute="centerY" secondItem="ytW-6Q-1zO" secondAttribute="centerY" id="y14-cA-PmT"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="88a-dp-6eJ" secondAttribute="bottom" id="Rgv-Nj-PqL"/>
+                    <constraint firstItem="88a-dp-6eJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="gHO-fW-onO"/>
+                    <constraint firstItem="88a-dp-6eJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="mvs-Ii-SoW"/>
+                    <constraint firstAttribute="trailing" secondItem="88a-dp-6eJ" secondAttribute="trailing" constant="20" id="zY2-RP-IUF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="circleBtn" destination="ytW-6Q-1zO" id="0E1-GD-2sc"/>
+                <outlet property="costLabel" destination="EoW-Y4-PcJ" id="lZm-ZX-MTG"/>
+                <outlet property="selectNameLabel" destination="JUd-nQ-cEr" id="4E2-nD-R9t"/>
+            </connections>
+            <point key="canvasLocation" x="115.94202898550725" y="48.214285714285715"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="circle" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
