@@ -18,6 +18,10 @@ class SelectTVCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
+    
+    static func nib() -> UINib {
+        return UINib(nibName: "SelectTVCell", bundle: nil)
+    }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

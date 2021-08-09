@@ -277,6 +277,9 @@
                                 <state key="normal" image="magnifyingglass" catalog="system">
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="18" scale="large" weight="thin"/>
                                 </state>
+                                <connections>
+                                    <segue destination="dck-7V-4d4" kind="show" id="Sam-U0-0nd"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qKc-Ms-6Z2"/>
@@ -311,15 +314,22 @@
         <!--Food ChoiceVC-->
         <scene sceneID="xtj-Nm-4UJ">
             <objects>
-                <viewController storyboardIdentifier="FoodChoiceVC" id="dck-7V-4d4" customClass="FoodChoiceVC" customModule="Yogiyo_test_iOS_Flora" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FoodChoiceVC" modalPresentationStyle="fullScreen" id="dck-7V-4d4" customClass="FoodChoiceVC" customModule="Yogiyo_test_iOS_Flora" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Gr-Ei-SXZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sJJ-gk-oNC">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="sJJ-gk-oNC">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" red="0.93725490196078431" green="0.93333333333333335" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ITJ-nD-0Z4">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="85"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="emB-xz-nWt"/>
+                                </constraints>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sdu-iv-cce">
                                 <rect key="frame" x="0.0" y="44" width="414" height="46"/>
                                 <subviews>
@@ -366,8 +376,10 @@
                         <viewLayoutGuide key="safeArea" id="7fY-0j-9aY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="ITJ-nD-0Z4" firstAttribute="leading" secondItem="7fY-0j-9aY" secondAttribute="leading" id="12j-OZ-wG0"/>
                             <constraint firstItem="7fY-0j-9aY" firstAttribute="trailing" secondItem="sJJ-gk-oNC" secondAttribute="trailing" id="2ZG-WN-wwk"/>
                             <constraint firstItem="sJJ-gk-oNC" firstAttribute="top" secondItem="1Gr-Ei-SXZ" secondAttribute="top" id="LBI-t9-uhD"/>
+                            <constraint firstItem="ITJ-nD-0Z4" firstAttribute="top" secondItem="1Gr-Ei-SXZ" secondAttribute="top" id="LkF-1p-47k"/>
                             <constraint firstAttribute="top" secondItem="8Nm-iR-Jif" secondAttribute="bottom" constant="-90.5" id="Sy8-Rz-fcC"/>
                             <constraint firstItem="sdu-iv-cce" firstAttribute="leading" secondItem="7fY-0j-9aY" secondAttribute="leading" id="Tah-yI-nNj"/>
                             <constraint firstItem="sJJ-gk-oNC" firstAttribute="leading" secondItem="7fY-0j-9aY" secondAttribute="leading" id="dmk-RK-VWJ"/>
@@ -376,13 +388,16 @@
                             <constraint firstItem="8Nm-iR-Jif" firstAttribute="top" secondItem="sdu-iv-cce" secondAttribute="bottom" id="lUJ-b6-aQm"/>
                             <constraint firstItem="7fY-0j-9aY" firstAttribute="trailing" secondItem="8Nm-iR-Jif" secondAttribute="trailing" id="pBX-9T-sbv"/>
                             <constraint firstItem="sdu-iv-cce" firstAttribute="top" secondItem="7fY-0j-9aY" secondAttribute="top" id="sCb-Ra-uD0"/>
+                            <constraint firstAttribute="trailing" secondItem="ITJ-nD-0Z4" secondAttribute="trailing" id="uzL-S0-HrD"/>
                             <constraint firstItem="7fY-0j-9aY" firstAttribute="trailing" secondItem="sdu-iv-cce" secondAttribute="trailing" id="wUD-hl-kbw"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="a3g-R9-YfN"/>
                     <connections>
                         <outlet property="backBtn" destination="ZbP-3y-7oF" id="Qym-Hn-5pJ"/>
                         <outlet property="foodChoiceTableView" destination="sJJ-gk-oNC" id="sRF-nb-nPI"/>
                         <outlet property="nameLabel" destination="3RU-RZ-d0Y" id="Mob-0K-MeB"/>
+                        <outlet property="navigationBarUIView" destination="sdu-iv-cce" id="u1B-eI-eEZ"/>
                         <outlet property="sharedBtn" destination="mln-Aa-N8E" id="Guu-bm-l2a"/>
                     </connections>
                 </viewController>

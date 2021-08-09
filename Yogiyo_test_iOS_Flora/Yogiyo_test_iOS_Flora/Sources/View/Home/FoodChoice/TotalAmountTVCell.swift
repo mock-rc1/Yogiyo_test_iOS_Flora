@@ -11,15 +11,21 @@ class TotalAmountTVCell: UITableViewCell {
     
     static let identifier = "TotalAmountTVCell"
 
+    @IBOutlet weak var totalAmountLabel: UILabel!
+    @IBOutlet weak var minOrderCostLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+    
+    }
+    
+    static func nib() -> UINib {
+        return UINib(nibName: "TotalAmountTVCell", bundle: nil)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
     }
     
 }

@@ -21,20 +21,20 @@
                         <rect key="frame" x="20" y="0.0" width="280" height="44"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gd3-04-tjF">
-                                <rect key="frame" x="0.0" y="10" width="23" height="22"/>
+                                <rect key="frame" x="0.0" y="11" width="23" height="22"/>
                                 <color key="tintColor" systemColor="systemGray2Color"/>
                                 <state key="normal" image="square" catalog="system">
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="thin"/>
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJr-wL-bd0">
-                                <rect key="frame" x="33" y="12" width="38" height="18"/>
+                                <rect key="frame" x="33" y="13" width="38" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Te-pC-zea">
-                                <rect key="frame" x="249" y="13.5" width="31" height="15"/>
+                                <rect key="frame" x="249" y="14.5" width="31" height="15"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -42,10 +42,10 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Gd3-04-tjF" firstAttribute="top" secondItem="Wep-Iz-bqX" secondAttribute="top" constant="10" id="Hwf-rv-QK4"/>
                             <constraint firstItem="GJr-wL-bd0" firstAttribute="leading" secondItem="Gd3-04-tjF" secondAttribute="trailing" constant="10" id="PKT-X6-7O2"/>
                             <constraint firstAttribute="trailing" secondItem="6Te-pC-zea" secondAttribute="trailing" id="Qtf-aV-07l"/>
                             <constraint firstItem="GJr-wL-bd0" firstAttribute="centerY" secondItem="Gd3-04-tjF" secondAttribute="centerY" id="SVN-0A-z4W"/>
+                            <constraint firstItem="Gd3-04-tjF" firstAttribute="centerY" secondItem="Wep-Iz-bqX" secondAttribute="centerY" id="VRd-lB-UQd"/>
                             <constraint firstItem="Gd3-04-tjF" firstAttribute="leading" secondItem="Wep-Iz-bqX" secondAttribute="leading" id="lTP-mV-BeG"/>
                             <constraint firstItem="6Te-pC-zea" firstAttribute="centerY" secondItem="GJr-wL-bd0" secondAttribute="centerY" id="nsl-Go-TaV"/>
                         </constraints>

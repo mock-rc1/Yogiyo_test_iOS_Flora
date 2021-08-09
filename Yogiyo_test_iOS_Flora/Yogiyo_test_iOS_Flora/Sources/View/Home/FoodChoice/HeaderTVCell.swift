@@ -20,7 +20,7 @@ class HeaderTVCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        reviewBtnView.layer.cornerRadius = 30
+        reviewBtnView.layer.cornerRadius = 20
         
     }
     

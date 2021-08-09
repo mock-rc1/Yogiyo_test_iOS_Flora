@@ -16,6 +16,10 @@ class PriceTVCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
+    
+    static func nib() -> UINib {
+        return UINib(nibName: "PriceTVCell", bundle: nil)
+    }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

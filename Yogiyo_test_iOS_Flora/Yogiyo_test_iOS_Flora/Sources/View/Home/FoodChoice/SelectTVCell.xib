@@ -21,20 +21,20 @@
                         <rect key="frame" x="20" y="0.0" width="280" height="42"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ytW-6Q-1zO">
-                                <rect key="frame" x="0.0" y="10" width="24" height="23"/>
+                                <rect key="frame" x="0.0" y="9.5" width="24" height="23"/>
                                 <color key="tintColor" systemColor="systemGray2Color"/>
                                 <state key="normal" image="circle" catalog="system">
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="thin"/>
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JUd-nQ-cEr">
-                                <rect key="frame" x="34" y="12.5" width="38" height="18"/>
+                                <rect key="frame" x="34" y="12" width="38" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EoW-Y4-PcJ">
-                                <rect key="frame" x="249" y="14" width="31" height="15"/>
+                                <rect key="frame" x="249" y="13.5" width="31" height="15"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -43,9 +43,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ytW-6Q-1zO" firstAttribute="leading" secondItem="88a-dp-6eJ" secondAttribute="leading" id="5Es-qu-6rO"/>
-                            <constraint firstItem="ytW-6Q-1zO" firstAttribute="top" secondItem="88a-dp-6eJ" secondAttribute="top" constant="10" id="6Dj-Wt-oPG"/>
                             <constraint firstItem="EoW-Y4-PcJ" firstAttribute="centerY" secondItem="JUd-nQ-cEr" secondAttribute="centerY" id="Anl-AC-pxQ"/>
                             <constraint firstItem="JUd-nQ-cEr" firstAttribute="leading" secondItem="ytW-6Q-1zO" secondAttribute="trailing" constant="10" id="PCf-Z3-umu"/>
+                            <constraint firstItem="ytW-6Q-1zO" firstAttribute="centerY" secondItem="88a-dp-6eJ" secondAttribute="centerY" id="dC3-jU-T9P"/>
                             <constraint firstAttribute="trailing" secondItem="EoW-Y4-PcJ" secondAttribute="trailing" id="rBX-Mx-NfI"/>
                             <constraint firstItem="JUd-nQ-cEr" firstAttribute="centerY" secondItem="ytW-6Q-1zO" secondAttribute="centerY" id="y14-cA-PmT"/>
                         </constraints>
