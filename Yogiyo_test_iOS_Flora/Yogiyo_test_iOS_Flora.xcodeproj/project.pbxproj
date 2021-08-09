@@ -125,6 +125,8 @@
 		DD3F912326BFD61B00F98C1D /* NickNameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F912226BFD61A00F98C1D /* NickNameVC.swift */; };
 		DD3F912726C0086200F98C1D /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F912626C0086200F98C1D /* UserInfo.swift */; };
 		DD3F912926C008AD00F98C1D /* UserInfoDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F912826C008AD00F98C1D /* UserInfoDataManager.swift */; };
+		DD3F912C26C1422600F98C1D /* beforeSearchTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F912A26C1422500F98C1D /* beforeSearchTVCell.swift */; };
+		DD3F912D26C1422600F98C1D /* beforeSearchTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3F912B26C1422500F98C1D /* beforeSearchTVCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -249,6 +251,8 @@
 		DD3F912226BFD61A00F98C1D /* NickNameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NickNameVC.swift; sourceTree = "<group>"; };
 		DD3F912626C0086200F98C1D /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		DD3F912826C008AD00F98C1D /* UserInfoDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoDataManager.swift; sourceTree = "<group>"; };
+		DD3F912A26C1422500F98C1D /* beforeSearchTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = beforeSearchTVCell.swift; sourceTree = "<group>"; };
+		DD3F912B26C1422500F98C1D /* beforeSearchTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = beforeSearchTVCell.xib; sourceTree = "<group>"; };
 		F9C1772B30741BA88AC342B9 /* Pods-Yogiyo_test_iOS_Flora.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yogiyo_test_iOS_Flora.release.xcconfig"; path = "Target Support Files/Pods-Yogiyo_test_iOS_Flora/Pods-Yogiyo_test_iOS_Flora.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -790,6 +794,8 @@
 			children = (
 				DD3F908526BBE20400F98C1D /* CurrentLocationTVCell.swift */,
 				DD3F908626BBE20400F98C1D /* CurrentLocationTVCell.xib */,
+				DD3F912A26C1422500F98C1D /* beforeSearchTVCell.swift */,
+				DD3F912B26C1422500F98C1D /* beforeSearchTVCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -1012,6 +1018,7 @@
 				DD3029B126B5773300ABEB63 /* OrderStoryboard.storyboard in Resources */,
 				DD3029A526B5761700ABEB63 /* HomeStoryboard.storyboard in Resources */,
 				DD30297B26B54F9B00ABEB63 /* MyYogiyoStoryboard.storyboard in Resources */,
+				DD3F912D26C1422600F98C1D /* beforeSearchTVCell.xib in Resources */,
 				DD30296626B53EB500ABEB63 /* Main.storyboard in Resources */,
 				DD3F900C26B8EAF200F98C1D /* CouponConVC.xib in Resources */,
 				DD3F904D26BA72FC00F98C1D /* CategoryFoodConVC.xib in Resources */,
@@ -1139,6 +1146,7 @@
 				DD3F907A26BBBF0400F98C1D /* HotOurStoreTVCell.swift in Sources */,
 				DD3F905226BA820700F98C1D /* HashTageCVCell.swift in Sources */,
 				DD3029AD26B5770900ABEB63 /* SearchViewController.swift in Sources */,
+				DD3F912C26C1422600F98C1D /* beforeSearchTVCell.swift in Sources */,
 				DD3F90B526BD15B400F98C1D /* BossamViewController.swift in Sources */,
 				DD30299B26B5696400ABEB63 /* EmailSignUpViewController.swift in Sources */,
 				DD3F904726BA72C200F98C1D /* FoodCategoryTVCell.swift in Sources */,
