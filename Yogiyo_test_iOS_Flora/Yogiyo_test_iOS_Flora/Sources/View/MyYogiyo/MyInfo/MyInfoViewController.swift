@@ -18,7 +18,8 @@ class MyInfoViewController: UIViewController {
     var myInfo = ["이메일","패스워드","전화번호","닉네임"]
     var sections = ["이메일셀","로그인로그아웃버튼셀"]
     
-    var userInfo: UserResult
+    //var userInfo : [UserResult]?
+    var userInfo : UserResult?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +27,7 @@ class MyInfoViewController: UIViewController {
         setDelegate()
         setStyle()
         setCellRegister()
+        dataManager.getUserInfo(delegate: self)
 
     }
     
@@ -75,12 +77,14 @@ extension MyInfoViewController: UITableViewDelegate, UITableViewDataSource {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: MyInfoTVCell.identifier) as? MyInfoTVCell else{
                 return UITableViewCell()
             }
+            
                 if indexPath.row == 0 {
                     cell.titleNameLabel.text = "이메일 아이디"
                     cell.changeBtn.isHidden = true
-                    cell.myInfoLabel.text = userInfo.userEmail
+                    cell.myInfoLabel.text = userInfo?.userEmail
                 } else if indexPath.row == 1 {
                     cell.titleNameLabel.text = "비밀번호"
+                    cell.myInfoLabel.text = "*********"
                     cell.changeBtn.isHidden = true
                     cell.myInfoLabel.textColor = #colorLiteral(red: 0.3333333433, green: 0.3333333433, blue: 0.3333333433, alpha: 1)
                 }
@@ -96,6 +100,7 @@ extension MyInfoViewController: UITableViewDelegate, UITableViewDataSource {
                 }
                 else if indexPath.row == 3 {
                     cell.titleNameLabel.text = "닉네임"
+                    cell.myInfoLabel.text = userInfo?.userNickname
                     cell.myInfoLabel.textColor = #colorLiteral(red: 0.3333333433, green: 0.3333333433, blue: 0.3333333433, alpha: 1)
                 }
                 
@@ -153,8 +158,8 @@ extension MyInfoViewController {
     func didSuccessUserInfo(result: UserResult) {
         //self.dismissIndicator()
         
-        userInfo = result
-        
+        self.userInfo = result
+        MyInfoTableView.reloadData() 
     }
     
     func failedToRequest(message: String) {

@@ -15,10 +15,12 @@ struct UserInfo: Codable {
     let result: UserResult
 }
 
-// MARK: - Result
+// MARK: - UserResult
 struct UserResult: Codable {
     let userIdx: Int
     let userEmail: String
     let userPhoneNum: String?
     let userNickname: String
 }
+
+

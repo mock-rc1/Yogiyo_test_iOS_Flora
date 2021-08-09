@@ -8,24 +8,47 @@
 import Foundation
 import Alamofire
 
+
 class UserInfoDataManager {
-    static let shared = UserInfoDataManager()
-    
-    let URL = "https://rc1-hardy.shop/users/email-login/:userIdx"
+    //static let shared = UserInfoDataManager()
     
     func getUserInfo(delegate: MyInfoViewController) {
         
-        AF.request(URL, method: .get, encoding: JSONEncoding.default, headers: ["Content-Type":"application/json","X-ACCESS-TOKEN": "token"])
-            .validate()
+        var url: String
+        
+        if let userIndex = UserDefaults.standard.string(forKey: "userIdx") {
+            url = "https://rc1-hardy.shop/users/email-login/\(userIndex)"
+        }
+        else {
+            url = "https://rc1-hardy.shop/users/email-login"
+        }
+        
+        var header : HTTPHeaders = []
+        
+        if let token = UserDefaults.standard.string(forKey: "userToken") {
+            header = ["Content-Type":"application/json", "X-ACCESS-TOKEN": token]
+        }
+        else {
+            header = ["Content-Type":"application/json"]
+        }
+        
+        AF.request(url, method: .get, encoding: JSONEncoding.default, headers: header)
+//            .responseString(completionHandler: { response in
+//                print("response",response)
+//                                }
             .responseDecodable(of: UserInfo.self) { response in
+                print("response",response)
                 switch response.result {
                 case .success(let response):
+                    print("이거나오면 여기까진온거야")
                     delegate.didSuccessUserInfo(result: response.result)
+                    print("성공햇니",response)
                 case .failure(let error):
-                    print(error.localizedDescription)
-                    delegate.failedToRequest(message: "서버와의 연결이 원활하지 않습니다")
+                    print("오류났슈",error.localizedDescription)
+                    delegate.failedToRequest(message: "오류가났습니다.")
                 }
             }
+    //)
     }
 }
 

@@ -109,6 +109,8 @@ extension emailLoginViewController {
         self.presentAlert(title: "로그인에 성공하였습니다", message: result.jwt, isCancelActionIncluded: true) {
             action in
             UserDefaults.standard.set(result.jwt, forKey: "userToken") // 토큰 저장
+            UserDefaults.standard.set(result.userIdx, forKey: "userIdx")
+            
             
             let storyboardVC = UIStoryboard(name: "MyYogiyoStoryboard", bundle: Bundle(for: MyYogiyoViewController.self)).instantiateViewController(withIdentifier: "MyYogiyoViewController") as! MyYogiyoViewController
 
