@@ -77,15 +77,14 @@ extension AllViewController: UITableViewDelegate, UITableViewDataSource {
             let cate = category[indexPath.row]
             cell.arrivalTimeLabel.text = cate.deliveryTime
             cell.deliveryFeeLabel.text = cate.deliveryTip
+            cell.foodImageView.sd_setImage(with: URL(string: cate.storeLogoURL ?? "https://yogiyoserver.s3.ap-northeast-2.amazonaws.com/icon/storeIcon/IMG_7739.jpg"))
             
-            URL(string: cate.storeImageURL!)
-            // Fetch Image Data
-            if let data = try? Data(contentsOf: URL(string: cate.storeImageURL!)) {
-                 //Create Image and Update Image View
-                cell.foodImageView.image = UIImage(data: data)
-            }
-            
-            Data(contentsOf: <#T##URL#>)
+//            let categoryUrl = URL(string: cate.storeImageURL!)
+//            // Fetch Image Data
+//            if let data = try? Data(contentsOf: categoryUrl!) {
+//                 //Create Image and Update Image View
+//                cell.foodImageView.image = UIImage(data: data)
+//            }
             
             cell.starScore.text = cate.storeRating
             cell.storeNameLabel.text = cate.storeName
