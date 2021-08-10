@@ -161,6 +161,18 @@
 		DD3F917126C1E88E00F98C1D /* BtnVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3F916F26C1E88E00F98C1D /* BtnVC.xib */; };
 		DD3F917926C22C6700F98C1D /* OrderHistoryInTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F917726C22C6700F98C1D /* OrderHistoryInTVCell.swift */; };
 		DD3F917A26C22C6700F98C1D /* OrderHistoryInTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3F917826C22C6700F98C1D /* OrderHistoryInTVCell.xib */; };
+		DD3F917E26C23DFD00F98C1D /* CustomerCenterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F917D26C23DFD00F98C1D /* CustomerCenterVC.swift */; };
+		DD3F918026C23E3000F98C1D /* MyYogiyoInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F917F26C23E3000F98C1D /* MyYogiyoInfoVC.swift */; };
+		DD3F918426C23F1D00F98C1D /* CustomerTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F918226C23F1D00F98C1D /* CustomerTVCell.swift */; };
+		DD3F918526C23F1D00F98C1D /* CustomerTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3F918326C23F1D00F98C1D /* CustomerTVCell.xib */; };
+		DD3F918926C2468E00F98C1D /* JjimTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F918726C2468E00F98C1D /* JjimTVCell.swift */; };
+		DD3F918A26C2468E00F98C1D /* JjimTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3F918826C2468E00F98C1D /* JjimTVCell.xib */; };
+		DD3F918D26C247B400F98C1D /* RecentlyViewTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F918B26C247B400F98C1D /* RecentlyViewTVCell.swift */; };
+		DD3F918E26C247B400F98C1D /* RecentlyViewTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3F918C26C247B400F98C1D /* RecentlyViewTVCell.xib */; };
+		DD3F919226C249B400F98C1D /* jjimVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F919026C249B400F98C1D /* jjimVC.swift */; };
+		DD3F919326C249B400F98C1D /* jjimVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3F919126C249B400F98C1D /* jjimVC.xib */; };
+		DD3F919626C249E700F98C1D /* RecentlyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F919426C249E700F98C1D /* RecentlyVC.swift */; };
+		DD3F919726C249E700F98C1D /* RecentlyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3F919526C249E700F98C1D /* RecentlyVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -321,6 +333,18 @@
 		DD3F916F26C1E88E00F98C1D /* BtnVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BtnVC.xib; sourceTree = "<group>"; };
 		DD3F917726C22C6700F98C1D /* OrderHistoryInTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHistoryInTVCell.swift; sourceTree = "<group>"; };
 		DD3F917826C22C6700F98C1D /* OrderHistoryInTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderHistoryInTVCell.xib; sourceTree = "<group>"; };
+		DD3F917D26C23DFD00F98C1D /* CustomerCenterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerCenterVC.swift; sourceTree = "<group>"; };
+		DD3F917F26C23E3000F98C1D /* MyYogiyoInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyYogiyoInfoVC.swift; sourceTree = "<group>"; };
+		DD3F918226C23F1D00F98C1D /* CustomerTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerTVCell.swift; sourceTree = "<group>"; };
+		DD3F918326C23F1D00F98C1D /* CustomerTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomerTVCell.xib; sourceTree = "<group>"; };
+		DD3F918726C2468E00F98C1D /* JjimTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JjimTVCell.swift; sourceTree = "<group>"; };
+		DD3F918826C2468E00F98C1D /* JjimTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JjimTVCell.xib; sourceTree = "<group>"; };
+		DD3F918B26C247B400F98C1D /* RecentlyViewTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentlyViewTVCell.swift; sourceTree = "<group>"; };
+		DD3F918C26C247B400F98C1D /* RecentlyViewTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecentlyViewTVCell.xib; sourceTree = "<group>"; };
+		DD3F919026C249B400F98C1D /* jjimVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jjimVC.swift; sourceTree = "<group>"; };
+		DD3F919126C249B400F98C1D /* jjimVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = jjimVC.xib; sourceTree = "<group>"; };
+		DD3F919426C249E700F98C1D /* RecentlyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentlyVC.swift; sourceTree = "<group>"; };
+		DD3F919526C249E700F98C1D /* RecentlyVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecentlyVC.xib; sourceTree = "<group>"; };
 		F9C1772B30741BA88AC342B9 /* Pods-Yogiyo_test_iOS_Flora.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yogiyo_test_iOS_Flora.release.xcconfig"; path = "Target Support Files/Pods-Yogiyo_test_iOS_Flora/Pods-Yogiyo_test_iOS_Flora.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -444,6 +468,7 @@
 			children = (
 				DD3029A826B576DC00ABEB63 /* JjimStoryboard.storyboard */,
 				DD3029AA26B576EE00ABEB63 /* JjimViewController.swift */,
+				DD3F918626C2466A00F98C1D /* Cell */,
 			);
 			path = Jjim;
 			sourceTree = "<group>";
@@ -476,6 +501,8 @@
 				DD3029C926B66D1700ABEB63 /* SocialLogin */,
 				DD3029CA26B66D4C00ABEB63 /* EmailLogin */,
 				DD3029CB26B66D8C00ABEB63 /* EmailSignUp */,
+				DD3F917C26C23D9E00F98C1D /* CustomerCenter */,
+				DD3F917B26C23D8100F98C1D /* MyYogiyoInfo */,
 			);
 			path = MyYogiyo;
 			sourceTree = "<group>";
@@ -1084,6 +1111,55 @@
 			path = TVCell;
 			sourceTree = "<group>";
 		};
+		DD3F917B26C23D8100F98C1D /* MyYogiyoInfo */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F917F26C23E3000F98C1D /* MyYogiyoInfoVC.swift */,
+			);
+			path = MyYogiyoInfo;
+			sourceTree = "<group>";
+		};
+		DD3F917C26C23D9E00F98C1D /* CustomerCenter */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F917D26C23DFD00F98C1D /* CustomerCenterVC.swift */,
+				DD3F918126C23F0600F98C1D /* Cell */,
+			);
+			path = CustomerCenter;
+			sourceTree = "<group>";
+		};
+		DD3F918126C23F0600F98C1D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F918226C23F1D00F98C1D /* CustomerTVCell.swift */,
+				DD3F918326C23F1D00F98C1D /* CustomerTVCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		DD3F918626C2466A00F98C1D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F918726C2468E00F98C1D /* JjimTVCell.swift */,
+				DD3F918826C2468E00F98C1D /* JjimTVCell.xib */,
+				DD3F918B26C247B400F98C1D /* RecentlyViewTVCell.swift */,
+				DD3F918C26C247B400F98C1D /* RecentlyViewTVCell.xib */,
+				DD3F918F26C2497D00F98C1D /* Controller */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		DD3F918F26C2497D00F98C1D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F919026C249B400F98C1D /* jjimVC.swift */,
+				DD3F919126C249B400F98C1D /* jjimVC.xib */,
+				DD3F919426C249E700F98C1D /* RecentlyVC.swift */,
+				DD3F919526C249E700F98C1D /* RecentlyVC.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1155,6 +1231,7 @@
 				DD3F905326BA820700F98C1D /* HashTageCVCell.xib in Resources */,
 				DD3F903E26BA582F00F98C1D /* FourthButtonTVCell.xib in Resources */,
 				DD3F900726B8EAB600F98C1D /* couponTableViewCell.xib in Resources */,
+				DD3F918E26C247B400F98C1D /* RecentlyViewTVCell.xib in Resources */,
 				DD3F8FF726B8531800F98C1D /* BeforeLoginConVC.xib in Resources */,
 				DD3F911726BFB42C00F98C1D /* LoginLogoutTVCell.xib in Resources */,
 				DD30298726B5612600ABEB63 /* Images.xcassets in Resources */,
@@ -1166,6 +1243,8 @@
 				DD3F915C26C1E77800F98C1D /* OrderHistoryTVCell.xib in Resources */,
 				DD3F912D26C1422600F98C1D /* beforeSearchTVCell.xib in Resources */,
 				DD30296626B53EB500ABEB63 /* Main.storyboard in Resources */,
+				DD3F918526C23F1D00F98C1D /* CustomerTVCell.xib in Resources */,
+				DD3F918A26C2468E00F98C1D /* JjimTVCell.xib in Resources */,
 				DD3F900C26B8EAF200F98C1D /* CouponConVC.xib in Resources */,
 				DD3F913426C168DB00F98C1D /* HeaderTVCell.xib in Resources */,
 				DD3F915426C1E73200F98C1D /* PayTVCell.xib in Resources */,
@@ -1178,6 +1257,7 @@
 				DD3F8FFF26B8DFE000F98C1D /* CompleteLoginVC.xib in Resources */,
 				DD3F915026C1E70F00F98C1D /* OrderInfoTVCell.xib in Resources */,
 				DD3F90CA26BD614C00F98C1D /* hashTagCollectionViewCell.xib in Resources */,
+				DD3F919326C249B400F98C1D /* jjimVC.xib in Resources */,
 				DD3F916926C1E7FE00F98C1D /* PayVC.xib in Resources */,
 				DD3F90F826BE10DF00F98C1D /* HashTagVC.xib in Resources */,
 				DD3F913826C16E1300F98C1D /* PriceTVCell.xib in Resources */,
@@ -1193,6 +1273,7 @@
 				DD3F907326BBB31C00F98C1D /* MiddleBannerCVCell.xib in Resources */,
 				DD3F905A26BA9E3F00F98C1D /* ExpressTVCell.xib in Resources */,
 				DD3F914026C1725D00F98C1D /* SelectTVCell.xib in Resources */,
+				DD3F919726C249E700F98C1D /* RecentlyVC.xib in Resources */,
 				DD3029A926B576DC00ABEB63 /* JjimStoryboard.storyboard in Resources */,
 				DD3F911B26BFB53300F98C1D /* LoginLogoutConVC.xib in Resources */,
 				DD3F905E26BAA3A000F98C1D /* ExpressCVCell.xib in Resources */,
@@ -1280,6 +1361,7 @@
 				DD3F913326C168DB00F98C1D /* HeaderTVCell.swift in Sources */,
 				DD3F915326C1E73200F98C1D /* PayTVCell.swift in Sources */,
 				DD30297726B5482000ABEB63 /* BaseViewController.swift in Sources */,
+				DD3F918026C23E3000F98C1D /* MyYogiyoInfoVC.swift in Sources */,
 				DD3F917926C22C6700F98C1D /* OrderHistoryInTVCell.swift in Sources */,
 				DD3F90A726BD13BB00F98C1D /* PizzaViewController.swift in Sources */,
 				DD3F90C126BD209A00F98C1D /* MyStoreTableViewCell.swift in Sources */,
@@ -1316,7 +1398,9 @@
 				DD3F910E26BF9FDF00F98C1D /* MyInfoTVCell.swift in Sources */,
 				DD3F902C26B9A05A00F98C1D /* SignUpRequest.swift in Sources */,
 				DD3F913F26C1725D00F98C1D /* SelectTVCell.swift in Sources */,
+				DD3F918926C2468E00F98C1D /* JjimTVCell.swift in Sources */,
 				DD3F907A26BBBF0400F98C1D /* HotOurStoreTVCell.swift in Sources */,
+				DD3F919626C249E700F98C1D /* RecentlyVC.swift in Sources */,
 				DD3F905226BA820700F98C1D /* HashTageCVCell.swift in Sources */,
 				DD3029AD26B5770900ABEB63 /* SearchViewController.swift in Sources */,
 				DD3F912C26C1422600F98C1D /* beforeSearchTVCell.swift in Sources */,
@@ -1324,6 +1408,7 @@
 				DD30299B26B5696400ABEB63 /* EmailSignUpViewController.swift in Sources */,
 				DD3F904726BA72C200F98C1D /* FoodCategoryTVCell.swift in Sources */,
 				DD3F90C926BD614C00F98C1D /* hashTagCollectionViewCell.swift in Sources */,
+				DD3F917E26C23DFD00F98C1D /* CustomerCenterVC.swift in Sources */,
 				DD3F907E26BBBF3100F98C1D /* HotOurStoreCVCell.swift in Sources */,
 				DD3F900626B8EAB600F98C1D /* couponTableViewCell.swift in Sources */,
 				DD3F901D26B95A0B00F98C1D /* SignUpData.swift in Sources */,
@@ -1337,6 +1422,7 @@
 				DD3F903126BA474700F98C1D /* BannerTVCell.swift in Sources */,
 				DD3029AB26B576EE00ABEB63 /* JjimViewController.swift in Sources */,
 				DD3F8FFE26B8DFE000F98C1D /* CompleteLoginVC.swift in Sources */,
+				DD3F919226C249B400F98C1D /* jjimVC.swift in Sources */,
 				DD3F90A526BD137000F98C1D /* BurgerViewController.swift in Sources */,
 				DD3F914B26C1E2C400F98C1D /* PlaceAnOrderVC.swift in Sources */,
 				DD3F90B326BD157400F98C1D /* NightViewController.swift in Sources */,
@@ -1345,6 +1431,8 @@
 				DD3F917026C1E88E00F98C1D /* BtnVC.swift in Sources */,
 				DD3F906E26BBB30000F98C1D /* MiddleBannerTVCell.swift in Sources */,
 				DD3F8FF626B8531800F98C1D /* BeforeLoginConVC.swift in Sources */,
+				DD3F918426C23F1D00F98C1D /* CustomerTVCell.swift in Sources */,
+				DD3F918D26C247B400F98C1D /* RecentlyViewTVCell.swift in Sources */,
 				DD3F906426BAF2C800F98C1D /* SignInResponse.swift in Sources */,
 				DD3F915F26C1E7AE00F98C1D /* BtnTVCell.swift in Sources */,
 				DD3F901326B9044000F98C1D /* categoryTableViewCell.swift in Sources */,

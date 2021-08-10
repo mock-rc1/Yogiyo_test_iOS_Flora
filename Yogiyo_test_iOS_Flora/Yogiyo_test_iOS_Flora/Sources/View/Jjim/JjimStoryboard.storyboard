@@ -15,11 +15,56 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kzd-7g-Pst">
+                                <rect key="frame" x="0.0" y="44" width="414" height="46"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="찜" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o6A-4u-Plm">
+                                        <rect key="frame" x="199.5" y="12.5" width="15" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="o6A-4u-Plm" firstAttribute="centerX" secondItem="kzd-7g-Pst" secondAttribute="centerX" id="2hj-eA-xFW"/>
+                                    <constraint firstItem="o6A-4u-Plm" firstAttribute="centerY" secondItem="kzd-7g-Pst" secondAttribute="centerY" id="PC1-B6-2IP"/>
+                                    <constraint firstAttribute="height" constant="46" id="b5d-Kq-epg"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yGp-H9-QsG">
+                                <rect key="frame" x="0.0" y="90" width="414" height="0.5"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="0.5" id="OSf-vN-flB"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="tjv-6U-qJV">
+                                <rect key="frame" x="0.0" y="90.5" width="414" height="722.5"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.94117647059999998" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kzd-7g-Pst" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="3Lb-9H-Tp2"/>
+                            <constraint firstItem="tjv-6U-qJV" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="3av-TN-X0I"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="kzd-7g-Pst" secondAttribute="trailing" id="GhD-Hi-JVC"/>
+                            <constraint firstItem="yGp-H9-QsG" firstAttribute="top" secondItem="kzd-7g-Pst" secondAttribute="bottom" id="KjU-bc-8XM"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="tjv-6U-qJV" secondAttribute="trailing" id="VRb-6F-d6D"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="yGp-H9-QsG" secondAttribute="trailing" id="Vrr-jU-RiM"/>
+                            <constraint firstItem="tjv-6U-qJV" firstAttribute="top" secondItem="yGp-H9-QsG" secondAttribute="bottom" id="dqp-GQ-jR3"/>
+                            <constraint firstItem="kzd-7g-Pst" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="g1P-we-DxU"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="tjv-6U-qJV" secondAttribute="bottom" id="iWb-7w-Shm"/>
+                            <constraint firstItem="yGp-H9-QsG" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="tKb-Hd-hnF"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="찜" image="찜안눌린거" selectedImage="찜눌린거" id="WsY-yP-a2O"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="jjimTableView" destination="tjv-6U-qJV" id="kr8-Gb-QQe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -31,6 +76,9 @@
         <image name="찜안눌린거" width="34" height="30"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
