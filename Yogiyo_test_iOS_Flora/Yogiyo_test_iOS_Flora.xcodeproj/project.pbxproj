@@ -173,6 +173,14 @@
 		DD3F919326C249B400F98C1D /* jjimVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3F919126C249B400F98C1D /* jjimVC.xib */; };
 		DD3F919626C249E700F98C1D /* RecentlyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F919426C249E700F98C1D /* RecentlyVC.swift */; };
 		DD3F919726C249E700F98C1D /* RecentlyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3F919526C249E700F98C1D /* RecentlyVC.xib */; };
+		DD3F919C26C2600400F98C1D /* ImageTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F919A26C2600400F98C1D /* ImageTVCell.swift */; };
+		DD3F919D26C2600400F98C1D /* ImageTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3F919B26C2600400F98C1D /* ImageTVCell.xib */; };
+		DD3F91A026C2609200F98C1D /* ImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F919E26C2609200F98C1D /* ImageVC.swift */; };
+		DD3F91A126C2609200F98C1D /* ImageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3F919F26C2609200F98C1D /* ImageVC.xib */; };
+		DD3F91A326C27EFA00F98C1D /* FirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F91A226C27EF900F98C1D /* FirstVC.swift */; };
+		DD3F91A526C27F0D00F98C1D /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F91A426C27F0D00F98C1D /* SecondVC.swift */; };
+		DD3F91AA26C291BB00F98C1D /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F91A926C291BB00F98C1D /* Categories.swift */; };
+		DD3F91AC26C294AE00F98C1D /* CategoriesDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F91AB26C294AE00F98C1D /* CategoriesDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -345,6 +353,14 @@
 		DD3F919126C249B400F98C1D /* jjimVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = jjimVC.xib; sourceTree = "<group>"; };
 		DD3F919426C249E700F98C1D /* RecentlyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentlyVC.swift; sourceTree = "<group>"; };
 		DD3F919526C249E700F98C1D /* RecentlyVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecentlyVC.xib; sourceTree = "<group>"; };
+		DD3F919A26C2600400F98C1D /* ImageTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTVCell.swift; sourceTree = "<group>"; };
+		DD3F919B26C2600400F98C1D /* ImageTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageTVCell.xib; sourceTree = "<group>"; };
+		DD3F919E26C2609200F98C1D /* ImageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageVC.swift; sourceTree = "<group>"; };
+		DD3F919F26C2609200F98C1D /* ImageVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageVC.xib; sourceTree = "<group>"; };
+		DD3F91A226C27EF900F98C1D /* FirstVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstVC.swift; sourceTree = "<group>"; };
+		DD3F91A426C27F0D00F98C1D /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
+		DD3F91A926C291BB00F98C1D /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
+		DD3F91AB26C294AE00F98C1D /* CategoriesDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesDataManager.swift; sourceTree = "<group>"; };
 		F9C1772B30741BA88AC342B9 /* Pods-Yogiyo_test_iOS_Flora.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yogiyo_test_iOS_Flora.release.xcconfig"; path = "Target Support Files/Pods-Yogiyo_test_iOS_Flora/Pods-Yogiyo_test_iOS_Flora.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -487,6 +503,9 @@
 			children = (
 				DD3029B026B5773300ABEB63 /* OrderStoryboard.storyboard */,
 				DD3029B226B5774300ABEB63 /* OrderViewController.swift */,
+				DD3F91A226C27EF900F98C1D /* FirstVC.swift */,
+				DD3F91A426C27F0D00F98C1D /* SecondVC.swift */,
+				DD3F91A626C28EF100F98C1D /* Cell */,
 			);
 			path = Order;
 			sourceTree = "<group>";
@@ -635,6 +654,7 @@
 		DD3F901926B9584200F98C1D /* Networkk */ = {
 			isa = PBXGroup;
 			children = (
+				DD3F91A726C2909000F98C1D /* Categories */,
 				DD3F912426C007C400F98C1D /* UserInfo */,
 				DD3F905F26BAF27400F98C1D /* SignIn */,
 				DD3F901A26B9588100F98C1D /* SignUp */,
@@ -964,6 +984,7 @@
 			isa = PBXGroup;
 			children = (
 				DD3F90CC26BD91B900F98C1D /* restaurantViewController.swift */,
+				DD3F919826C25FBD00F98C1D /* Cell */,
 			);
 			path = Restaurant;
 			sourceTree = "<group>";
@@ -1160,6 +1181,49 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		DD3F919826C25FBD00F98C1D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F919A26C2600400F98C1D /* ImageTVCell.swift */,
+				DD3F919B26C2600400F98C1D /* ImageTVCell.xib */,
+				DD3F919926C25FCC00F98C1D /* Controller */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		DD3F919926C25FCC00F98C1D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F919E26C2609200F98C1D /* ImageVC.swift */,
+				DD3F919F26C2609200F98C1D /* ImageVC.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DD3F91A626C28EF100F98C1D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		DD3F91A726C2909000F98C1D /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F91AB26C294AE00F98C1D /* CategoriesDataManager.swift */,
+				DD3F91A826C291A300F98C1D /* Entity */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		DD3F91A826C291A300F98C1D /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F91A926C291BB00F98C1D /* Categories.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1225,6 +1289,7 @@
 				DD3F907B26BBBF0400F98C1D /* HotOurStoreTVCell.xib in Resources */,
 				DD3F903226BA474700F98C1D /* BannerTVCell.xib in Resources */,
 				DD3F90FC26BEF25D00F98C1D /* HomeHashTagVC.xib in Resources */,
+				DD3F919D26C2600400F98C1D /* ImageTVCell.xib in Resources */,
 				DD3F914426C1744800F98C1D /* AddTVCell.xib in Resources */,
 				DD3F910026BEF73A00F98C1D /* TodayYogiTVCell.xib in Resources */,
 				DD3F914826C1763000F98C1D /* TotalAmountTVCell.xib in Resources */,
@@ -1260,6 +1325,7 @@
 				DD3F919326C249B400F98C1D /* jjimVC.xib in Resources */,
 				DD3F916926C1E7FE00F98C1D /* PayVC.xib in Resources */,
 				DD3F90F826BE10DF00F98C1D /* HashTagVC.xib in Resources */,
+				DD3F91A126C2609200F98C1D /* ImageVC.xib in Resources */,
 				DD3F913826C16E1300F98C1D /* PriceTVCell.xib in Resources */,
 				DD3F916526C1E7E200F98C1D /* OrderInfoVC.xib in Resources */,
 				DD3F910F26BF9FDF00F98C1D /* MyInfoTVCell.xib in Resources */,
@@ -1341,14 +1407,17 @@
 				DD3F90A926BD140600F98C1D /* TangViewController.swift in Sources */,
 				DD3F90B926BD165100F98C1D /* MartViewController.swift in Sources */,
 				DD3F901F26B95BF400F98C1D /* SignUpDataManager.swift in Sources */,
+				DD3F91A026C2609200F98C1D /* ImageVC.swift in Sources */,
 				DD3F903D26BA582F00F98C1D /* FourthButtonTVCell.swift in Sources */,
 				DD3F911626BFB42C00F98C1D /* LoginLogoutTVCell.swift in Sources */,
 				DD3F902326B9973E00F98C1D /* String.swift in Sources */,
 				DD3F90BD26BD16E700F98C1D /* PetViewController.swift in Sources */,
 				DD3F914F26C1E70F00F98C1D /* OrderInfoTVCell.swift in Sources */,
 				DD3F912326BFD61B00F98C1D /* NickNameVC.swift in Sources */,
+				DD3F91AA26C291BB00F98C1D /* Categories.swift in Sources */,
 				DD3F90FB26BEF25D00F98C1D /* HomeHashTagVC.swift in Sources */,
 				DD3F901726B9045C00F98C1D /* CategotyViewController.swift in Sources */,
+				DD3F91A526C27F0D00F98C1D /* SecondVC.swift in Sources */,
 				DD3029BD26B61A8900ABEB63 /* NavigationViewController.swift in Sources */,
 				DD3F915B26C1E77800F98C1D /* OrderHistoryTVCell.swift in Sources */,
 				DD3F90A326BD132E00F98C1D /* KoreaFoodViewController.swift in Sources */,
@@ -1391,6 +1460,7 @@
 				DD3F909926BCF5C800F98C1D /* ParentViewController.swift in Sources */,
 				DD3F902826B9979800F98C1D /* AlertViewController.swift in Sources */,
 				DD3F909D26BD001D00F98C1D /* ChineseFoodViewController.swift in Sources */,
+				DD3F91A326C27EFA00F98C1D /* FirstVC.swift in Sources */,
 				DD3F90B126BD150C00F98C1D /* JapaneseFoodViewController.swift in Sources */,
 				DD3F909B26BCF6EA00F98C1D /* AllViewController.swift in Sources */,
 				DD3F916C26C1E85600F98C1D /* SelectCouponVC.swift in Sources */,
@@ -1406,6 +1476,7 @@
 				DD3F912C26C1422600F98C1D /* beforeSearchTVCell.swift in Sources */,
 				DD3F90B526BD15B400F98C1D /* BossamViewController.swift in Sources */,
 				DD30299B26B5696400ABEB63 /* EmailSignUpViewController.swift in Sources */,
+				DD3F91AC26C294AE00F98C1D /* CategoriesDataManager.swift in Sources */,
 				DD3F904726BA72C200F98C1D /* FoodCategoryTVCell.swift in Sources */,
 				DD3F90C926BD614C00F98C1D /* hashTagCollectionViewCell.swift in Sources */,
 				DD3F917E26C23DFD00F98C1D /* CustomerCenterVC.swift in Sources */,
@@ -1430,6 +1501,7 @@
 				DD30296126B53EB500ABEB63 /* SceneDelegate.swift in Sources */,
 				DD3F917026C1E88E00F98C1D /* BtnVC.swift in Sources */,
 				DD3F906E26BBB30000F98C1D /* MiddleBannerTVCell.swift in Sources */,
+				DD3F919C26C2600400F98C1D /* ImageTVCell.swift in Sources */,
 				DD3F8FF626B8531800F98C1D /* BeforeLoginConVC.swift in Sources */,
 				DD3F918426C23F1D00F98C1D /* CustomerTVCell.swift in Sources */,
 				DD3F918D26C247B400F98C1D /* RecentlyViewTVCell.swift in Sources */,

@@ -8,6 +8,7 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+    //lazy var dataManager: CategoriesDataManager = CategoriesDataManager()
     
     // 요즘뜨는 우리동네 부분 유아이 이상하니까 그냥 요기요 익스프레스 셀로 뿌려주기
     let sections: [String] = ["배너", "버튼4개", "서치바아이콘", "요기요익스프레스","광고","요즘뜨는 우리동네가게", "요기서먹어요헤더","요기서먹어요"]
@@ -22,6 +23,7 @@ class HomeViewController: UIViewController {
     // 해시태그 헤더
     var homeHashTagVC : HomeHashTagVC?
     
+    //var category : [Result] = []
     
     // MARK: - Properties
     @IBOutlet weak var currentLocationBtn: UIButton!
@@ -37,6 +39,8 @@ class HomeViewController: UIViewController {
         setCellRegister()
         //mainTableView.estimatedSectionHeaderHeight = 50
         //mainTableView.sectionHeaderHeight = UITableView.automaticDimension
+        
+        //dataManager.getCategories(delegate: self)
     }
     
     // MARK: - Fuction
@@ -318,3 +322,17 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
 }
+
+//extension MyInfoViewController {
+//    func didSuccessCategories(result: Result) {
+//        //self.dismissIndicator()
+//
+//        self.category = Result
+//        //self.userInfo = result
+//        MyInfoTableView.reloadData()
+//    }
+//
+//    func failedToRequest(message: String) {
+//        self.presentAlert(title: message)
+//    }
+//}

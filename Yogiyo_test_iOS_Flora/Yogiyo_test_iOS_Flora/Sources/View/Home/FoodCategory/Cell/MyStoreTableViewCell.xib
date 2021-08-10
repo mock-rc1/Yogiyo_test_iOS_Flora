@@ -58,17 +58,17 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="Tyh-MV-fEC">
-                                <rect key="frame" x="100" y="87.5" width="60" height="21"/>
+                                <rect key="frame" x="100" y="87.5" width="56" height="20"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="41d-Mi-MD7">
-                                        <rect key="frame" x="0.0" y="0.0" width="24" height="21"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="시간" translatesAutoresizingMaskIntoConstraints="NO" id="41d-Mi-MD7">
+                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="21" id="fYY-fC-XVo"/>
-                                            <constraint firstAttribute="width" secondItem="41d-Mi-MD7" secondAttribute="height" multiplier="8:7" id="jgb-3f-HOx"/>
+                                            <constraint firstAttribute="width" constant="20" id="ATV-kL-L7J"/>
+                                            <constraint firstAttribute="height" constant="20" id="L2a-6h-sTq"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W6I-9X-seE">
-                                        <rect key="frame" x="27" y="0.0" width="33" height="21"/>
+                                        <rect key="frame" x="23" y="0.0" width="33" height="20"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.89411771299999998" green="0.19607841970000001" blue="0.32941177490000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
@@ -76,7 +76,7 @@
                                 </subviews>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="eWN-Jw-vZx">
-                                <rect key="frame" x="167" y="95" width="7" height="6"/>
+                                <rect key="frame" x="163" y="94.5" width="7" height="6"/>
                                 <color key="tintColor" systemColor="systemGray4Color"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="7" id="HHt-8t-ZRy"/>
@@ -84,7 +84,7 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="11k-2b-OQP">
-                                <rect key="frame" x="181" y="90" width="81" height="16"/>
+                                <rect key="frame" x="177" y="89.5" width="81" height="16"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="배달요금" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RZQ-jQ-n9q">
                                         <rect key="frame" x="0.0" y="0.0" width="45" height="16"/>
@@ -152,6 +152,7 @@
         <image name="circle.fill" catalog="system" width="128" height="121"/>
         <image name="test" width="1008" height="294"/>
         <image name="별점" width="80" height="78"/>
+        <image name="시간" width="96" height="86"/>
         <systemColor name="systemGray4Color">
             <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

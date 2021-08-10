@@ -9,7 +9,10 @@ import UIKit
 
 class restaurantViewController: UIViewController, UIScrollViewDelegate {
     
-    var sections = ["탭바전까지셀","찜공유컨트롤러","탭바"]
+    var sections = ["찜공유까지","탭바"]
+    
+    var imageVC : ImageVC?
+    
 
     @IBOutlet weak var restaurantLabel: UILabel!
     @IBOutlet weak var backBtn: UIButton!
@@ -24,7 +27,7 @@ class restaurantViewController: UIViewController, UIScrollViewDelegate {
         navigationBarUIView.isHidden = true
         restaurantLabel.isHidden = true
         
-        //self.locationTableView.register(CurrentLocationTVCell.nib(), forCellReuseIdentifier: CurrentLocationTVCell.identifier)
+        self.RestaurantTableView.register(CurrentLocationTVCell.nib(), forCellReuseIdentifier: CurrentLocationTVCell.identifier)
     }
     
     @IBAction func backBtnTap(_ sender: Any) {

@@ -7,8 +7,12 @@
 
 import UIKit
 import XLPagerTabStrip
+import SDWebImage
 
 class AllViewController: UIViewController, IndicatorInfoProvider {
+    lazy var dataManager: CategoriesDataManager = CategoriesDataManager()
+    
+    var category : [Result] = []
     
     @IBOutlet weak var AllTableView: UITableView!
     
@@ -20,7 +24,7 @@ class AllViewController: UIViewController, IndicatorInfoProvider {
         super.viewDidLoad()
         setDelegate()
         setStyle()
-        //setRegister()
+        dataManager.getCategories(delegate: self)
         
         self.AllTableView.register(MyStoreTableViewCell.nib(), forCellReuseIdentifier: MyStoreTableViewCell.identifier)
         
@@ -53,7 +57,7 @@ class AllViewController: UIViewController, IndicatorInfoProvider {
 extension AllViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 {
-            return myStore.count
+            return category.count
         }
         else if section == 1 {
             return yogiyoRegister.count
@@ -69,6 +73,22 @@ extension AllViewController: UITableViewDelegate, UITableViewDataSource {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: MyStoreTableViewCell.identifier) as? MyStoreTableViewCell else{
                 return UITableViewCell()
             }
+            
+            let cate = category[indexPath.row]
+            cell.arrivalTimeLabel.text = cate.deliveryTime
+            cell.deliveryFeeLabel.text = cate.deliveryTip
+            
+            URL(string: cate.storeImageURL!)
+            // Fetch Image Data
+            if let data = try? Data(contentsOf: URL(string: cate.storeImageURL!)) {
+                 //Create Image and Update Image View
+                cell.foodImageView.image = UIImage(data: data)
+            }
+            
+            Data(contentsOf: <#T##URL#>)
+            
+            cell.starScore.text = cate.storeRating
+            cell.storeNameLabel.text = cate.storeName
             return cell
         }
         if indexPath.section == 1 {
@@ -135,4 +155,16 @@ extension AllViewController: UITableViewDelegate, UITableViewDataSource {
         self.navigationController?.pushViewController(storyboardVC, animated: true)
             
         }
+}
+
+extension AllViewController {
+    func didSuccessCategories(result: [Result]) {
+        //self.dismissIndicator()
+        category = result
+        AllTableView.reloadData()
+    }
+    
+    func failedToRequest(message: String) {
+        self.presentAlert(title: message)
+    }
 }

@@ -15,15 +15,112 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RKk-NK-zqw">
+                                <rect key="frame" x="0.0" y="44" width="414" height="46"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="회원 주문내역" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dNP-oK-vIE">
+                                        <rect key="frame" x="160.5" y="12.5" width="93" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="dNP-oK-vIE" firstAttribute="centerX" secondItem="RKk-NK-zqw" secondAttribute="centerX" id="7jY-Wf-O1F"/>
+                                    <constraint firstItem="dNP-oK-vIE" firstAttribute="centerY" secondItem="RKk-NK-zqw" secondAttribute="centerY" id="OsX-7N-AEc"/>
+                                    <constraint firstAttribute="height" constant="46" id="lte-dh-qmy"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3mX-wI-dwh" customClass="ButtonBarView" customModule="XLPagerTabStrip">
+                                <rect key="frame" x="0.0" y="90" width="414" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Xg5-Rz-Uqu"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="v5b-p3-Nbc">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zQ6-Dv-uAi">
+                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
+                            </scrollView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3mX-wI-dwh" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="780-DI-BUs"/>
+                            <constraint firstItem="zQ6-Dv-uAi" firstAttribute="top" secondItem="3mX-wI-dwh" secondAttribute="bottom" id="C74-Nu-gyD"/>
+                            <constraint firstItem="3mX-wI-dwh" firstAttribute="top" secondItem="RKk-NK-zqw" secondAttribute="bottom" id="CYL-QP-Tfc"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="zQ6-Dv-uAi" secondAttribute="trailing" id="K9N-HA-o5x"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="3mX-wI-dwh" secondAttribute="trailing" id="P9B-dz-cfV"/>
+                            <constraint firstItem="RKk-NK-zqw" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="UYg-lA-YCv"/>
+                            <constraint firstItem="RKk-NK-zqw" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="gTc-6V-huv"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="zQ6-Dv-uAi" secondAttribute="bottom" id="iqP-vZ-2RM"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="RKk-NK-zqw" secondAttribute="trailing" id="kOv-MW-pR5"/>
+                            <constraint firstItem="zQ6-Dv-uAi" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="vkI-s4-KKR"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="주문내역" image="주문내역안눌린거" selectedImage="주문내역눌린거" id="XGd-y0-4Mf"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="buttonBarView" destination="3mX-wI-dwh" id="1Tw-Sq-zZz"/>
+                        <outlet property="containerView" destination="zQ6-Dv-uAi" id="je3-x9-dOI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="35" y="84"/>
+        </scene>
+        <!--FirstVC-->
+        <scene sceneID="5qa-6x-aLd">
+            <objects>
+                <viewController storyboardIdentifier="child1" id="pXu-ly-WTg" customClass="FirstVC" customModule="Yogiyo_test_iOS_Flora" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="y7Q-Pu-ab9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Mr2-vq-Jtm">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3cV-Dw-Y60"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3cV-Dw-Y60" firstAttribute="trailing" secondItem="Mr2-vq-Jtm" secondAttribute="trailing" id="drG-pg-um6"/>
+                            <constraint firstItem="Mr2-vq-Jtm" firstAttribute="top" secondItem="3cV-Dw-Y60" secondAttribute="top" id="p65-wk-Maj"/>
+                            <constraint firstItem="Mr2-vq-Jtm" firstAttribute="leading" secondItem="3cV-Dw-Y60" secondAttribute="leading" id="vHj-Vg-kbV"/>
+                            <constraint firstItem="3cV-Dw-Y60" firstAttribute="bottom" secondItem="Mr2-vq-Jtm" secondAttribute="bottom" id="x6y-QM-wKS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="packTableView" destination="Mr2-vq-Jtm" id="23d-Um-oxu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GSl-Ng-miN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="765" y="84"/>
+        </scene>
+        <!--SecondVC-->
+        <scene sceneID="lIi-gY-z16">
+            <objects>
+                <viewController storyboardIdentifier="child2" id="hWC-TJ-7Cj" customClass="SecondVC" customModule="Yogiyo_test_iOS_Flora" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rF2-Ih-DyB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="v89-hW-uug"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w3s-5z-lsG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1480" y="84"/>
         </scene>
     </scenes>
     <resources>
