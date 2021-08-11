@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,11 +16,52 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="가게나 메뉴로 검색해 보세요." translatesAutoresizingMaskIntoConstraints="NO" id="NBk-BH-MCi">
+                                <rect key="frame" x="10" y="44" width="392" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="LbA-M9-8N7"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="AvZ-vj-Hsu">
+                                <rect key="frame" x="0.0" y="94" width="414" height="719"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="nwL-jQ-zRV">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" id="PBM-h0-kkV">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="8oO-QP-nhU">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="AvZ-vj-Hsu" firstAttribute="top" secondItem="NBk-BH-MCi" secondAttribute="bottom" id="1Iv-sc-CVU"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="AvZ-vj-Hsu" secondAttribute="trailing" id="597-8n-hNO"/>
+                            <constraint firstItem="NBk-BH-MCi" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="X1e-LB-dKd"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="AvZ-vj-Hsu" secondAttribute="bottom" id="qEb-2y-ZrI"/>
+                            <constraint firstItem="NBk-BH-MCi" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="tkj-G8-12c"/>
+                            <constraint firstItem="AvZ-vj-Hsu" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="x4E-nX-dO7"/>
+                            <constraint firstItem="NBk-BH-MCi" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" constant="-12" id="xOx-Du-Gvh"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="검색" image="검색안눌린거" selectedImage="검색눌린거" id="lfM-Bi-XOj"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="mainCollectionView" destination="AvZ-vj-Hsu" id="OhS-uQ-Erm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

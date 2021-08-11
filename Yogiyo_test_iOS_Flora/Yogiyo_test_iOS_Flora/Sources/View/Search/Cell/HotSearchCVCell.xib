@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HotSearchCVCell" id="gTV-IL-0wX" customClass="HotSearchCVCell" customModule="Yogiyo_test_iOS_Flora" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="308" height="56"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="308" height="56"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XY8-ww-Irz">
+                        <rect key="frame" x="0.0" y="0.0" width="308" height="56"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eIT-cL-0hT">
+                                <rect key="frame" x="0.0" y="17.5" width="8" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="파리바게트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uaq-jm-NtE">
+                                <rect key="frame" x="23" y="19" width="65" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Rh-Ww-Ea0">
+                                <rect key="frame" x="293" y="20.5" width="15" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="15" id="bkZ-VP-F2K"/>
+                                    <constraint firstAttribute="height" constant="15" id="hKp-x7-9rb"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemGray2Color"/>
+                                <state key="normal" image="minus" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="16" scale="small" weight="light"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="uaq-jm-NtE" firstAttribute="centerY" secondItem="eIT-cL-0hT" secondAttribute="centerY" id="KEg-bR-yDg"/>
+                            <constraint firstItem="eIT-cL-0hT" firstAttribute="centerY" secondItem="XY8-ww-Irz" secondAttribute="centerY" id="Mum-q1-eYz"/>
+                            <constraint firstItem="uaq-jm-NtE" firstAttribute="leading" secondItem="eIT-cL-0hT" secondAttribute="trailing" constant="15" id="NZ5-bb-Xyg"/>
+                            <constraint firstItem="eIT-cL-0hT" firstAttribute="leading" secondItem="XY8-ww-Irz" secondAttribute="leading" id="iog-Tj-Qq5"/>
+                            <constraint firstItem="1Rh-Ww-Ea0" firstAttribute="centerY" secondItem="uaq-jm-NtE" secondAttribute="centerY" id="miq-58-lYe"/>
+                            <constraint firstAttribute="trailing" secondItem="1Rh-Ww-Ea0" secondAttribute="trailing" id="us9-OB-gp8"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="XY8-ww-Irz" secondAttribute="trailing" id="5K8-8e-n7B"/>
+                <constraint firstAttribute="bottom" secondItem="XY8-ww-Irz" secondAttribute="bottom" id="J1l-Bu-Vbe"/>
+                <constraint firstItem="XY8-ww-Irz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="c1O-TN-keU"/>
+                <constraint firstItem="XY8-ww-Irz" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="mbK-SF-8ND"/>
+            </constraints>
+            <size key="customSize" width="308" height="56"/>
+            <connections>
+                <outlet property="imageBtn" destination="1Rh-Ww-Ea0" id="Dga-TK-npD"/>
+                <outlet property="nameLabel" destination="uaq-jm-NtE" id="Qvs-MV-3uV"/>
+                <outlet property="scoreLabel" destination="eIT-cL-0hT" id="em2-QZ-yth"/>
+            </connections>
+            <point key="canvasLocation" x="-4.3478260869565224" y="79.6875"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="minus" catalog="system" width="128" height="24"/>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
