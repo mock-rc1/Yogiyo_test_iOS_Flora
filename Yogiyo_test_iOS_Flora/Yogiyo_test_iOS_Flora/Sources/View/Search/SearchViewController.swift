@@ -9,83 +9,91 @@ import UIKit
 
 class SearchViewController: UIViewController {
     
-    static let identifier = "SearchViewController"
-    
     var sections = [1,2]
     var hotSearch = ["1","2","3","4","5","6","7","8","9","10"]
-    //var minItemSpacing: CGFloat = 10
     
-    @IBOutlet weak var mainCollectionView: UICollectionView!
+    
+    @IBOutlet weak var mainTableView: UITableView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setRegister()
         setDelegate()
+        setStyle()
         
     }
     
     func setRegister() {
-        self.mainCollectionView.register(HotHeaderCVCell.nib(), forCellWithReuseIdentifier: HotHeaderCVCell.identifier)
+        self.mainTableView.register(HeaderHotTVCell.nib(), forCellReuseIdentifier: HeaderHotTVCell.identifier)
+        self.mainTableView.register(HotMenuTVCell.nib(), forCellReuseIdentifier: HotMenuTVCell.identifier)
     }
     
     func setDelegate() {
-        mainCollectionView.delegate = self
-        mainCollectionView.dataSource = self
+        mainTableView.delegate = self
+        mainTableView.dataSource = self
+    }
+    
+    // setStyle
+    func setStyle() {
+        // 테이블 뷰 경계션 없애기
+        mainTableView.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: .greatestFiniteMagnitude)
     }
     
 }
 
-
-extension SearchViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+// MARK: - Extension
+extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        
-        return hotSearch.count
-        
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HotSearchCVCell.identifier, for: indexPath) as? HotSearchCVCell else{
-            return UICollectionViewCell()
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if section == 0 {
+            return 1
+            
+        } else if section == 1 {
+            return 1
         }
-        cell.scoreLabel.text = hotSearch[indexPath.row]
-        return cell
+        else {
+            return 0
+        }
     }
     
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        if indexPath.section == 0 {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: HeaderHotTVCell.identifier) as? HeaderHotTVCell else{
+                return UITableViewCell()
+            }
+            cell.selectionStyle = .none
+            return cell
+        }
+        else if indexPath.section == 1 {
+            
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: HotMenuTVCell.identifier) as? HotMenuTVCell else{
+                return UITableViewCell()
+            }
+            cell.selectionStyle = .none
+            return cell
+        }
+        return UITableViewCell()
+    }
+    
+    // 섹션
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return sections.count
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.section == 0 {
+            return 360
+        }
+        else if indexPath.section == 1 {
+            return 1000
+        }
+        else {
+            return 0
+        }
+    }
 }
 
-extension SearchViewController: UICollectionViewDelegateFlowLayout{
-    //MARK: - Cell 사이즈
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize
-    {
-        return CGSize(width: (collectionView.frame.width-40)/2, height: 50 )
-        
-    }
-    
-    //MARK: - Cell간의 좌우간격 지정
-    //    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat
-    //    {
-    //        return 10
-    //    }
-    
-    //MARK: - 마진
-    //    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets
-    //    {
-    //        return UIEdgeInsets(top: 0, left: 20, bottom: 20, right: 20)
-    //    }
-    //
-    //    //MARK: - Paging Effect
-    //    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>)
-    //    {
-    //        let cellWidthIncludeSpacing = (self.mainCollectionView.frame.width)-40 + minItemSpacing
-    //        var offset = targetContentOffset.pointee
-    //        let index = (offset.x + scrollView.contentInset.left) / cellWidthIncludeSpacing
-    //        let roundedIndex: CGFloat = round(index)
-    //
-    //        offset = CGPoint(x: roundedIndex * cellWidthIncludeSpacing, y: scrollView.contentInset.top)
-    //        targetContentOffset.pointee = offset
-    //    }
-}
 

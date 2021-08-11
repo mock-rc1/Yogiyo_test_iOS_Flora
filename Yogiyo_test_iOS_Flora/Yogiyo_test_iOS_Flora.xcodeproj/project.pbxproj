@@ -198,8 +198,12 @@
 		DD3F91CD26C37EFD00F98C1D /* DeliveryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3F91CB26C37EFD00F98C1D /* DeliveryVC.xib */; };
 		DD3F91D526C3973200F98C1D /* HotSearchCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F91D326C3973200F98C1D /* HotSearchCVCell.swift */; };
 		DD3F91D626C3973200F98C1D /* HotSearchCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3F91D426C3973200F98C1D /* HotSearchCVCell.xib */; };
-		DD3F91E326C3CA4100F98C1D /* HotHeaderCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F91E126C3CA4100F98C1D /* HotHeaderCVCell.swift */; };
-		DD3F91E426C3CA4100F98C1D /* HotHeaderCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3F91E226C3CA4100F98C1D /* HotHeaderCVCell.xib */; };
+		DD3F91E726C420A700F98C1D /* HeaderHotTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F91E526C420A700F98C1D /* HeaderHotTVCell.swift */; };
+		DD3F91E826C420A700F98C1D /* HeaderHotTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3F91E626C420A700F98C1D /* HeaderHotTVCell.xib */; };
+		DD3F91EB26C42CAE00F98C1D /* HotMenuTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F91E926C42CAE00F98C1D /* HotMenuTVCell.swift */; };
+		DD3F91EC26C42CAE00F98C1D /* HotMenuTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3F91EA26C42CAE00F98C1D /* HotMenuTVCell.xib */; };
+		DD3F91EF26C42E2100F98C1D /* HotMenuCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F91ED26C42E2100F98C1D /* HotMenuCVCell.swift */; };
+		DD3F91F026C42E2100F98C1D /* HotMenuCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3F91EE26C42E2100F98C1D /* HotMenuCVCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -397,8 +401,12 @@
 		DD3F91CB26C37EFD00F98C1D /* DeliveryVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeliveryVC.xib; sourceTree = "<group>"; };
 		DD3F91D326C3973200F98C1D /* HotSearchCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotSearchCVCell.swift; sourceTree = "<group>"; };
 		DD3F91D426C3973200F98C1D /* HotSearchCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HotSearchCVCell.xib; sourceTree = "<group>"; };
-		DD3F91E126C3CA4100F98C1D /* HotHeaderCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotHeaderCVCell.swift; sourceTree = "<group>"; };
-		DD3F91E226C3CA4100F98C1D /* HotHeaderCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HotHeaderCVCell.xib; sourceTree = "<group>"; };
+		DD3F91E526C420A700F98C1D /* HeaderHotTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderHotTVCell.swift; sourceTree = "<group>"; };
+		DD3F91E626C420A700F98C1D /* HeaderHotTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderHotTVCell.xib; sourceTree = "<group>"; };
+		DD3F91E926C42CAE00F98C1D /* HotMenuTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotMenuTVCell.swift; sourceTree = "<group>"; };
+		DD3F91EA26C42CAE00F98C1D /* HotMenuTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HotMenuTVCell.xib; sourceTree = "<group>"; };
+		DD3F91ED26C42E2100F98C1D /* HotMenuCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotMenuCVCell.swift; sourceTree = "<group>"; };
+		DD3F91EE26C42E2100F98C1D /* HotMenuCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HotMenuCVCell.xib; sourceTree = "<group>"; };
 		F9C1772B30741BA88AC342B9 /* Pods-Yogiyo_test_iOS_Flora.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yogiyo_test_iOS_Flora.release.xcconfig"; path = "Target Support Files/Pods-Yogiyo_test_iOS_Flora/Pods-Yogiyo_test_iOS_Flora.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1305,10 +1313,14 @@
 		DD3F91CE26C3956000F98C1D /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				DD3F91E126C3CA4100F98C1D /* HotHeaderCVCell.swift */,
-				DD3F91E226C3CA4100F98C1D /* HotHeaderCVCell.xib */,
+				DD3F91E526C420A700F98C1D /* HeaderHotTVCell.swift */,
+				DD3F91E626C420A700F98C1D /* HeaderHotTVCell.xib */,
 				DD3F91D326C3973200F98C1D /* HotSearchCVCell.swift */,
 				DD3F91D426C3973200F98C1D /* HotSearchCVCell.xib */,
+				DD3F91E926C42CAE00F98C1D /* HotMenuTVCell.swift */,
+				DD3F91EA26C42CAE00F98C1D /* HotMenuTVCell.xib */,
+				DD3F91ED26C42E2100F98C1D /* HotMenuCVCell.swift */,
+				DD3F91EE26C42E2100F98C1D /* HotMenuCVCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -1378,8 +1390,8 @@
 				DD3F907B26BBBF0400F98C1D /* HotOurStoreTVCell.xib in Resources */,
 				DD3F903226BA474700F98C1D /* BannerTVCell.xib in Resources */,
 				DD3F90FC26BEF25D00F98C1D /* HomeHashTagVC.xib in Resources */,
+				DD3F91E826C420A700F98C1D /* HeaderHotTVCell.xib in Resources */,
 				DD3F919D26C2600400F98C1D /* ImageTVCell.xib in Resources */,
-				DD3F91E426C3CA4100F98C1D /* HotHeaderCVCell.xib in Resources */,
 				DD3F91C426C375B000F98C1D /* PackCVCell.xib in Resources */,
 				DD3F914426C1744800F98C1D /* AddTVCell.xib in Resources */,
 				DD3F910026BEF73A00F98C1D /* TodayYogiTVCell.xib in Resources */,
@@ -1407,7 +1419,9 @@
 				DD3F915426C1E73200F98C1D /* PayTVCell.xib in Resources */,
 				DD3F904D26BA72FC00F98C1D /* CategoryFoodConVC.xib in Resources */,
 				DD3F916026C1E7AE00F98C1D /* BtnTVCell.xib in Resources */,
+				DD3F91F026C42E2100F98C1D /* HotMenuCVCell.xib in Resources */,
 				DD3F917126C1E88E00F98C1D /* BtnVC.xib in Resources */,
+				DD3F91EC26C42CAE00F98C1D /* HotMenuTVCell.xib in Resources */,
 				DD3F903626BA4BA300F98C1D /* BannerCVCell.xib in Resources */,
 				DD3F906F26BBB30000F98C1D /* MiddleBannerTVCell.xib in Resources */,
 				DD3F8FF126B8520F00F98C1D /* beforeLoginTVCell.xib in Resources */,
@@ -1544,6 +1558,7 @@
 				DD3F913726C16E1300F98C1D /* PriceTVCell.swift in Sources */,
 				DD30298026B5515800ABEB63 /* SocialLoginViewController.swift in Sources */,
 				DD3F908326BBE16F00F98C1D /* CurrentLocationVC.swift in Sources */,
+				DD3F91E726C420A700F98C1D /* HeaderHotTVCell.swift in Sources */,
 				DD3F912726C0086200F98C1D /* UserInfo.swift in Sources */,
 				DD3F908C26BCBDA500F98C1D /* TransitionViewController.swift in Sources */,
 				DD3F916426C1E7E200F98C1D /* OrderInfoVC.swift in Sources */,
@@ -1552,6 +1567,7 @@
 				DD3F91C326C375B000F98C1D /* PackCVCell.swift in Sources */,
 				DD3F900B26B8EAF200F98C1D /* CouponConVC.swift in Sources */,
 				DD3F910226BF7B9200F98C1D /* MyInfoViewController.swift in Sources */,
+				DD3F91EF26C42E2100F98C1D /* HotMenuCVCell.swift in Sources */,
 				DD3F90FF26BEF73A00F98C1D /* TodayYogiTVCell.swift in Sources */,
 				DD3F914326C1744800F98C1D /* AddTVCell.swift in Sources */,
 				DD3F90AD26BD148600F98C1D /* BunsikViewController.swift in Sources */,
@@ -1564,6 +1580,7 @@
 				DD3F91A326C27EFA00F98C1D /* FirstVC.swift in Sources */,
 				DD3F90B126BD150C00F98C1D /* JapaneseFoodViewController.swift in Sources */,
 				DD3F909B26BCF6EA00F98C1D /* AllViewController.swift in Sources */,
+				DD3F91EB26C42CAE00F98C1D /* HotMenuTVCell.swift in Sources */,
 				DD3F916C26C1E85600F98C1D /* SelectCouponVC.swift in Sources */,
 				DD3F906626BAF2D800F98C1D /* SignInRequest.swift in Sources */,
 				DD3F91C726C37EAE00F98C1D /* DeliveryTableViewCell.swift in Sources */,
@@ -1575,7 +1592,6 @@
 				DD3F919626C249E700F98C1D /* RecentlyVC.swift in Sources */,
 				DD3F905226BA820700F98C1D /* HashTageCVCell.swift in Sources */,
 				DD3029AD26B5770900ABEB63 /* SearchViewController.swift in Sources */,
-				DD3F91E326C3CA4100F98C1D /* HotHeaderCVCell.swift in Sources */,
 				DD3F912C26C1422600F98C1D /* beforeSearchTVCell.swift in Sources */,
 				DD3F90B526BD15B400F98C1D /* BossamViewController.swift in Sources */,
 				DD30299B26B5696400ABEB63 /* EmailSignUpViewController.swift in Sources */,
