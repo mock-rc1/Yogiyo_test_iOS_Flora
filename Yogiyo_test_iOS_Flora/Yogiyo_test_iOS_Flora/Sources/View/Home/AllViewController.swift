@@ -148,10 +148,12 @@ extension AllViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView,didSelectRowAt indexPath: IndexPath) {
             
-            // 해당 셀을 누르면 'thirdVC' 호출
+            // 해당 셀을 누르면 'VC' 호출
         let storyboardVC = UIStoryboard(name: "HomeStoryboard", bundle: Bundle(for: restaurantViewController.self)).instantiateViewController(withIdentifier: "restaurantViewController") as! restaurantViewController
-                
-        self.navigationController?.pushViewController(storyboardVC, animated: true)
+        
+        
+        self.present(storyboardVC, animated: true, completion: nil)
+        //self.navigationController?.pushViewController(storyboardVC, animated: true)
             
         }
 }

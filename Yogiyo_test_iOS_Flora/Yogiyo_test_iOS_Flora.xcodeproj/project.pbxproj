@@ -181,6 +181,21 @@
 		DD3F91A526C27F0D00F98C1D /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F91A426C27F0D00F98C1D /* SecondVC.swift */; };
 		DD3F91AA26C291BB00F98C1D /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F91A926C291BB00F98C1D /* Categories.swift */; };
 		DD3F91AC26C294AE00F98C1D /* CategoriesDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F91AB26C294AE00F98C1D /* CategoriesDataManager.swift */; };
+		DD3F91AF26C3479800F98C1D /* HeaderTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F91AD26C3479700F98C1D /* HeaderTabBarVC.swift */; };
+		DD3F91B026C3479800F98C1D /* HeaderTabBarVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3F91AE26C3479700F98C1D /* HeaderTabBarVC.xib */; };
+		DD3F91B226C34BBC00F98C1D /* ChildVC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F91B126C34BBC00F98C1D /* ChildVC1.swift */; };
+		DD3F91B426C34BCA00F98C1D /* ChildVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F91B326C34BCA00F98C1D /* ChildVC2.swift */; };
+		DD3F91B626C34BDB00F98C1D /* ChildVC3.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F91B526C34BDB00F98C1D /* ChildVC3.swift */; };
+		DD3F91BA26C355B400F98C1D /* MenuTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F91B826C355B400F98C1D /* MenuTVCell.swift */; };
+		DD3F91BB26C355B400F98C1D /* MenuTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3F91B926C355B400F98C1D /* MenuTVCell.xib */; };
+		DD3F91BE26C372FA00F98C1D /* PackTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F91BC26C372FA00F98C1D /* PackTVCell.swift */; };
+		DD3F91BF26C372FA00F98C1D /* PackTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3F91BD26C372FA00F98C1D /* PackTVCell.xib */; };
+		DD3F91C326C375B000F98C1D /* PackCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F91C126C375B000F98C1D /* PackCVCell.swift */; };
+		DD3F91C426C375B000F98C1D /* PackCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3F91C226C375B000F98C1D /* PackCVCell.xib */; };
+		DD3F91C726C37EAE00F98C1D /* DeliveryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F91C526C37EAE00F98C1D /* DeliveryTableViewCell.swift */; };
+		DD3F91C826C37EAE00F98C1D /* DeliveryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3F91C626C37EAE00F98C1D /* DeliveryTableViewCell.xib */; };
+		DD3F91CC26C37EFD00F98C1D /* DeliveryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F91CA26C37EFD00F98C1D /* DeliveryVC.swift */; };
+		DD3F91CD26C37EFD00F98C1D /* DeliveryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3F91CB26C37EFD00F98C1D /* DeliveryVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -361,6 +376,21 @@
 		DD3F91A426C27F0D00F98C1D /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
 		DD3F91A926C291BB00F98C1D /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
 		DD3F91AB26C294AE00F98C1D /* CategoriesDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesDataManager.swift; sourceTree = "<group>"; };
+		DD3F91AD26C3479700F98C1D /* HeaderTabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTabBarVC.swift; sourceTree = "<group>"; };
+		DD3F91AE26C3479700F98C1D /* HeaderTabBarVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderTabBarVC.xib; sourceTree = "<group>"; };
+		DD3F91B126C34BBC00F98C1D /* ChildVC1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildVC1.swift; sourceTree = "<group>"; };
+		DD3F91B326C34BCA00F98C1D /* ChildVC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildVC2.swift; sourceTree = "<group>"; };
+		DD3F91B526C34BDB00F98C1D /* ChildVC3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildVC3.swift; sourceTree = "<group>"; };
+		DD3F91B826C355B400F98C1D /* MenuTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTVCell.swift; sourceTree = "<group>"; };
+		DD3F91B926C355B400F98C1D /* MenuTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuTVCell.xib; sourceTree = "<group>"; };
+		DD3F91BC26C372FA00F98C1D /* PackTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackTVCell.swift; sourceTree = "<group>"; };
+		DD3F91BD26C372FA00F98C1D /* PackTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PackTVCell.xib; sourceTree = "<group>"; };
+		DD3F91C126C375B000F98C1D /* PackCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackCVCell.swift; sourceTree = "<group>"; };
+		DD3F91C226C375B000F98C1D /* PackCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PackCVCell.xib; sourceTree = "<group>"; };
+		DD3F91C526C37EAE00F98C1D /* DeliveryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryTableViewCell.swift; sourceTree = "<group>"; };
+		DD3F91C626C37EAE00F98C1D /* DeliveryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeliveryTableViewCell.xib; sourceTree = "<group>"; };
+		DD3F91CA26C37EFD00F98C1D /* DeliveryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryVC.swift; sourceTree = "<group>"; };
+		DD3F91CB26C37EFD00F98C1D /* DeliveryVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeliveryVC.xib; sourceTree = "<group>"; };
 		F9C1772B30741BA88AC342B9 /* Pods-Yogiyo_test_iOS_Flora.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yogiyo_test_iOS_Flora.release.xcconfig"; path = "Target Support Files/Pods-Yogiyo_test_iOS_Flora/Pods-Yogiyo_test_iOS_Flora.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1186,6 +1216,8 @@
 			children = (
 				DD3F919A26C2600400F98C1D /* ImageTVCell.swift */,
 				DD3F919B26C2600400F98C1D /* ImageTVCell.xib */,
+				DD3F91B826C355B400F98C1D /* MenuTVCell.swift */,
+				DD3F91B926C355B400F98C1D /* MenuTVCell.xib */,
 				DD3F919926C25FCC00F98C1D /* Controller */,
 			);
 			path = Cell;
@@ -1196,6 +1228,9 @@
 			children = (
 				DD3F919E26C2609200F98C1D /* ImageVC.swift */,
 				DD3F919F26C2609200F98C1D /* ImageVC.xib */,
+				DD3F91AD26C3479700F98C1D /* HeaderTabBarVC.swift */,
+				DD3F91AE26C3479700F98C1D /* HeaderTabBarVC.xib */,
+				DD3F91B726C352FB00F98C1D /* tabBar */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1203,6 +1238,12 @@
 		DD3F91A626C28EF100F98C1D /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				DD3F91BC26C372FA00F98C1D /* PackTVCell.swift */,
+				DD3F91BD26C372FA00F98C1D /* PackTVCell.xib */,
+				DD3F91C526C37EAE00F98C1D /* DeliveryTableViewCell.swift */,
+				DD3F91C626C37EAE00F98C1D /* DeliveryTableViewCell.xib */,
+				DD3F91C926C37EE300F98C1D /* Controller */,
+				DD3F91C026C3758F00F98C1D /* CollectionView */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -1222,6 +1263,34 @@
 				DD3F91A926C291BB00F98C1D /* Categories.swift */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		DD3F91B726C352FB00F98C1D /* tabBar */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F91B126C34BBC00F98C1D /* ChildVC1.swift */,
+				DD3F91B326C34BCA00F98C1D /* ChildVC2.swift */,
+				DD3F91B526C34BDB00F98C1D /* ChildVC3.swift */,
+			);
+			path = tabBar;
+			sourceTree = "<group>";
+		};
+		DD3F91C026C3758F00F98C1D /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F91C126C375B000F98C1D /* PackCVCell.swift */,
+				DD3F91C226C375B000F98C1D /* PackCVCell.xib */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		DD3F91C926C37EE300F98C1D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F91CA26C37EFD00F98C1D /* DeliveryVC.swift */,
+				DD3F91CB26C37EFD00F98C1D /* DeliveryVC.xib */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1290,6 +1359,7 @@
 				DD3F903226BA474700F98C1D /* BannerTVCell.xib in Resources */,
 				DD3F90FC26BEF25D00F98C1D /* HomeHashTagVC.xib in Resources */,
 				DD3F919D26C2600400F98C1D /* ImageTVCell.xib in Resources */,
+				DD3F91C426C375B000F98C1D /* PackCVCell.xib in Resources */,
 				DD3F914426C1744800F98C1D /* AddTVCell.xib in Resources */,
 				DD3F910026BEF73A00F98C1D /* TodayYogiTVCell.xib in Resources */,
 				DD3F914826C1763000F98C1D /* TotalAmountTVCell.xib in Resources */,
@@ -1307,6 +1377,7 @@
 				DD30297B26B54F9B00ABEB63 /* MyYogiyoStoryboard.storyboard in Resources */,
 				DD3F915C26C1E77800F98C1D /* OrderHistoryTVCell.xib in Resources */,
 				DD3F912D26C1422600F98C1D /* beforeSearchTVCell.xib in Resources */,
+				DD3F91C826C37EAE00F98C1D /* DeliveryTableViewCell.xib in Resources */,
 				DD30296626B53EB500ABEB63 /* Main.storyboard in Resources */,
 				DD3F918526C23F1D00F98C1D /* CustomerTVCell.xib in Resources */,
 				DD3F918A26C2468E00F98C1D /* JjimTVCell.xib in Resources */,
@@ -1321,6 +1392,7 @@
 				DD3F8FF126B8520F00F98C1D /* beforeLoginTVCell.xib in Resources */,
 				DD3F8FFF26B8DFE000F98C1D /* CompleteLoginVC.xib in Resources */,
 				DD3F915026C1E70F00F98C1D /* OrderInfoTVCell.xib in Resources */,
+				DD3F91CD26C37EFD00F98C1D /* DeliveryVC.xib in Resources */,
 				DD3F90CA26BD614C00F98C1D /* hashTagCollectionViewCell.xib in Resources */,
 				DD3F919326C249B400F98C1D /* jjimVC.xib in Resources */,
 				DD3F916926C1E7FE00F98C1D /* PayVC.xib in Resources */,
@@ -1328,6 +1400,7 @@
 				DD3F91A126C2609200F98C1D /* ImageVC.xib in Resources */,
 				DD3F913826C16E1300F98C1D /* PriceTVCell.xib in Resources */,
 				DD3F916526C1E7E200F98C1D /* OrderInfoVC.xib in Resources */,
+				DD3F91B026C3479800F98C1D /* HeaderTabBarVC.xib in Resources */,
 				DD3F910F26BF9FDF00F98C1D /* MyInfoTVCell.xib in Resources */,
 				DD3F907F26BBBF3100F98C1D /* HotOurStoreCVCell.xib in Resources */,
 				DD3F904326BA63BE00F98C1D /* FourthBtnConVC.xib in Resources */,
@@ -1340,10 +1413,12 @@
 				DD3F905A26BA9E3F00F98C1D /* ExpressTVCell.xib in Resources */,
 				DD3F914026C1725D00F98C1D /* SelectTVCell.xib in Resources */,
 				DD3F919726C249E700F98C1D /* RecentlyVC.xib in Resources */,
+				DD3F91BF26C372FA00F98C1D /* PackTVCell.xib in Resources */,
 				DD3029A926B576DC00ABEB63 /* JjimStoryboard.storyboard in Resources */,
 				DD3F911B26BFB53300F98C1D /* LoginLogoutConVC.xib in Resources */,
 				DD3F905E26BAA3A000F98C1D /* ExpressCVCell.xib in Resources */,
 				DD3F916D26C1E85600F98C1D /* SelectCouponVC.xib in Resources */,
+				DD3F91BB26C355B400F98C1D /* MenuTVCell.xib in Resources */,
 				DD3F90C226BD209A00F98C1D /* MyStoreTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1426,6 +1501,7 @@
 				DD3F904C26BA72FC00F98C1D /* CategoryFoodConVC.swift in Sources */,
 				DD3F913B26C16F2A00F98C1D /* quantityTVCell.swift in Sources */,
 				DD3F90AB26BD144700F98C1D /* CafeViewController.swift in Sources */,
+				DD3F91AF26C3479800F98C1D /* HeaderTabBarVC.swift in Sources */,
 				DD30297E26B5512E00ABEB63 /* MyYogiyoViewController.swift in Sources */,
 				DD3F913326C168DB00F98C1D /* HeaderTVCell.swift in Sources */,
 				DD3F915326C1E73200F98C1D /* PayTVCell.swift in Sources */,
@@ -1451,20 +1527,24 @@
 				DD3F916426C1E7E200F98C1D /* OrderInfoVC.swift in Sources */,
 				DD3F905926BA9E3F00F98C1D /* ExpressTVCell.swift in Sources */,
 				DD30299926B5695500ABEB63 /* emailLoginViewController.swift in Sources */,
+				DD3F91C326C375B000F98C1D /* PackCVCell.swift in Sources */,
 				DD3F900B26B8EAF200F98C1D /* CouponConVC.swift in Sources */,
 				DD3F910226BF7B9200F98C1D /* MyInfoViewController.swift in Sources */,
 				DD3F90FF26BEF73A00F98C1D /* TodayYogiTVCell.swift in Sources */,
 				DD3F914326C1744800F98C1D /* AddTVCell.swift in Sources */,
 				DD3F90AD26BD148600F98C1D /* BunsikViewController.swift in Sources */,
 				DD3029A726B5762A00ABEB63 /* HomeViewController.swift in Sources */,
+				DD3F91B626C34BDB00F98C1D /* ChildVC3.swift in Sources */,
 				DD3F909926BCF5C800F98C1D /* ParentViewController.swift in Sources */,
 				DD3F902826B9979800F98C1D /* AlertViewController.swift in Sources */,
 				DD3F909D26BD001D00F98C1D /* ChineseFoodViewController.swift in Sources */,
+				DD3F91B226C34BBC00F98C1D /* ChildVC1.swift in Sources */,
 				DD3F91A326C27EFA00F98C1D /* FirstVC.swift in Sources */,
 				DD3F90B126BD150C00F98C1D /* JapaneseFoodViewController.swift in Sources */,
 				DD3F909B26BCF6EA00F98C1D /* AllViewController.swift in Sources */,
 				DD3F916C26C1E85600F98C1D /* SelectCouponVC.swift in Sources */,
 				DD3F906626BAF2D800F98C1D /* SignInRequest.swift in Sources */,
+				DD3F91C726C37EAE00F98C1D /* DeliveryTableViewCell.swift in Sources */,
 				DD3F910E26BF9FDF00F98C1D /* MyInfoTVCell.swift in Sources */,
 				DD3F902C26B9A05A00F98C1D /* SignUpRequest.swift in Sources */,
 				DD3F913F26C1725D00F98C1D /* SelectTVCell.swift in Sources */,
@@ -1480,6 +1560,7 @@
 				DD3F904726BA72C200F98C1D /* FoodCategoryTVCell.swift in Sources */,
 				DD3F90C926BD614C00F98C1D /* hashTagCollectionViewCell.swift in Sources */,
 				DD3F917E26C23DFD00F98C1D /* CustomerCenterVC.swift in Sources */,
+				DD3F91CC26C37EFD00F98C1D /* DeliveryVC.swift in Sources */,
 				DD3F907E26BBBF3100F98C1D /* HotOurStoreCVCell.swift in Sources */,
 				DD3F900626B8EAB600F98C1D /* couponTableViewCell.swift in Sources */,
 				DD3F901D26B95A0B00F98C1D /* SignUpData.swift in Sources */,
@@ -1491,11 +1572,13 @@
 				DD30295F26B53EB500ABEB63 /* AppDelegate.swift in Sources */,
 				DD3F90CD26BD91B900F98C1D /* restaurantViewController.swift in Sources */,
 				DD3F903126BA474700F98C1D /* BannerTVCell.swift in Sources */,
+				DD3F91B426C34BCA00F98C1D /* ChildVC2.swift in Sources */,
 				DD3029AB26B576EE00ABEB63 /* JjimViewController.swift in Sources */,
 				DD3F8FFE26B8DFE000F98C1D /* CompleteLoginVC.swift in Sources */,
 				DD3F919226C249B400F98C1D /* jjimVC.swift in Sources */,
 				DD3F90A526BD137000F98C1D /* BurgerViewController.swift in Sources */,
 				DD3F914B26C1E2C400F98C1D /* PlaceAnOrderVC.swift in Sources */,
+				DD3F91BE26C372FA00F98C1D /* PackTVCell.swift in Sources */,
 				DD3F90B326BD157400F98C1D /* NightViewController.swift in Sources */,
 				DD3F903526BA4BA300F98C1D /* BannerCVCell.swift in Sources */,
 				DD30296126B53EB500ABEB63 /* SceneDelegate.swift in Sources */,
@@ -1507,6 +1590,7 @@
 				DD3F918D26C247B400F98C1D /* RecentlyViewTVCell.swift in Sources */,
 				DD3F906426BAF2C800F98C1D /* SignInResponse.swift in Sources */,
 				DD3F915F26C1E7AE00F98C1D /* BtnTVCell.swift in Sources */,
+				DD3F91BA26C355B400F98C1D /* MenuTVCell.swift in Sources */,
 				DD3F901326B9044000F98C1D /* categoryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

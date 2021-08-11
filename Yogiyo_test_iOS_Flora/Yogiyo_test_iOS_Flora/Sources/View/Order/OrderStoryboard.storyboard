@@ -47,23 +47,33 @@
                                 </collectionViewFlowLayout>
                                 <cells/>
                             </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g5D-MG-dCL">
+                                <rect key="frame" x="0.0" y="140" width="414" height="0.5"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="0.5" id="7u8-5h-u5N"/>
+                                </constraints>
+                            </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zQ6-Dv-uAi">
-                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
+                                <rect key="frame" x="0.0" y="140.5" width="414" height="672.5"/>
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="3mX-wI-dwh" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="780-DI-BUs"/>
-                            <constraint firstItem="zQ6-Dv-uAi" firstAttribute="top" secondItem="3mX-wI-dwh" secondAttribute="bottom" id="C74-Nu-gyD"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="g5D-MG-dCL" secondAttribute="trailing" id="A9A-fL-f0l"/>
+                            <constraint firstItem="zQ6-Dv-uAi" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="AGf-z9-i1F"/>
                             <constraint firstItem="3mX-wI-dwh" firstAttribute="top" secondItem="RKk-NK-zqw" secondAttribute="bottom" id="CYL-QP-Tfc"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="zQ6-Dv-uAi" secondAttribute="trailing" id="K9N-HA-o5x"/>
+                            <constraint firstItem="zQ6-Dv-uAi" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="MuX-kN-dte"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="3mX-wI-dwh" secondAttribute="trailing" id="P9B-dz-cfV"/>
+                            <constraint firstItem="zQ6-Dv-uAi" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="Q3W-nV-K5c"/>
+                            <constraint firstItem="g5D-MG-dCL" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="SHP-Zi-xRZ"/>
                             <constraint firstItem="RKk-NK-zqw" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="UYg-lA-YCv"/>
+                            <constraint firstItem="zQ6-Dv-uAi" firstAttribute="top" secondItem="g5D-MG-dCL" secondAttribute="bottom" id="doA-1c-Btk"/>
                             <constraint firstItem="RKk-NK-zqw" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="gTc-6V-huv"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="zQ6-Dv-uAi" secondAttribute="bottom" id="iqP-vZ-2RM"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="RKk-NK-zqw" secondAttribute="trailing" id="kOv-MW-pR5"/>
-                            <constraint firstItem="zQ6-Dv-uAi" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="vkI-s4-KKR"/>
+                            <constraint firstItem="g5D-MG-dCL" firstAttribute="top" secondItem="3mX-wI-dwh" secondAttribute="bottom" id="tct-1Y-eKA"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="주문내역" image="주문내역안눌린거" selectedImage="주문내역눌린거" id="XGd-y0-4Mf"/>
@@ -75,7 +85,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="35" y="84"/>
+            <point key="canvasLocation" x="34.782608695652179" y="83.705357142857139"/>
         </scene>
         <!--FirstVC-->
         <scene sceneID="5qa-6x-aLd">
@@ -87,7 +97,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Mr2-vq-Jtm">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.94117647059999998" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3cV-Dw-Y60"/>
@@ -114,20 +124,64 @@
                     <view key="view" contentMode="scaleToFill" id="rF2-Ih-DyB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="스크린샷 2021-08-11 오후 1.59.58" translatesAutoresizingMaskIntoConstraints="NO" id="rDj-a9-F4Z">
+                                <rect key="frame" x="87" y="334" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Sbn-4i-saE"/>
+                                    <constraint firstAttribute="width" constant="240" id="lmu-KV-K3t"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dug-vU-O7U">
+                                <rect key="frame" x="117.5" y="479" width="179" height="38.5"/>
+                                <string key="text">요마트 주문내역이 없습니다.
+요마트를 이용해보세요!</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" systemColor="systemGray2Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FFH-Kl-gnf">
+                                <rect key="frame" x="97" y="547.5" width="220" height="40"/>
+                                <color key="backgroundColor" red="0.89803922179999995" green="0.19215688110000001" blue="0.32941177490000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ehe-hC-S4h"/>
+                                    <constraint firstAttribute="width" constant="220" id="ybr-eK-joe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="요마트 홈으로 이동">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="v89-hW-uug"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dug-vU-O7U" firstAttribute="centerX" secondItem="rDj-a9-F4Z" secondAttribute="centerX" id="T1F-gT-sU1"/>
+                            <constraint firstItem="FFH-Kl-gnf" firstAttribute="top" secondItem="dug-vU-O7U" secondAttribute="bottom" constant="30" id="U4c-jW-MhC"/>
+                            <constraint firstItem="dug-vU-O7U" firstAttribute="top" secondItem="rDj-a9-F4Z" secondAttribute="bottom" constant="17" id="UbE-dw-IAy"/>
+                            <constraint firstItem="FFH-Kl-gnf" firstAttribute="centerX" secondItem="dug-vU-O7U" secondAttribute="centerX" id="oRZ-5y-RhD"/>
+                            <constraint firstItem="rDj-a9-F4Z" firstAttribute="centerX" secondItem="rF2-Ih-DyB" secondAttribute="centerX" id="twx-jC-n2n"/>
+                            <constraint firstItem="rDj-a9-F4Z" firstAttribute="centerY" secondItem="rF2-Ih-DyB" secondAttribute="centerY" constant="-50" id="ujT-V2-34X"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w3s-5z-lsG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1480" y="84"/>
+            <point key="canvasLocation" x="1478.2608695652175" y="83.705357142857139"/>
         </scene>
     </scenes>
     <resources>
+        <image name="스크린샷 2021-08-11 오후 1.59.58" width="332" height="238"/>
         <image name="주문내역눌린거" width="35" height="33"/>
         <image name="주문내역안눌린거" width="33" height="31"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

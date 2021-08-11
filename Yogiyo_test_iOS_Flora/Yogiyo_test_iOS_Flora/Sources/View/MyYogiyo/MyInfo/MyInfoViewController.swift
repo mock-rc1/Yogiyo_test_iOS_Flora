@@ -84,7 +84,7 @@ extension MyInfoViewController: UITableViewDelegate, UITableViewDataSource {
                     cell.myInfoLabel.text = userInfo?.userEmail
                 } else if indexPath.row == 1 {
                     cell.titleNameLabel.text = "비밀번호"
-                    cell.myInfoLabel.text = "*********"
+                    cell.myInfoLabel.text = "********"
                     cell.changeBtn.isHidden = true
                     cell.myInfoLabel.textColor = #colorLiteral(red: 0.3333333433, green: 0.3333333433, blue: 0.3333333433, alpha: 1)
                 }

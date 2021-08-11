@@ -15,6 +15,9 @@ class FoodChoiceVC: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var foodChoiceTableView: UITableView!
     
+    @IBOutlet weak var addOrderBtnView: UIView!
+    @IBOutlet weak var orderBtn: UIView!
+    
     let headerView = UIView()
     var select = [1,2,3]
     var add = [1,2,3,4]
@@ -23,6 +26,7 @@ class FoodChoiceVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        tapGesture()
         //navigationBarUIView.isHidden = true
         //nameLabel.isHidden = true
         
@@ -43,6 +47,16 @@ class FoodChoiceVC: UIViewController {
         
     }
     
+    // MARK: UIView tap gesture
+       func tapGesture() {
+           let tapGesture = UITapGestureRecognizer(target: self, action:#selector(self.screenDidTap(_:)))
+           self.orderBtn.addGestureRecognizer(tapGesture)
+       }
+       @objc private func screenDidTap(_ gesture: UITapGestureRecognizer) {
+           guard let dvc = self.storyboard?.instantiateViewController(identifier: "PlaceAnOrderVC")else{return}
+           self.present(dvc, animated: true, completion:nil)
+       }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
         headerView.layer.addBorder([.top], color: .systemGray4, width: 0.5)
@@ -54,6 +68,9 @@ class FoodChoiceVC: UIViewController {
         foodChoiceTableView.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: .greatestFiniteMagnitude)
     }
     
+    @IBAction func backBtnTap(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     
 }
 

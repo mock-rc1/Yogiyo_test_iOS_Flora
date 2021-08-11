@@ -56,6 +56,9 @@ class PlaceAnOrderVC: UIViewController {
         self.OrderTableView.register(UINib(nibName: "BtnTVCell", bundle: nil),
                                    forCellReuseIdentifier: "BtnTVCell")
     }
+    @IBAction func backBtnTap(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
 }
 
 extension PlaceAnOrderVC: UITableViewDelegate, UITableViewDataSource {
