@@ -102,8 +102,9 @@ extension MyInfoViewController: UITableViewDelegate, UITableViewDataSource {
                     cell.titleNameLabel.text = "닉네임"
                     cell.myInfoLabel.text = userInfo?.userNickname
                     cell.myInfoLabel.textColor = #colorLiteral(red: 0.3333333433, green: 0.3333333433, blue: 0.3333333433, alpha: 1)
+                    cell.changeBtn.addTarget(self, action: #selector(displayButton(_:)), for: .touchUpInside)
                 }
-                
+            cell.selectionStyle = .none
             return cell
         }
         else if indexPath.section == 1 {
@@ -128,7 +129,7 @@ extension MyInfoViewController: UITableViewDelegate, UITableViewDataSource {
             
             // 하위 컨트롤러가 컨트롤러 권한을 상위컨트롤러로 위임
             loginLogoutVC!.didMove(toParent: self)
-            
+            cell.selectionStyle = .none
             return cell
         }
         
@@ -152,7 +153,17 @@ extension MyInfoViewController: UITableViewDelegate, UITableViewDataSource {
             return 0
         }
     }
+    
+    @objc func displayButton(_ UIButton: UIButton) {
+        let storyboardVC = UIStoryboard(name: "MyYogiyoStoryboard", bundle: Bundle(for: NickNameVC.self)).instantiateViewController(withIdentifier: "NickNameVC") as! NickNameVC
+        
+        self.navigationController?.pushViewController(storyboardVC, animated: true)
+        //storyboardVC.modalPresentationStyle = .fullScreen
+        //self.present(storyboardVC, animated: true, completion: nil)
+    }
 }
+
+
 
 extension MyInfoViewController {
     func didSuccessUserInfo(result: UserResult) {

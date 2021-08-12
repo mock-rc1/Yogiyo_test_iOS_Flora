@@ -48,7 +48,7 @@ class UserInfoDataManager {
                     delegate.failedToRequest(message: "오류가났습니다.")
                 }
             }
-    //)
+   // )
     }
 }
 

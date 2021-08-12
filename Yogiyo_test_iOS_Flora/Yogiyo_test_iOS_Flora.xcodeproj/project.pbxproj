@@ -204,6 +204,30 @@
 		DD3F91EC26C42CAE00F98C1D /* HotMenuTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3F91EA26C42CAE00F98C1D /* HotMenuTVCell.xib */; };
 		DD3F91EF26C42E2100F98C1D /* HotMenuCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F91ED26C42E2100F98C1D /* HotMenuCVCell.swift */; };
 		DD3F91F026C42E2100F98C1D /* HotMenuCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3F91EE26C42E2100F98C1D /* HotMenuCVCell.xib */; };
+		DD3F91F326C4CE4F00F98C1D /* UserNicknameResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F91F226C4CE4F00F98C1D /* UserNicknameResponse.swift */; };
+		DD3F91F626C4CE7200F98C1D /* UserNicknameDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F91F526C4CE7200F98C1D /* UserNicknameDataManager.swift */; };
+		DD3F91F826C4CF2F00F98C1D /* UserNicknameRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F91F726C4CF2F00F98C1D /* UserNicknameRequest.swift */; };
+		DD3F91FC26C4EF2500F98C1D /* MainCategoryIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F91FB26C4EF2500F98C1D /* MainCategoryIndex.swift */; };
+		DD3F91FE26C4F32B00F98C1D /* MainIndexDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F91FD26C4F32B00F98C1D /* MainIndexDataManager.swift */; };
+		DD3F920226C4FA8B00F98C1D /* CategoryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F920126C4FA8B00F98C1D /* CategoryStore.swift */; };
+		DD3F920426C4FAC800F98C1D /* CategoryStoreDataManager1.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F920326C4FAC800F98C1D /* CategoryStoreDataManager1.swift */; };
+		DD3F920626C50E2E00F98C1D /* CategoryStoreDataManager2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F920526C50E2E00F98C1D /* CategoryStoreDataManager2.swift */; };
+		DD3F920826C50E3A00F98C1D /* CategoryStoreDataManager3.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F920726C50E3A00F98C1D /* CategoryStoreDataManager3.swift */; };
+		DD3F920A26C50E4400F98C1D /* CategoryStoreDataManager4.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F920926C50E4400F98C1D /* CategoryStoreDataManager4.swift */; };
+		DD3F920C26C50E4C00F98C1D /* CategoryStoreDataManager5.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F920B26C50E4C00F98C1D /* CategoryStoreDataManager5.swift */; };
+		DD3F920E26C50E5700F98C1D /* CategoryStoreDataManager6.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F920D26C50E5700F98C1D /* CategoryStoreDataManager6.swift */; };
+		DD3F921026C50E6000F98C1D /* CategoryStoreDataManager7.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F920F26C50E6000F98C1D /* CategoryStoreDataManager7.swift */; };
+		DD3F921226C50E6A00F98C1D /* CategoryStoreDataManager8.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F921126C50E6A00F98C1D /* CategoryStoreDataManager8.swift */; };
+		DD3F921426C50E7300F98C1D /* CategoryStoreDataManager9.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F921326C50E7300F98C1D /* CategoryStoreDataManager9.swift */; };
+		DD3F921626C50E8600F98C1D /* CategoryStoreDataManager10.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F921526C50E8600F98C1D /* CategoryStoreDataManager10.swift */; };
+		DD3F921826C50E8E00F98C1D /* CategoryStoreDataManager11.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F921726C50E8E00F98C1D /* CategoryStoreDataManager11.swift */; };
+		DD3F921A26C50E9600F98C1D /* CategoryStoreDataManager12.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F921926C50E9600F98C1D /* CategoryStoreDataManager12.swift */; };
+		DD3F921C26C50EB200F98C1D /* CategoryStoreDataManager13.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F921B26C50EB200F98C1D /* CategoryStoreDataManager13.swift */; };
+		DD3F921E26C50EBA00F98C1D /* CategoryStoreDataManager14.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F921D26C50EBA00F98C1D /* CategoryStoreDataManager14.swift */; };
+		DD3F922026C50EC300F98C1D /* CategoryStoreDataManager15.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F921F26C50EC300F98C1D /* CategoryStoreDataManager15.swift */; };
+		DD3F922226C50EC900F98C1D /* CategoryStoreDataManager16.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F922126C50EC900F98C1D /* CategoryStoreDataManager16.swift */; };
+		DD3F922826C54F9E00F98C1D /* StoreInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F922726C54F9E00F98C1D /* StoreInfo.swift */; };
+		DD3F922A26C54FEC00F98C1D /* StoreInfoDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F922926C54FEC00F98C1D /* StoreInfoDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -407,6 +431,30 @@
 		DD3F91EA26C42CAE00F98C1D /* HotMenuTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HotMenuTVCell.xib; sourceTree = "<group>"; };
 		DD3F91ED26C42E2100F98C1D /* HotMenuCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotMenuCVCell.swift; sourceTree = "<group>"; };
 		DD3F91EE26C42E2100F98C1D /* HotMenuCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HotMenuCVCell.xib; sourceTree = "<group>"; };
+		DD3F91F226C4CE4F00F98C1D /* UserNicknameResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNicknameResponse.swift; sourceTree = "<group>"; };
+		DD3F91F526C4CE7200F98C1D /* UserNicknameDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNicknameDataManager.swift; sourceTree = "<group>"; };
+		DD3F91F726C4CF2F00F98C1D /* UserNicknameRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNicknameRequest.swift; sourceTree = "<group>"; };
+		DD3F91FB26C4EF2500F98C1D /* MainCategoryIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCategoryIndex.swift; sourceTree = "<group>"; };
+		DD3F91FD26C4F32B00F98C1D /* MainIndexDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainIndexDataManager.swift; sourceTree = "<group>"; };
+		DD3F920126C4FA8B00F98C1D /* CategoryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryStore.swift; sourceTree = "<group>"; };
+		DD3F920326C4FAC800F98C1D /* CategoryStoreDataManager1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryStoreDataManager1.swift; sourceTree = "<group>"; };
+		DD3F920526C50E2E00F98C1D /* CategoryStoreDataManager2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryStoreDataManager2.swift; sourceTree = "<group>"; };
+		DD3F920726C50E3A00F98C1D /* CategoryStoreDataManager3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryStoreDataManager3.swift; sourceTree = "<group>"; };
+		DD3F920926C50E4400F98C1D /* CategoryStoreDataManager4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryStoreDataManager4.swift; sourceTree = "<group>"; };
+		DD3F920B26C50E4C00F98C1D /* CategoryStoreDataManager5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryStoreDataManager5.swift; sourceTree = "<group>"; };
+		DD3F920D26C50E5700F98C1D /* CategoryStoreDataManager6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryStoreDataManager6.swift; sourceTree = "<group>"; };
+		DD3F920F26C50E6000F98C1D /* CategoryStoreDataManager7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryStoreDataManager7.swift; sourceTree = "<group>"; };
+		DD3F921126C50E6A00F98C1D /* CategoryStoreDataManager8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryStoreDataManager8.swift; sourceTree = "<group>"; };
+		DD3F921326C50E7300F98C1D /* CategoryStoreDataManager9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryStoreDataManager9.swift; sourceTree = "<group>"; };
+		DD3F921526C50E8600F98C1D /* CategoryStoreDataManager10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryStoreDataManager10.swift; sourceTree = "<group>"; };
+		DD3F921726C50E8E00F98C1D /* CategoryStoreDataManager11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryStoreDataManager11.swift; sourceTree = "<group>"; };
+		DD3F921926C50E9600F98C1D /* CategoryStoreDataManager12.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryStoreDataManager12.swift; sourceTree = "<group>"; };
+		DD3F921B26C50EB200F98C1D /* CategoryStoreDataManager13.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryStoreDataManager13.swift; sourceTree = "<group>"; };
+		DD3F921D26C50EBA00F98C1D /* CategoryStoreDataManager14.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryStoreDataManager14.swift; sourceTree = "<group>"; };
+		DD3F921F26C50EC300F98C1D /* CategoryStoreDataManager15.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryStoreDataManager15.swift; sourceTree = "<group>"; };
+		DD3F922126C50EC900F98C1D /* CategoryStoreDataManager16.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryStoreDataManager16.swift; sourceTree = "<group>"; };
+		DD3F922726C54F9E00F98C1D /* StoreInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreInfo.swift; sourceTree = "<group>"; };
+		DD3F922926C54FEC00F98C1D /* StoreInfoDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreInfoDataManager.swift; sourceTree = "<group>"; };
 		F9C1772B30741BA88AC342B9 /* Pods-Yogiyo_test_iOS_Flora.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yogiyo_test_iOS_Flora.release.xcconfig"; path = "Target Support Files/Pods-Yogiyo_test_iOS_Flora/Pods-Yogiyo_test_iOS_Flora.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -701,6 +749,10 @@
 		DD3F901926B9584200F98C1D /* Networkk */ = {
 			isa = PBXGroup;
 			children = (
+				DD3F922526C54F4D00F98C1D /* StoreInfo */,
+				DD3F91FF26C4FA5A00F98C1D /* CategoryStore */,
+				DD3F91F926C4EE5000F98C1D /* Main */,
+				DD3F91F126C4CDF000F98C1D /* UserNickname */,
 				DD3F91A726C2909000F98C1D /* Categories */,
 				DD3F912426C007C400F98C1D /* UserInfo */,
 				DD3F905F26BAF27400F98C1D /* SignIn */,
@@ -1325,6 +1377,90 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		DD3F91F126C4CDF000F98C1D /* UserNickname */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F91F526C4CE7200F98C1D /* UserNicknameDataManager.swift */,
+				DD3F91F426C4CE5900F98C1D /* Entity */,
+			);
+			path = UserNickname;
+			sourceTree = "<group>";
+		};
+		DD3F91F426C4CE5900F98C1D /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F91F226C4CE4F00F98C1D /* UserNicknameResponse.swift */,
+				DD3F91F726C4CF2F00F98C1D /* UserNicknameRequest.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		DD3F91F926C4EE5000F98C1D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F91FD26C4F32B00F98C1D /* MainIndexDataManager.swift */,
+				DD3F91FA26C4EE5A00F98C1D /* Entity */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		DD3F91FA26C4EE5A00F98C1D /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F91FB26C4EF2500F98C1D /* MainCategoryIndex.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		DD3F91FF26C4FA5A00F98C1D /* CategoryStore */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F920326C4FAC800F98C1D /* CategoryStoreDataManager1.swift */,
+				DD3F920526C50E2E00F98C1D /* CategoryStoreDataManager2.swift */,
+				DD3F920726C50E3A00F98C1D /* CategoryStoreDataManager3.swift */,
+				DD3F920926C50E4400F98C1D /* CategoryStoreDataManager4.swift */,
+				DD3F920B26C50E4C00F98C1D /* CategoryStoreDataManager5.swift */,
+				DD3F920D26C50E5700F98C1D /* CategoryStoreDataManager6.swift */,
+				DD3F920F26C50E6000F98C1D /* CategoryStoreDataManager7.swift */,
+				DD3F921126C50E6A00F98C1D /* CategoryStoreDataManager8.swift */,
+				DD3F921326C50E7300F98C1D /* CategoryStoreDataManager9.swift */,
+				DD3F921526C50E8600F98C1D /* CategoryStoreDataManager10.swift */,
+				DD3F921726C50E8E00F98C1D /* CategoryStoreDataManager11.swift */,
+				DD3F921926C50E9600F98C1D /* CategoryStoreDataManager12.swift */,
+				DD3F921B26C50EB200F98C1D /* CategoryStoreDataManager13.swift */,
+				DD3F921D26C50EBA00F98C1D /* CategoryStoreDataManager14.swift */,
+				DD3F921F26C50EC300F98C1D /* CategoryStoreDataManager15.swift */,
+				DD3F922126C50EC900F98C1D /* CategoryStoreDataManager16.swift */,
+				DD3F920026C4FA7600F98C1D /* Entity */,
+			);
+			path = CategoryStore;
+			sourceTree = "<group>";
+		};
+		DD3F920026C4FA7600F98C1D /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F920126C4FA8B00F98C1D /* CategoryStore.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		DD3F922526C54F4D00F98C1D /* StoreInfo */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F922926C54FEC00F98C1D /* StoreInfoDataManager.swift */,
+				DD3F922626C54F8C00F98C1D /* Entity */,
+			);
+			path = StoreInfo;
+			sourceTree = "<group>";
+		};
+		DD3F922626C54F8C00F98C1D /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F922726C54F9E00F98C1D /* StoreInfo.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1508,15 +1644,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD3F920E26C50E5700F98C1D /* CategoryStoreDataManager6.swift in Sources */,
 				DD3F914726C1763000F98C1D /* TotalAmountTVCell.swift in Sources */,
 				DD3F908726BBE20400F98C1D /* CurrentLocationTVCell.swift in Sources */,
 				DD3F90AF26BD14C900F98C1D /* OnePersonViewController.swift in Sources */,
 				DD3F8FFA26B8DFA200F98C1D /* completeLoginTVCell.swift in Sources */,
 				DD3F907226BBB31C00F98C1D /* MiddleBannerCVCell.swift in Sources */,
+				DD3F921226C50E6A00F98C1D /* CategoryStoreDataManager8.swift in Sources */,
 				DD3F900E26B8FB6200F98C1D /* Border.swift in Sources */,
+				DD3F920826C50E3A00F98C1D /* CategoryStoreDataManager3.swift in Sources */,
 				DD3F915726C1E75300F98C1D /* SelectCouponTVCell.swift in Sources */,
 				DD3F90A926BD140600F98C1D /* TangViewController.swift in Sources */,
 				DD3F90B926BD165100F98C1D /* MartViewController.swift in Sources */,
+				DD3F91FE26C4F32B00F98C1D /* MainIndexDataManager.swift in Sources */,
 				DD3F901F26B95BF400F98C1D /* SignUpDataManager.swift in Sources */,
 				DD3F91A026C2609200F98C1D /* ImageVC.swift in Sources */,
 				DD3F903D26BA582F00F98C1D /* FourthButtonTVCell.swift in Sources */,
@@ -1531,6 +1671,7 @@
 				DD3F91A526C27F0D00F98C1D /* SecondVC.swift in Sources */,
 				DD3029BD26B61A8900ABEB63 /* NavigationViewController.swift in Sources */,
 				DD3F915B26C1E77800F98C1D /* OrderHistoryTVCell.swift in Sources */,
+				DD3F921426C50E7300F98C1D /* CategoryStoreDataManager9.swift in Sources */,
 				DD3F90A326BD132E00F98C1D /* KoreaFoodViewController.swift in Sources */,
 				DD3F8FE926B7B14800F98C1D /* userDataTest.swift in Sources */,
 				DD3F904226BA63BE00F98C1D /* FourthBtnConVC.swift in Sources */,
@@ -1551,9 +1692,13 @@
 				DD3F911A26BFB53300F98C1D /* LoginLogoutConVC.swift in Sources */,
 				DD3F902A26B9986700F98C1D /* UIButton.swift in Sources */,
 				DD3029B326B5774300ABEB63 /* OrderViewController.swift in Sources */,
+				DD3F921E26C50EBA00F98C1D /* CategoryStoreDataManager14.swift in Sources */,
 				DD3F90B726BD160700F98C1D /* FranchiseViewController.swift in Sources */,
 				DD3F90BB26BD16B300F98C1D /* HealthViewController.swift in Sources */,
+				DD3F91FC26C4EF2500F98C1D /* MainCategoryIndex.swift in Sources */,
 				DD3F8FF026B8520F00F98C1D /* beforeLoginTVCell.swift in Sources */,
+				DD3F921A26C50E9600F98C1D /* CategoryStoreDataManager12.swift in Sources */,
+				DD3F920626C50E2E00F98C1D /* CategoryStoreDataManager2.swift in Sources */,
 				DD3F913026C1575500F98C1D /* FoodChoiceVC.swift in Sources */,
 				DD3F913726C16E1300F98C1D /* PriceTVCell.swift in Sources */,
 				DD30298026B5515800ABEB63 /* SocialLoginViewController.swift in Sources */,
@@ -1561,18 +1706,25 @@
 				DD3F91E726C420A700F98C1D /* HeaderHotTVCell.swift in Sources */,
 				DD3F912726C0086200F98C1D /* UserInfo.swift in Sources */,
 				DD3F908C26BCBDA500F98C1D /* TransitionViewController.swift in Sources */,
+				DD3F922226C50EC900F98C1D /* CategoryStoreDataManager16.swift in Sources */,
+				DD3F921826C50E8E00F98C1D /* CategoryStoreDataManager11.swift in Sources */,
 				DD3F916426C1E7E200F98C1D /* OrderInfoVC.swift in Sources */,
 				DD3F905926BA9E3F00F98C1D /* ExpressTVCell.swift in Sources */,
+				DD3F91F326C4CE4F00F98C1D /* UserNicknameResponse.swift in Sources */,
 				DD30299926B5695500ABEB63 /* emailLoginViewController.swift in Sources */,
 				DD3F91C326C375B000F98C1D /* PackCVCell.swift in Sources */,
+				DD3F921C26C50EB200F98C1D /* CategoryStoreDataManager13.swift in Sources */,
 				DD3F900B26B8EAF200F98C1D /* CouponConVC.swift in Sources */,
 				DD3F910226BF7B9200F98C1D /* MyInfoViewController.swift in Sources */,
+				DD3F91F626C4CE7200F98C1D /* UserNicknameDataManager.swift in Sources */,
 				DD3F91EF26C42E2100F98C1D /* HotMenuCVCell.swift in Sources */,
 				DD3F90FF26BEF73A00F98C1D /* TodayYogiTVCell.swift in Sources */,
 				DD3F914326C1744800F98C1D /* AddTVCell.swift in Sources */,
 				DD3F90AD26BD148600F98C1D /* BunsikViewController.swift in Sources */,
 				DD3029A726B5762A00ABEB63 /* HomeViewController.swift in Sources */,
 				DD3F91B626C34BDB00F98C1D /* ChildVC3.swift in Sources */,
+				DD3F922A26C54FEC00F98C1D /* StoreInfoDataManager.swift in Sources */,
+				DD3F921026C50E6000F98C1D /* CategoryStoreDataManager7.swift in Sources */,
 				DD3F909926BCF5C800F98C1D /* ParentViewController.swift in Sources */,
 				DD3F902826B9979800F98C1D /* AlertViewController.swift in Sources */,
 				DD3F909D26BD001D00F98C1D /* ChineseFoodViewController.swift in Sources */,
@@ -1583,6 +1735,7 @@
 				DD3F91EB26C42CAE00F98C1D /* HotMenuTVCell.swift in Sources */,
 				DD3F916C26C1E85600F98C1D /* SelectCouponVC.swift in Sources */,
 				DD3F906626BAF2D800F98C1D /* SignInRequest.swift in Sources */,
+				DD3F920226C4FA8B00F98C1D /* CategoryStore.swift in Sources */,
 				DD3F91C726C37EAE00F98C1D /* DeliveryTableViewCell.swift in Sources */,
 				DD3F910E26BF9FDF00F98C1D /* MyInfoTVCell.swift in Sources */,
 				DD3F902C26B9A05A00F98C1D /* SignUpRequest.swift in Sources */,
@@ -1597,13 +1750,19 @@
 				DD30299B26B5696400ABEB63 /* EmailSignUpViewController.swift in Sources */,
 				DD3F91AC26C294AE00F98C1D /* CategoriesDataManager.swift in Sources */,
 				DD3F904726BA72C200F98C1D /* FoodCategoryTVCell.swift in Sources */,
+				DD3F91F826C4CF2F00F98C1D /* UserNicknameRequest.swift in Sources */,
 				DD3F90C926BD614C00F98C1D /* hashTagCollectionViewCell.swift in Sources */,
 				DD3F917E26C23DFD00F98C1D /* CustomerCenterVC.swift in Sources */,
 				DD3F91CC26C37EFD00F98C1D /* DeliveryVC.swift in Sources */,
+				DD3F921626C50E8600F98C1D /* CategoryStoreDataManager10.swift in Sources */,
+				DD3F922026C50EC300F98C1D /* CategoryStoreDataManager15.swift in Sources */,
 				DD3F907E26BBBF3100F98C1D /* HotOurStoreCVCell.swift in Sources */,
 				DD3F900626B8EAB600F98C1D /* couponTableViewCell.swift in Sources */,
 				DD3F901D26B95A0B00F98C1D /* SignUpData.swift in Sources */,
 				DD3F912926C008AD00F98C1D /* UserInfoDataManager.swift in Sources */,
+				DD3F922826C54F9E00F98C1D /* StoreInfo.swift in Sources */,
+				DD3F920C26C50E4C00F98C1D /* CategoryStoreDataManager5.swift in Sources */,
+				DD3F920A26C50E4400F98C1D /* CategoryStoreDataManager4.swift in Sources */,
 				DD3F8FEC26B7FB8900F98C1D /* UIViewController.swift in Sources */,
 				DD3F906126BAF2A100F98C1D /* SignInDataManager.swift in Sources */,
 				DD3F90F726BE10DF00F98C1D /* HashTagVC.swift in Sources */,
@@ -1615,6 +1774,7 @@
 				DD3029AB26B576EE00ABEB63 /* JjimViewController.swift in Sources */,
 				DD3F8FFE26B8DFE000F98C1D /* CompleteLoginVC.swift in Sources */,
 				DD3F919226C249B400F98C1D /* jjimVC.swift in Sources */,
+				DD3F920426C4FAC800F98C1D /* CategoryStoreDataManager1.swift in Sources */,
 				DD3F90A526BD137000F98C1D /* BurgerViewController.swift in Sources */,
 				DD3F91D526C3973200F98C1D /* HotSearchCVCell.swift in Sources */,
 				DD3F914B26C1E2C400F98C1D /* PlaceAnOrderVC.swift in Sources */,

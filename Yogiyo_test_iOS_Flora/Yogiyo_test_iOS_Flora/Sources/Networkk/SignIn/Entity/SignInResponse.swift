@@ -18,7 +18,7 @@ struct SignInResponse: Codable {
 // MARK: - SignInResult
 struct SignInResult: Codable {
     let userIdx: Int
-    let jwt, passwordStar : String
+    let jwt : String
 }
 
 

@@ -66,6 +66,7 @@ class MyYogiyoViewController: UIViewController {
 //        } else {
 //            // 사용자가 로그인을 하기 전이다.
 //        }
+        MyYogiyoTableView.reloadData()
     }
 }
 
@@ -114,7 +115,7 @@ extension MyYogiyoViewController: UITableViewDataSource, UITableViewDelegate {
                 
                 // 하위 컨트롤러가 컨트롤러 권한을 상위컨트롤러로 위임
                 completeLoginVC!.didMove(toParent: self)
-                
+                cell.selectionStyle = .none
                 return cell
                 
             } else {
@@ -139,7 +140,7 @@ extension MyYogiyoViewController: UITableViewDataSource, UITableViewDelegate {
                 
                 // 하위 컨트롤러가 컨트롤러 권한을 상위컨트롤러로 위임
                 beforeLoginVC!.didMove(toParent: self)
-                
+                cell.selectionStyle = .none
                 return cell
                 
             }
@@ -167,7 +168,7 @@ extension MyYogiyoViewController: UITableViewDataSource, UITableViewDelegate {
             
             // 하위 컨트롤러가 컨트롤러 권한을 상위컨트롤러로 위임
             couponVC!.didMove(toParent: self)
-            
+            cell.selectionStyle = .none
             return cell
             
         case 2:
@@ -193,7 +194,7 @@ extension MyYogiyoViewController: UITableViewDataSource, UITableViewDelegate {
             
             // 하위 컨트롤러가 컨트롤러 권한을 상위컨트롤러로 위임
             categoryVC!.didMove(toParent: self)
-            
+            cell.selectionStyle = .none
             return cell
             
         default:

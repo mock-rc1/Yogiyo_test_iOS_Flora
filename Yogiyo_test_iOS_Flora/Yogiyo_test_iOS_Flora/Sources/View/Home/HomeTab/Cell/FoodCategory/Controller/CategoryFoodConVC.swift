@@ -6,11 +6,29 @@
 //
 
 import UIKit
+import XLPagerTabStrip
 
 class CategoryFoodConVC: UIViewController {
 
     @IBOutlet weak var allFoodBtn: UIButton!
-
+    @IBOutlet weak var ChineseFoodBtn: UIButton!
+    @IBOutlet weak var ChickenBtn: UIButton!
+    @IBOutlet weak var KoreanFoodBtn: UIButton!
+    @IBOutlet weak var BurgerBtn: UIButton!
+    @IBOutlet weak var PizzaBtn: UIButton!
+    @IBOutlet weak var SoupBtn: UIButton!
+    @IBOutlet weak var CafeBtn: UIButton!
+    @IBOutlet weak var BunsikBtn: UIButton!
+    @IBOutlet weak var SinglePersonBtn: UIButton!
+    @IBOutlet weak var JapaneseBtn: UIButton!
+    @IBOutlet weak var NightBtn: UIButton!
+    @IBOutlet weak var PigBtn: UIButton!
+    @IBOutlet weak var FranchiseBtn: UIButton!
+    @IBOutlet weak var yomartBtn: UIButton!
+    @IBOutlet weak var BeautyBtn: UIButton!
+    @IBOutlet weak var PetBtn: UIButton!
+    
+    
     var hashTag = ["#냉면","#갈비탕","#아이스크림","#밥","#식혜","#과자","#음료수"]
     @IBOutlet weak var hashTagCollectionView: UICollectionView!
     
@@ -18,6 +36,7 @@ class CategoryFoodConVC: UIViewController {
         super.viewDidLoad()
         setDelegate()
         setRegister()
+        
     }
     
     
@@ -32,6 +51,136 @@ class CategoryFoodConVC: UIViewController {
     
     @IBAction func allFoodBtnTap(_ sender: Any) {
         
+        allFoodBtn.tag = 1
+        let storyboardVC = UIStoryboard(name: "HomeStoryboard", bundle: Bundle(for: ParentViewController.self)).instantiateViewController(withIdentifier: "ParentViewController") as! ParentViewController
+                
+        self.navigationController?.pushViewController(storyboardVC, animated: true)
+    }
+    
+    @IBAction func ChineseBtnTap(_ sender: Any) {
+        
+        ChineseFoodBtn.tag = 2
+        let storyboardVC = UIStoryboard(name: "HomeStoryboard", bundle: Bundle(for: ParentViewController.self)).instantiateViewController(withIdentifier: "ParentViewController") as! ParentViewController
+        
+                
+        self.navigationController?.pushViewController(storyboardVC, animated: true)
+    }
+    
+    @IBAction func ChickenBtnTap(_ sender: Any) {
+        
+        ChickenBtn.tag = 3
+        let storyboardVC = UIStoryboard(name: "HomeStoryboard", bundle: Bundle(for: ParentViewController.self)).instantiateViewController(withIdentifier: "ParentViewController") as! ParentViewController
+                
+        self.navigationController?.pushViewController(storyboardVC, animated: true)
+    }
+    
+    @IBAction func KoreanBtnTap(_ sender: Any) {
+        
+        KoreanFoodBtn.tag = 4
+        let storyboardVC = UIStoryboard(name: "HomeStoryboard", bundle: Bundle(for: ParentViewController.self)).instantiateViewController(withIdentifier: "ParentViewController") as! ParentViewController
+                
+        self.navigationController?.pushViewController(storyboardVC, animated: true)
+    }
+    
+    @IBAction func BurgerBtnTap(_ sender: Any) {
+        
+        BurgerBtn.tag = 5
+        let storyboardVC = UIStoryboard(name: "HomeStoryboard", bundle: Bundle(for: ParentViewController.self)).instantiateViewController(withIdentifier: "ParentViewController") as! ParentViewController
+                
+        self.navigationController?.pushViewController(storyboardVC, animated: true)
+    }
+    
+    @IBAction func pizzaBtnTap(_ sender: Any) {
+        
+        PizzaBtn.tag = 6
+        let storyboardVC = UIStoryboard(name: "HomeStoryboard", bundle: Bundle(for: ParentViewController.self)).instantiateViewController(withIdentifier: "ParentViewController") as! ParentViewController
+                
+        self.navigationController?.pushViewController(storyboardVC, animated: true)
+    }
+    
+    @IBAction func SoupBtnTap(_ sender: Any) {
+        
+        SoupBtn.tag = 7
+        let storyboardVC = UIStoryboard(name: "HomeStoryboard", bundle: Bundle(for: ParentViewController.self)).instantiateViewController(withIdentifier: "ParentViewController") as! ParentViewController
+                
+        self.navigationController?.pushViewController(storyboardVC, animated: true)
+    }
+    
+    @IBAction func cafeBtnTap(_ sender: Any) {
+        
+        CafeBtn.tag = 8
+        let storyboardVC = UIStoryboard(name: "HomeStoryboard", bundle: Bundle(for: ParentViewController.self)).instantiateViewController(withIdentifier: "ParentViewController") as! ParentViewController
+                
+        self.navigationController?.pushViewController(storyboardVC, animated: true)
+    }
+    
+    @IBAction func bunsikBtnTap(_ sender: Any) {
+        
+        BunsikBtn.tag = 9
+        let storyboardVC = UIStoryboard(name: "HomeStoryboard", bundle: Bundle(for: ParentViewController.self)).instantiateViewController(withIdentifier: "ParentViewController") as! ParentViewController
+                
+        self.navigationController?.pushViewController(storyboardVC, animated: true)
+    }
+    
+    @IBAction func singlePersonBtnTap(_ sender: Any) {
+        
+        SinglePersonBtn.tag = 10
+        let storyboardVC = UIStoryboard(name: "HomeStoryboard", bundle: Bundle(for: ParentViewController.self)).instantiateViewController(withIdentifier: "ParentViewController") as! ParentViewController
+                
+        self.navigationController?.pushViewController(storyboardVC, animated: true)
+    }
+    
+    @IBAction func JapaneseBtnTap(_ sender: Any) {
+        
+        JapaneseBtn.tag = 11
+        let storyboardVC = UIStoryboard(name: "HomeStoryboard", bundle: Bundle(for: ParentViewController.self)).instantiateViewController(withIdentifier: "ParentViewController") as! ParentViewController
+                
+        self.navigationController?.pushViewController(storyboardVC, animated: true)
+    }
+    
+    @IBAction func NightBtnTap(_ sender: Any) {
+        
+        NightBtn.tag = 12
+        let storyboardVC = UIStoryboard(name: "HomeStoryboard", bundle: Bundle(for: ParentViewController.self)).instantiateViewController(withIdentifier: "ParentViewController") as! ParentViewController
+                
+        self.navigationController?.pushViewController(storyboardVC, animated: true)
+    }
+    
+    @IBAction func PigBtnTap(_ sender: Any) {
+        
+        PigBtn.tag = 13
+        let storyboardVC = UIStoryboard(name: "HomeStoryboard", bundle: Bundle(for: ParentViewController.self)).instantiateViewController(withIdentifier: "ParentViewController") as! ParentViewController
+                
+        self.navigationController?.pushViewController(storyboardVC, animated: true)
+    }
+    
+    @IBAction func FranchiseBtnTap(_ sender: Any) {
+        
+        FranchiseBtn.tag = 14
+        let storyboardVC = UIStoryboard(name: "HomeStoryboard", bundle: Bundle(for: ParentViewController.self)).instantiateViewController(withIdentifier: "ParentViewController") as! ParentViewController
+                
+        self.navigationController?.pushViewController(storyboardVC, animated: true)
+    }
+    
+    @IBAction func yomartBtnTap(_ sender: Any) {
+        
+        yomartBtn.tag = 15
+        let storyboardVC = UIStoryboard(name: "HomeStoryboard", bundle: Bundle(for: ParentViewController.self)).instantiateViewController(withIdentifier: "ParentViewController") as! ParentViewController
+                
+        self.navigationController?.pushViewController(storyboardVC, animated: true)
+    }
+    
+    @IBAction func beautyBtnTap(_ sender: Any) {
+        
+        BeautyBtn.tag = 16
+        let storyboardVC = UIStoryboard(name: "HomeStoryboard", bundle: Bundle(for: ParentViewController.self)).instantiateViewController(withIdentifier: "ParentViewController") as! ParentViewController
+                
+        self.navigationController?.pushViewController(storyboardVC, animated: true)
+    }
+    
+    @IBAction func PetBtnTap(_ sender: Any) {
+        
+        PetBtn.tag = 17
         let storyboardVC = UIStoryboard(name: "HomeStoryboard", bundle: Bundle(for: ParentViewController.self)).instantiateViewController(withIdentifier: "ParentViewController") as! ParentViewController
                 
         self.navigationController?.pushViewController(storyboardVC, animated: true)

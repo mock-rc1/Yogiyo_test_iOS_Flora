@@ -8,22 +8,53 @@
 import UIKit
 
 class NickNameVC: UIViewController {
-
+    
+    lazy var dataManager: UserNicknameDataManager  = UserNicknameDataManager()
+    
+    @IBOutlet weak var backBtn: UIButton!
+    @IBOutlet weak var nickNameTextField: UITextField!
+    @IBOutlet weak var nickNameChangeCompleteBtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func backBtnTap(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
     }
-    */
+    
+    @IBAction func nickNameChangeBtnTap(_ sender: Any) {
+        
+        guard let nickName = nickNameTextField.text?.trim, nickName.isExists else {
+            self.presentAlert(title: "닉네임을 입력해주세요")
+            return
+        }
+        let input = UserNicknameRequest(userNickname: nickName)
+        dataManager.patchUserNickname(input, delegate: self)
+    }
+    
+}
 
+extension NickNameVC {
+    func didSuccessUserNicknameChange(result: UserNicknameResponse) {
+        print("닉네임변경성공")
+        UserDefaults.standard.string(forKey: "userNickname")
+        //self.dismissIndicator()
+        self.presentAlert(title: "닉네임이 변경되었습니다.", isCancelActionIncluded: true) {
+            action in
+            
+            //                        let storyboardVC = UIStoryboard(name: "MyYogiyoStoryboard", bundle: Bundle(for: MyYogiyoViewController.self)).instantiateViewController(withIdentifier: "MyYogiyoViewController") as! MyYogiyoViewController
+            //
+            //            self.dismiss(animated: true) {
+            //                self.present(storyboardVC, animated: true, completion: nil)
+            //            }
+            self.navigationController?.popViewController(animated: true)
+        }
+    }
+    
+    func failedToRequest(message: String) {
+        self.presentAlert(title: message)
+    }
 }

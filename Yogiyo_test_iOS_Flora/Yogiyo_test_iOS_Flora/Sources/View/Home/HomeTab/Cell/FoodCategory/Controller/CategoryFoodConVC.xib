@@ -10,9 +10,25 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CategoryFoodConVC" customModule="Yogiyo_test_iOS_Flora" customModuleProvider="target">
             <connections>
+                <outlet property="BeautyBtn" destination="6AH-RB-2Qg" id="RoQ-B1-tG9"/>
+                <outlet property="BunsikBtn" destination="ZZ5-oT-8ka" id="2xR-5B-FVb"/>
+                <outlet property="BurgerBtn" destination="PDY-cD-qlj" id="GEk-zb-56k"/>
+                <outlet property="CafeBtn" destination="4ka-uy-TcI" id="K47-w0-HyW"/>
+                <outlet property="ChickenBtn" destination="X28-zF-YnQ" id="K0z-Lj-E2J"/>
+                <outlet property="ChineseFoodBtn" destination="pgU-WI-35U" id="4xU-8s-JIp"/>
+                <outlet property="FranchiseBtn" destination="XhM-Kg-28q" id="4sZ-Ax-ssp"/>
+                <outlet property="JapaneseBtn" destination="R8G-Aw-yeq" id="xBC-F0-Fqa"/>
+                <outlet property="KoreanFoodBtn" destination="6FU-ck-Ee3" id="CMT-6p-ug7"/>
+                <outlet property="NightBtn" destination="i1W-7n-AnQ" id="WwN-Ue-3Wi"/>
+                <outlet property="PetBtn" destination="XlM-ck-ZVa" id="3aP-YV-N5D"/>
+                <outlet property="PigBtn" destination="QR4-MG-GXz" id="KCZ-KL-SrO"/>
+                <outlet property="PizzaBtn" destination="TaV-gd-S3L" id="1M5-Fh-KZw"/>
+                <outlet property="SinglePersonBtn" destination="UTh-cp-Wu8" id="cpc-nr-sp3"/>
+                <outlet property="SoupBtn" destination="CFC-pF-74e" id="0uh-WD-Ib6"/>
                 <outlet property="allFoodBtn" destination="RFo-06-pey" id="OLe-7n-C7W"/>
                 <outlet property="hashTagCollectionView" destination="NL7-Xh-Lw8" id="oeH-q7-Tdw"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="yomartBtn" destination="hux-jY-FoY" id="RXq-Fk-wSo"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -91,6 +107,9 @@
                                                                 <constraint firstAttribute="width" secondItem="pgU-WI-35U" secondAttribute="height" multiplier="75:58" id="ykk-IB-0K6"/>
                                                             </constraints>
                                                             <state key="normal" image="중국집"/>
+                                                            <connections>
+                                                                <action selector="ChineseBtnTap:" destination="-1" eventType="touchUpInside" id="hKC-Ut-fjC"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o7d-Tc-vOa">
                                                             <rect key="frame" x="22" y="58" width="30" height="24"/>
@@ -117,6 +136,9 @@
                                                                 <constraint firstAttribute="width" secondItem="X28-zF-YnQ" secondAttribute="height" multiplier="75:58" id="o3b-xm-nwG"/>
                                                             </constraints>
                                                             <state key="normal" image="치킨"/>
+                                                            <connections>
+                                                                <action selector="ChickenBtnTap:" destination="-1" eventType="touchUpInside" id="cO6-TO-PbR"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9dZ-Vv-1FD">
                                                             <rect key="frame" x="22" y="58" width="30" height="24"/>
@@ -143,6 +165,9 @@
                                                                 <constraint firstAttribute="height" constant="58" id="zaj-qE-Mfg"/>
                                                             </constraints>
                                                             <state key="normal" image="한식"/>
+                                                            <connections>
+                                                                <action selector="KoreanBtnTap:" destination="-1" eventType="touchUpInside" id="bgW-1Q-NWM"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0CW-d4-Lxa">
                                                             <rect key="frame" x="22" y="58" width="30" height="24"/>
@@ -169,6 +194,9 @@
                                                                 <constraint firstAttribute="width" secondItem="PDY-cD-qlj" secondAttribute="height" multiplier="75:58" id="jmT-dm-O9M"/>
                                                             </constraints>
                                                             <state key="normal" image="버거"/>
+                                                            <connections>
+                                                                <action selector="BurgerBtnTap:" destination="-1" eventType="touchUpInside" id="cqk-yR-Kmr"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e3C-yb-txd">
                                                             <rect key="frame" x="22" y="58" width="30" height="24"/>
@@ -200,6 +228,9 @@
                                                                 <constraint firstAttribute="height" constant="58" id="a54-Cz-JqC"/>
                                                             </constraints>
                                                             <state key="normal" image="피자양식"/>
+                                                            <connections>
+                                                                <action selector="pizzaBtnTap:" destination="-1" eventType="touchUpInside" id="4kF-z3-gjE"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GuY-Ne-Drx">
                                                             <rect key="frame" x="18" y="57" width="38" height="24"/>
@@ -228,6 +259,9 @@
                                                                 <constraint firstAttribute="height" constant="58" id="qOS-5j-UeK"/>
                                                             </constraints>
                                                             <state key="normal" image="찜탕"/>
+                                                            <connections>
+                                                                <action selector="SoupBtnTap:" destination="-1" eventType="touchUpInside" id="gUU-bS-dTL"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJp-Bs-bNd">
                                                             <rect key="frame" x="22" y="53" width="30" height="24"/>
@@ -254,6 +288,9 @@
                                                                 <constraint firstAttribute="width" secondItem="4ka-uy-TcI" secondAttribute="height" multiplier="75:58" id="h1P-k7-rLc"/>
                                                             </constraints>
                                                             <state key="normal" image="카페디저트"/>
+                                                            <connections>
+                                                                <action selector="cafeBtnTap:" destination="-1" eventType="touchUpInside" id="hHq-hz-R6c"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sMp-eo-PsL">
                                                             <rect key="frame" x="13.5" y="53" width="47" height="24"/>
@@ -280,6 +317,9 @@
                                                                 <constraint firstAttribute="height" constant="58" id="rKw-9G-cVF"/>
                                                             </constraints>
                                                             <state key="normal" image="분식"/>
+                                                            <connections>
+                                                                <action selector="bunsikBtnTap:" destination="-1" eventType="touchUpInside" id="VVM-U7-5eQ"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="71n-TS-bpA">
                                                             <rect key="frame" x="22" y="53" width="30" height="24"/>
@@ -306,6 +346,9 @@
                                                                 <constraint firstAttribute="height" constant="58" id="rI6-KN-JMy"/>
                                                             </constraints>
                                                             <state key="normal" image="1인주문"/>
+                                                            <connections>
+                                                                <action selector="singlePersonBtnTap:" destination="-1" eventType="touchUpInside" id="hMc-z8-FT6"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfS-sb-JAE">
                                                             <rect key="frame" x="21.5" y="53" width="31" height="24"/>
@@ -337,6 +380,9 @@
                                                                 <constraint firstAttribute="height" constant="58" id="ZjX-Fb-d3l"/>
                                                             </constraints>
                                                             <state key="normal" image="일식돈까스"/>
+                                                            <connections>
+                                                                <action selector="JapaneseBtnTap:" destination="-1" eventType="touchUpInside" id="wVL-vo-BJG"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fdw-Oe-uhy">
                                                             <rect key="frame" x="13.5" y="53" width="47" height="24"/>
@@ -365,6 +411,9 @@
                                                                 <constraint firstAttribute="height" constant="58" id="xUf-iK-mnH"/>
                                                             </constraints>
                                                             <state key="normal" image="야식"/>
+                                                            <connections>
+                                                                <action selector="NightBtnTap:" destination="-1" eventType="touchUpInside" id="ufZ-gS-4Ml"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sww-RW-qoK">
                                                             <rect key="frame" x="22" y="53" width="30" height="24"/>
@@ -391,6 +440,9 @@
                                                                 <constraint firstAttribute="width" secondItem="QR4-MG-GXz" secondAttribute="height" multiplier="75:58" id="sgA-23-fe8"/>
                                                             </constraints>
                                                             <state key="normal" image="족발보쌈"/>
+                                                            <connections>
+                                                                <action selector="PigBtnTap:" destination="-1" eventType="touchUpInside" id="mv3-qY-3M4"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mbK-Ny-YAF">
                                                             <rect key="frame" x="18" y="53" width="38" height="24"/>
@@ -417,6 +469,9 @@
                                                                 <constraint firstAttribute="height" constant="58" id="iji-A0-e8z"/>
                                                             </constraints>
                                                             <state key="normal" image="프렌차이즈"/>
+                                                            <connections>
+                                                                <action selector="FranchiseBtnTap:" destination="-1" eventType="touchUpInside" id="w6R-On-V2r"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OEs-Kl-1g8">
                                                             <rect key="frame" x="15" y="53" width="44" height="24"/>
@@ -443,6 +498,9 @@
                                                                 <constraint firstAttribute="width" secondItem="hux-jY-FoY" secondAttribute="height" multiplier="75:58" id="igw-fD-NKg"/>
                                                             </constraints>
                                                             <state key="normal" image="요마트"/>
+                                                            <connections>
+                                                                <action selector="yomartBtnTap:" destination="-1" eventType="touchUpInside" id="E0E-dr-uqU"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E55-Dc-bQL">
                                                             <rect key="frame" x="22" y="53" width="30" height="24"/>
@@ -474,6 +532,9 @@
                                                                 <constraint firstAttribute="width" secondItem="6AH-RB-2Qg" secondAttribute="height" multiplier="75:58" id="TFm-Sb-XO3"/>
                                                             </constraints>
                                                             <state key="normal" image="헬스뷰티"/>
+                                                            <connections>
+                                                                <action selector="beautyBtnTap:" destination="-1" eventType="touchUpInside" id="vCd-UX-1Cg"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K8j-Io-paR">
                                                             <rect key="frame" x="18" y="53" width="38" height="24"/>
@@ -502,6 +563,9 @@
                                                                 <constraint firstAttribute="width" secondItem="XlM-ck-ZVa" secondAttribute="height" multiplier="75:58" id="xcY-bX-nm5"/>
                                                             </constraints>
                                                             <state key="normal" image="반려동물용품"/>
+                                                            <connections>
+                                                                <action selector="PetBtnTap:" destination="-1" eventType="touchUpInside" id="UMe-sX-8wA"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qxW-Fn-yl3">
                                                             <rect key="frame" x="11" y="53" width="52" height="24"/>

@@ -111,7 +111,6 @@ extension emailLoginViewController {
             UserDefaults.standard.set(result.jwt, forKey: "userToken") // 토큰 저장
             UserDefaults.standard.set(result.userIdx, forKey: "userIdx")
             
-            
             let storyboardVC = UIStoryboard(name: "MyYogiyoStoryboard", bundle: Bundle(for: MyYogiyoViewController.self)).instantiateViewController(withIdentifier: "MyYogiyoViewController") as! MyYogiyoViewController
 
             self.navigationController?.pushViewController(storyboardVC, animated: true)

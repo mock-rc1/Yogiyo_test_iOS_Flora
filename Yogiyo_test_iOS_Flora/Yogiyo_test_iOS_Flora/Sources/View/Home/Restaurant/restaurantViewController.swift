@@ -18,7 +18,7 @@ class restaurantViewController: UIViewController, UIScrollViewDelegate {
     
     var tabBottom = [1,2,3,4,5,6,7]
     
-
+    
     @IBOutlet weak var restaurantLabel: UILabel!
     @IBOutlet weak var backBtn: UIButton!
     @IBOutlet weak var navigationBarUIView: UIView!
@@ -29,7 +29,7 @@ class restaurantViewController: UIViewController, UIScrollViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
- 
+        
         
         setDelegate()
         setStyle()
@@ -53,10 +53,10 @@ class restaurantViewController: UIViewController, UIScrollViewDelegate {
     func setCellRegister() {
         // cell
         self.RestaurantTableView.register(MenuTVCell.nib(), forCellReuseIdentifier: MenuTVCell.identifier)
-
+        
         // controller cell
         self.RestaurantTableView.register(UINib(nibName: "ImageTVCell", bundle: nil),
-                                   forCellReuseIdentifier: "ImageTVCell")
+                                          forCellReuseIdentifier: "ImageTVCell")
     }
     
     
@@ -86,7 +86,7 @@ extension restaurantViewController: UITableViewDataSource, UITableViewDelegate {
             let cell = RestaurantTableView.dequeueReusableCell(withIdentifier: "ImageTVCell",for: indexPath) as! ImageTVCell
             
             imageVC = ImageVC(nibName: "ImageVC",
-                                              bundle: nil)
+                              bundle: nil)
             
             // 셀에 컨트롤러의 View를 추가
             cell.addSubview(imageVC!.view)
@@ -152,17 +152,17 @@ extension restaurantViewController: UITableViewDataSource, UITableViewDelegate {
         else {
             headerTabBar = HeaderTabBarVC(nibName: "HeaderTabBarVC", bundle: nil)
             
-          let headerView = UIView()
-          headerView.backgroundColor = .red
-          headerView.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: 50)
-          
+            let headerView = UIView()
+            headerView.backgroundColor = .red
+            headerView.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: 50)
+            
             headerView.addSubview(headerTabBar!.view)
             
             self.addChild(headerTabBar!)
             
             // autolayout
             headerTabBar!.view.translatesAutoresizingMaskIntoConstraints = false
-         
+            
             headerTabBar!.view.topAnchor.constraint(equalTo: headerView.topAnchor).isActive = true
             headerTabBar!.view.bottomAnchor.constraint(equalTo: headerView.bottomAnchor).isActive = true
             headerTabBar!.view.leftAnchor.constraint(equalTo: headerView.leftAnchor).isActive = true
@@ -170,22 +170,22 @@ extension restaurantViewController: UITableViewDataSource, UITableViewDelegate {
             
             // 하위 컨트롤러가 컨트롤러 권한을 상위컨트롤러로 위임
             headerTabBar!.didMove(toParent: self)
-
-          
-          return headerView
+            
+            
+            return headerView
         }
     }
     
     func tableView(_ tableView: UITableView,didSelectRowAt indexPath: IndexPath) {
-            
+        
         if indexPath.section == 1 {
             // 해당 셀을 누르면 'VC' 호출
-        let storyboardVC = UIStoryboard(name: "HomeStoryboard", bundle: Bundle(for: FoodChoiceVC.self)).instantiateViewController(withIdentifier: "FoodChoiceVC") as! FoodChoiceVC
-        
-        
-        self.present(storyboardVC, animated: true, completion: nil)
-        //self.navigationController?.pushViewController(storyboardVC, animated: true)
+            let storyboardVC = UIStoryboard(name: "HomeStoryboard", bundle: Bundle(for: FoodChoiceVC.self)).instantiateViewController(withIdentifier: "FoodChoiceVC") as! FoodChoiceVC
+            
+            
+            self.present(storyboardVC, animated: true, completion: nil)
+            //self.navigationController?.pushViewController(storyboardVC, animated: true)
         }
-        }
+    }
     
 }

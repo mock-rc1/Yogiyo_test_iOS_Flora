@@ -22,5 +22,3 @@ struct UserResult: Codable {
     let userPhoneNum: String?
     let userNickname: String
 }
-
-

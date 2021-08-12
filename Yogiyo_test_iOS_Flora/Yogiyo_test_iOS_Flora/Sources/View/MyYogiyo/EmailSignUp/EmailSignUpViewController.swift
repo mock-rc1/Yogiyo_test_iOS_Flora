@@ -172,7 +172,7 @@ class EmailSignUpViewController: BaseViewController {
 extension EmailSignUpViewController {
     // 회원가입에 성공했을 때
     func didSuccessSignUp(_ result: SignUpResult) {
-        self.presentAlert(title: "회원가입에 성공하였습니다", message: result.jwt, isCancelActionIncluded: true) { action in
+        self.presentAlert(title: "회원가입에 성공하였습니다", message: "자동으로 로그인 되셨습니다", isCancelActionIncluded: true) { action in
             UserDefaults.standard.set(result.jwt, forKey: "userToken") // 토큰 저장
             let mainTabBarController = UIStoryboard(name: "MyYogiyoStoryboard", bundle: nil).instantiateViewController(identifier: "MyYogiyoViewController")
             self.changeRootViewController(mainTabBarController)

@@ -42,9 +42,6 @@
                                         <state key="normal" image="settingIcon">
                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
                                         </state>
-                                        <connections>
-                                            <segue destination="gll-0H-mTg" kind="show" id="Z64-LJ-YcQ"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -187,6 +184,9 @@
                                         <state key="normal" image="chevron.left" catalog="system">
                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="18" scale="large" weight="thin"/>
                                         </state>
+                                        <connections>
+                                            <action selector="backBtnTap:" destination="HX0-3s-T3c" eventType="touchUpInside" id="PBV-h1-HmK"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="닉네임 변경" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Of5-xh-Pua">
                                         <rect key="frame" x="168" y="12.5" width="78" height="21"/>
@@ -229,6 +229,9 @@
                                 <state key="normal" title="닉네임 변경 완료">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="nickNameChangeBtnTap:" destination="HX0-3s-T3c" eventType="touchUpInside" id="sMY-Vk-vle"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="l0m-Xj-6aC"/>
@@ -248,6 +251,11 @@
                             <constraint firstItem="dml-5g-ZP6" firstAttribute="top" secondItem="0RN-Hw-AmI" secondAttribute="bottom" id="yh4-iG-EMA"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="backBtn" destination="JPX-dW-BwK" id="KZS-Qq-LTr"/>
+                        <outlet property="nickNameChangeCompleteBtn" destination="hxw-bw-ftL" id="d5X-hn-u7d"/>
+                        <outlet property="nickNameTextField" destination="otu-Mp-vBs" id="rCI-ry-pxW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PEd-R3-uFg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -357,7 +365,6 @@
                                         </state>
                                         <connections>
                                             <action selector="backBtnTap:" destination="gll-0H-mTg" eventType="touchUpInside" id="JUE-ot-vFG"/>
-                                            <segue destination="g7f-zh-Vfi" kind="show" id="HQS-ve-4r4"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="고객만족센터" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9E-Ko-4KZ">

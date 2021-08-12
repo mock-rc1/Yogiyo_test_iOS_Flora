@@ -8,13 +8,16 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-    //lazy var dataManager: CategoriesDataManager = CategoriesDataManager()
+    
+    lazy var dataManager: MainIndexDataManager = MainIndexDataManager()
     
     // 요즘뜨는 우리동네 부분 유아이 이상하니까 그냥 요기요 익스프레스 셀로 뿌려주기
     let sections: [String] = ["배너", "버튼4개", "서치바아이콘", "요기요익스프레스","광고","요즘뜨는 우리동네가게", "요기서먹어요헤더","요기서먹어요"]
     
     var hotStore = [1,2,3]
     var todayYogi = [1,2,3,4,5,6]
+    
+    var mainIndex : [MainResult] = []
     
     // 버튼 네개 있는 셀
     var fourthBtnVC : FourthBtnConVC?
@@ -23,7 +26,6 @@ class HomeViewController: UIViewController {
     // 해시태그 헤더
     var homeHashTagVC : HomeHashTagVC?
     
-    //var category : [Result] = []
     
     // MARK: - Properties
     @IBOutlet weak var currentLocationBtn: UIButton!
@@ -33,14 +35,13 @@ class HomeViewController: UIViewController {
     // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setDelegate()
         setStyle()
         setCellRegister()
         //mainTableView.estimatedSectionHeaderHeight = 50
         //mainTableView.sectionHeaderHeight = UITableView.automaticDimension
         
-        //dataManager.getCategories(delegate: self)
+        dataManager.getMainIndex(delegate: self)
     }
     
     // MARK: - Fuction
@@ -170,6 +171,25 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             // 하위 컨트롤러가 컨트롤러 권한을 상위컨트롤러로 위임
             foodCategoryVC!.didMove(toParent: self)
             
+//            let vc = CategoryFoodConVC()
+//            vc.allFoodBtn?.tag = mainIndex[0].categoryIdx
+//            print("여기값잇어????", mainIndex[0])
+//            vc.ChineseFoodBtn.tag = mainIndex[1].categoryIdx
+//            vc.ChickenBtn.tag = mainIndex[2].categoryIdx
+//            vc.KoreanFoodBtn.tag = mainIndex[3].categoryIdx
+//            vc.BurgerBtn.tag = mainIndex[4].categoryIdx
+//            vc.PizzaBtn.tag = mainIndex[5].categoryIdx
+//            vc.SoupBtn.tag = mainIndex[6].categoryIdx
+//            vc.CafeBtn.tag = mainIndex[7].categoryIdx
+//            vc.BunsikBtn.tag = mainIndex[8].categoryIdx
+//            vc.SinglePersonBtn.tag = mainIndex[9].categoryIdx
+//            vc.JapaneseBtn.tag = mainIndex[10].categoryIdx
+//            vc.NightBtn.tag = mainIndex[11].categoryIdx
+//            vc.PigBtn.tag = mainIndex[12].categoryIdx
+//            vc.FranchiseBtn.tag = mainIndex[13].categoryIdx
+//            vc.yomartBtn.tag = mainIndex[14].categoryIdx
+//            vc.BeautyBtn.tag = mainIndex[15].categoryIdx
+//            vc.PetBtn.tag = mainIndex[16].categoryIdx
             return cell
         }
         
@@ -184,6 +204,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: MiddleBannerTVCell.identifier) as? MiddleBannerTVCell else{
                 return UITableViewCell()
             }
+            print("와우판타스틱베이비", mainIndex)
             return cell
         }
         
@@ -323,16 +344,21 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
 }
 
-//extension MyInfoViewController {
-//    func didSuccessCategories(result: Result) {
-//        //self.dismissIndicator()
-//
-//        self.category = Result
-//        //self.userInfo = result
-//        MyInfoTableView.reloadData()
-//    }
-//
-//    func failedToRequest(message: String) {
-//        self.presentAlert(title: message)
-//    }
-//}
+extension HomeViewController {
+    func didSuccessMainIndex(result: [MainResult]) {
+        //self.dismissIndicator()
+        
+        print("메인리절트", result)
+        
+        self.mainIndex = result
+        print("메인인뎃그",mainIndex[0])
+        
+        //UserDefaults.standard.set(result.userNickname, forKey: "userNickname")
+        mainTableView.reloadData()
+    }
+    
+    func failedToRequest(message: String) {
+        self.presentAlert(title: message)
+    }
+}
+

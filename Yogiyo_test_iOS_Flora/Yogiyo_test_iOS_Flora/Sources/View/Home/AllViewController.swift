@@ -162,6 +162,7 @@ extension AllViewController {
     func didSuccessCategories(result: [Result]) {
         //self.dismissIndicator()
         category = result
+        
         AllTableView.reloadData()
     }
     

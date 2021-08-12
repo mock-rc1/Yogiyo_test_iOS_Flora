@@ -22,6 +22,7 @@ struct SignUpDataManager {
                     // 성공했을 때
                     if response.isSuccess, let result = response.result {
                         delegate.didSuccessSignUp(result)
+                        print("회원가입성공", result.jwt)
                     }
                     // 실패했을 때
                     else {
