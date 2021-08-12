@@ -10,7 +10,8 @@ import SDWebImage
 
 class restaurantViewController: UIViewController, UIScrollViewDelegate {
     
-    lazy var dataManager: StoreInfoDataManager = StoreInfoDataManager()
+    lazy var dataManager1: StoreInfoDataManager = StoreInfoDataManager()
+    lazy var dataManager2: StoreFoodDataManager = StoreFoodDataManager()
     
     var sections = ["찜공유까지","탭바"]
     
@@ -19,8 +20,8 @@ class restaurantViewController: UIViewController, UIScrollViewDelegate {
     // 헤더안에 탭바 컨트롤러
     var headerTabBar : HeaderTabBarVC?
     
-    var tabBottom = [1,2,3,4,5,6,7]
     var store : StoreResult?
+    var storeFood : [StoreFoodResult] = []
     
     @IBOutlet weak var restaurantLabel: UILabel!
     @IBOutlet weak var backBtn: UIButton!
@@ -33,7 +34,8 @@ class restaurantViewController: UIViewController, UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        dataManager.getStoreInfo(delegate: self)
+        dataManager1.getStoreInfo(delegate: self)
+        dataManager2.getStoreFood(delegate: self)
         setDelegate()
         setStyle()
         setCellRegister()
@@ -76,7 +78,7 @@ extension restaurantViewController: UITableViewDataSource, UITableViewDelegate {
             return 1
             
         } else if section == 1 {
-            return tabBottom.count
+            return storeFood.count
         }
         else {
             return 0
@@ -126,7 +128,9 @@ extension restaurantViewController: UITableViewDataSource, UITableViewDelegate {
                 return UITableViewCell()
             }
             
-            
+            cell.menuName.text = storeFood[indexPath.row].menuName
+            cell.priceLabel.text = storeFood[indexPath.row].menuPrice
+            cell.foodImageView.sd_setImage(with: URL(string: storeFood[indexPath.row].menuImageURL ?? "" ))
             return cell
         }
         return UITableViewCell()
@@ -211,6 +215,19 @@ extension restaurantViewController {
     }
     
     func failedToRequest(message: String) {
+        self.presentAlert(title: message)
+    }
+}
+
+
+extension restaurantViewController {
+    func didSuccessStoreFood(result: [StoreFoodResult]) {
+        //self.dismissIndicator()
+        storeFood = result
+        RestaurantTableView.reloadData()
+    }
+    
+    func failedToRequest2(message: String) {
         self.presentAlert(title: message)
     }
 }

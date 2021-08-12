@@ -228,6 +228,8 @@
 		DD3F922226C50EC900F98C1D /* CategoryStoreDataManager16.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F922126C50EC900F98C1D /* CategoryStoreDataManager16.swift */; };
 		DD3F922826C54F9E00F98C1D /* StoreInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F922726C54F9E00F98C1D /* StoreInfo.swift */; };
 		DD3F922A26C54FEC00F98C1D /* StoreInfoDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F922926C54FEC00F98C1D /* StoreInfoDataManager.swift */; };
+		DD3F922E26C5692E00F98C1D /* StoreFood.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F922D26C5692E00F98C1D /* StoreFood.swift */; };
+		DD3F923026C5696300F98C1D /* StoreFoodDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F922F26C5696300F98C1D /* StoreFoodDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -455,6 +457,8 @@
 		DD3F922126C50EC900F98C1D /* CategoryStoreDataManager16.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryStoreDataManager16.swift; sourceTree = "<group>"; };
 		DD3F922726C54F9E00F98C1D /* StoreInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreInfo.swift; sourceTree = "<group>"; };
 		DD3F922926C54FEC00F98C1D /* StoreInfoDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreInfoDataManager.swift; sourceTree = "<group>"; };
+		DD3F922D26C5692E00F98C1D /* StoreFood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreFood.swift; sourceTree = "<group>"; };
+		DD3F922F26C5696300F98C1D /* StoreFoodDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreFoodDataManager.swift; sourceTree = "<group>"; };
 		F9C1772B30741BA88AC342B9 /* Pods-Yogiyo_test_iOS_Flora.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yogiyo_test_iOS_Flora.release.xcconfig"; path = "Target Support Files/Pods-Yogiyo_test_iOS_Flora/Pods-Yogiyo_test_iOS_Flora.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -749,6 +753,7 @@
 		DD3F901926B9584200F98C1D /* Networkk */ = {
 			isa = PBXGroup;
 			children = (
+				DD3F922B26C568E900F98C1D /* StoreFood */,
 				DD3F922526C54F4D00F98C1D /* StoreInfo */,
 				DD3F91FF26C4FA5A00F98C1D /* CategoryStore */,
 				DD3F91F926C4EE5000F98C1D /* Main */,
@@ -1461,6 +1466,23 @@
 			path = Entity;
 			sourceTree = "<group>";
 		};
+		DD3F922B26C568E900F98C1D /* StoreFood */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F922F26C5696300F98C1D /* StoreFoodDataManager.swift */,
+				DD3F922C26C5691700F98C1D /* Entity */,
+			);
+			path = StoreFood;
+			sourceTree = "<group>";
+		};
+		DD3F922C26C5691700F98C1D /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F922D26C5692E00F98C1D /* StoreFood.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1677,6 +1699,7 @@
 				DD3F904226BA63BE00F98C1D /* FourthBtnConVC.swift in Sources */,
 				DD3F904C26BA72FC00F98C1D /* CategoryFoodConVC.swift in Sources */,
 				DD3F913B26C16F2A00F98C1D /* quantityTVCell.swift in Sources */,
+				DD3F923026C5696300F98C1D /* StoreFoodDataManager.swift in Sources */,
 				DD3F90AB26BD144700F98C1D /* CafeViewController.swift in Sources */,
 				DD3F91AF26C3479800F98C1D /* HeaderTabBarVC.swift in Sources */,
 				DD30297E26B5512E00ABEB63 /* MyYogiyoViewController.swift in Sources */,
@@ -1697,6 +1720,7 @@
 				DD3F90BB26BD16B300F98C1D /* HealthViewController.swift in Sources */,
 				DD3F91FC26C4EF2500F98C1D /* MainCategoryIndex.swift in Sources */,
 				DD3F8FF026B8520F00F98C1D /* beforeLoginTVCell.swift in Sources */,
+				DD3F922E26C5692E00F98C1D /* StoreFood.swift in Sources */,
 				DD3F921A26C50E9600F98C1D /* CategoryStoreDataManager12.swift in Sources */,
 				DD3F920626C50E2E00F98C1D /* CategoryStoreDataManager2.swift in Sources */,
 				DD3F913026C1575500F98C1D /* FoodChoiceVC.swift in Sources */,
