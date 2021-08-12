@@ -230,6 +230,8 @@
 		DD3F922A26C54FEC00F98C1D /* StoreInfoDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F922926C54FEC00F98C1D /* StoreInfoDataManager.swift */; };
 		DD3F922E26C5692E00F98C1D /* StoreFood.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F922D26C5692E00F98C1D /* StoreFood.swift */; };
 		DD3F923026C5696300F98C1D /* StoreFoodDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F922F26C5696300F98C1D /* StoreFoodDataManager.swift */; };
+		DD3F923426C57C6000F98C1D /* SpecificFoodInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F923326C57C6000F98C1D /* SpecificFoodInfo.swift */; };
+		DD3F923626C57CEA00F98C1D /* SpecificFoodInfoDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F923526C57CEA00F98C1D /* SpecificFoodInfoDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -459,6 +461,8 @@
 		DD3F922926C54FEC00F98C1D /* StoreInfoDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreInfoDataManager.swift; sourceTree = "<group>"; };
 		DD3F922D26C5692E00F98C1D /* StoreFood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreFood.swift; sourceTree = "<group>"; };
 		DD3F922F26C5696300F98C1D /* StoreFoodDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreFoodDataManager.swift; sourceTree = "<group>"; };
+		DD3F923326C57C6000F98C1D /* SpecificFoodInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecificFoodInfo.swift; sourceTree = "<group>"; };
+		DD3F923526C57CEA00F98C1D /* SpecificFoodInfoDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecificFoodInfoDataManager.swift; sourceTree = "<group>"; };
 		F9C1772B30741BA88AC342B9 /* Pods-Yogiyo_test_iOS_Flora.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yogiyo_test_iOS_Flora.release.xcconfig"; path = "Target Support Files/Pods-Yogiyo_test_iOS_Flora/Pods-Yogiyo_test_iOS_Flora.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -753,6 +757,7 @@
 		DD3F901926B9584200F98C1D /* Networkk */ = {
 			isa = PBXGroup;
 			children = (
+				DD3F923126C57C3100F98C1D /* SpecificFoodInfo */,
 				DD3F922B26C568E900F98C1D /* StoreFood */,
 				DD3F922526C54F4D00F98C1D /* StoreInfo */,
 				DD3F91FF26C4FA5A00F98C1D /* CategoryStore */,
@@ -1483,6 +1488,23 @@
 			path = Entity;
 			sourceTree = "<group>";
 		};
+		DD3F923126C57C3100F98C1D /* SpecificFoodInfo */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F923526C57CEA00F98C1D /* SpecificFoodInfoDataManager.swift */,
+				DD3F923226C57C4900F98C1D /* Entity */,
+			);
+			path = SpecificFoodInfo;
+			sourceTree = "<group>";
+		};
+		DD3F923226C57C4900F98C1D /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F923326C57C6000F98C1D /* SpecificFoodInfo.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1673,6 +1695,7 @@
 				DD3F8FFA26B8DFA200F98C1D /* completeLoginTVCell.swift in Sources */,
 				DD3F907226BBB31C00F98C1D /* MiddleBannerCVCell.swift in Sources */,
 				DD3F921226C50E6A00F98C1D /* CategoryStoreDataManager8.swift in Sources */,
+				DD3F923426C57C6000F98C1D /* SpecificFoodInfo.swift in Sources */,
 				DD3F900E26B8FB6200F98C1D /* Border.swift in Sources */,
 				DD3F920826C50E3A00F98C1D /* CategoryStoreDataManager3.swift in Sources */,
 				DD3F915726C1E75300F98C1D /* SelectCouponTVCell.swift in Sources */,
@@ -1754,6 +1777,7 @@
 				DD3F909D26BD001D00F98C1D /* ChineseFoodViewController.swift in Sources */,
 				DD3F91B226C34BBC00F98C1D /* ChildVC1.swift in Sources */,
 				DD3F91A326C27EFA00F98C1D /* FirstVC.swift in Sources */,
+				DD3F923626C57CEA00F98C1D /* SpecificFoodInfoDataManager.swift in Sources */,
 				DD3F90B126BD150C00F98C1D /* JapaneseFoodViewController.swift in Sources */,
 				DD3F909B26BCF6EA00F98C1D /* AllViewController.swift in Sources */,
 				DD3F91EB26C42CAE00F98C1D /* HotMenuTVCell.swift in Sources */,

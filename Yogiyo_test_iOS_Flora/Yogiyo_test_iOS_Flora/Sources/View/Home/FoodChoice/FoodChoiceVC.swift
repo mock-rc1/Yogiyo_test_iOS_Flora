@@ -6,8 +6,11 @@
 //
 
 import UIKit
+import SDWebImage
 
 class FoodChoiceVC: UIViewController {
+    
+    lazy var dataManager : SpecificFoodInfoDataManager = SpecificFoodInfoDataManager()
     
     @IBOutlet weak var navigationBarUIView: UIView!
     @IBOutlet weak var sharedBtn: UIButton!
@@ -18,6 +21,7 @@ class FoodChoiceVC: UIViewController {
     @IBOutlet weak var addOrderBtnView: UIView!
     @IBOutlet weak var orderBtn: UIView!
     
+    var foodInfo : [SpecificFoodInfoResult] = []
     let headerView = UIView()
     var select = [1,2,3]
     var add = [1,2,3,4]
@@ -44,6 +48,8 @@ class FoodChoiceVC: UIViewController {
         // 테이블뷰 그룹으로 했을 때 섹션푸터때문에 붕 뜨는 현상 없애줌
         foodChoiceTableView.sectionFooterHeight = .leastNonzeroMagnitude
         foodChoiceTableView.separatorColor = UIColor.clear
+        
+        dataManager.getSpecificFoodInfo(delegate: self)
         
     }
     
@@ -77,10 +83,10 @@ class FoodChoiceVC: UIViewController {
 extension FoodChoiceVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 {
-            return 1
+            return foodInfo.count
         }
         else if section == 1 {
-            return 1
+            return foodInfo.count
         }
         else if section == 2 {
             return select.count
@@ -105,12 +111,16 @@ extension FoodChoiceVC: UITableViewDelegate, UITableViewDataSource {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: HeaderTVCell.identifier) as? HeaderTVCell else{
                 return UITableViewCell()
             }
+            cell.foodImageView.sd_setImage(with: URL(string: foodInfo[indexPath.row].menuImageURL ?? "" ))
+            cell.foodName.text = foodInfo[indexPath.row].menuName
+            cell.subFoodNameLabel.text = foodInfo[indexPath.row].menuInfo ?? "맛있는 음식"
             return cell
         }
         else if indexPath.section == 1 {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: PriceTVCell.identifier) as? PriceTVCell else{
                 return UITableViewCell()
             }
+            cell.priceLabel.text = foodInfo[indexPath.row].menuPrice
             return cell
         }
         
@@ -238,3 +248,23 @@ extension FoodChoiceVC: UITableViewDelegate, UITableViewDataSource {
     
     
 }
+
+
+extension FoodChoiceVC {
+    func didSuccessSpecificFoodInfo(result: [SpecificFoodInfoResult]) {
+        //self.dismissIndicator()
+        
+        print("메인리절트", result)
+        
+        self.foodInfo = result
+        
+        
+        //UserDefaults.standard.set(result.userNickname, forKey: "userNickname")
+        foodChoiceTableView.reloadData()
+    }
+    
+    func failedToRequest(message: String) {
+        self.presentAlert(title: message)
+    }
+}
+

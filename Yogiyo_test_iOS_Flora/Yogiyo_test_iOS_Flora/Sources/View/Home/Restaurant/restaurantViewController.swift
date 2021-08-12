@@ -131,6 +131,7 @@ extension restaurantViewController: UITableViewDataSource, UITableViewDelegate {
             cell.menuName.text = storeFood[indexPath.row].menuName
             cell.priceLabel.text = storeFood[indexPath.row].menuPrice
             cell.foodImageView.sd_setImage(with: URL(string: storeFood[indexPath.row].menuImageURL ?? "" ))
+            cell.menuIndex = storeFood[indexPath.row].menuIdx
             return cell
         }
         return UITableViewCell()
@@ -196,6 +197,9 @@ extension restaurantViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView,didSelectRowAt indexPath: IndexPath) {
         
         if indexPath.section == 1 {
+            
+            UserDefaults.standard.set(storeFood[indexPath.row].menuIdx, forKey: "menuIdx") // 저장
+            
             // 해당 셀을 누르면 'VC' 호출
             let storyboardVC = UIStoryboard(name: "HomeStoryboard", bundle: Bundle(for: FoodChoiceVC.self)).instantiateViewController(withIdentifier: "FoodChoiceVC") as! FoodChoiceVC
             

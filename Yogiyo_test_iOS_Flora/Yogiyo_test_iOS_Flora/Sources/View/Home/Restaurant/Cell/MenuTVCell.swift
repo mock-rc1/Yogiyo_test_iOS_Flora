@@ -10,6 +10,8 @@ import UIKit
 class MenuTVCell: UITableViewCell {
     
     static let identifier = "MenuTVCell"
+    
+    var menuIndex : Int?
 
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var menuName: UILabel!
