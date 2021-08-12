@@ -21,6 +21,7 @@ class LoginLogoutConVC: UIViewController {
         UserDefaults.standard.removeObject(forKey: "userPw")
         UserDefaults.standard.removeObject(forKey: "userToken")
         UserDefaults.standard.removeObject(forKey: "userIdx")
+        //UserDefaults.standard.removeObject(forKey: "userNickname")
         
         let storyboardVC = UIStoryboard(name: "MyYogiyoStoryboard", bundle: Bundle(for: MyYogiyoViewController.self)).instantiateViewController(withIdentifier: "MyYogiyoViewController") as! MyYogiyoViewController
                    
