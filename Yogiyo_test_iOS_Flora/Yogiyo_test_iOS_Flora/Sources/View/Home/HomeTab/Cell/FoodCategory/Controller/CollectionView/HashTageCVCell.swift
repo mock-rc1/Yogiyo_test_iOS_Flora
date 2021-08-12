@@ -15,7 +15,7 @@ class HashTageCVCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        hashTagBtn.layer.cornerRadius = 20
+        hashTagBtn.layer.cornerRadius = 15
     }
     
 }

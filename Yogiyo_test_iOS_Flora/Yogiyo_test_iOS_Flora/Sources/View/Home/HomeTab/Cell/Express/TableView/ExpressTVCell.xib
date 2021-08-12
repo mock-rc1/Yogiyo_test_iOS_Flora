@@ -18,13 +18,13 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🛵 요기요 익스프레스" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ygn-N2-7s2">
-                        <rect key="frame" x="20" y="15" width="157.5" height="21.5"/>
-                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                        <rect key="frame" x="20" y="15" width="157" height="21.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHN-7n-fny">
-                        <rect key="frame" x="180.5" y="15" width="16" height="22"/>
+                        <rect key="frame" x="180" y="15" width="16" height="22"/>
                         <color key="tintColor" systemColor="systemGray4Color"/>
                         <state key="normal" image="info.circle" catalog="system">
                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small" weight="thin"/>

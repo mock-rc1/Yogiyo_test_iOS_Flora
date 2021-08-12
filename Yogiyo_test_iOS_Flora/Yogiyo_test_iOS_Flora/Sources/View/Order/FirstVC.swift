@@ -11,7 +11,7 @@ import XLPagerTabStrip
 class FirstVC: UIViewController, IndicatorInfoProvider {
 
     let sections = ["배너","배달완료창"]
-    var deliveryDone = [1,2,3]
+    var deliveryDone = [1]
     // 배달완료
     var deliveryVC : DeliveryVC?
     
@@ -121,7 +121,7 @@ extension FirstVC: UITableViewDelegate, UITableViewDataSource {
             return 100
         }
         else if indexPath.section == 1 {
-            return 190
+            return 200
         }
         else {
             return 0

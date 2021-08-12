@@ -23,8 +23,14 @@ class LoginLogoutConVC: UIViewController {
         UserDefaults.standard.removeObject(forKey: "userIdx")
         
         let storyboardVC = UIStoryboard(name: "MyYogiyoStoryboard", bundle: Bundle(for: MyYogiyoViewController.self)).instantiateViewController(withIdentifier: "MyYogiyoViewController") as! MyYogiyoViewController
-        //navigationController?.popViewController(animated: true)
-        navigationController?.pushViewController(storyboardVC, animated: true)
+                   
+                   self.dismiss(animated: true) {
+                       self.navigationController?.pushViewController(storyboardVC, animated: true)
+                   }
+        
+//        let storyboardVC = UIStoryboard(name: "MyYogiyoStoryboard", bundle: Bundle(for: MyYogiyoViewController.self)).instantiateViewController(withIdentifier: "MyYogiyoViewController") as! MyYogiyoViewController
+//        //navigationController?.popViewController(animated: true)
+//        navigationController?.pushViewController(storyboardVC, animated: true)
     }
     
 }

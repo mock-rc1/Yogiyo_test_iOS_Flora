@@ -14,7 +14,6 @@ class HomeViewController: UIViewController {
     // 요즘뜨는 우리동네 부분 유아이 이상하니까 그냥 요기요 익스프레스 셀로 뿌려주기
     let sections: [String] = ["배너", "버튼4개", "서치바아이콘", "요기요익스프레스","광고","요즘뜨는 우리동네가게", "요기서먹어요헤더","요기서먹어요"]
     
-    var hotStore = [1,2,3]
     var todayYogi = [1,2,3,4,5,6]
     
     var mainIndex : [MainResult] = []
@@ -102,7 +101,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             return 1
         }
         else if section == 5 {
-            return hotStore.count
+            return 1
         }
         else if section == 6 {
             return 0
@@ -196,6 +195,9 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: ExpressTVCell.identifier) as? ExpressTVCell else{
                 return UITableViewCell()
             }
+            if indexPath.row == 0 {
+                
+            }
             return cell
         }
         
@@ -203,7 +205,6 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: MiddleBannerTVCell.identifier) as? MiddleBannerTVCell else{
                 return UITableViewCell()
             }
-            print("와우판타스틱베이비", mainIndex)
             return cell
         }
         
@@ -230,7 +231,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.section == 0 {
-            return 180
+            return 160
         }
         else if indexPath.section == 1 {
             return 150
@@ -309,7 +310,8 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
           let titleLabel = UILabel()
           titleLabel.textColor = .black
           titleLabel.text = "오늘은 요기서 먹어요"
-          titleLabel.frame = CGRect(x: 20, y: 0, width: headerView.frame.width, height: headerView.frame.height)
+            titleLabel.font = UIFont.systemFont(ofSize: 18, weight: .bold)
+          titleLabel.frame = CGRect(x: 20, y: 10, width: headerView.frame.width, height: headerView.frame.height)
           headerView.addSubview(titleLabel)
           
           return headerView

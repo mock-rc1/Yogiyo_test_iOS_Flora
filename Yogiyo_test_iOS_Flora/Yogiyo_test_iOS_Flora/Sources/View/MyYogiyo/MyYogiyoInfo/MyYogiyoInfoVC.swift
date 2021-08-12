@@ -74,7 +74,7 @@ extension MyYogiyoInfoVC: UITableViewDelegate, UITableViewDataSource {
             cell.iconImage.image = #imageLiteral(resourceName: "메달")
             cell.nameLabel.text = yogiyoInfo[indexPath.row]
         }
-        
+        cell.selectionStyle = .none
         return cell
     }
     

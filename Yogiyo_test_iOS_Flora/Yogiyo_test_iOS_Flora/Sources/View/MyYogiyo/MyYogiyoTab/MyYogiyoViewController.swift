@@ -14,10 +14,10 @@ class MyYogiyoViewController: UIViewController {
     @IBOutlet weak var MyYogiyoTableView: UITableView!
     
     // 로그인되면 화면 변경해주는거
-//    var isLogin = false {
-//        didSet {
-//            MyYogiyoTableView.reloadData() }
-//    }
+    //    var isLogin = false {
+    //        didSet {
+    //            MyYogiyoTableView.reloadData() }
+    //    }
     
     // 로그인전
     var beforeLoginVC : BeforeLoginConVC?
@@ -59,13 +59,13 @@ class MyYogiyoViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-//        if let userToken = UserDefaults.standard.string(forKey: "userToken") {
-//            // 사용자가 로그인을 했다.
-//            // 로그인을 했으니 토큰이 있을 것이고 그 토큰을 가지고 유저 정보를 조회하는 API를 호출한다.
-//            // 그 API의 데이터를 뷰에 넣어준다.
-//        } else {
-//            // 사용자가 로그인을 하기 전이다.
-//        }
+        //        if let userToken = UserDefaults.standard.string(forKey: "userToken") {
+        //            // 사용자가 로그인을 했다.
+        //            // 로그인을 했으니 토큰이 있을 것이고 그 토큰을 가지고 유저 정보를 조회하는 API를 호출한다.
+        //            // 그 API의 데이터를 뷰에 넣어준다.
+        //        } else {
+        //            // 사용자가 로그인을 하기 전이다.
+        //        }
         MyYogiyoTableView.reloadData()
     }
 }
@@ -195,6 +195,7 @@ extension MyYogiyoViewController: UITableViewDataSource, UITableViewDelegate {
             // 하위 컨트롤러가 컨트롤러 권한을 상위컨트롤러로 위임
             categoryVC!.didMove(toParent: self)
             cell.selectionStyle = .none
+            categoryVC?.categoryNameLabel.text = myYogiyoBtn[indexPath.row]
             return cell
             
         default:
@@ -219,6 +220,24 @@ extension MyYogiyoViewController: UITableViewDataSource, UITableViewDelegate {
         }
     }
     
+    func tableView(_ tableView: UITableView,didSelectRowAt indexPath: IndexPath) {
+        if indexPath.section == 2 {
+            if indexPath.row == 3 {
+                // 해당 셀을 누르면 'VC' 호출
+                let storyboardVC = UIStoryboard(name: "MyYogiyoStoryboard", bundle: Bundle(for: CustomerCenterVC.self)).instantiateViewController(withIdentifier: "CustomerCenterVC") as! CustomerCenterVC
+                
+                self.navigationController?.pushViewController(storyboardVC, animated: true)
+            }
+            else if indexPath.row == 4 {
+                
+                // 해당 셀을 누르면 'VC' 호출
+                let storyboardVC = UIStoryboard(name: "MyYogiyoStoryboard", bundle: Bundle(for: MyYogiyoInfoVC.self)).instantiateViewController(withIdentifier: "MyYogiyoInfoVC") as! MyYogiyoInfoVC
+                
+                self.navigationController?.pushViewController(storyboardVC, animated: true)
+            }
+        }
+    }
+    
 }
 
 //MARK: - API
@@ -226,7 +245,7 @@ extension MyYogiyoViewController {
     
     func didSuccessLoginAPI(_ result: SignUpResult) {
         // 회원가입에 성공했을 때
-//        self.isLogin = true
+        //        self.isLogin = true
         
         
     }

@@ -55,6 +55,8 @@ extension CurrentLocationVC : UITableViewDelegate, UITableViewDataSource {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: CurrentLocationTVCell.identifier) as? CurrentLocationTVCell else{
                 return UITableViewCell()
             }
+            cell.cancelBtn.addTarget(self, action: #selector(deleteButton(_:)), for: .touchUpInside)
+            cell.selectionStyle = .none
             return cell
         }
         return UITableViewCell()
@@ -93,5 +95,12 @@ extension CurrentLocationVC : UITableViewDelegate, UITableViewDataSource {
 
         return UIView()
     }
+    
+    @objc func deleteButton(_ sender: UIButton) {
+        let point = sender.convert(CGPoint.zero, to: locationTableView)
+            guard let indexPath = locationTableView.indexPathForRow(at: point) else { return }
+        address.remove(at: indexPath.row)
+        locationTableView.deleteRows(at: [indexPath], with: .automatic)
+        }
 
 }

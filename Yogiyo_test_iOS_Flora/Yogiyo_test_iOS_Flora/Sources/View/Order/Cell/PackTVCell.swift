@@ -86,7 +86,7 @@ extension PackTVCell: UICollectionViewDelegateFlowLayout{
     {
         return 0
     }
-    
+
     //MARK: - 마진
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets
     {
@@ -100,7 +100,7 @@ extension PackTVCell: UICollectionViewDelegateFlowLayout{
         var offset = targetContentOffset.pointee
         let index = (offset.x + scrollView.contentInset.left) / cellWidthIncludeSpacing
         let roundedIndex: CGFloat = round(index)
-        
+
         offset = CGPoint(x: roundedIndex * cellWidthIncludeSpacing, y: scrollView.contentInset.top)
         targetContentOffset.pointee = offset
     }

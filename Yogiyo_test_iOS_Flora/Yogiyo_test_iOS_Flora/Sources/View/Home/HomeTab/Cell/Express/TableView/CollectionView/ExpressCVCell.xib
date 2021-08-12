@@ -63,7 +63,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="sfo-RK-Nn7">
-                                        <rect key="frame" x="0.0" y="37" width="61.5" height="13"/>
+                                        <rect key="frame" x="0.0" y="37" width="65.5" height="13"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qLr-l3-zkW">
                                                 <rect key="frame" x="0.0" y="0.0" width="41" height="13"/>
@@ -74,8 +74,8 @@
                                                 <state key="normal" image="익스프레스"/>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25분" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XL2-w1-Ktf">
-                                                <rect key="frame" x="44" y="0.0" width="17.5" height="13"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                                <rect key="frame" x="44" y="0.0" width="21.5" height="13"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                 <color key="textColor" red="0.89411771299999998" green="0.19607841970000001" blue="0.32941177490000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>

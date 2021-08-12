@@ -48,17 +48,20 @@ extension CustomerCenterVC: UITableViewDelegate, UITableViewDataSource {
         
         guard let cell = tableView.dequeueReusableCell(withIdentifier: CustomerTVCell.identifier) as? CustomerTVCell else{
             return UITableViewCell()
+            
         }
         
         if indexPath.row == 1 {
             cell.iconImage.image = #imageLiteral(resourceName: "카톡")
             cell.nameLabel.text = "상담톡"
+            
         }
         if indexPath.row == 2 {
             cell.iconImage.image = #imageLiteral(resourceName: "마켓")
             cell.nameLabel.text = "입점 문의하기"
+            
         }
-        
+        cell.selectionStyle = .none
         return cell
     }
     

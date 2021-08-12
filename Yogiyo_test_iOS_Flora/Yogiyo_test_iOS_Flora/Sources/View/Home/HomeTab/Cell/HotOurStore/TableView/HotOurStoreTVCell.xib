@@ -18,13 +18,13 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🏆 요즘 뜨는 우리동네 가게" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ycX-IM-sk5">
-                        <rect key="frame" x="15" y="15" width="198" height="22"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <rect key="frame" x="15" y="15" width="196.5" height="22"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycS-Xd-1f6">
-                        <rect key="frame" x="216" y="15" width="16" height="22"/>
+                        <rect key="frame" x="214.5" y="15" width="16" height="22"/>
                         <color key="tintColor" systemColor="systemGray4Color"/>
                         <state key="normal" image="info.circle" catalog="system">
                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small" weight="thin"/>

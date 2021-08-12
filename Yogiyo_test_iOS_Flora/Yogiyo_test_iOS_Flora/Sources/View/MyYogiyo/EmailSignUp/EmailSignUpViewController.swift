@@ -174,8 +174,14 @@ extension EmailSignUpViewController {
     func didSuccessSignUp(_ result: SignUpResult) {
         self.presentAlert(title: "회원가입에 성공하였습니다", message: "자동으로 로그인 되셨습니다", isCancelActionIncluded: true) { action in
             UserDefaults.standard.set(result.jwt, forKey: "userToken") // 토큰 저장
-            let mainTabBarController = UIStoryboard(name: "MyYogiyoStoryboard", bundle: nil).instantiateViewController(identifier: "MyYogiyoViewController")
-            self.changeRootViewController(mainTabBarController)
+            
+            let storyboardVC = UIStoryboard(name: "MyYogiyoStoryboard", bundle: Bundle(for: MyYogiyoViewController.self)).instantiateViewController(withIdentifier: "MyYogiyoViewController") as! MyYogiyoViewController
+                       
+                       self.dismiss(animated: true) {
+                           self.navigationController?.pushViewController(storyboardVC, animated: true)
+                       }
+//            let mainTabBarController = UIStoryboard(name: "MyYogiyoStoryboard", bundle: nil).instantiateViewController(identifier: "MyYogiyoViewController")
+//            self.changeRootViewController(mainTabBarController)
         }
     }
     // 회원가입에 실패했을 때

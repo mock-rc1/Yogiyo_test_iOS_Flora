@@ -11,7 +11,7 @@ class BannerTVCell: UITableViewCell {
     
     static let identifier = "BannerTVCell"
     
-    var testData = [1,2,3,4,5,6,7,8,9,10]
+    var testData = [1,2,3,4]
     var minItemSpacing: CGFloat = 10
 
     @IBOutlet weak var bannerCollectionView: UICollectionView!
@@ -64,6 +64,20 @@ extension BannerTVCell: UICollectionViewDelegate, UICollectionViewDataSource {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: BannerCVCell.identifier, for: indexPath) as? BannerCVCell else{
             return UICollectionViewCell()
         }
+        
+        if indexPath.row == 0 {
+            cell.bannerImageView.image = UIImage(named: "배너1")
+        }
+        else if indexPath.row == 1 {
+            cell.bannerImageView.image = UIImage(named: "배너2")
+        }
+        else if indexPath.row == 2 {
+            cell.bannerImageView.image = UIImage(named: "배너3")
+        }
+        else if indexPath.row == 3 {
+            cell.bannerImageView.image = UIImage(named: "배너4")
+        }
+        
         return cell
     }
 }

@@ -45,12 +45,17 @@ extension NickNameVC {
         self.presentAlert(title: "닉네임이 변경되었습니다.", isCancelActionIncluded: true) {
             action in
             
+            let storyboardVC = UIStoryboard(name: "MyYogiyoStoryboard", bundle: Bundle(for: MyInfoViewController.self)).instantiateViewController(withIdentifier: "MyInfoViewController") as! MyInfoViewController
+            
+            self.dismiss(animated: true) {
+                self.navigationController?.pushViewController(storyboardVC, animated: true)
+            }
             //                        let storyboardVC = UIStoryboard(name: "MyYogiyoStoryboard", bundle: Bundle(for: MyYogiyoViewController.self)).instantiateViewController(withIdentifier: "MyYogiyoViewController") as! MyYogiyoViewController
             //
             //            self.dismiss(animated: true) {
             //                self.present(storyboardVC, animated: true, completion: nil)
             //            }
-            self.navigationController?.popViewController(animated: true)
+            //self.navigationController?.popViewController(animated: true)
         }
     }
     

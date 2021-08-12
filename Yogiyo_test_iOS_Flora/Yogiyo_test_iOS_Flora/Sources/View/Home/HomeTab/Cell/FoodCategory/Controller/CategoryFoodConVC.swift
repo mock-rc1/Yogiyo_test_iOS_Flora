@@ -29,7 +29,7 @@ class CategoryFoodConVC: UIViewController {
     @IBOutlet weak var PetBtn: UIButton!
     
     
-    var hashTag = ["#냉면","#갈비탕","#아이스크림","#밥","#식혜","#과자","#음료수"]
+    var hashTag = ["#냉면","#갈비","#떡국","#밥","#식혜","#과자","#음료수", "#김밥", "#닭강정"]
     @IBOutlet weak var hashTagCollectionView: UICollectionView!
     
     override func viewDidLoad() {
@@ -210,7 +210,7 @@ extension CategoryFoodConVC: UICollectionViewDelegateFlowLayout{
     //MARK: - Cell 사이즈
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize
     {
-        return CGSize(width: collectionView.frame.width-250, height: collectionView.frame.height)
+        return CGSize(width: (collectionView.frame.width-250)/2, height: 30)
 
     }
     
@@ -223,7 +223,7 @@ extension CategoryFoodConVC: UICollectionViewDelegateFlowLayout{
     //MARK: - 마진
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets
     {
-        return UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 0)
+        return UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
     }
     
 }

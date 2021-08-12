@@ -16,7 +16,7 @@ class HotOurStoreTVCell: UITableViewCell {
     static let identifier = "HotOurStoreTVCell"
     
     @IBOutlet weak var HotOurStoreCollectionView: UICollectionView!
-    var testData = [1,2,3,4,5,6,7,8,9,10]
+    var testData = [1,2,3,4]
     var minItemSpacing: CGFloat = 10
 
     override func awakeFromNib() {
@@ -56,6 +56,35 @@ extension HotOurStoreTVCell: UICollectionViewDelegate, UICollectionViewDataSourc
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ExpressCVCell.identifier, for: indexPath) as? ExpressCVCell else{
             return UICollectionViewCell()
         }
+        if indexPath.row == 0 {
+                   cell.titleLabel.text = "롯데리아-신촌점"
+                   cell.starScoreBtn.setTitle("4.6", for: .normal)
+                   cell.reviewLabel.text = "(5,215)"
+                   cell.expressTimeLabel.text = "65~75분"
+                   cell.imageView.image = UIImage(named: "음식1")
+               }
+               else if indexPath.row == 1 {
+                   cell.titleLabel.text = "혼밥대왕-홍대점"
+                   cell.starScoreBtn.setTitle("4.8", for: .normal)
+                   cell.reviewLabel.text = "(1,730)"
+                   cell.expressTimeLabel.text = "45~55분"
+                   cell.imageView.image = UIImage(named: "음식2")
+               }
+               else if indexPath.row == 2 {
+                   cell.titleLabel.text = "가화만사성"
+                   cell.starScoreBtn.setTitle("4.6", for: .normal)
+                   cell.reviewLabel.text = "(14,620)"
+                   cell.expressTimeLabel.text = "20~30분"
+                   cell.imageView.image = UIImage(named: "음식3")
+               }
+               else if indexPath.row == 3 {
+                   cell.titleLabel.text = "신연경-본점"
+                   cell.starScoreBtn.setTitle("4.5", for: .normal)
+                   cell.reviewLabel.text = "(4,083)"
+                   cell.expressTimeLabel.text = "30~40분"
+                   cell.imageView.image = UIImage(named: "음식4")
+               }
+               
         return cell
     }
 }
