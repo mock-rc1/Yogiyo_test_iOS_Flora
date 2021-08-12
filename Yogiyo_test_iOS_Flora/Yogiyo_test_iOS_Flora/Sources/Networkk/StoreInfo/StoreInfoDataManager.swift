@@ -12,17 +12,17 @@ class StoreInfoDataManager {
     
     func getStoreInfo(delegate: restaurantViewController) {
         
-        if let storeIndex = UserDefaults.standard.string(forKey: "userIdx") {
-            url = "https://rc1-hardy.shop/users/email-login/\(userIndex)"
+        var url: String
+        
+        if let storeIndex = UserDefaults.standard.string(forKey: "storeIdx") {
+            url = "https://rc1-hardy.shop/stores/\(storeIndex)"
         }
         else {
-            url = "https://rc1-hardy.shop/users/email-login"
+            url = "https://rc1-hardy.shop/stores"
         }
         
-        let url = "https://rc1-hardy.shop/stores/:storeIdx"
-        
         AF.request(url, method: .get, encoding: JSONEncoding.default, headers: [ "Content-Type":"application/json"])
-            .responseDecodable(of: Categories.self) { response in
+            .responseDecodable(of: StoreInfo.self) { response in
                 print("response",response)
                 switch response.result {
                 case .success(let response):

@@ -171,25 +171,24 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             // 하위 컨트롤러가 컨트롤러 권한을 상위컨트롤러로 위임
             foodCategoryVC!.didMove(toParent: self)
             
-//            let vc = CategoryFoodConVC()
-//            vc.allFoodBtn?.tag = mainIndex[0].categoryIdx
-//            print("여기값잇어????", mainIndex[0])
-//            vc.ChineseFoodBtn.tag = mainIndex[1].categoryIdx
-//            vc.ChickenBtn.tag = mainIndex[2].categoryIdx
-//            vc.KoreanFoodBtn.tag = mainIndex[3].categoryIdx
-//            vc.BurgerBtn.tag = mainIndex[4].categoryIdx
-//            vc.PizzaBtn.tag = mainIndex[5].categoryIdx
-//            vc.SoupBtn.tag = mainIndex[6].categoryIdx
-//            vc.CafeBtn.tag = mainIndex[7].categoryIdx
-//            vc.BunsikBtn.tag = mainIndex[8].categoryIdx
-//            vc.SinglePersonBtn.tag = mainIndex[9].categoryIdx
-//            vc.JapaneseBtn.tag = mainIndex[10].categoryIdx
-//            vc.NightBtn.tag = mainIndex[11].categoryIdx
-//            vc.PigBtn.tag = mainIndex[12].categoryIdx
-//            vc.FranchiseBtn.tag = mainIndex[13].categoryIdx
-//            vc.yomartBtn.tag = mainIndex[14].categoryIdx
-//            vc.BeautyBtn.tag = mainIndex[15].categoryIdx
-//            vc.PetBtn.tag = mainIndex[16].categoryIdx
+            //foodCategoryVC!.allFoodBtn?.tag = mainIndex[0].categoryIdx
+//            foodCategoryVC!.ChineseFoodBtn.tag = mainIndex[1].categoryIdx
+//            foodCategoryVC!.ChickenBtn.tag = mainIndex[2].categoryIdx
+//            foodCategoryVC!.KoreanFoodBtn.tag = mainIndex[3].categoryIdx
+//            foodCategoryVC!.BurgerBtn.tag = mainIndex[4].categoryIdx
+//            foodCategoryVC!.PizzaBtn.tag = mainIndex[5].categoryIdx
+//            foodCategoryVC!.SoupBtn.tag = mainIndex[6].categoryIdx
+//            foodCategoryVC!.CafeBtn.tag = mainIndex[7].categoryIdx
+//            foodCategoryVC!.BunsikBtn.tag = mainIndex[8].categoryIdx
+//            foodCategoryVC!.SinglePersonBtn.tag = mainIndex[9].categoryIdx
+//            foodCategoryVC!.JapaneseBtn.tag = mainIndex[10].categoryIdx
+//            foodCategoryVC!.NightBtn.tag = mainIndex[11].categoryIdx
+//            foodCategoryVC!.PigBtn.tag = mainIndex[12].categoryIdx
+//            foodCategoryVC!.FranchiseBtn.tag = mainIndex[13].categoryIdx
+//            foodCategoryVC!.yomartBtn.tag = mainIndex[14].categoryIdx
+//            foodCategoryVC!.BeautyBtn.tag = mainIndex[15].categoryIdx
+//            foodCategoryVC!.PetBtn.tag = mainIndex[16].categoryIdx
+            
             return cell
         }
         

@@ -75,6 +75,7 @@ extension AllViewController: UITableViewDelegate, UITableViewDataSource {
             }
             
             let cate = category[indexPath.row]
+            cell.storeIndex = cate.storeIdx
             cell.arrivalTimeLabel.text = cate.deliveryTime
             cell.deliveryFeeLabel.text = cate.deliveryTip
             cell.foodImageView.sd_setImage(with: URL(string: cate.storeLogoURL ?? "https://yogiyoserver.s3.ap-northeast-2.amazonaws.com/icon/storeIcon/IMG_7739.jpg"))
@@ -147,7 +148,8 @@ extension AllViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView,didSelectRowAt indexPath: IndexPath) {
-            
+        // 스토어인덱스저장
+        UserDefaults.standard.set(category[indexPath.row].storeIdx, forKey: "storeIdx")
             // 해당 셀을 누르면 'VC' 호출
         let storyboardVC = UIStoryboard(name: "HomeStoryboard", bundle: Bundle(for: restaurantViewController.self)).instantiateViewController(withIdentifier: "restaurantViewController") as! restaurantViewController
         

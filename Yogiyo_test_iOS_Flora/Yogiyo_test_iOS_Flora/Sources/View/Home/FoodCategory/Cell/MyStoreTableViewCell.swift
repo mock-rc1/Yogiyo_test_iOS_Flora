@@ -11,6 +11,7 @@ class MyStoreTableViewCell: UITableViewCell {
     
     static let identifier = "MyStoreTableViewCell"
 
+    var storeIndex : Int?
     @IBOutlet weak var deliveryFeeLabel: UILabel!
     @IBOutlet weak var arrivalTimeLabel: UILabel!
     @IBOutlet weak var experssOrclockLabel: UIImageView!

@@ -6,8 +6,11 @@
 //
 
 import UIKit
+import SDWebImage
 
 class restaurantViewController: UIViewController, UIScrollViewDelegate {
+    
+    lazy var dataManager: StoreInfoDataManager = StoreInfoDataManager()
     
     var sections = ["찜공유까지","탭바"]
     
@@ -17,7 +20,7 @@ class restaurantViewController: UIViewController, UIScrollViewDelegate {
     var headerTabBar : HeaderTabBarVC?
     
     var tabBottom = [1,2,3,4,5,6,7]
-    
+    var store : StoreResult?
     
     @IBOutlet weak var restaurantLabel: UILabel!
     @IBOutlet weak var backBtn: UIButton!
@@ -30,10 +33,11 @@ class restaurantViewController: UIViewController, UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        dataManager.getStoreInfo(delegate: self)
         setDelegate()
         setStyle()
         setCellRegister()
+        
     }
     
     // MARK: - Fuction
@@ -104,6 +108,15 @@ extension restaurantViewController: UITableViewDataSource, UITableViewDelegate {
             // 하위 컨트롤러가 컨트롤러 권한을 상위컨트롤러로 위임
             imageVC!.didMove(toParent: self)
             
+            imageVC?.storeNameLabel.text = store?.storeName
+            imageVC?.starScoreLabel.text = store?.storeRating
+            imageVC?.timerLabel.text = store?.deliveryTime
+            imageVC?.foodImageView.sd_setImage(with: URL(string: store?.storeImageURL ?? "" ))
+            imageVC?.minOrderLabel.text = store?.minOrderPrice
+            imageVC?.deliveryTipLabel.text = store?.deliveryTip
+            imageVC?.storeAddressLabel.text = store?.storeAddress
+            restaurantLabel.text = store?.storeName
+
             return cell
         }
         else if indexPath.section == 1 {
@@ -112,6 +125,7 @@ extension restaurantViewController: UITableViewDataSource, UITableViewDelegate {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: MenuTVCell.identifier) as? MenuTVCell else{
                 return UITableViewCell()
             }
+            
             
             return cell
         }
@@ -170,8 +184,7 @@ extension restaurantViewController: UITableViewDataSource, UITableViewDelegate {
             
             // 하위 컨트롤러가 컨트롤러 권한을 상위컨트롤러로 위임
             headerTabBar!.didMove(toParent: self)
-            
-            
+
             return headerView
         }
     }
@@ -188,4 +201,16 @@ extension restaurantViewController: UITableViewDataSource, UITableViewDelegate {
         }
     }
     
+}
+
+extension restaurantViewController {
+    func didSuccessStoreInfo(result: StoreResult) {
+        //self.dismissIndicator()
+        store = result
+        RestaurantTableView.reloadData()
+    }
+    
+    func failedToRequest(message: String) {
+        self.presentAlert(title: message)
+    }
 }

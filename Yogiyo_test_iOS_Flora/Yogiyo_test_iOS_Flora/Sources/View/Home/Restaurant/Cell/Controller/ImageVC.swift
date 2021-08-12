@@ -8,6 +8,8 @@
 import UIKit
 
 class ImageVC: UIViewController {
+    
+    var storeName : String?
 
     @IBOutlet weak var callBtn: UIButton!
     @IBOutlet weak var moreBtn: UIButton!
@@ -25,6 +27,8 @@ class ImageVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        storeNameLabel.text = storeName
+        
         jjimBtnVIew.layer.borderWidth = 0.5
         jjimBtnVIew.layer.borderColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
         sharedBtnView.layer.borderWidth = 0.5
