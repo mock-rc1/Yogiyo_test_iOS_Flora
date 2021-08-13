@@ -10,6 +10,13 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OrderInfoVC" customModule="Yogiyo_test_iOS_Flora" customModuleProvider="target">
             <connections>
+                <outlet property="SecondTextField" destination="GLr-lU-Uw4" id="oec-CO-vFP"/>
+                <outlet property="firstLabel" destination="bP1-ht-grq" id="9ei-3k-HSr"/>
+                <outlet property="firstTextField" destination="deN-Nd-tFp" id="YYq-Cy-F2O"/>
+                <outlet property="firstview" destination="hJ5-nu-gEq" id="Flo-5R-e2O"/>
+                <outlet property="requestTextField" destination="aWw-bF-lJ6" id="TWT-bj-S81"/>
+                <outlet property="secondLabel" destination="3dn-Fq-Bp0" id="Xkn-CD-gdS"/>
+                <outlet property="secondview" destination="xpe-17-5wm" id="92R-MN-q1a"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -71,16 +78,16 @@
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lbd-Wo-KXF">
-                                    <rect key="frame" x="0.0" y="202" width="107" height="20"/>
+                                    <rect key="frame" x="0.0" y="202" width="108" height="21"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <color key="tintColor" systemColor="systemGray2Color"/>
-                                    <state key="normal" title="  안심번호 사용" image="square" catalog="system">
+                                    <color key="tintColor" red="0.89803922179999995" green="0.19215688110000001" blue="0.32941177490000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <state key="normal" title="  안심번호 사용" image="checkmark.square" catalog="system">
                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="16" scale="large" weight="thin"/>
+                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="16" scale="large" weight="regular"/>
                                     </state>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rzx-pf-4Pb">
-                                    <rect key="frame" x="112" y="201" width="13" height="22"/>
+                                    <rect key="frame" x="113" y="201.5" width="13" height="22"/>
                                     <color key="tintColor" systemColor="systemGray2Color"/>
                                     <state key="normal" image="info.circle" catalog="system">
                                         <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="14" scale="small" weight="thin"/>
@@ -123,9 +130,9 @@
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJ5-nu-gEq">
                                             <rect key="frame" x="10" y="9" width="22" height="22"/>
-                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <state key="normal" image="square.fill" catalog="system">
-                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="16" scale="large" weight="thin"/>
+                                            <color key="tintColor" red="0.89803922179999995" green="0.19215688110000001" blue="0.32941177490000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <state key="normal" image="checkmark.square" catalog="system">
+                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="16" scale="large" weight="regular"/>
                                             </state>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[안전배달] 문 앞에 놓고, 문자주세요!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vtz-6j-3sX">
@@ -245,9 +252,9 @@
         </view>
     </objects>
     <resources>
+        <image name="checkmark.square" catalog="system" width="128" height="114"/>
         <image name="chevron.down" catalog="system" width="128" height="72"/>
         <image name="info.circle" catalog="system" width="128" height="121"/>
-        <image name="square" catalog="system" width="128" height="114"/>
         <image name="square.fill" catalog="system" width="128" height="114"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

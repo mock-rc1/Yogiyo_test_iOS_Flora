@@ -24,8 +24,8 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XYF-gw-eCc">
-                        <rect key="frame" x="252" y="22.5" width="48" height="24"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <rect key="frame" x="248.5" y="22.5" width="51.5" height="24"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                         <color key="textColor" red="0.89803922179999995" green="0.19607841970000001" blue="0.33333334329999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <nil key="highlightedColor"/>
                     </label>

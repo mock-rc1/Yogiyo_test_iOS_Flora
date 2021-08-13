@@ -9,6 +9,9 @@ import UIKit
 
 class OrderHistoryInTVCell: UITableViewCell {
     
+    @IBOutlet weak var cost: UILabel!
+    @IBOutlet weak var secondLabel: UILabel!
+    @IBOutlet weak var firstLabel: UILabel!
     static let identifier = "OrderHistoryInTVCell"
 
     override func awakeFromNib() {

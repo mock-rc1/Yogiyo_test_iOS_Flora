@@ -10,6 +10,17 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PayVC" customModule="Yogiyo_test_iOS_Flora" customModuleProvider="target">
             <connections>
+                <outlet property="carcar" destination="rGh-nz-42C" id="5a5-ok-KD4"/>
+                <outlet property="cardview" destination="WFZ-p7-fe2" id="dsp-xY-wcM"/>
+                <outlet property="chai" destination="LhN-EM-HYw" id="jPV-zx-4Pm"/>
+                <outlet property="kakao" destination="53t-U3-SF0" id="qmd-ow-eto"/>
+                <outlet property="money" destination="wdb-WD-K3V" id="Nee-bO-ln1"/>
+                <outlet property="naver" destination="WBV-f7-8fY" id="QJa-Jc-FsK"/>
+                <outlet property="payco" destination="DfK-Jg-7Qp" id="Ma5-oI-M5t"/>
+                <outlet property="phone" destination="aG5-LR-uzl" id="EZT-xC-UOx"/>
+                <outlet property="sin" destination="z9R-TU-sJR" id="x2d-C0-Avm"/>
+                <outlet property="smile" destination="qal-Nf-BH5" id="iMf-1F-CDx"/>
+                <outlet property="toss" destination="NnI-dV-1n7" id="6Wd-Ot-hUo"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -29,8 +40,8 @@
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3aA-mq-5ZT">
                             <rect key="frame" x="20" y="59" width="135" height="22"/>
-                            <color key="tintColor" systemColor="systemGray2Color"/>
-                            <state key="normal" title=" 요기서 1초 결제" image="circle" catalog="system">
+                            <color key="tintColor" red="0.89803922179999995" green="0.19215688110000001" blue="0.32941177490000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <state key="normal" title=" 요기서 1초 결제" image="circle.fill" catalog="system">
                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
                         </button>
@@ -103,11 +114,35 @@
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="53t-U3-SF0">
                                             <rect key="frame" x="0.0" y="0.0" width="182" height="64"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="카카오페이" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W7R-J7-3kX">
+                                                    <rect key="frame" x="54" y="22" width="74" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstItem="W7R-J7-3kX" firstAttribute="centerY" secondItem="53t-U3-SF0" secondAttribute="centerY" id="1aR-Wp-ijP"/>
+                                                <constraint firstItem="W7R-J7-3kX" firstAttribute="centerX" secondItem="53t-U3-SF0" secondAttribute="centerX" id="TWR-EP-hOW"/>
+                                            </constraints>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WBV-f7-8fY">
                                             <rect key="frame" x="192" y="0.0" width="182" height="64"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="네이버페이" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAU-5Q-WvJ">
+                                                    <rect key="frame" x="54" y="22" width="74" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstItem="jAU-5Q-WvJ" firstAttribute="centerX" secondItem="WBV-f7-8fY" secondAttribute="centerX" id="AFf-aH-YKb"/>
+                                                <constraint firstItem="jAU-5Q-WvJ" firstAttribute="centerY" secondItem="WBV-f7-8fY" secondAttribute="centerY" id="oan-bW-Fvc"/>
+                                            </constraints>
                                         </view>
                                     </subviews>
                                 </stackView>
@@ -116,11 +151,35 @@
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LhN-EM-HYw">
                                             <rect key="frame" x="0.0" y="0.0" width="182" height="64"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="차이" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Shf-17-D7W">
+                                                    <rect key="frame" x="76.5" y="22" width="29.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstItem="Shf-17-D7W" firstAttribute="centerY" secondItem="LhN-EM-HYw" secondAttribute="centerY" id="2t6-7d-dZB"/>
+                                                <constraint firstItem="Shf-17-D7W" firstAttribute="centerX" secondItem="LhN-EM-HYw" secondAttribute="centerX" id="DC4-qi-a8f"/>
+                                            </constraints>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NnI-dV-1n7">
                                             <rect key="frame" x="192" y="0.0" width="182" height="64"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="토스" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fet-OB-MJi">
+                                                    <rect key="frame" x="76.5" y="22" width="29.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstItem="fet-OB-MJi" firstAttribute="centerY" secondItem="NnI-dV-1n7" secondAttribute="centerY" id="0zS-II-rAG"/>
+                                                <constraint firstItem="fet-OB-MJi" firstAttribute="centerX" secondItem="NnI-dV-1n7" secondAttribute="centerX" id="SRk-p3-grd"/>
+                                            </constraints>
                                         </view>
                                     </subviews>
                                 </stackView>
@@ -129,11 +188,35 @@
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DfK-Jg-7Qp">
                                             <rect key="frame" x="0.0" y="0.0" width="182" height="64"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="페이코" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zA6-BF-Hfa">
+                                                    <rect key="frame" x="69" y="22" width="44.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstItem="zA6-BF-Hfa" firstAttribute="centerY" secondItem="DfK-Jg-7Qp" secondAttribute="centerY" id="VtR-aY-nFW"/>
+                                                <constraint firstItem="zA6-BF-Hfa" firstAttribute="centerX" secondItem="DfK-Jg-7Qp" secondAttribute="centerX" id="urO-lc-nge"/>
+                                            </constraints>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qal-Nf-BH5">
                                             <rect key="frame" x="192" y="0.0" width="182" height="64"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="스마일페이" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VWG-1s-U1Z">
+                                                    <rect key="frame" x="54" y="22" width="74" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstItem="VWG-1s-U1Z" firstAttribute="centerY" secondItem="qal-Nf-BH5" secondAttribute="centerY" id="uVM-WY-lUt"/>
+                                                <constraint firstItem="VWG-1s-U1Z" firstAttribute="centerX" secondItem="qal-Nf-BH5" secondAttribute="centerX" id="wAc-Qu-m4x"/>
+                                            </constraints>
                                         </view>
                                     </subviews>
                                 </stackView>
@@ -142,11 +225,35 @@
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z9R-TU-sJR">
                                             <rect key="frame" x="0.0" y="0.0" width="182" height="64"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="신용카드" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4SB-15-GuR">
+                                                    <rect key="frame" x="61.5" y="22" width="59" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstItem="4SB-15-GuR" firstAttribute="centerY" secondItem="z9R-TU-sJR" secondAttribute="centerY" id="PCT-dC-eG2"/>
+                                                <constraint firstItem="4SB-15-GuR" firstAttribute="centerX" secondItem="z9R-TU-sJR" secondAttribute="centerX" id="j6V-8b-Bag"/>
+                                            </constraints>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aG5-LR-uzl">
                                             <rect key="frame" x="192" y="0.0" width="182" height="64"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="휴대전화" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qy3-uo-5iv">
+                                                    <rect key="frame" x="61.5" y="22" width="59" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstItem="Qy3-uo-5iv" firstAttribute="centerX" secondItem="aG5-LR-uzl" secondAttribute="centerX" id="Gwf-7d-qft"/>
+                                                <constraint firstItem="Qy3-uo-5iv" firstAttribute="centerY" secondItem="aG5-LR-uzl" secondAttribute="centerY" id="a73-46-VJz"/>
+                                            </constraints>
                                         </view>
                                     </subviews>
                                 </stackView>
@@ -294,6 +401,7 @@
     </objects>
     <resources>
         <image name="circle" catalog="system" width="128" height="121"/>
+        <image name="circle.fill" catalog="system" width="128" height="121"/>
         <image name="creditcard" catalog="system" width="128" height="88"/>
         <image name="info.circle" catalog="system" width="128" height="121"/>
         <image name="plus" catalog="system" width="128" height="113"/>

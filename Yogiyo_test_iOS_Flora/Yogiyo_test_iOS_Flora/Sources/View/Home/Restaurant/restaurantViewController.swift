@@ -119,6 +119,7 @@ extension restaurantViewController: UITableViewDataSource, UITableViewDelegate {
             imageVC?.storeAddressLabel.text = store?.storeAddress
             restaurantLabel.text = store?.storeName
 
+            cell.selectionStyle = .none
             return cell
         }
         else if indexPath.section == 1 {
@@ -132,6 +133,7 @@ extension restaurantViewController: UITableViewDataSource, UITableViewDelegate {
             cell.priceLabel.text = storeFood[indexPath.row].menuPrice
             cell.foodImageView.sd_setImage(with: URL(string: storeFood[indexPath.row].menuImageURL ?? "" ))
             cell.menuIndex = storeFood[indexPath.row].menuIdx
+            cell.selectionStyle = .none
             return cell
         }
         return UITableViewCell()

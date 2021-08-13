@@ -399,20 +399,12 @@
                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="18" scale="large" weight="thin"/>
                                         </state>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3RU-RZ-d0Y">
-                                        <rect key="frame" x="186.5" y="13" width="41.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="ZbP-3y-7oF" firstAttribute="centerY" secondItem="sdu-iv-cce" secondAttribute="centerY" id="GLg-Tn-uzE"/>
                                     <constraint firstItem="ZbP-3y-7oF" firstAttribute="leading" secondItem="sdu-iv-cce" secondAttribute="leading" constant="20" id="PRd-aE-vQv"/>
-                                    <constraint firstItem="3RU-RZ-d0Y" firstAttribute="centerY" secondItem="sdu-iv-cce" secondAttribute="centerY" id="aBc-ir-F5B"/>
                                     <constraint firstItem="mln-Aa-N8E" firstAttribute="centerY" secondItem="sdu-iv-cce" secondAttribute="centerY" id="bxn-L3-Xb0"/>
-                                    <constraint firstItem="3RU-RZ-d0Y" firstAttribute="centerX" secondItem="sdu-iv-cce" secondAttribute="centerX" id="m4P-N4-HLg"/>
                                     <constraint firstAttribute="height" constant="46" id="mxe-gE-IuB"/>
                                     <constraint firstAttribute="trailing" secondItem="mln-Aa-N8E" secondAttribute="trailing" constant="20" id="xhg-EL-CCF"/>
                                 </constraints>
@@ -493,7 +485,6 @@
                         <outlet property="addOrderBtnView" destination="e8E-jL-Hkk" id="qYu-qL-6PP"/>
                         <outlet property="backBtn" destination="ZbP-3y-7oF" id="Qym-Hn-5pJ"/>
                         <outlet property="foodChoiceTableView" destination="sJJ-gk-oNC" id="sRF-nb-nPI"/>
-                        <outlet property="nameLabel" destination="3RU-RZ-d0Y" id="Mob-0K-MeB"/>
                         <outlet property="navigationBarUIView" destination="sdu-iv-cce" id="u1B-eI-eEZ"/>
                         <outlet property="orderBtn" destination="LFK-5u-uI8" id="8E4-SN-suF"/>
                         <outlet property="sharedBtn" destination="mln-Aa-N8E" id="Guu-bm-l2a"/>

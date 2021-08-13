@@ -9,13 +9,29 @@ import UIKit
 
 class BtnVC: UIViewController {
 
+    @IBOutlet weak var btnbtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func btnTap(_ sender: UIButton) {
+       
+                let storyboardVC = UIStoryboard(name: "HomeStoryboard", bundle: Bundle(for: HomeViewController.self)).instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
 
+        self.dismiss(animated: true){
+
+
+            self.navigationController?.pushViewController(storyboardVC, animated: true)}
+
+    }
+        
+       
+               
+            
+    
+    
     /*
     // MARK: - Navigation
 
@@ -25,5 +41,6 @@ class BtnVC: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+
 
 }

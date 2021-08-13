@@ -9,6 +9,7 @@ import UIKit
 
 class OrderHistoryTVCell: UITableViewCell {
     
+    @IBOutlet weak var cost: UILabel!
     var foodOrder = [1,2]
     @IBOutlet weak var tableViewInTableView: UITableView!
     
@@ -47,6 +48,16 @@ extension OrderHistoryTVCell : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: OrderHistoryInTVCell.identifier) as? OrderHistoryInTVCell else{
             return UITableViewCell()
+        }
+        if indexPath.row == 0 {
+            cell.firstLabel.text = "짜장면 X 1"
+            cell.secondLabel.text = "일반"
+            cell.cost.text = "5,000원"
+        }
+        if indexPath.row == 1 {
+            cell.firstLabel.text = "추가금액"
+            cell.secondLabel.text = ""
+            cell.cost.text = "3,000원"
         }
         return cell
     }

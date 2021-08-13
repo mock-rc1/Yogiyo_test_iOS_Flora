@@ -24,7 +24,7 @@ class FoodChoiceVC: UIViewController {
     var foodInfo : [SpecificFoodInfoResult] = []
     let headerView = UIView()
     var select = [1,2,3]
-    var add = [1,2,3,4]
+    var add = [1,2,3]
     var sections = ["헤더뷰","가격","선택","추가","수량","총주문금액"]
     
     override func viewDidLoad() {
@@ -114,6 +114,8 @@ extension FoodChoiceVC: UITableViewDelegate, UITableViewDataSource {
             cell.foodImageView.sd_setImage(with: URL(string: foodInfo[indexPath.row].menuImageURL ?? "" ))
             cell.foodName.text = foodInfo[indexPath.row].menuName
             cell.subFoodNameLabel.text = foodInfo[indexPath.row].menuInfo ?? "맛있는 음식"
+            
+            cell.selectionStyle = .none
             return cell
         }
         else if indexPath.section == 1 {
@@ -121,20 +123,37 @@ extension FoodChoiceVC: UITableViewDelegate, UITableViewDataSource {
                 return UITableViewCell()
             }
             cell.priceLabel.text = foodInfo[indexPath.row].menuPrice
+            cell.selectionStyle = .none
             return cell
         }
         
-        else if indexPath.section == 2 {
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: SelectTVCell.identifier) as? SelectTVCell else{
-                return UITableViewCell()
-            }
-            return cell
-        }
+//        else if indexPath.section == 2 {
+//            guard let cell = tableView.dequeueReusableCell(withIdentifier: SelectTVCell.identifier) as? SelectTVCell else{
+//                return UITableViewCell()
+//            }
+//
+//
+//            return cell
+//        }
         
         else if indexPath.section == 3 {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: AddTVCell.identifier) as? AddTVCell else{
                 return UITableViewCell()
             }
+            //cell.checkBoxBtn.addTarget(self, action: #selector(displayButton(_:)), for: .touchUpInside)
+            if indexPath.row == 0 {
+                cell.addFoodLabel.text = "짬뽕국물 추가"
+                cell.addCostLabel.text = "+1000원"
+            }
+            else if indexPath.row == 1 {
+                cell.addFoodLabel.text = "곱빼기 추가"
+                cell.addCostLabel.text = "+1000원"
+            }
+            else if indexPath.row == 2 {
+                cell.addFoodLabel.text = "공기밥 추가"
+                cell.addCostLabel.text = "+1000원"
+            }
+            cell.selectionStyle = .none
             return cell
         }
         
@@ -142,6 +161,7 @@ extension FoodChoiceVC: UITableViewDelegate, UITableViewDataSource {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: quantityTVCell.identifier) as? quantityTVCell else{
                 return UITableViewCell()
             }
+            cell.selectionStyle = .none
             return cell
         }
         
@@ -149,6 +169,9 @@ extension FoodChoiceVC: UITableViewDelegate, UITableViewDataSource {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: TotalAmountTVCell.identifier) as? TotalAmountTVCell else{
                 return UITableViewCell()
             }
+            cell.totalAmountLabel.text = "5,000원"
+            cell.minOrderCostLabel.text = "(최소주문금액 8000원)"
+            cell.selectionStyle = .none
             return cell
         }
         
@@ -162,9 +185,9 @@ extension FoodChoiceVC: UITableViewDelegate, UITableViewDataSource {
         else if indexPath.section == 1 {
             return 50
         }
-        else if indexPath.section == 2 {
-            return 40
-        }
+//        else if indexPath.section == 2 {
+//            return 40
+//        }
         else if indexPath.section == 3 {
             return 40
         }
@@ -192,6 +215,9 @@ extension FoodChoiceVC: UITableViewDelegate, UITableViewDataSource {
         if section == 1 {
             return CGFloat.leastNormalMagnitude
         }
+        if section == 2 {
+            return CGFloat.leastNormalMagnitude
+        }
         if section == 4 {
             return CGFloat.leastNormalMagnitude
         }
@@ -206,22 +232,22 @@ extension FoodChoiceVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
 
-        if section == 2 {
-            
-            let headerView = UIView()
-            headerView.backgroundColor = .white
-            headerView.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: 50)
-            
-            let titleLabel = UILabel()
-            titleLabel.textColor = .black
-            titleLabel.text = "선택"
-            titleLabel.font = UIFont.systemFont(ofSize: 17, weight: .semibold)
-            titleLabel.frame = CGRect(x: 20, y: 0, width: headerView.frame.width, height: headerView.frame.height)
-            headerView.addSubview(titleLabel)
-            
-            return headerView
-            
-        }
+//        if section == 2 {
+//
+//            let headerView = UIView()
+//            headerView.backgroundColor = .white
+//            headerView.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: 50)
+//
+//            let titleLabel = UILabel()
+//            titleLabel.textColor = .black
+//            titleLabel.text = "선택"
+//            titleLabel.font = UIFont.systemFont(ofSize: 17, weight: .semibold)
+//            titleLabel.frame = CGRect(x: 20, y: 0, width: headerView.frame.width, height: headerView.frame.height)
+//            headerView.addSubview(titleLabel)
+//
+//            return headerView
+//
+//        }
         if section == 3 {
             
             
@@ -244,7 +270,15 @@ extension FoodChoiceVC: UITableViewDelegate, UITableViewDataSource {
         return UIView()
     }
     
- 
+//    @objc func displayButton(_ UIButton: UIButton) {
+//        let storyboardVC = UIStoryboard(name: "MyYogiyoStoryboard", bundle: Bundle(for: NickNameVC.self)).instantiateViewController(withIdentifier: "NickNameVC") as! NickNameVC
+//        self.dismiss(animated: true){
+//        
+//            self.present(storyboardVC, animated: true, completion: nil)
+//            //storyboardVC.modalPresentationStyle = .fullScreen
+//            //self.present(storyboardVC, animated: true, completion: nil)
+//        }
+//        }
     
     
 }

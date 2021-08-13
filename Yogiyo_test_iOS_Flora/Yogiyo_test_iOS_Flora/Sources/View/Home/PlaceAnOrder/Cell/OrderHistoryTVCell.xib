@@ -97,6 +97,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="cost" destination="AfD-Bw-9N7" id="hPi-SC-Vir"/>
                 <outlet property="tableViewInTableView" destination="v7D-6P-i1E" id="7U1-5T-CM6"/>
             </connections>
             <point key="canvasLocation" x="-1.4492753623188408" y="155.35714285714286"/>

@@ -13,7 +13,8 @@ class PlaceAnOrderVC: UIViewController {
     @IBOutlet weak var backBtn: UIButton!
     
     var sections = ["주문자정보","결제수단","쿠폰함","배달주문내역","결제버튼"]
-    
+    let dogBreed = ["단무지/치킨무/반찬류 안주셔도 돼요.", "벨은 누르지 말아주세요", "도착 후 전화주시면 직접 받으러 갈게요", "그냥 문 앞에 놓아주시면 돼요"]
+   
     var orderInfo : OrderInfoVC?
     var pay : PayVC?
     var selectCoupon : SelectCouponVC?
@@ -25,6 +26,8 @@ class PlaceAnOrderVC: UIViewController {
         setDelegate()
         setStyle()
         setCellRegister()
+        // 바탕 누르면 키보드 없어지기
+        dismissKeyboardWhenTappedAround()
         
     }
     
@@ -108,6 +111,9 @@ extension PlaceAnOrderVC: UITableViewDelegate, UITableViewDataSource {
                 // 하위 컨트롤러가 컨트롤러 권한을 상위컨트롤러로 위임
                 orderInfo!.didMove(toParent: self)
                 
+                orderInfo?.firstLabel.text = "서울특별시 마포구 동교동 홍대입구역"
+                orderInfo?.secondLabel.text = "[도로명] 양화로 188 홍대입구역"
+                
                 return cell
             }
             else if indexPath.section == 1 {
@@ -165,6 +171,7 @@ extension PlaceAnOrderVC: UITableViewDelegate, UITableViewDataSource {
                 guard let cell = tableView.dequeueReusableCell(withIdentifier: OrderHistoryTVCell.identifier) as? OrderHistoryTVCell else{
                     return UITableViewCell()
                 }
+                cell.cost.text = "8,000원"
                 return cell
             }
             
@@ -189,8 +196,11 @@ extension PlaceAnOrderVC: UITableViewDelegate, UITableViewDataSource {
 
                 // 하위 컨트롤러가 컨트롤러 권한을 상위컨트롤러로 위임
                 btn!.didMove(toParent: self)
-
+                
+               
+                
                 return cell
+                
             }
             return UITableViewCell()
         }
@@ -308,6 +318,10 @@ extension PlaceAnOrderVC: UITableViewDelegate, UITableViewDataSource {
 //            }
 //        }
         
-    
+  
     
 }
+
+
+
+
