@@ -35,8 +35,6 @@
         3) 사용자 정보
             - 내 정보 수정, 닉네임 변경, 사용자 정보 조회 API 연동 및 구현
 
-## 🛠 개발환경
-
 ## 📄 개발일지
 <details>       
 <summary> 2021.07.31 토 - 클론 프로젝트 시작 </summary>      
@@ -379,6 +377,12 @@
 
 </div>
 </details>
+
+## 🛠 개발환경
+<a href="" target="_blank"><img src="https://img.shields.io/badge/Swift-FA7343?style=flat-square&logo=Swift&logoColor=white"/></a>
+<a href="" target="_blank"><img src="https://img.shields.io/badge/CocoaPods-EE3322?style=flat-square&logo=CocoaPods&logoColor=white"/></a>
+<a href="" target="_blank"><img src="https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=Postman&logoColor=white"/></a>
+<a href="" target="_blank"><img src="https://img.shields.io/badge/Slack-4A154B?style=flat-square&logo=Slack&logoColor=white"/></a>
 
 ## 📌 참고
 - 라이징 테스트 기획서 [PDF 파일](/etc/라이징테스트기획서_요기요A.pdf), [docx 파일](/etc/라이징테스트기획서_요기요A.docx)  
